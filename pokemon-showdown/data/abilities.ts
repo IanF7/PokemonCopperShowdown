@@ -5660,4 +5660,155 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3,
 		num: -3,
 	},
+	steelwool: {
+		onDamagingHit(damage, target, source, move) {
+			if (this.checkMoveMakesContact(move, source, target, true)) {
+				this.add('-ability', target, 'Steel Wool');
+				this.boost({ spe: -1 }, source, target, null, true);
+			}
+		},
+		flags: {},
+		name: "Steel Wool",
+		rating: 2,
+		num: -100,
+	},
+    stateshift: {
+        onStart(pokemon) {
+            if (pokemon.baseSpecies.baseSpecies !== 'Puradox' || pokemon.transformed) return;
+
+            if (this.randomChance(1, 2)) {
+                const targetForme = pokemon.species.name === 'Puradox' ?
+                    'Puradox-Dead-State' : 'Puradox';
+
+                pokemon.formeChange(targetForme, this.effect, true);
+                this.add('-activate', pokemon, 'ability: State Shift');
+            }
+        },
+		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1 },
+        name: "State Shift",
+        rating: 1,
+        num: -101,
+    },
+	eternalflame: {
+		onWeather(target, source, effect) {
+			if (target.effectiveWeather() !== effect.id) return;
+			if (effect.id === 'sunnyday' || effect.id === 'desolateland') {
+				this.heal(target.baseMaxhp / 16);
+			}
+		},
+		flags: {},
+		name: "Eternal Flame",
+		rating: 1.5,
+		num: -102,
+	},
+	stormsurge: {
+		onSwitchInPriority: -2,
+		onStart(pokemon) {
+			this.singleEvent('WeatherChange', this.effect, this.effectState, pokemon);
+		},
+		onWeatherChange(pokemon) {
+			if (pokemon.baseSpecies.baseSpecies !== 'Brawnsoon' || pokemon.transformed) return;
+			let forme = null;
+			switch (pokemon.effectiveWeather()) {
+			case 'raindance':
+			case 'primordialsea':
+				if (pokemon.species.id !== 'brawnsoonflood') forme = 'Brawnsoon-Flood';
+				break;
+			default:
+				if (pokemon.species.id !== 'brawnsoon') forme = 'Brawnsoon';
+				break;
+			}
+			if (pokemon.isActive && forme) {
+				pokemon.formeChange(forme, this.effect, false, '0', '[msg]');
+			}
+		},
+		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, notransform: 1 },
+		name: "Storm Surge",
+		rating: 4,
+		num: -103,
+	},
+	stabilizingorder: {
+		onStart(pokemon) {
+			if (pokemon.shieldBoost) return;
+			pokemon.shieldBoost = true;
+			this.boost({ def: 1 }, pokemon);
+		},
+		flags: {},
+		name: "Stabilizing Order",
+		rating: 3.5,
+		num: -104,
+	},
+	ragingchaos: {
+		onStart(pokemon) {
+			if (pokemon.swordBoost) return;
+			pokemon.swordBoost = true;
+			this.boost({ spa: 1 }, pokemon);
+		},
+		flags: {},
+		name: "Raging Chaos",
+		rating: 4,
+		num: -105,
+	},
+	balancingaura: {
+		onStart(pokemon) {
+			this.add('-ability', pokemon, 'Balancing Aura');
+
+			for (const target of this.getAllActive()) {
+				if (!target.hp) continue;
+				target.clearBoosts();
+				this.add('-clearboost', target);
+			}
+		},
+		flags: {},
+		name: "Balancing Aura",
+		rating: 3,
+		num: -106,
+	},
+    thornybody: {
+        onDamagingHitOrder: 1,
+        onDamagingHit(damage, target, source, move) {
+            if (this.checkMoveMakesContact(move, source, target, true)) {
+				this.add('-ability', target, 'Thorny Body');
+                this.damage(source.baseMaxhp / 16, source, target);
+                this.boost({evasion: -1}, source, target, null);
+            }
+        },
+        flags: {},
+        name: "Thorny Body",
+        rating: 2.5,
+        num: -107,
+    },
+	spectralize: {
+		onModifyTypePriority: -1,
+		onModifyType(move, pokemon) {
+			const noModifyType = [
+				'judgment', 'multiattack', 'naturalgift', 'revelationdance', 'technoblast', 'terrainpulse', 'weatherball',
+			];
+			if (move.type === 'Normal' && (!noModifyType.includes(move.id) || this.activeMove?.isMax) &&
+				!(move.isZ && move.category !== 'Status') && !(move.name === 'Tera Blast' && pokemon.terastallized)) {
+				move.type = 'Ghost';
+				move.typeChangerBoosted = this.effect;
+			}
+		},
+		onBasePowerPriority: 23,
+		onBasePower(basePower, pokemon, target, move) {
+			if (move.typeChangerBoosted === this.effect) return this.chainModify([4915, 4096]);
+		},
+		flags: {},
+		name: "Spectralize",
+		rating: 4,
+		num: -108,
+	},
+	goldenbody: {
+		onSourceModifyDamage(damage, source, target, move) {
+			if (target.getMoveHitData(move).typeMod > 0) {
+				this.debug('Golden Body neutralize');
+				return this.chainModify(0.75);
+			}
+		},
+		flags: { breakable: 1 },
+		name: "Golden Body",
+		rating: 3,
+		num: -109,
+	},
 };

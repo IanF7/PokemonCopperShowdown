@@ -8164,4 +8164,301 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		gen: 8,
 		isNonstandard: "CAP",
 	},
+	linkingcord: {
+		name: "Linking Cord",
+		spritenum: -100,
+		fling: {
+			basePower: 30,
+		},
+		num: -100,
+		gen: 9,
+	},
+	badegg: {
+		name: "Bad Egg",
+		spritenum: -101,
+		fling: {
+			basePower: 80,
+		},
+		num: -101,
+		gen: 9,
+	},
+	luckyhorn: {
+		name: "Lucky Horn",
+		spritenum: -102,
+		fling: {
+			basePower: 40,
+		},
+		onModifyCritRatio(critRatio, user) {
+			return critRatio + 2;
+		},
+		onAfterMoveSecondarySelf(source, target, move) {
+			if (source && source !== target && move && move.category !== 'Status' && !source.forceSwitchFlag) {
+				this.damage(source.baseMaxhp / 10, source, source, this.dex.items.get('luckyhorn'));
+			}
+		},
+		itemUser: ["Chansey"],
+		num: 256,
+		gen: 2,
+		isNonstandard: "Past",
+	},
+	spinefossil: {
+		name: "Spine Fossil",
+		spritenum: -103,
+		fling: {
+			basePower: 100,
+		},
+		num: -103,
+		gen: 9,
+	},
+	toothfossil: {
+		name: "Tooth Fossil",
+		spritenum: -104,
+		fling: {
+			basePower: 100,
+		},
+		num: -104,
+		gen: 9,
+	},
+	poliwrathite: {
+		name: "Poliwrathite",
+		spritenum: -105,
+		megaStone: { "Poliwrath": "Poliwrath-Mega" },
+		itemUser: ["Poliwrath"],
+		onTakeItem(item, source) {
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
+		},
+		num: -105,
+		gen: 9,
+	},
+	crobatite: {
+		name: "Crobatite",
+		spritenum: -106,
+		megaStone: { "Crobat": "Crobat-Mega" },
+		itemUser: ["Crobat"],
+		onTakeItem(item, source) {
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
+		},
+		num: -106,
+		gen: 9,
+	},
+	torkoalite: {
+		name: "Torkoalite",
+		spritenum: -107,
+		megaStone: { "Torkoal": "Torkoal-Mega" },
+		itemUser: ["Torkoal"],
+		onTakeItem(item, source) {
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
+		},
+		num: -107,
+		gen: 9,
+	},
+	flygonite: {
+		name: "Flygonite",
+		spritenum: -108,
+		megaStone: { "Flygon": "Flygon-Mega" },
+		itemUser: ["Flygon"],
+		onTakeItem(item, source) {
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
+		},
+		num: -108,
+		gen: 9,
+	},
+	roseradite: {
+		name: "Roseradite",
+		spritenum: -109,
+		megaStone: { "Roserade": "Roserade-Mega" },
+		itemUser: ["Roserade"],
+		onTakeItem(item, source) {
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
+		},
+		num: -109,
+		gen: 9,
+	},
+	krookodilite: {
+		name: "Krookodilite",
+		spritenum: -110,
+		megaStone: { "Krookodile": "Krookodile-Mega" },
+		itemUser: ["Krookodile"],
+		onTakeItem(item, source) {
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
+		},
+		num: -110,
+		gen: 9,
+	},
+	crustlite: {
+		name: "Crustlite",
+		spritenum: -111,
+		megaStone: { "Crustle": "Crustle-Mega" },
+		itemUser: ["Crustle"],
+		onTakeItem(item, source) {
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
+		},
+		num: -111,
+		gen: 9,
+	},
+	hydreigonite: {
+		name: "Hydreigonite",
+		spritenum: -112,
+		megaStone: { "Hydreigon": "Hydreigon-Mega" },
+		itemUser: ["Hydreigon"],
+		onTakeItem(item, source) {
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
+		},
+		num: -112,
+		gen: 9,
+	},
+	aegislashite: {
+		name: "Aegislashite",
+		spritenum: -113,
+		megaStone: { "Aegislash": "Aegislash-Mega" },
+		itemUser: ["Aegislash"],
+		onTakeItem(item, source) {
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
+		},
+		num: -113,
+		gen: 9,
+	},
+	helioliskite: {
+		name: "Helioliskite",
+		spritenum: -114,
+		megaStone: { "Heliolisk": "Heliolisk-Mega" },
+		itemUser: ["Heliolisk"],
+		onTakeItem(item, source) {
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
+		},
+		num: -114,
+		gen: 9,
+	},
+	latremorite: {
+		name: "Latremorite",
+		spritenum: -115,
+		megaStone: { "Latremor": "Latremor-Mega" },
+		itemUser: ["Latremor"],
+		onTakeItem(item, source) {
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
+		},
+		num: -115,
+		gen: 9,
+	},
+	aurocite: {
+		name: "Aurocite",
+		spritenum: -116,
+		megaStone: { "Aurocyx": "Aurocyx-Mega" },
+		itemUser: ["Aurocyx"],
+		onTakeItem(item, source) {
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
+		},
+		num: -116,
+		gen: 9,
+	},
+	platypunchite: {
+		name: "Platypunchite",
+		spritenum: -117,
+		megaStone: { "Platypunch": "Platypunch-Mega" },
+		itemUser: ["Platypunch"],
+		onTakeItem(item, source) {
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
+		},
+		num: -117,
+		gen: 9,
+	},
+	snuffluffite: {
+		name: "Snuffluffite",
+		spritenum: -118,
+		megaStone: { "Snuffluff": "Snuffluff-Mega" },
+		itemUser: ["Snuffluff"],
+		onTakeItem(item, source) {
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
+		},
+		num: -118,
+		gen: 9,
+	},
+	phantohmite: {
+		name: "Phantohmite",
+		spritenum: -119,
+		megaStone: { "Phantohm": "Phantohm-Mega" },
+		itemUser: ["Phantohm"],
+		onTakeItem(item, source) {
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
+		},
+		num: -119,
+		gen: 9,
+	},
+	magnetaurite: {
+		name: "Magnetaurite",
+		spritenum: -120,
+		megaStone: { "Magnetaur": "Magnetaur-Mega" },
+		itemUser: ["Magnetaur"],
+		onTakeItem(item, source) {
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
+		},
+		num: -120,
+		gen: 9,
+	},
+	frigidite: {
+		name: "Frigidite",
+		spritenum: -121,
+		megaStone: { "Frigidae": "Frigidae-Mega" },
+		itemUser: ["Frigidae"],
+		onTakeItem(item, source) {
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
+		},
+		num: -121,
+		gen: 9,
+	},
+	titanimaamite: {
+		name: "Titanimaamite",
+		spritenum: -122,
+		megaStone: { "Titanimaam": "Titanimaam-Mega" },
+		itemUser: ["Titanimaam"],
+		onTakeItem(item, source) {
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
+		},
+		num: -122,
+		gen: 9,
+	},
+	infernoixite: {
+		name: "Infernoixite",
+		spritenum: -123,
+		megaStone: { "Infernoix": "Infernoix-Mega" },
+		itemUser: ["Infernoix"],
+		onTakeItem(item, source) {
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
+		},
+		num: -123,
+		gen: 9,
+	},
+	roaraclite: {
+		name: "Roaraclite",
+		spritenum: -124,
+		megaStone: { "Roaracle": "Roaracle-Mega" },
+		itemUser: ["Roaracle"],
+		onTakeItem(item, source) {
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
+		},
+		num: -124,
+		gen: 9,
+	},
+	dvarmite: {
+		name: "Dvarmite",
+		spritenum: -125,
+		megaStone: { "Dvarmith": "Dvarmith-Mega" },
+		itemUser: ["Dvarmith"],
+		onTakeItem(item, source) {
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
+		},
+		num: -125,
+		gen: 9,
+	},
+	jinlongite: {
+		name: "Jinlongite",
+		spritenum: -126,
+		megaStone: { "Jinlong": "Jinlong-Mega" },
+		itemUser: ["Jinlong"],
+		onTakeItem(item, source) {
+			return !item.megaStone?.[source.baseSpecies.baseSpecies];
+		},
+		num: -126,
+		gen: 9,
+	},
 };
