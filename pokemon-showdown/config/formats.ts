@@ -21,7 +21,54 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 
 	// S/V Singles
 	///////////////////////////////////////////////////////////////////
-
+	{
+		section: "Pokémon Copper",
+	},
+	{
+		name: "[Gen 9] Pokémon Copper Exclusive Singles",
+		desc: 'Single battle with Pok&eacute;mon new to Pok&eacute;mon Copper',
+		mod: 'gen9',
+		bestOfDefault: true,
+		ruleset: ['Standard', 'Azori Exclusives', 'Flat Rules', 'VGC Timer'],
+	},
+	{
+		name: "[Gen 9] Pokémon Copper Exclusive Doubles",
+		desc: 'Double battle with Pok&eacute;mon new to Pok&eacute;mon Copper',
+		mod: 'gen9',
+		gameType: 'doubles',
+		bestOfDefault: true,
+		ruleset: ['Standard Doubles', 'Azori Exclusives', 'Flat Rules', 'VGC Timer'],
+	},
+	{
+		name: "[Gen 9] Azori Pokédex Singles",
+		desc: 'Single battle with Pok&eacute;mon from the Azori Pok&eacute;dex',
+		mod: 'gen9',
+		bestOfDefault: true,
+		ruleset: ['Standard', 'Azori Pokedex', 'Flat Rules', 'VGC Timer'],
+	},
+	{
+		name: "[Gen 9] Azori Pokédex Doubles",
+		desc: 'Double battle with Pok&eacute;mon from the Azori Pok&eacute;dex',
+		mod: 'gen9',
+		gameType: 'doubles',
+		bestOfDefault: true,
+		ruleset: ['Standard Doubles', 'Azori Pokedex', 'Flat Rules', 'VGC Timer'],
+	},
+	{
+		name: "[Gen 9] National Pokédex Singles",
+		desc: 'Single battle with all Pok&eacute;mon in the National Pok&eacute;dex',
+		mod: 'gen9',
+		bestOfDefault: true,
+		ruleset: ['Standard', 'Flat Rules', 'VGC Timer', 'Open Team Sheets'],
+	},
+	{
+		name: "[Gen 9] National Pokédex Doubles",
+		desc: 'Double battle with all Pok&eacute;mon in the National Pok&eacute;dex',
+		mod: 'gen9',
+		gameType: 'doubles',
+		bestOfDefault: true,
+		ruleset: ['Standard Doubles', 'Flat Rules', 'VGC Timer', 'Open Team Sheets'],
+	},
 	{
 		section: "S/V Singles",
 	},

@@ -480,6 +480,44 @@ export const Rulesets: import('../sim/dex-formats').FormatDataTable = {
 			}
 		},
 	},
+	azoriexclusives: {
+		effectType: 'ValidatorRule',
+		name: 'Azori Exclusives',
+		desc: "Only allows Pok&eacute;mon that are new in Pok&eacute;mon Copper",
+		banlist: [
+			'Spearow-Base', 'Fearow-Base', 'Dragonite-Base', 'Hoppip-Base', 'Skiploom-Base', 'Jumpluff-Base', 'Blissey-Base', 'Bouffalant-Base',
+			'Dewpider-Base', 'Araquanid-Base'
+		],
+		onValidateSet(set, format) {
+			const azoriExclusives = [
+				'Lagavo', 'Lagavien', 'Latremor', 'Sparcyx', 'Aurorun', 'Aurocyx', 'Platyke', 'Platyspar', 'Platypunch', 'Wrini', 'Wrengal', 'Wrengade', 'Wrenquiem', 'Burrot', 'Burthrow', 'Larfluff', 'Cocoonix', 'Luminoth', 'Bikkunise', 'Snuffluff', 'Kamakid', 'Kamasei', 'Stellopod', 'Cephastar', 'Celumina', 'Whimsijack', 'Tanukiroot', 'Branuki', 'Treenuki', 'Rolil', 'Rolidozer', 'Volten', 'Panthere', 'Phantohm', 'Parapossum', 'Charcupine', 'Scorcupine', 'Rattleghast', 'Spectrattle', 'Jabberoo', 'Clobberoo', 'Rootality', 'Marling', 'Martana', 'Parkel', 'Parktic', 'Cluddle', 'Adolem', 'Adobalith', 'Stalcria', 'Stalpaca', 'Embush', 'Horeburn', 'Eimole', 'Treimor', 'Cheimgar', 'Alacruico', 'Diablare', 'Diablaze', 'Cypup', 'Cyprowl', 'Apozip', 'Apozoom', 'Salaphyt', 'Phyloch', 'Torreloch', 'Dustcoon', 'Toxcoon', 'Stegodite', 'Stegeodon', 'Obsidodile', 'Obsidoruth', 'Brawnsoon', 'Polterick', 'Deceptjinn', 'Bullectric', 'Capacitaur', 'Magnetaur', 'Fridglet', 'Frigidae', 'Chupacarno', 'Spritanium', 'Titanimaam', 'Chember', 'Flaenix', 'Infernoix', 'Toxila', 'Gilagon', 'Oracub', 'Roaracle', 'Outlage', 'Sileam', 'Naiadance', 'Naiphoria', 'Puradox', 'Jarmbat', 'Dvarmbat', 'Dvarmith', 'Lediboss', 'Linturna', 'Volstrika', 'Fueghorn', 'Cuburn', 'Taiburn', 'Saburn', 'Qinlong', 'Yinlong', 'Jinlong', 'Azordin', 'Rokentro', 'Coradios', 'Faeolith', 'Pyrotic', 'Spearow', 'Fearow', 'Dragonite', 'Hoppip', 'Skiploom', 'Jumpluff', 'Blissey', 'Bouffalant', 'Dewpider', 'Araquanid'
+			];
+			const species = this.dex.species.get(set.species || set.name);
+			if (!azoriExclusives.includes(species.baseSpecies) && !azoriExclusives.includes(species.name) &&
+				!this.ruleTable.has('+' + species.id)) {
+				return [`${species.baseSpecies} is not new to Pokémon Copper.`];
+			}
+		},
+	},
+	azoripokedex: {
+		effectType: 'ValidatorRule',
+		name: 'Azori Pokedex',
+		desc: "Only allows Pok&eacute;mon that are native to the Azori region",
+		banlist: [
+			'Spearow-Base', 'Fearow-Base', 'Dragonite-Base', 'Hoppip-Base', 'Skiploom-Base', 'Jumpluff-Base', 'Blissey-Base', 'Bouffalant-Base',
+			'Dewpider-Base', 'Araquanid-Base'
+		],
+		onValidateSet(set, format) {
+			const azoriPokedex = [
+				'Lagavo', 'Lagavien', 'Latremor', 'Sparcyx', 'Aurorun', 'Aurocyx', 'Platyke', 'Platyspar', 'Platypunch', 'Wrini', 'Wrengal', 'Wrengade', 'Wrenquiem', 'Caterpie', 'Metapod', 'Butterfree', 'Weedle', 'Kakuna', 'Beedrill', 'Ledyba', 'Ledian', 'Lediboss', 'Pidgey', 'Pidgeotto', 'Pidgeot', 'Rattata', 'Raticate', 'Starly', 'Staravia', 'Staraptor', 'Grubbin', 'Charjabug', 'Vikavolt', 'Fletchling', 'Fletchinder', 'Talonflame', 'Spearow', 'Fearow', 'Burrot', 'Burthrow', 'Larfluff', 'Cocoonix', 'Luminoth', 'Spinarak', 'Ariados', 'Poochyena', 'Mightyena', 'Zigzagoon', 'Linoone', 'Lillipup', 'Herdier', 'Stoutland', 'Purrloin', 'Liepard', 'Wooloo', 'Dubwool', 'Fueghorn', 'Bidoof', 'Bibarel', 'Kricketot', 'Kricketune', 'Ekans', 'Arbok', 'Pichu', 'Pikachu', 'Raichu', 'Bikkunise', 'Lotad', 'Lombre', 'Ludicolo', 'Seedot', 'Nuzleaf', 'Shiftry', 'Sandshrew', 'Sandslash', 'Snuffluff', 'Kamakid', 'Kamasei', 'Cleffa', 'Clefairy', 'Clefable', 'Shinx', 'Luxio', 'Luxray', 'Chinchou', 'Lanturn', 'Linturna', 'Stellopod', 'Cephastar', 'Celumina', 'Whimsijack', 'Togepi', 'Togetic', 'Togekiss', 'Hoppip', 'Skiploom', 'Jumpluff', 'Litleo', 'Pyroar', 'Natu', 'Xatu', 'Tanukiroot', 'Branuki', 'Treenuki', 'Ralts', 'Kirlia', 'Gardevoir', 'Gallade', 'Mareep', 'Flaaffy', 'Ampharos', 'Rolil', 'Rolidozer', 'Volten', 'Panthere', 'Phantohm', 'Azurill', 'Marill', 'Azumarill', 'Geodude', 'Graveler', 'Golem', 'Roggenrola', 'Boldore', 'Gigalith', 'Rolycoly', 'Carkol', 'Coalossal', 'Zubat', 'Golbat', 'Crobat', 'Bonsly', 'Sudowoodo', 'Shroomish', 'Breloom', 'Skiddo', 'Gogoat', 'Parapossum', 'Vulpix', 'Ninetales', 'Wooper', 'Quagsire', 'Combee', 'Vespiquen', 'Cutiefly', 'Ribombee', 'Rockruff', 'Lycanroc', 'Charcupine', 'Scorcupine', 'Igglybuff', 'Jigglypuff', 'Wigglytuff', 'Nincada', 'Ninjask', 'Shedinja', 'Mudbray', 'Mudsdale', 'Dewpider', 'Araquanid', 'Diglett', 'Dugtrio', 'Drilbur', 'Excadrill', 'Silicobra', 'Sandaconda', 'Meowth', 'Persian', 'Murkrow', 'Honchkrow', 'Psyduck', 'Golduck', 'Growlithe', 'Arcanine', 'Rattleghast', 'Spectrattle', 'Sableye', 'Mawile', 'Misdreavus', 'Mismagius', 'Honedge', 'Doublade', 'Aegislash', 'Blitzle', 'Zebstrika', 'Volstrika', 'Pachirisu', 'Poliwag', 'Poliwhirl', 'Poliwrath', 'Politoed', 'Aron', 'Lairon', 'Aggron', 'Pineco', 'Forretress', 'Fomantis', 'Lurantis', 'Budew', 'Roselia', 'Roserade', 'Sizzlipede', 'Centiskorch', 'Shellos', 'Gastrodon', 'Helioptile', 'Heliolisk', 'Abra', 'Kadabra', 'Alakazam', 'Drifloon', 'Drifblim', 'Buneary', 'Lopunny', 'Jabberoo', 'Clobberoo', 'Rootality', 'Hawlucha', 'Gulpin', 'Swalot', 'Machop', 'Machoke', 'Machamp', 'Ponyta', 'Rapidash', 'Timburr', 'Gurdurr', 'Conkeldurr', 'Stunky', 'Skuntank', 'Marling', 'Martana', 'Gligar', 'Gliscor', 'Slowpoke', 'Slowbro', 'Slowking', 'Parkel', 'Parktic', 'Cluddle', 'Adolem', 'Adobalith', 'Shuckle', 'Heracross', 'Sneasel', 'Weavile', 'Magnemite', 'Magneton', 'Magnezone', 'Bronzor', 'Bronzong', 'Tympole', 'Palpitoad', 'Seismitoad', 'Carvanha', 'Sharpedo', 'Numel', 'Camerupt', 'Sewaddle', 'Swadloon', 'Leavanny', 'Venipede', 'Whirlipede', 'Scolipede', 'Grimer', 'Muk', 'Stalcria', 'Stalpaca', 'Embush', 'Horeburn', 'Torkoal', 'Trapinch', 'Vibrava', 'Flygon', 'Cottonee', 'Whimsicott', 'Sandile', 'Krokorok', 'Krookodile', 'Teddiursa', 'Ursaring', 'Darumaka', 'Darmanitan', 'Eimole', 'Treimor', 'Cheimgar', 'Swinub', 'Piloswine', 'Mamoswine', 'Cacnea', 'Cacturne', 'Wimpod', 'Golisopod', 'Skarmory', 'Maractus', 'Swablu', 'Altaria', 'Goomy', 'Sliggoo', 'Goodra', 'Shellder', 'Cloyster', 'Houndour', 'Houndoom', 'Phanpy', 'Donphan', 'Gastly', 'Haunter', 'Gengar', 'Alacruico', 'Diablare', 'Diablaze', 'Phantump', 'Trevenant', 'Lunatone', 'Solrock', 'Onix', 'Steelix', 'Cubone', 'Marowak', 'Spiritomb', 'Dwebble', 'Crustle', 'Cypup', 'Cyprowl', 'Apozip', 'Apozoom', 'Barboach', 'Whiscash', 'Corphish', 'Crawdaunt', 'Scraggy', 'Scrafty', 'Minior', 'Tyrogue', 'Hitmonchan', 'Hitmonlee', 'Hitmontop', 'Salaphyt', 'Phyloch', 'Torreloch', 'Koffing', 'Weezing', 'Dustcoon', 'Toxcoon', 'Baltoy', 'Claydol', 'Stegodite', 'Stegeodon', 'Obsidodile', 'Obsidoruth', 'Sigilyph', 'Ducklett', 'Swanna', 'Mimikyu', 'Bouffalant', 'Castform', 'Brawnsoon', 'Deerling', 'Sawsbuck', 'Polterick', 'Deceptjinn', 'Feebas', 'Milotic', 'Rhyhorn', 'Rhydon', 'Rhyperior', 'Bullectric', 'Capacitaur', 'Magnetaur', 'Fridglet', 'Frigidae', 'Happiny', 'Chansey', 'Blissey', 'Joltik', 'Galvantula', 'Ferroseed', 'Ferrothorn', 'Shuppet', 'Banette', 'Duskull', 'Dusclops', 'Dusknoir', 'Chupacarno', 'Scyther', 'Scizor', 'Spritanium', 'Titanimaam', 'Tynamo', 'Eelektrik', 'Eelektross', 'Clauncher', 'Clawitzer', 'Heatmor', 'Durant', 'Pinsir', 'Tauros', 'Litwick', 'Lampent', 'Chandelure', 'Chember', 'Flaenix', 'Infernoix', 'Axew', 'Fraxure', 'Haxorus', 'Absol', 'Toxila', 'Gilagon', 'Oracub', 'Roaracle', 'Magikarp', 'Gyarados', 'Druddigon', 'Snorunt', 'Glalie', 'Froslass', 'Golett', 'Golurk', 'Pawniard', 'Bisharp', 'Outlage', 'Lapras', 'Sileam', 'Naiadance', 'Naiphoria', 'Rufflet', 'Braviary', 'Vullaby', 'Mandibuzz', 'Gible', 'Gabite', 'Garchomp', 'Riolu', 'Lucario', 'Hippopotas', 'Hippowdon', 'Snom', 'Frosmoth', 'Ditto', 'Puradox', 'Eevee', 'Vaporeon', 'Jolteon', 'Flareon', 'Espeon', 'Umbreon', 'Leafeon', 'Glaceon', 'Sylveon', 'Skorupi', 'Drapion', 'Croagunk', 'Toxicroak', 'Rotom', 'Cryogonal', 'Bagon', 'Shelgon', 'Salamence', 'Jarmbat', 'Dvarmbat', 'Dvarmith', 'Munchlax', 'Snorlax', 'Beldum', 'Metang', 'Metagross', 'Jangmoo', 'Hakamoo', 'Kommoo', 'Snover', 'Abomasnow', 'Cuburn', 'Taiburn', 'Saburn', 'Larvitar', 'Pupitar', 'Tyranitar', 'Deino', 'Zweilous', 'Hydreigon', 'Noibat', 'Noivern', 'Dreepy', 'Drakloak', 'Dragapult', 'Larvesta', 'Volcarona', 'Dratini', 'Dragonair', 'Dragonite', 'Qinlong', 'Yinlong', 'Jinlong', 'Azordin', 'Rokentro', 'Coradios', 'Faeolith', 'Pyrotic'
+			];
+			const species = this.dex.species.get(set.species || set.name);
+			if (!azoriPokedex.includes(species.baseSpecies) && !azoriPokedex.includes(species.name) &&
+				!this.ruleTable.has('+' + species.id)) {
+				return [`${species.baseSpecies} is not in the Azori Pokédex.`];
+			}
+		},
+	},
 	potd: {
 		effectType: 'Rule',
 		name: 'PotD',
