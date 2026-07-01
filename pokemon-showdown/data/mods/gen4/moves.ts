@@ -809,7 +809,7 @@ export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
 		condition: {
 			inherit: true,
 			onStart(target) {
-				if (target.volatiles['ingrain'] || target.ability === 'levitate') return false;
+				if (target.volatiles['ingrain'] || target.ability === 'levitate' || target.ability === 'eelevate') return false;
 				this.add('-start', target, 'Magnet Rise');
 			},
 			onResidualOrder: 10,

@@ -137,6 +137,7 @@ export const Scripts: ModdedBattleScriptsData = {
 			if (!message) return false;
 			if (notImmune === null) {
 				this.battle.add('-immune', this, '[from] ability: Levitate');
+				this.battle.add('-immune', this, '[from] ability: Eelevate');
 			} else {
 				this.battle.add('-immune', this);
 			}

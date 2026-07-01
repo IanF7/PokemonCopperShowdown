@@ -7650,4 +7650,192 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 			shortDesc: "Nearly always goes first. Always crits.",
 		},
 	},
+	darkwave: {
+		name: "Dark Wave",
+		shortDesc: "No additional effect. Hits adjacent foes.",
+	},
+	blitz: {
+		name: "Blitz",
+		shortDesc: "Usually goes first.",
+	},
+	powersurge: {
+		name: "Power Surge",
+		shortDesc: "Lowers the user's Sp. Atk by 2.",
+	},
+	thunderslash: {
+		name: "Thunder Slash",
+		shortDesc: "High critical hit ratio.",
+	},
+	faestrike: {
+		name: "Fae Strike",
+		shortDesc: "No additional effect.",
+	},
+	pixiepunch: {
+		name: "Pixie Punch",
+		shortDesc: "No additional effect.",
+	},
+	ragingblast: {
+		name: "Raging Blast",
+		shortDesc: "10% chance to raise the user's Sp. Atk by 1.",
+	},
+	scorchingblade: {
+		name: "Scorching Blade",
+		shortDesc: "10% chance to burn the target.",
+	},
+	pressurewave: {
+		name: "Pressure Wave",
+		shortDesc: "30% chance to make the target flinch.",
+	},
+	spectralstrike: {
+		name: "Spectral Strike",
+		shortDesc: "No additional effect.",
+	},
+	vengeance: {
+		name: "Vengeance",
+		shortDesc: "Lowers the user's Defense and Sp. Def by 1.",
+	},
+	haunt: {
+		name: "Haunt",
+		shortDesc: "Traps and damages the target for 4-5 turns.",
+	},
+	seismicbeam: {
+		name: "Seismic Beam",
+		shortDesc: "No additional effect.",
+	},
+	frostbite: {
+		name: "Frostbite",
+		shortDesc: "Power doubles if the target has a status condition.",
+	},
+	telekineticslam: {
+		name: "Telekinetic Slam",
+		shortDesc: "Hits airborne targets and grounds them.",
+	},
+	crystalinecannon: {
+		name: "Crystaline Cannon",
+		shortDesc: "10% chance to raise the user's Sp. Atk by 1.",
+	},
+	mineralburst: {
+		name: "Mineral Burst",
+		shortDesc: "No additional effect. Hits adjacent foes.",
+	},
+	metalpulse: {
+		name: "Metal Pulse",
+		shortDesc: "No additional effect.",
+	},
+	thorntrap: {
+		name: "Thorn Trap",
+		shortDesc: "Prevents the target from switching out.",
+	},
+	counterspine: {
+		name: "Counter Spine",
+		shortDesc: "Usually goes first. Fails if the target has moved.",
+	},
+	blazingsprint: {
+		name: "Blazing Sprint",
+		shortDesc: "100% chance to raise the user's Speed by 1.",
+	},
+	hydrosmash: {
+		name: "Hydro Smash",
+		shortDesc: "No additional effect.",
+	},
+	heist: {
+		name: "Heist",
+		shortDesc: "Steals the target's positive stat changes.",
+	},
+	spookyserenade: {
+		name: "Spooky Serenade",
+		shortDesc: "10% chance to lower the foe(s) Sp. Def by 1.",
+	},
+	staticsurprise: {
+		name: "Static Surprise",
+		shortDesc: "20% chance to lower Defense or Sp. Def by 1.",
+	},
+	recklessroll: {
+		name: "Reckless Roll",
+		shortDesc: "Has 1/4 recoil.",
+	},
+	quillbarrage: {
+		name: "Quill Barrage",
+		shortDesc: "Hits 2-5 times in one turn.",
+	},
+	crushingkick: {
+		name: "Crushing Kick",
+		shortDesc: "30% chance to lower the target's Defense by 1.",
+	},
+	guidingflame: {
+		name: "Guiding Flame",
+		shortDesc: "The user draws attacks to itself.",
+	},
+	aquaticrush: {
+		name: "Aquatic Rush",
+		shortDesc: "100% chance to lower the target's evasiveness by 1.",
+	},
+	vampiricbite: {
+		name: "Vampiric Bite",
+		shortDesc: "User recovers 50% of the damage dealt.",
+	},
+	psybarrage: {
+		name: "Psy Barrage",
+		shortDesc: "Traps and damages the target for 4-5 turns.",
+	},
+	sandbullet: {
+		name: "Sand Bullet",
+		shortDesc: "100% chance to lower the target's Speed by 1.",
+	},
+	flowingdance: {
+		name: "Flowing Dance",
+		shortDesc: "10% chance to infatuate the target.",
+	},
+	armorforge: {
+		name: "Armor Forge",
+		shortDesc: "Raises the user's and ally's Defense by 1.",
+	},
+	grenegg: {
+		name: "Gren-egg",
+		shortDesc: "30% chance to poison adjacent Pokemon.",
+	},
+	insectoidrush: {
+		name: "Insectoid Rush",
+		shortDesc: "Hits 3 times. Each hit is stronger than the last.",
+	},
+	shortcircuit: {
+		name: "Short Circuit",
+		shortDesc: " 10% chance to paralyze. Super effective on Electric.",
+	},
+	lightningdash: {
+		name: "Lightning Dash",
+		shortDesc: "Nearly always goes first.",
+	},
+	scaldinghorn: {
+		name: "Scalding Horn",
+		shortDesc: "30% chance to burn the target.",
+	},
+	flashfreeze: {
+		name: "Flash Freeze",
+		shortDesc: "20% chance to burn or freeze the target.",
+	},
+	goldenstorm: {
+		name: "Golden Storm",
+		shortDesc: "Money is earned after battle.",
+	},
+	orderstrike: {
+		name: "Order Strike",
+		shortDesc: "30% chance to raise the user's Defense by 1.",
+	},
+	chaoticburst: {
+		name: "Chaotic Burst",
+		shortDesc: "30% chance to raise the user's Sp. Atk by 1.",
+	},
+	equilibriumpulse: {
+		name: "Equilibrium Pulse",
+		shortDesc: "30% chance to make the foe(s) flinch.",
+	},
+	mysticward: {
+		name: "Mystic Ward",
+		shortDesc: "Raises allies' Sp. Def. Also raises Defense in Misty Terrain.",
+	},
+	dancingflames: {
+		name: "Dancing Flames",
+		shortDesc: "50% chance to confuse the target.",
+	},
 };

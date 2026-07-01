@@ -2305,4 +2305,58 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 
 		activate: "  [POKEMON] extends [MOVE] by 2 turns!",
 	},
+	steelwool: {
+		name: "Steel Wool",
+		shortDesc: "Pokemon making contact with this Pokemon have their Speed lowered by 1 stage.",
+	},
+	stateshift: {
+		name: "State Shift",
+		shortDesc: "On switch-in, this Pokemon has a 50% chance of changing forms.",
+	},
+	eternalflame: {
+		name: "Eternal Flame",
+		desc: "If Sunny Day is active, this Pokemon restores 1/16 of its maximum HP, rounded down, at the end of each turn. This effect is prevented if this Pokemon is holding a Utility Umbrella.",
+		shortDesc: "If Sunny Day is active, this Pokemon heals 1/16 of its max HP each turn.",
+	},
+	stormsurge: {
+		name: "Storm Surge",
+		shortDesc: "Brawnsoon's form changes to flood form when the weather is rainy. This effect is prevented if this Pokemon is holding a Utility Umbrella.",
+	},
+	stabilizingorder: {
+		name: "Stabilizing Order",
+		shortDesc: "On switch-in, this Pokemon's Defense is raised by 1 stage. Once per battle.",
+	},
+	ragingchaos: {
+		name: "Raging Chaos",
+		shortDesc: "On switch-in, this Pokemon's Special Attack is raised by 1 stage. Once per battle.",
+	},
+	balancingaura: {
+		name: "Balancing Aura",
+		shortDesc: "On switch-in, this Pokemon resets all stat changes on the field.",
+	},
+	thornybody: {
+		name: "Thorny Body",
+		desc: "Pokemon making contact with this Pokemon lose 1/16 of their maximum HP, rounded down, and their evasion is lowered by 1 stage.",
+		shortDesc: "Pokemon making contact with this Pokemon lose 1/8 of their max HP, and their evasion is lowered by 1 stage.",
+
+		damage: "  [POKEMON] was hurt and had their evasion lowered!",
+	},
+	spectralize: {
+		name: "Spectralize",
+		desc: "This Pokemon's Normal-type moves become Ghost-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+		shortDesc: "This Pokemon's Normal-type moves become Ghost type and have 1.2x power.",
+	},
+	goldenbody: {
+		name: "Golden Body",
+		shortDesc: "This Pokemon receives 3/4 damage from supereffective attacks.",
+	},
+	eelevate: {
+		name: "Eelevate",
+		desc: "This Pokemon is immune to Ground-type attacks and the effects of Spikes, Toxic Spikes, Sticky Web, and the Arena Trap Ability. The effects of Gravity, Ingrain, Smack Down, Thousand Arrows, and Iron Ball nullify the immunity. Thousand Arrows can hit this Pokemon as if it did not have this Ability. This Pokemon's highest stat is raised by 1 stage if it attacks and knocks out another Pokemon. Stat stage changes are not considered. If multiple stats are tied, Attack, Defense, Special Attack, Special Defense, and Speed are prioritized in that order.",
+		shortDesc: "This Pokemon is immune to Ground; Gravity/Ingrain/Smack Down/Iron Ball nullify it and this Pokemon's highest stat is raised by 1 if it attacks and KOes another Pokemon..",
+	},
+	firemane: {
+		name: "Fire Mane",
+		shortDesc: "This Pokemon's offensive stat is multiplied by 1.5 while using a Fire-type attack.",
+	},
 };

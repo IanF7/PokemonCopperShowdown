@@ -1348,6 +1348,7 @@ export class RandomGen8Teams extends RandomTeams {
 			sapsipper: ['Grass'],
 			thickfat: ['Ice', 'Fire'],
 			levitate: ['Ground'],
+			eelevate: ['Ground'],
 		};
 
 		while (pokemonPool.length && pokemon.length < this.maxTeamSize) {
@@ -1580,6 +1581,7 @@ export class RandomGen8Teams extends RandomTeams {
 			lightningrod: ['Electric'], voltabsorb: ['Electric'],
 			thickfat: ['Ice', 'Fire'],
 			levitate: ['Ground'],
+			eelevate: ['Ground'],
 		};
 		const limitFactor = Math.ceil(this.maxTeamSize / 6);
 		/**

@@ -1024,7 +1024,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 88,
 	},
 	dragonize: {
-		isNonstandard: "Future",
 		onModifyTypePriority: -1,
 		onModifyType(move, pokemon) {
 			const noModifyType = [
@@ -2511,7 +2510,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 178,
 	},
 	megasol: {
-		isNonstandard: "Future",
 		onWeatherModifyDamagePriority: 1,
 		onWeatherModifyDamage(damage, attacker, defender, move) {
 			(this.dex.conditions.getByID('sunnyday' as ID) as any).onWeatherModifyDamage
@@ -3235,7 +3233,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 53,
 	},
 	piercingdrill: {
-		isNonstandard: "Future",
 		onHitProtect(source, target, move) {
 			if (move.flags['contact']) {
 				target.getMoveHitData(move).bypassProtect = this.effect;
@@ -4419,7 +4416,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		num: 3,
 	},
 	spicyspray: {
-		isNonstandard: "Future",
 		onDamagingHit(damage, target, source, move) {
 			if (!source.trySetStatus('brn', target) && !source.status && source.hasType('Fire')) {
 				this.add('-immune', source);
@@ -5810,5 +5806,38 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		name: "Golden Body",
 		rating: 3,
 		num: -109,
+	},
+	eelevate: {
+		onSourceAfterFaint(length, target, source, effect) {
+			if (effect && effect.effectType === 'Move') {
+				const bestStat = source.getBestStat(true, true);
+				this.boost({ [bestStat]: length }, source);
+			}
+		},
+		// airborneness implemented in sim/pokemon.js:Pokemon#isGrounded
+		flags: { breakable: 1 },
+		name: "Eelevate",
+		rating: 4,
+		num: -110,
+	},
+	firemane: {
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Fire') {
+				this.debug('Fire Mane boost');
+				return this.chainModify(1.5);
+			}
+		},
+		onModifySpAPriority: 5,
+		onModifySpA(atk, attacker, defender, move) {
+			if (move.type === 'Fire') {
+				this.debug('Fire Mane boost');
+				return this.chainModify(1.5);
+			}
+		},
+		flags: {},
+		name: "Fire Mane",
+		rating: 3.5,
+		num: -111,
 	},
 };

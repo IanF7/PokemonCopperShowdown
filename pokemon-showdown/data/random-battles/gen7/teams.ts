@@ -1427,6 +1427,7 @@ export class RandomGen7Teams extends RandomGen8Teams {
 			sapsipper: ['Grass'],
 			thickfat: ['Ice', 'Fire'],
 			levitate: ['Ground'],
+			eelevate: ['Ground'],
 		};
 
 		while (pokemonPool.length && pokemon.length < this.maxTeamSize) {
@@ -1690,6 +1691,7 @@ export class RandomGen7Teams extends RandomGen8Teams {
 			lightningrod: ['Electric'], voltabsorb: ['Electric'],
 			thickfat: ['Ice', 'Fire'],
 			levitate: ['Ground'],
+			eelevate: ['Ground'],
 		};
 
 		while (pokemonPool.length && pokemon.length < this.maxTeamSize) {

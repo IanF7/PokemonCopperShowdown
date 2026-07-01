@@ -2624,4 +2624,113 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Vile Vial",
 		shortDesc: "If held by a Venomicon, its Poison- and Flying-type attacks have 1.2x power.",
 	},
+	linkingcord: {
+		name: "Linking Cord",
+		desc: "Evolves Pokemon that would normally evolve through trade when used.",
+		shortDesc: "Evolves certain species of Pokemon when used.",
+	},
+	badegg: {
+		name: "Razor Fang",
+		shortDesc: "Evolves Chansey into Azorian-Blissey when held and leveled up during the night.",
+	},
+	luckyhorn: {
+		name: "Lucky Horn",
+		shortDesc: "Holder's critical hit ratio is raised by 2 stages and it loses 1/8 its max HP after the attack.",
+	},
+	spinefossil: {
+		name: "Spine Fossil",
+		shortDesc: "Can be revived into Stegodite.",
+	},
+	toothfossil: {
+		name: "Tooth Fossil",
+	    shortDesc: "Can be revived into Obsidodile.",
+	},
+	poliwrathite: {
+		name: "Poliwrathite",
+		shortDesc: "If held by a Poliwrath, this item allows it to Mega Evolve into Mega Poliwrath.",
+	},
+	crobatite: {
+		name: "Crobatite",
+		shortDesc: "If held by a Crobat, this item allows it to Mega Evolve into Mega Crobat.",
+	},
+	torkoalite: {
+		name: "Torkoalite",
+		shortDesc: "If held by a Torkoal, this item allows it to Mega Evolve into Mega Torkoal.",
+	},
+	flygonite: {
+		name: "Flygonite",
+		shortDesc: "If held by a Flygon, this item allows it to Mega Evolve into Mega Flygon.",
+	},
+	roseradite: {
+		name: "Roseradite",
+		shortDesc: "If held by a Roserade, this item allows it to Mega Evolve into Mega Roserade.",
+	},
+	krookodilite: {
+		name: "Krookodilite",
+		shortDesc: "If held by a Krookodile, this item allows it to Mega Evolve into Mega Krookodile.",
+	},
+	crustlite: {
+		name: "Crustlite",
+		shortDesc: "If held by a Crustle, this item allows it to Mega Evolve into Mega Crustle.",
+	},
+	hydreigonite: {
+		name: "Hydreigonite",
+		shortDesc: "If held by a Hydreigon, this item allows it to Mega Evolve into Mega Hydreigon.",
+	},
+	aegislashite: {
+		name: "Aegislashite",
+		shortDesc: "If held by an Aegislash, this item allows it to Mega Evolve into Mega Aegislash.",
+	},
+	helioliskite: {
+		name: "Helioliskite",
+		shortDesc: "If held by a Heliolisk, this item allows it to Mega Evolve into Mega Heliolisk.",
+	},
+	latremorite: {
+		name: "Latremorite",
+		shortDesc: "If held by a Latremor, this item allows it to Mega Evolve into Mega Latremor.",
+	},
+	aurocite: {
+		name: "Aurocite",
+		shortDesc: "If held by an Aurocyx, this item allows it to Mega Evolve into Mega Aurocyx.",
+	},
+	platypunchite: {
+		name: "Platypunchite",
+		shortDesc: "If held by a Platypunch, this item allows it to Mega Evolve into Mega Platypunch.",
+	},
+	snuffluffite: {
+		name: "Snuffluffite",
+		shortDesc: "If held by a Snuffluff, this item allows it to Mega Evolve into Mega Snuffluff.",
+	},
+	phantohmite: {
+		name: "Phantohmite",
+		shortDesc: "If held by a Phantohm, this item allows it to Mega Evolve into Mega Phantohm.",
+	},
+	magnetaurite: {
+		name: "Magnetaurite",
+		shortDesc: "If held by a Magnetaur, this item allows it to Mega Evolve into Mega Magnetaur.",
+	},
+	frigidite: {
+		name: "Frigidite",
+		shortDesc: "If held by a Frigidae, this item allows it to Mega Evolve into Mega Frigidae.",
+	},
+	titanimaamite: {
+		name: "Titanimaamite",
+		shortDesc: "If held by a Titanimaam, this item allows it to Mega Evolve into Mega Titanimaam.",
+	},
+	infernoixite: {
+		name: "Infernoixite",
+		shortDesc: "If held by an Infernoix, this item allows it to Mega Evolve into Mega Infernoix.",
+	},
+	roaraclite: {
+		name: "Roaraclite",
+		shortDesc: "If held by a Roaracle, this item allows it to Mega Evolve into Mega Roaracle.",
+	},
+	dvarmite: {
+		name: "Dvarmite",
+		shortDesc: "If held by a Dvarmith, this item allows it to Mega Evolve into Mega Dvarmith.",
+	},
+	jinlongite: {
+		name: "Jinlongite",
+		shortDesc: "If held by a Jinlong, this item allows it to Mega Evolve into Mega Jinlong.",
+	},
 };

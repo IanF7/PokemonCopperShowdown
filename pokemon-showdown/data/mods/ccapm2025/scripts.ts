@@ -545,6 +545,10 @@ export const Scripts: ModdedBattleScriptsData = {
 				!this.battle.suppressingAbility(this)) {
 				return null;
 			}
+			if ((this.hasAbility('eelevate')) &&
+				!this.battle.suppressingAbility(this)) {
+				return null;
+			}
 			if ('magnetrise' in this.volatiles) return false;
 			if ('telekinesis' in this.volatiles) return false;
 			return item !== 'airballoon';

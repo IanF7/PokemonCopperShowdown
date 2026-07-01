@@ -1379,7 +1379,7 @@ export class RandomTeams {
 			(moves.has('chillyreception') || (
 				role === 'Fast Support' &&
 				[...PIVOT_MOVES, 'defog', 'mortalspin', 'rapidspin'].some(m => moves.has(m)) &&
-				!types.has('Flying') && ability !== 'Levitate'
+				!types.has('Flying') && ability !== 'Levitate' && ability !== 'Eelevate'
 			))
 		) return 'Heavy-Duty Boots';
 
@@ -1403,7 +1403,7 @@ export class RandomTeams {
 			(species.baseStats.hp + species.baseStats.def + species.baseStats.spd) < 258
 		) return 'Focus Sash';
 		if (
-			!counter.get('setup') && ability !== 'Levitate' && this.dex.getEffectiveness('Ground', species) >= 2
+			!counter.get('setup') && ability !== 'Levitate' && ability !== 'Eelevate' && this.dex.getEffectiveness('Ground', species) >= 2
 		) return 'Air Balloon';
 		if (['Bulky Attacker', 'Bulky Support', 'Bulky Setup'].some(m => role === (m))) return 'Leftovers';
 		if (species.id === 'pawmot' && moves.has('nuzzle')) return 'Leppa Berry';
@@ -2883,7 +2883,7 @@ export class RandomTeams {
 			lightningrod: ['Electric'], motordrive: ['Electric'], voltabsorb: ['Electric'],
 			sapsipper: ['Grass'],
 			thickfat: ['Ice', 'Fire'],
-			eartheater: ['Ground'], levitate: ['Ground'],
+			eartheater: ['Ground'], levitate: ['Ground'], eelevate: ['Ground']
 		};
 		const movesLimited: { [k: string]: string } = {
 			stealthrock: 'stealthRock',
@@ -3193,6 +3193,7 @@ export class RandomTeams {
 			voltabsorb: ["Electric"],
 			thickfat: ["Ice", "Fire"],
 			levitate: ["Ground"],
+			eelevate: ['Ground'],
 		};
 		const limitFactor = Math.ceil(this.maxTeamSize / 6);
 		/**
