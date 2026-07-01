@@ -2630,7 +2630,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		shortDesc: "Evolves certain species of Pokemon when used.",
 	},
 	badegg: {
-		name: "Razor Fang",
+		name: "Bad Egg",
 		shortDesc: "Evolves Chansey into Azorian-Blissey when held and leveled up during the night.",
 	},
 	luckyhorn: {
