@@ -21723,38 +21723,32 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	guidingflame: {
 		num: -126,
-		accuracy: true,
-		basePower: 0,
+		accuracy: 100,
+		basePower: 40,
 		category: "Special",
 		name: "Guiding Flame",
 		pp: 20,
 		priority: 2,
-		flags: { noassist: 1, failcopycat: 1 },
-		volatileStatus: 'followme',
-		onTry(source) {
-			return this.activePerHalf > 1;
+		flags: {protect: 1, mirror: 1, noassist: 1, failcopycat: 1},
+		self: {
+			volatileStatus: 'guidingflame',
 		},
 		condition: {
 			duration: 1,
 			onStart(target, source, effect) {
-				if (effect?.id === 'zpower') {
-					this.add('-singleturn', target, 'move: Follow Me', '[zeffect]');
-				} else {
-					this.add('-singleturn', target, 'move: Follow Me');
-				}
+				this.add('-singleturn', target, 'move: Guiding Flame');
 			},
 			onFoeRedirectTargetPriority: 1,
 			onFoeRedirectTarget(target, source, source2, move) {
 				if (!this.effectState.target.isSkyDropped() && this.validTarget(this.effectState.target, source, move.target)) {
 					if (move.smartTarget) move.smartTarget = false;
-					this.debug("Follow Me redirected target of move");
+					this.debug("Guiding Flame redirected target of move");
 					return this.effectState.target;
 				}
 			},
 		},
-		target: "self",
+		target: "normal",
 		type: "Fire",
-		zMove: { effect: 'clearnegativeboost' },
 		contestType: "Clever",
 	},
 	aquaticrush: {
