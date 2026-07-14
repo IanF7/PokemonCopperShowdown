@@ -8167,17 +8167,18 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		fling: {
 			basePower: 40,
 		},
-		onModifyCritRatio(critRatio, user) {
-			return critRatio + 2;
-		},
-		onAfterMoveSecondarySelf(source, target, move) {
-			if (source && source !== target && move && move.category !== 'Status' && !source.forceSwitchFlag) {
-				this.damage(source.baseMaxhp / 8, source, source, this.dex.items.get('luckyhorn'));
+		onModifyMovePriority: -2,
+		onModifyMove(move) {
+			if (move.secondaries) {
+				this.debug('increasing secondary chance');
+				for (const secondary of move.secondaries) {
+					if (secondary.chance) secondary.chance += 10;
+				}
 			}
+			if (move.self?.chance) move.self.chance += 10;
 		},
-		itemUser: ["Chansey"],
-		num: 256,
-		gen: 2,
+		num: -102,
+		gen: 9,
 	},
 	spinefossil: {
 		name: "Spine Fossil",

@@ -2635,7 +2635,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	luckyhorn: {
 		name: "Lucky Horn",
-		shortDesc: "Holder's critical hit ratio is raised by 2 stages and it loses 1/8 its max HP after the attack.",
+		shortDesc: "Holder's moves have their secondary effect chance increased by 10%.",
 	},
 	spinefossil: {
 		name: "Spine Fossil",
