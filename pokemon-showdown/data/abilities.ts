@@ -5840,4 +5840,15 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3.5,
 		num: -111,
 	},
+	auraguard: {
+		onSourceModifyDamage(damage, source, target, move) {
+			let mod = 1;
+			if (move.flags['contact']) mod /= 2;
+			return this.chainModify(mod);
+		},
+		flags: { breakable: 1 },
+		name: "Aura Guard",
+		rating: 3.5,
+		num: -112,
+	},
 };

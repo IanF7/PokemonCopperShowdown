@@ -2359,4 +2359,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Fire Mane",
 		shortDesc: "This Pokemon's offensive stat is multiplied by 1.5 while using a Fire-type attack.",
 	},
+	auraguard: {
+		name: "Aura Guard",
+		shortDesc: "This Pokemon takes 1/2 damage from contact moves",
+	}
 };
