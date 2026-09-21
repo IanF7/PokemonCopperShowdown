@@ -339,7 +339,8 @@ Storage.initPrefs = function () {
 	Storage.loadTeams();
 	if (Config.testclient) {
 		return this.initTestClient();
-	} else if (location.protocol + '//' + location.hostname === Storage.origin) {
+	} else if (Config.selfhosted || location.protocol + '//' + location.hostname === Storage.origin) {
+		// Self-hosted: prefs and teams live in this site's own localStorage
 		// Same origin, everything can be kept as default
 		Config.server = Config.server || Config.defaultserver;
 		this.whenPrefsLoaded.load();

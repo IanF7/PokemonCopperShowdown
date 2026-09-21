@@ -45,7 +45,8 @@ const PERMALOCK_CACHE_TIME = 30 * 24 * 60 * 60 * 1000; // 30 days
 
 const DEFAULT_TRAINER_SPRITES = [1, 2, 101, 102, 169, 170, 265, 266];
 
-import { Utils, type ProcessManager } from '../lib';
+import * as crypto from 'crypto';
+import { FS, Utils, type ProcessManager } from '../lib';
 import {
 	Auth, GlobalAuth, PLAYER_SYMBOL, HOST_SYMBOL, type RoomPermission, type GlobalPermission,
 } from './user-groups';
@@ -54,6 +55,44 @@ const MINUTES = 60 * 1000;
 const IDLE_TIMER = 60 * MINUTES;
 const STAFF_IDLE_TIMER = 30 * MINUTES;
 const CONNECTION_EXPIRY_TIME = 24 * 60 * MINUTES;
+
+/*********************************************************
+ * Self-hosted passwords for trusted names
+ *********************************************************/
+
+// With no login server (Config.noguestsecurity), names with a rank in
+// usergroups.csv can log in with `/trn [name],0,[password]` instead of a
+// login-server token. Passwords are stored hashed in this git-ignored file;
+// set one with `node tools/set-password [name]` (see HOSTING.md).
+const TRUSTED_PASSWORDS_FILE = 'config/trusted-passwords.json';
+const PASSWORD_MAX_FAILURES = 5;
+const PASSWORD_LOCKOUT_TIME = 10 * MINUTES;
+const passwordFailures = new Map<string, { count: number, lockedUntil: number }>();
+
+function checkTrustedPassword(userid: ID, password: string, ip: string): 'ok' | 'wrong' | 'locked' | 'unset' {
+	const failures = passwordFailures.get(ip);
+	if (failures && failures.lockedUntil > Date.now()) return 'locked';
+
+	let stored: string | undefined;
+	try {
+		stored = JSON.parse(FS(TRUSTED_PASSWORDS_FILE).readIfExistsSync() || '{}')[userid];
+	} catch {}
+	if (!stored) return 'unset';
+
+	const [salt, hash] = stored.split(':');
+	const expected = Buffer.from(hash, 'hex');
+	const actual = crypto.scryptSync(password, salt, expected.length);
+	if (crypto.timingSafeEqual(actual, expected)) {
+		passwordFailures.delete(ip);
+		return 'ok';
+	}
+	const count = (failures?.count || 0) + 1;
+	passwordFailures.set(ip, {
+		count: count >= PASSWORD_MAX_FAILURES ? 0 : count,
+		lockedUntil: count >= PASSWORD_MAX_FAILURES ? Date.now() + PASSWORD_LOCKOUT_TIME : 0,
+	});
+	return 'wrong';
+}
 
 /*********************************************************
  * Utility functions
@@ -636,11 +675,19 @@ export class User extends Chat.MessageContext {
 		}
 	}
 	async validateToken(token: string, name: string, userid: ID, connection: Connection) {
+		if (Config.noguestsecurity && Users.isTrusted(userid) && !token.includes(';')) {
+			// no login server: trusted names use a password instead (real tokens always contain ';')
+			const result = token.trim() ? checkTrustedPassword(userid, token.trim(), connection?.ip || '') : 'unset';
+			if (result === 'ok') return '2';
+			const message = {
+				unset: `This name is reserved. To use it, type /trn ${name},0,[your password] in the chat box.`,
+				wrong: `Wrong password for ${name}.`,
+				locked: `Too many wrong passwords. Try again in ${Chat.toDurationString(PASSWORD_LOCKOUT_TIME)}.`,
+			}[result];
+			this.send(`|nametaken|${name}|${message}`);
+			return null;
+		}
 		if (!token && Config.noguestsecurity) {
-			if (Users.isTrusted(userid)) {
-				this.send(`|nametaken|${name}|You need an authentication token to log in as a trusted user.`);
-				return null;
-			}
 			return '1';
 		}
 

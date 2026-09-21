@@ -9,14 +9,14 @@ npm-debug.log
 /play.pokemonshowdown.com/dirindex/webfonts/
 /play.pokemonshowdown.com/dirindex/fontawesome5*
 
-/play.pokemonshowdown.com/sprites/
-/play.pokemonshowdown.com/audio/
+# NOTE: play.pokemonshowdown.com/sprites/, audio/, data/ and js/ are committed on
+# purpose in this fork: they hold the custom sprites/cries and the built client,
+# so the server can serve the client straight from a git checkout without
+# building it (see HOSTING.md).
 
 # built from other sources
 /play.pokemonshowdown.com/caches/
 /play.pokemonshowdown.com/crossprotocol.html
-/play.pokemonshowdown.com/data/
-/play.pokemonshowdown.com/js/
 /play.pokemonshowdown.com/ads.txt
 
 /pokemonshowdown.com/.well-known/

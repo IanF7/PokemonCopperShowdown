@@ -12184,7 +12184,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9L30", "9M"],
 		},
 	},
-	taurospaldeancombatbreed: {
+	taurospaldeacombat: {
 		learnset: {
 			assurance: ["9L15"],
 			bodypress: ["9M"],
@@ -12238,7 +12238,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9L30", "9M"],
 		},
 	},
-	taurospaldeanblazebreed: {
+	taurospaldeablaze: {
 		learnset: {
 			bodypress: ["9M"],
 			bodyslam: ["9M"],
@@ -12297,7 +12297,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9L30", "9M"],
 		},
 	},
-	taurospaldeanaquabreed: {
+	taurospaldeaaqua: {
 		learnset: {
 			aquajet: ["9L15"],
 			bodypress: ["9M"],
@@ -34381,7 +34381,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9L49", "9M"],
 		},
 	},
-	deoxysattackforme: {
+	deoxysattack: {
 		learnset: {
 			aerialace: ["9M"],
 			agility: ["9T"],
@@ -34461,7 +34461,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9L49", "9M"],
 		},
 	},
-	deoxysdefenseforme: {
+	deoxysdefense: {
 		learnset: {
 			aerialace: ["9M"],
 			agility: ["9T"],
@@ -34543,7 +34543,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9L49", "9M"],
 		},
 	},
-	deoxysspeedforme: {
+	deoxysspeed: {
 		learnset: {
 			aerialace: ["9M"],
 			agility: ["9L55", "9T"],
@@ -36270,7 +36270,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			tackle: ["9L10"],
 		},
 	},
-	burmysandycloak: {
+	burmysandy: {
 		learnset: {
 			bugbite: ["9L15", "9M"],
 			electroweb: ["9T"],
@@ -36281,7 +36281,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			tackle: ["9L10"],
 		},
 	},
-	burmytrashcloak: {
+	burmytrash: {
 		learnset: {
 			bugbite: ["9L15", "9M"],
 			electroweb: ["9T"],
@@ -36357,7 +36357,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			worryseed: ["9T"],
 		},
 	},
-	wormadamsandycloak: {
+	wormadamsandy: {
 		learnset: {
 			allyswitch: ["9T"],
 			attract: ["9L41", "9M"],
@@ -36424,7 +36424,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			venoshock: ["9M"],
 		},
 	},
-	wormadamtrashcloak: {
+	wormadamtrash: {
 		learnset: {
 			allyswitch: ["9T"],
 			attract: ["9L41", "9M"],
@@ -37052,7 +37052,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			yawn: ["9E"],
 		},
 	},
-	shelloseastsea: {
+	shelloseast: {
 		learnset: {
 			acidarmor: ["9E"],
 			amnesia: ["9T"],
@@ -37163,7 +37163,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			whirlpool: ["9T"],
 		},
 	},
-	gastrodoneastsea: {
+	gastrodoneast: {
 		learnset: {
 			amnesia: ["9T"],
 			ancientpower: ["9L20"],
@@ -42321,7 +42321,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			trickroom: ["9M"],
 		},
 	},
-	dialgaoriginforme: {
+	dialgaorigin: {
 		learnset: {
 			ancientpower: ["9L16"],
 			aurasphere: ["9L48", "9T"],
@@ -42464,7 +42464,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			whirlpool: ["9T"],
 		},
 	},
-	palkiaoriginforme: {
+	palkiaorigin: {
 		learnset: {
 			aerialace: ["9M"],
 			ancientpower: ["9L16"],
@@ -42784,7 +42784,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			willowisp: ["9M"],
 		},
 	},
-	giratinaoriginforme: {
+	giratinaorigin: {
 		learnset: {
 			ancientpower: ["9L14"],
 			aurasphere: ["9L56", "9T"],
@@ -43197,7 +43197,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	shayminskyforme: {
+	shayminsky: {
 		learnset: {
 			aircutter: ["9T"],
 			airslash: ["9L64", "9T"],
@@ -43375,7 +43375,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	arceusfightingtype: {
+	arceusfighting: {
 		learnset: {
 			acidspray: ["9T"],
 			agility: ["9T"],
@@ -43505,7 +43505,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	arceusflyingtype: {
+	arceusflying: {
 		learnset: {
 			acidspray: ["9T"],
 			agility: ["9T"],
@@ -43635,7 +43635,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	arceuspoisontype: {
+	arceuspoison: {
 		learnset: {
 			acidspray: ["9T"],
 			agility: ["9T"],
@@ -43765,7 +43765,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	arceusgroundtype: {
+	arceusground: {
 		learnset: {
 			acidspray: ["9T"],
 			agility: ["9T"],
@@ -43895,7 +43895,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	arceusrocktype: {
+	arceusrock: {
 		learnset: {
 			acidspray: ["9T"],
 			agility: ["9T"],
@@ -44025,7 +44025,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	arceusbugtype: {
+	arceusbug: {
 		learnset: {
 			acidspray: ["9T"],
 			agility: ["9T"],
@@ -44155,7 +44155,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	arceusghosttype: {
+	arceusghost: {
 		learnset: {
 			acidspray: ["9T"],
 			agility: ["9T"],
@@ -44285,7 +44285,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	arceussteeltype: {
+	arceussteel: {
 		learnset: {
 			acidspray: ["9T"],
 			agility: ["9T"],
@@ -44545,7 +44545,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	arceusfiretype: {
+	arceusfire: {
 		learnset: {
 			acidspray: ["9T"],
 			agility: ["9T"],
@@ -44675,7 +44675,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	arceuswatertype: {
+	arceuswater: {
 		learnset: {
 			acidspray: ["9T"],
 			agility: ["9T"],
@@ -44805,7 +44805,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	arceusgrasstype: {
+	arceusgrass: {
 		learnset: {
 			acidspray: ["9T"],
 			agility: ["9T"],
@@ -44935,7 +44935,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	arceuselectrictype: {
+	arceuselectric: {
 		learnset: {
 			acidspray: ["9T"],
 			agility: ["9T"],
@@ -45065,7 +45065,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	arceuspsychictype: {
+	arceuspsychic: {
 		learnset: {
 			acidspray: ["9T"],
 			agility: ["9T"],
@@ -45195,7 +45195,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	arceusicetype: {
+	arceusice: {
 		learnset: {
 			acidspray: ["9T"],
 			agility: ["9T"],
@@ -45325,7 +45325,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	arceusdragontype: {
+	arceusdragon: {
 		learnset: {
 			acidspray: ["9T"],
 			agility: ["9T"],
@@ -45455,7 +45455,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	arceusdarktype: {
+	arceusdark: {
 		learnset: {
 			acidspray: ["9T"],
 			agility: ["9T"],
@@ -45585,7 +45585,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	arceusfairytype: {
+	arceusfairy: {
 		learnset: {
 			acidspray: ["9T"],
 			agility: ["9T"],
@@ -50451,7 +50451,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	darmanitanzenmode: {
+	darmanitanzen: {
 		learnset: {
 			attract: ["9M"],
 			bellydrum: ["9L38"],
@@ -50546,7 +50546,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	darmanitangalarianstandardmode: {
+	darmanitangalar: {
 		learnset: {
 			attract: ["9M"],
 			avalanche: ["9L12", "9M"],
@@ -50629,7 +50629,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	darmanitangalarianzenmode: {
+	darmanitangalarzen: {
 		learnset: {
 			attract: ["9M"],
 			avalanche: ["9L12", "9M"],
@@ -57340,7 +57340,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			weatherball: ["9T"],
 		},
 	},
-	tornadustherianforme: {
+	tornadustherian: {
 		learnset: {
 			acrobatics: ["9M"],
 			agility: ["9L25", "9T"],
@@ -57470,7 +57470,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	thundurustherianforme: {
+	thundurustherian: {
 		learnset: {
 			acrobatics: ["9M"],
 			agility: ["9L25", "9T"],
@@ -57742,7 +57742,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			weatherball: ["9T"],
 		},
 	},
-	landorustherianforme: {
+	landorustherian: {
 		learnset: {
 			block: ["9L10"],
 			bodyslam: ["9M"],
@@ -58192,7 +58192,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	meloettapirouetteforme: {
+	meloettapirouette: {
 		learnset: {
 			acrobatics: ["9L26", "9M"],
 			alluringvoice: ["9T"],
@@ -58348,7 +58348,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	genesectshockdrive: {
+	genesectshock: {
 		learnset: {
 			aerialace: ["9M"],
 			allyswitch: ["9T"],
@@ -58433,7 +58433,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	genesectburndrive: {
+	genesectburn: {
 		learnset: {
 			aerialace: ["9M"],
 			allyswitch: ["9T"],
@@ -58518,7 +58518,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	genesectchilldrive: {
+	genesectchill: {
 		learnset: {
 			aerialace: ["9M"],
 			allyswitch: ["9T"],
@@ -58603,7 +58603,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	genesectdousedrive: {
+	genesectdouse: {
 		learnset: {
 			aerialace: ["9M"],
 			allyswitch: ["9T"],
@@ -59429,7 +59429,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			weatherball: ["9T"],
 		},
 	},
-	greninjaashgreninja: {
+	greninjaash: {
 		learnset: {
 			acrobatics: ["9M"],
 			aerialace: ["9L33", "9M"],
@@ -59939,7 +59939,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			weatherball: ["9T"],
 		},
 	},
-	vivilloncontinentalpattern: {
+	vivilloncontinental: {
 		learnset: {
 			acrobatics: ["9M"],
 			aircutter: ["9T"],
@@ -59984,7 +59984,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			weatherball: ["9T"],
 		},
 	},
-	vivillonelegantpattern: {
+	vivillonelegant: {
 		learnset: {
 			acrobatics: ["9M"],
 			aircutter: ["9T"],
@@ -60029,7 +60029,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			weatherball: ["9T"],
 		},
 	},
-	vivillongardenpattern: {
+	vivillongarden: {
 		learnset: {
 			acrobatics: ["9M"],
 			aircutter: ["9T"],
@@ -60074,7 +60074,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			weatherball: ["9T"],
 		},
 	},
-	vivillonhighplainspattern: {
+	vivillonhighplains: {
 		learnset: {
 			acrobatics: ["9M"],
 			aircutter: ["9T"],
@@ -60119,7 +60119,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			weatherball: ["9T"],
 		},
 	},
-	vivillonicysnowpattern: {
+	vivillonicysnow: {
 		learnset: {
 			acrobatics: ["9M"],
 			aircutter: ["9T"],
@@ -60164,7 +60164,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			weatherball: ["9T"],
 		},
 	},
-	vivillonjunglepattern: {
+	vivillonjungle: {
 		learnset: {
 			acrobatics: ["9M"],
 			aircutter: ["9T"],
@@ -60209,7 +60209,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			weatherball: ["9T"],
 		},
 	},
-	vivillonmarinepattern: {
+	vivillonmarine: {
 		learnset: {
 			acrobatics: ["9M"],
 			aircutter: ["9T"],
@@ -60299,7 +60299,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			weatherball: ["9T"],
 		},
 	},
-	vivillonmodernpattern: {
+	vivillonmodern: {
 		learnset: {
 			acrobatics: ["9M"],
 			aircutter: ["9T"],
@@ -60344,7 +60344,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			weatherball: ["9T"],
 		},
 	},
-	vivillonmonsoonpattern: {
+	vivillonmonsoon: {
 		learnset: {
 			acrobatics: ["9M"],
 			aircutter: ["9T"],
@@ -60389,7 +60389,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			weatherball: ["9T"],
 		},
 	},
-	vivillonoceanpattern: {
+	vivillonocean: {
 		learnset: {
 			acrobatics: ["9M"],
 			aircutter: ["9T"],
@@ -60434,7 +60434,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			weatherball: ["9T"],
 		},
 	},
-	vivillonpolarpattern: {
+	vivillonpolar: {
 		learnset: {
 			acrobatics: ["9M"],
 			aircutter: ["9T"],
@@ -60479,7 +60479,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			weatherball: ["9T"],
 		},
 	},
-	vivillonriverpattern: {
+	vivillonriver: {
 		learnset: {
 			acrobatics: ["9M"],
 			aircutter: ["9T"],
@@ -60524,7 +60524,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			weatherball: ["9T"],
 		},
 	},
-	vivillonsandstormpattern: {
+	vivillonsandstorm: {
 		learnset: {
 			acrobatics: ["9M"],
 			aircutter: ["9T"],
@@ -60569,7 +60569,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			weatherball: ["9T"],
 		},
 	},
-	vivillonsavannapattern: {
+	vivillonsavanna: {
 		learnset: {
 			acrobatics: ["9M"],
 			aircutter: ["9T"],
@@ -60614,7 +60614,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			weatherball: ["9T"],
 		},
 	},
-	vivillonsunpattern: {
+	vivillonsun: {
 		learnset: {
 			acrobatics: ["9M"],
 			aircutter: ["9T"],
@@ -60659,7 +60659,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			weatherball: ["9T"],
 		},
 	},
-	vivillontundrapattern: {
+	vivillontundra: {
 		learnset: {
 			acrobatics: ["9M"],
 			aircutter: ["9T"],
@@ -60704,7 +60704,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			weatherball: ["9T"],
 		},
 	},
-	vivillonfancypattern: {
+	vivillonfancy: {
 		learnset: {
 			acrobatics: ["9M"],
 			aircutter: ["9T"],
@@ -60749,7 +60749,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			weatherball: ["9T"],
 		},
 	},
-	vivillonpokballpattern: {
+	vivillonpokeball: {
 		learnset: {
 			acrobatics: ["9M"],
 			aircutter: ["9T"],
@@ -60956,7 +60956,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			workup: ["9L1"],
 		},
 	},
-	flabb: {
+	flabebe: {
 		learnset: {
 			alluringvoice: ["9T"],
 			batonpass: ["9T"],
@@ -61004,7 +61004,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			wish: ["9L20"],
 		},
 	},
-	flabbyellowflower: {
+	flabebeyellow: {
 		learnset: {
 			alluringvoice: ["9T"],
 			batonpass: ["9T"],
@@ -61052,7 +61052,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			wish: ["9L20"],
 		},
 	},
-	flabborangeflower: {
+	flabebeorange: {
 		learnset: {
 			alluringvoice: ["9T"],
 			batonpass: ["9T"],
@@ -61100,7 +61100,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			wish: ["9L20"],
 		},
 	},
-	flabbblueflower: {
+	flabebeblue: {
 		learnset: {
 			alluringvoice: ["9T"],
 			batonpass: ["9T"],
@@ -61148,7 +61148,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			wish: ["9L20"],
 		},
 	},
-	flabbwhiteflower: {
+	flabebewhite: {
 		learnset: {
 			alluringvoice: ["9T"],
 			batonpass: ["9T"],
@@ -61294,7 +61294,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			wish: ["9L20"],
 		},
 	},
-	floetteorangeflower: {
+	floetteorange: {
 		learnset: {
 			alluringvoice: ["9T"],
 			batonpass: ["9T"],
@@ -61343,7 +61343,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			wish: ["9L20"],
 		},
 	},
-	floetteblueflower: {
+	floetteblue: {
 		learnset: {
 			alluringvoice: ["9T"],
 			batonpass: ["9T"],
@@ -61392,7 +61392,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			wish: ["9L20"],
 		},
 	},
-	floettewhiteflower: {
+	floettewhite: {
 		learnset: {
 			alluringvoice: ["9T"],
 			batonpass: ["9T"],
@@ -61441,7 +61441,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			wish: ["9L20"],
 		},
 	},
-	floetteeternalflower: {
+	floetteeternal: {
 		learnset: {
 			alluringvoice: ["9T"],
 			aromatherapy: ["9L38"],
@@ -61638,7 +61638,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			wish: ["9L1"],
 		},
 	},
-	florgesorangeflower: {
+	florgesorange: {
 		learnset: {
 			alluringvoice: ["9T"],
 			batonpass: ["9T"],
@@ -61687,7 +61687,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			wish: ["9L1"],
 		},
 	},
-	florgesblueflower: {
+	florgesblue: {
 		learnset: {
 			alluringvoice: ["9T"],
 			batonpass: ["9T"],
@@ -61736,7 +61736,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			wish: ["9L1"],
 		},
 	},
-	florgeswhiteflower: {
+	florgeswhite: {
 		learnset: {
 			alluringvoice: ["9T"],
 			batonpass: ["9T"],
@@ -62171,7 +62171,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	furfrouhearttrim: {
+	furfrouheart: {
 		learnset: {
 			attract: ["9M"],
 			babydolleyes: ["9L9"],
@@ -62234,7 +62234,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	furfroustartrim: {
+	furfroustar: {
 		learnset: {
 			attract: ["9M"],
 			babydolleyes: ["9L9"],
@@ -62297,7 +62297,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	furfroudiamondtrim: {
+	furfroudiamond: {
 		learnset: {
 			attract: ["9M"],
 			babydolleyes: ["9L9"],
@@ -62360,7 +62360,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	furfroudebutantetrim: {
+	furfroudebutante: {
 		learnset: {
 			attract: ["9M"],
 			babydolleyes: ["9L9"],
@@ -62423,7 +62423,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	furfroumatrontrim: {
+	furfroumatron: {
 		learnset: {
 			attract: ["9M"],
 			babydolleyes: ["9L9"],
@@ -62486,7 +62486,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	furfroudandytrim: {
+	furfroudandy: {
 		learnset: {
 			attract: ["9M"],
 			babydolleyes: ["9L9"],
@@ -62549,7 +62549,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	furfroulareinetrim: {
+	furfroulareine: {
 		learnset: {
 			attract: ["9M"],
 			babydolleyes: ["9L9"],
@@ -62612,7 +62612,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	furfroukabukitrim: {
+	furfroukabuki: {
 		learnset: {
 			attract: ["9M"],
 			babydolleyes: ["9L9"],
@@ -62675,7 +62675,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	furfroupharaohtrim: {
+	furfroupharaoh: {
 		learnset: {
 			attract: ["9M"],
 			babydolleyes: ["9L9"],
@@ -62844,7 +62844,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	meowsticfemale: {
+	meowsticf: {
 		learnset: {
 			alluringvoice: ["9T"],
 			batonpass: ["9T"],
@@ -63158,7 +63158,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			toxic: ["9M"],
 		},
 	},
-	aegislashbladeforme: {
+	aegislashblade: {
 		learnset: {
 			aerialace: ["9L1", "9M"],
 			afteryou: ["9T"],
@@ -65843,7 +65843,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			worryseed: ["9L28", "9T"],
 		},
 	},
-	pumpkaboolargesize: {
+	pumpkaboolarge: {
 		learnset: {
 			allyswitch: ["9T"],
 			astonish: ["9L1"],
@@ -65924,7 +65924,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			worryseed: ["9L28", "9T"],
 		},
 	},
-	pumpkaboosupersize: {
+	pumpkaboosuper: {
 		learnset: {
 			allyswitch: ["9T"],
 			astonish: ["9L1"],
@@ -66177,7 +66177,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			worryseed: ["9L28", "9T"],
 		},
 	},
-	gourgeistlargesize: {
+	gourgeistlarge: {
 		learnset: {
 			allyswitch: ["9T"],
 			astonish: ["9L1"],
@@ -66263,7 +66263,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			worryseed: ["9L28", "9T"],
 		},
 	},
-	gourgeistsupersize: {
+	gourgeistsuper: {
 		learnset: {
 			allyswitch: ["9T"],
 			astonish: ["9L1"],
@@ -66918,7 +66918,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	zygarde10forme: {
+	zygarde10: {
 		learnset: {
 			bind: ["9L1", "9T"],
 			bite: ["9L1"],
@@ -66993,7 +66993,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	zygardecompleteforme: {
+	zygardecomplete: {
 		learnset: {
 			bind: ["9L1", "9T"],
 			bite: ["9L1"],
@@ -68722,7 +68722,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			uturn: ["9M"],
 		},
 	},
-	oricoriopompomstyle: {
+	oricoriopompom: {
 		learnset: {
 			acrobatics: ["9L23", "9M"],
 			aerialace: ["9M"],
@@ -68771,7 +68771,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			uturn: ["9M"],
 		},
 	},
-	oricoriopaustyle: {
+	oricoriopau: {
 		learnset: {
 			acrobatics: ["9L23", "9M"],
 			aerialace: ["9M"],
@@ -68820,7 +68820,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			uturn: ["9M"],
 		},
 	},
-	oricoriosensustyle: {
+	oricoriosensu: {
 		learnset: {
 			acrobatics: ["9L23", "9M"],
 			aerialace: ["9M"],
@@ -71102,7 +71102,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	silvallytypefighting: {
+	silvallyfighting: {
 		learnset: {
 			aerialace: ["9L1", "9M"],
 			airslash: ["9L30", "9T"],
@@ -71192,7 +71192,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	silvallytypeflying: {
+	silvallyflying: {
 		learnset: {
 			aerialace: ["9L1", "9M"],
 			airslash: ["9L30", "9T"],
@@ -71282,7 +71282,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	silvallytypepoison: {
+	silvallypoison: {
 		learnset: {
 			aerialace: ["9L1", "9M"],
 			airslash: ["9L30", "9T"],
@@ -71372,7 +71372,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	silvallytypeground: {
+	silvallyground: {
 		learnset: {
 			aerialace: ["9L1", "9M"],
 			airslash: ["9L30", "9T"],
@@ -71462,7 +71462,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	silvallytyperock: {
+	silvallyrock: {
 		learnset: {
 			aerialace: ["9L1", "9M"],
 			airslash: ["9L30", "9T"],
@@ -71552,7 +71552,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	silvallytypebug: {
+	silvallybug: {
 		learnset: {
 			aerialace: ["9L1", "9M"],
 			airslash: ["9L30", "9T"],
@@ -71642,7 +71642,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	silvallytypeghost: {
+	silvallyghost: {
 		learnset: {
 			aerialace: ["9L1", "9M"],
 			airslash: ["9L30", "9T"],
@@ -71732,7 +71732,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	silvallytypesteel: {
+	silvallysteel: {
 		learnset: {
 			aerialace: ["9L1", "9M"],
 			airslash: ["9L30", "9T"],
@@ -71912,7 +71912,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	silvallytypefire: {
+	silvallyfire: {
 		learnset: {
 			aerialace: ["9L1", "9M"],
 			airslash: ["9L30", "9T"],
@@ -72002,7 +72002,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	silvallytypewater: {
+	silvallywater: {
 		learnset: {
 			aerialace: ["9L1", "9M"],
 			airslash: ["9L30", "9T"],
@@ -72092,7 +72092,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	silvallytypegrass: {
+	silvallygrass: {
 		learnset: {
 			aerialace: ["9L1", "9M"],
 			airslash: ["9L30", "9T"],
@@ -72182,7 +72182,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	silvallytypeelectric: {
+	silvallyelectric: {
 		learnset: {
 			aerialace: ["9L1", "9M"],
 			airslash: ["9L30", "9T"],
@@ -72272,7 +72272,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	silvallytypepsychic: {
+	silvallypsychic: {
 		learnset: {
 			aerialace: ["9L1", "9M"],
 			airslash: ["9L30", "9T"],
@@ -72362,7 +72362,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	silvallytypeice: {
+	silvallyice: {
 		learnset: {
 			aerialace: ["9L1", "9M"],
 			airslash: ["9L30", "9T"],
@@ -72452,7 +72452,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	silvallytypedragon: {
+	silvallydragon: {
 		learnset: {
 			aerialace: ["9L1", "9M"],
 			airslash: ["9L30", "9T"],
@@ -72542,7 +72542,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	silvallytypedark: {
+	silvallydark: {
 		learnset: {
 			aerialace: ["9L1", "9M"],
 			airslash: ["9L30", "9T"],
@@ -72632,7 +72632,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	silvallytypefairy: {
+	silvallyfairy: {
 		learnset: {
 			aerialace: ["9L1", "9M"],
 			airslash: ["9L30", "9T"],
@@ -72828,7 +72828,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	miniororangecore: {
+	miniororange: {
 		learnset: {
 			acrobatics: ["9M"],
 			ancientpower: ["9L17"],
@@ -72881,7 +72881,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	minioryellowcore: {
+	minioryellow: {
 		learnset: {
 			acrobatics: ["9M"],
 			ancientpower: ["9L17"],
@@ -72934,7 +72934,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	miniorgreencore: {
+	miniorgreen: {
 		learnset: {
 			acrobatics: ["9M"],
 			ancientpower: ["9L17"],
@@ -72987,7 +72987,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	miniorbluecore: {
+	miniorblue: {
 		learnset: {
 			acrobatics: ["9M"],
 			ancientpower: ["9L17"],
@@ -73040,7 +73040,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	miniorindigocore: {
+	miniorindigo: {
 		learnset: {
 			acrobatics: ["9M"],
 			ancientpower: ["9L17"],
@@ -73093,7 +73093,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	miniorvioletcore: {
+	miniorviolet: {
 		learnset: {
 			acrobatics: ["9M"],
 			ancientpower: ["9L17"],
@@ -75353,7 +75353,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	magearnaoriginalcolor: {
+	magearnaoriginal: {
 		learnset: {
 			agility: ["9T"],
 			aurasphere: ["9L66", "9T"],
@@ -80499,7 +80499,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	eiscuenoiceface: {
+	eiscuenoice: {
 		learnset: {
 			agility: ["9T"],
 			amnesia: ["9L30", "9T"],
@@ -80599,7 +80599,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	indeedeefemale: {
+	indeedeef: {
 		learnset: {
 			alluringvoice: ["9T"],
 			batonpass: ["9L5", "9T"],
@@ -80719,7 +80719,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			wildcharge: ["9T"],
 		},
 	},
-	morpekohangrymode: {
+	morpekohangry: {
 		learnset: {
 			agility: ["9L40", "9T"],
 			aurawheel: ["9L55"],
@@ -81429,7 +81429,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			wildcharge: ["9T"],
 		},
 	},
-	zaciancrownedsword: {
+	zaciancrowned: {
 		learnset: {
 			agility: ["9T"],
 			airslash: ["9T"],
@@ -81542,7 +81542,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			wildcharge: ["9T"],
 		},
 	},
-	zamazentacrownedshield: {
+	zamazentacrowned: {
 		learnset: {
 			agility: ["9T"],
 			bite: ["9L1"],
@@ -81756,7 +81756,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	urshifurapidstrikestyle: {
+	urshifurapidstrike: {
 		learnset: {
 			acrobatics: ["9M"],
 			aerialace: ["9L12", "9M"],
@@ -82143,7 +82143,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	calyrexicerider: {
+	calyrexice: {
 		learnset: {
 			agility: ["9T"],
 			avalanche: ["9L1", "9M"],
@@ -82238,7 +82238,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	calyrexshadowrider: {
+	calyrexshadow: {
 		learnset: {
 			agility: ["9L1", "9T"],
 			astralbarrage: ["9L1"],
@@ -91768,7 +91768,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	basculegionfemale: {
+	basculegionf: {
 		learnset: {
 			agility: ["9T"],
 			aquajet: ["9L12"],
@@ -92662,7 +92662,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			zenheadbutt: ["9M"],
 		},
 	},
-	oinkolognefemale: {
+	oinkolognef: {
 		learnset: {
 			belch: ["9L51"],
 			bodypress: ["9M"],
@@ -93531,7 +93531,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			uturn: ["9M"],
 		},
 	},
-	squawkabillyblueplumage: {
+	squawkabillyblue: {
 		learnset: {
 			aerialace: ["9L13", "9M"],
 			aircutter: ["9T"],
@@ -93581,7 +93581,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			uturn: ["9M"],
 		},
 	},
-	squawkabillyyellowplumage: {
+	squawkabillyyellow: {
 		learnset: {
 			aerialace: ["9L13", "9M"],
 			aircutter: ["9T"],
@@ -93631,7 +93631,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			uturn: ["9M"],
 		},
 	},
-	squawkabillywhiteplumage: {
+	squawkabillywhite: {
 		learnset: {
 			aerialace: ["9L13", "9M"],
 			aircutter: ["9T"],
@@ -98996,7 +98996,7 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			wingattack: ["9L32"],
 		},
 	},
-		ogerpon: {
+	ogerpon: {
 		learnset: {
 			brickbreak: ["9M"],
 			bulletseed: ["9M"],
@@ -99061,16 +99061,6 @@ export const Learnsets: import('../sim/dex-species').ModdedLearnsetDataTable = {
 			woodhammer: ["9L66"],
 			zenheadbutt: ["9M"],
 		},
-		eventOnly: true,
-	},
-	ogerponhearthflame: {
-		eventOnly: true,
-	},
-	ogerponwellspring: {
-		eventOnly: true,
-	},
-	ogerponcornerstone: {
-		eventOnly: true,
 	},
 	archaludon: {
 		learnset: {

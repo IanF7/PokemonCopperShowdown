@@ -968,6 +968,9 @@ process.stdout.write("Building `data/teambuilder-tables.js`... ");
 	for (const id in G2Learnsets) {
 		const learnset = G2Learnsets[id].learnset;
 		if (!learnset) continue;
+		// CAP and Pokestar ("Custom") species intentionally have no modern
+		// learnset in this fork; they're banned by 'Standard' anyway
+		if (!learnsets[id] && ['CAP', 'Custom'].includes(Dex.species.get(id).isNonstandard)) continue;
 		for (const moveid in learnset) {
 			const gens = learnset[moveid].map(x => Number(x[0]));
 			const minGen = Math.min(...gens);

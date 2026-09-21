@@ -275,6 +275,8 @@ export class ServerStream extends Streams.ObjectReadWriteStream<string> {
 		wsdeflate?: typeof Config.wsdeflate,
 		proxyip?: typeof Config.proxyip,
 		customhttpresponse?: typeof Config.customhttpresponse,
+		clientdir?: string | null,
+		clientindex?: string,
 	}) {
 		super();
 		if (!config.bindaddress) config.bindaddress = '0.0.0.0';
@@ -341,6 +343,12 @@ export class ServerStream extends Streams.ObjectReadWriteStream<string> {
 			const cssServer = new StaticServer('./config');
 			const avatarServer = new StaticServer('./config/avatars');
 			const staticServer = new StaticServer('./server/static');
+			// Self-hosted client: if `Config.clientdir` is set, serve the built client
+			// from this same port instead of redirecting to psim.us
+			const clientDir = config.clientdir;
+			const clientIndex = config.clientindex || 'index.html';
+			const clientServer = clientDir ? new StaticServer(clientDir) : null;
+			const clientIndexServer = clientDir ? new StaticServer(clientDir, { cacheTime: 0 }) : null;
 			const staticRequestHandler = (req: http.IncomingMessage, res: http.ServerResponse) => {
 				// console.log(`static rq: ${req.socket.remoteAddress}:${req.socket.remotePort} -> ${req.socket.localAddress}:${req.socket.localPort} - ${req.method} ${req.url} ${req.httpVersion} - ${req.rawHeaders.join('|')}`);
 				req.resume();
@@ -356,6 +364,16 @@ export class ServerStream extends Streams.ObjectReadWriteStream<string> {
 						} else if (req.url.startsWith('/avatars/')) {
 							req.url = req.url.slice(8);
 							server = avatarServer;
+						} else if (clientServer && clientIndexServer) {
+							const pathname = req.url.split('?')[0];
+							if (pathname === '/' || roomidRegex.test(pathname)) {
+								// the client handles room URLs like /battle-gen9ou-1 itself
+								clientIndexServer.serveFile(clientIndex, 200, {}, req, res).catch(() => {
+									void staticServer.serveFile('404.html', 404, {}, req, res);
+								});
+								return;
+							}
+							server = clientServer;
 						} else if (roomidRegex.test(req.url)) {
 							req.url = '/';
 						}

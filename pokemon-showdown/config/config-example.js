@@ -463,6 +463,18 @@ exports.autolockdown = true;
 exports.noguestsecurity = false;
 
 /**
+ * clientdir - serve a self-hosted copy of the client from this server's port,
+ *   instead of redirecting visitors to psim.us. Relative to the
+ *   pokemon-showdown folder. Set to null to use the official client.
+ *
+ * clientindex - the page (inside clientdir) served for `/` and room URLs.
+ *
+ * @type {string | null}
+ */
+exports.clientdir = null;
+exports.clientindex = 'index-selfhosted.html';
+
+/**
  * tourroom - specify a room to receive tournament announcements (defaults to
  * the room 'tournaments').
  * tourannouncements - announcements are only allowed in these rooms

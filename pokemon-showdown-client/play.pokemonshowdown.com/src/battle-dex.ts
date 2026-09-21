@@ -353,15 +353,14 @@ export const Dex = new class implements ModdedDex {
 		return window.Storage?.prefs ? window.Storage.prefs(prop) : window.PS?.prefs?.[prop];
 	}
 
+	/**
+	 * Custom Pokemon sprites and cries aren't on play.pokemonshowdown.com, so
+	 * they're served by whatever host served this page (our own server).
+	 */
 	getCustomSpritePrefix() {
 		const location = window.document?.location;
-		if (!location) return Dex.resourcePrefix;
-
-		if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') {
-			return `${location.protocol}//${location.host}/`;
-		}
-
-		return Dex.resourcePrefix;
+		if (!location || !location.host) return Dex.resourcePrefix;
+		return `${location.protocol}//${location.host}/`;
 	}
 
 	getShortName(name: string) {
@@ -684,7 +683,14 @@ export const Dex = new class implements ModdedDex {
 		if (!miscData && window.BattlePokemonSpritesBW) miscData = BattlePokemonSpritesBW[speciesid];
 		if (!miscData) miscData = {};
 
-		if (miscData.num !== 0 && miscData.num > -5000) {
+		const customBaseSpecies = isCustomPokemonSpriteId(species.baseSpecies);
+		if (customBaseSpecies) {
+			// Fakemon (and their megas): audio/cries/<basespecies>.mp3 on our own server
+			spriteData.cryurl = Dex.getCustomSpritePrefix() + 'audio/cries/' + toID(species.baseSpecies) + '.mp3';
+		} else if (isCustomPokemonSpriteId(species.id)) {
+			// custom forme of a real Pokemon (e.g. a new mega): use the base Pokemon's official cry
+			spriteData.cryurl = 'audio/cries/' + toID(species.baseSpecies) + '.mp3';
+		} else if (miscData.num !== 0 && miscData.num > -5000) {
 			let baseSpeciesid = toID(species.baseSpecies);
 			spriteData.cryurl = 'audio/cries/' + baseSpeciesid;
 			let formeid = species.formeid;

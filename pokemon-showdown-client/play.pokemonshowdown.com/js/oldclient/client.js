@@ -286,7 +286,14 @@ function toId() {
 				return;
 			}
 
-			if (this.get('userid') !== userid) {
+			if (Config.selfhosted) {
+				// no login server: the server accepts any unregistered name (Config.noguestsecurity)
+				try {
+					localStorage.setItem('showdown_selfhosted_name', name);
+				} catch (e) {}
+				app.trigger('loggedin');
+				app.send('/trn ' + name);
+			} else if (this.get('userid') !== userid) {
 				var self = this;
 				$.post(this.getActionPHP(), {
 					act: 'getassertion',
@@ -342,6 +349,20 @@ function toId() {
 				 */
 				this.challstr = challstr;
 				var self = this;
+				if (Config.selfhosted) {
+					// no login server: reuse the name picked last time, if any
+					this.loaded = true;
+					var savedName = null;
+					try {
+						savedName = localStorage.getItem('showdown_selfhosted_name');
+					} catch (e) {}
+					if (savedName) {
+						app.send('/trn ' + savedName);
+					} else {
+						app.topbar.updateUserbar();
+					}
+					return;
+				}
 				$.post(this.getActionPHP(), {
 					act: 'upkeep',
 					challstr: this.challstr
@@ -369,10 +390,16 @@ function toId() {
 		 * Log out from the server (but remain connected as a guest).
 		 */
 		logout: function () {
-			$.post(this.getActionPHP(), {
-				act: 'logout',
-				userid: this.get('userid')
-			});
+			if (Config.selfhosted) {
+				try {
+					localStorage.removeItem('showdown_selfhosted_name');
+				} catch (e) {}
+			} else {
+				$.post(this.getActionPHP(), {
+					act: 'logout',
+					userid: this.get('userid')
+				});
+			}
 			app.send('/logout');
 			app.trigger('init:socketclosed', "You have been logged out and disconnected.<br /><br />If you wanted to change your name while staying connected, use the 'Change Name' button or the '/nick' command.", false);
 			app.socket.close();
@@ -422,7 +449,7 @@ function toId() {
 			// 	});
 			} else {
 				var hostname = document.location.hostname;
-				if (hostname === Config.routes.client || Config.testclient || hostname.startsWith(Config.defaultserver.id + '-')) {
+				if (hostname === Config.routes.client || Config.testclient || Config.selfhosted || hostname.startsWith(Config.defaultserver.id + '-')) {
 					this.addRoom('rooms', null, true);
 				} else {
 					this.addRoom('lobby', null, true);
@@ -1169,7 +1196,7 @@ function toId() {
 				var named = !!+parts[2];
 
 				var userid = toUserid(parsed.name);
-				if (userid === this.user.get('userid') && parsed.name !== this.user.get('name')) {
+				if (!Config.selfhosted && userid === this.user.get('userid') && parsed.name !== this.user.get('name')) {
 					$.post(app.user.getActionPHP(), {
 						act: 'changeusername',
 						username: parsed.name

@@ -57,6 +57,8 @@ export interface PSConfig {
 	customcolors: Record<string, string>;
 	whitelist?: string[];
 	testclient?: boolean;
+	/** served by our own PS server (index-selfhosted.html): no login server, custom assets from this host */
+	selfhosted?: boolean;
 }
 export declare const Config: PSConfig;
 

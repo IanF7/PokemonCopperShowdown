@@ -460,7 +460,19 @@ exports.autolockdown = true;
  * Logging in this way will make you considered an unregistered user and grant
  * no authority. You cannot log into a trusted (g+/r%) user account this way.
  */
-exports.noguestsecurity = false;
+exports.noguestsecurity = true;
+
+/**
+ * clientdir - serve a self-hosted copy of the client from this server's port,
+ *   instead of redirecting visitors to psim.us. Relative to the
+ *   pokemon-showdown folder. Set to null to use the official client.
+ *
+ * clientindex - the page (inside clientdir) served for `/` and room URLs.
+ *
+ * @type {string | null}
+ */
+exports.clientdir = '../pokemon-showdown-client/play.pokemonshowdown.com';
+exports.clientindex = 'index-selfhosted.html';
 
 /**
  * tourroom - specify a room to receive tournament announcements (defaults to
