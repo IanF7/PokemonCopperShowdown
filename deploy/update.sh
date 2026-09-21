@@ -17,12 +17,20 @@ cp -r pokemon-showdown/config "$BACKUP"
 echo "=== Backed up server config to $BACKUP ==="
 
 echo "=== Pulling latest code ==="
+OLD_LOCK="$(git rev-parse HEAD:pokemon-showdown/package-lock.json)"
 git fetch origin
 git reset --hard '@{u}'
+NEW_LOCK="$(git rev-parse HEAD:pokemon-showdown/package-lock.json)"
 
 echo "=== Rebuilding server ==="
 cd pokemon-showdown
-npm ci --omit=dev --no-audit --no-fund
+# Reinstalling compiles better-sqlite3 from source, which takes 20+ minutes on
+# an e2-micro, so only do it when the dependencies actually changed.
+if [ "$OLD_LOCK" != "$NEW_LOCK" ] || [ ! -d node_modules ]; then
+	npm ci --omit=dev --no-audit --no-fund
+else
+	echo "(dependencies unchanged, skipping npm install)"
+fi
 node build
 
 echo "=== Restarting ==="
