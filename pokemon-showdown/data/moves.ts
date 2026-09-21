@@ -21325,7 +21325,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
     pixiepunch: {
 		num: -105,
-		accuracy: 100,
+		accuracy: true,
 		basePower: 60,
 		category: "Physical",
 		name: "Pixie Punch",
@@ -21495,12 +21495,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Psychic",
 		contestType: "Clever",
 	},
-	crystalinecannon: {
+	crystallinecannon: {
 		num: -114,
 		accuracy: 100,
 		basePower: 90,
 		category: "Special",
-		name: "Crystaline Cannon",
+		name: "Crystalline Cannon",
 		pp: 10,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
