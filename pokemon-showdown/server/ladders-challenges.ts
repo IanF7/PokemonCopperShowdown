@@ -16,6 +16,8 @@ export class BattleReady {
 	readonly rating: number;
 	readonly challengeType: ChallengeType;
 	readonly time: number;
+	/** unregistered player on a self-hosted server: any battle they're in is unrated */
+	unrated = false;
 	constructor(
 		userid: ID,
 		formatid: string,

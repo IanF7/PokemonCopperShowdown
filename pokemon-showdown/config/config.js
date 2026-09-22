@@ -13,7 +13,9 @@ exports.port = 8000;
  *
  * @type {string}
  */
-exports.bindaddress = '0.0.0.0';
+// deploy/setup-https.sh sets PS_BIND_ADDRESS=127.0.0.1, so behind Caddy the
+// server only accepts connections through Caddy (i.e. over HTTPS)
+exports.bindaddress = process.env.PS_BIND_ADDRESS || '0.0.0.0';
 
 /**
  * wsdeflate - compresses WebSocket messages

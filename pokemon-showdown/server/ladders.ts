@@ -318,10 +318,26 @@ class Ladder extends LadderStore {
 		}
 
 		const oldUserid = user.id;
-		const search = await this.prepBattle(connection, format.rated ? 'rated' : 'unrated', null, format.rated !== false);
+		// Without a login server, only names registered on this server
+		// (server/local-accounts.ts) play rated. Unregistered players can still
+		// search: they're matched as if rated 1000, but the battle is unrated.
+		const unregistered = !!Config.noguestsecurity && !user.registered;
+		const rated = format.rated !== false && !unregistered;
+		let search = await this.prepBattle(connection, format.rated ? 'rated' : 'unrated', null, rated);
 
 		if (oldUserid !== user.id) return;
 		if (!search) return;
+		if (unregistered && format.rated !== false) {
+			search = new BattleReady(search.userid, search.formatid, search.settings, 1000, search.challengeType);
+			search.unrated = true;
+			if (!user.unratedNoticeShown) {
+				user.unratedNoticeShown = true;
+				connection.popup(
+					`Your name isn't registered, so your battles won't be rated.\n\n` +
+					`To play rated battles, click your name at the top right and choose "Register".`
+				);
+			}
+		}
 
 		this.addSearch(search, user);
 	}
@@ -462,6 +478,7 @@ class Ladder extends LadderStore {
 			});
 			if (ready.rating < minRating) minRating = ready.rating;
 		}
+		if (readies.some(ready => ready.unrated)) minRating = 0;
 		if (missingUser) {
 			for (const ready of readies) {
 				Users.get(ready.userid)?.popup(`Sorry, your opponent ${missingUser} went offline before your battle could start.`);

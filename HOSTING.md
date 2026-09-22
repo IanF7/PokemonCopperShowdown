@@ -2,8 +2,8 @@
 
 The game server (`pokemon-showdown`) also serves the custom client
 (`pokemon-showdown-client/play.pokemonshowdown.com`) from the same port. There
-is no login server: players click **Choose name** and pick any name that isn't
-taken. Nothing else needs to run.
+is no separate login server: the game server also handles accounts (see
+"Accounts and ranked battles"). Nothing else needs to run.
 
 ## Testing on your PC
 
@@ -84,49 +84,74 @@ Put MP3s in `pokemon-showdown-client/play.pokemonshowdown.com/audio/cries/`,
 named by Pokémon ID (e.g. `latremor.mp3`). The README in that folder lists all
 113 expected names. Commit, push and run `update.sh`. No rebuild is needed.
 
+## Accounts and ranked battles
+
+Players can register a name with a password, like on regular Pokémon Showdown:
+
+- **Register:** pick a name, click it at the top right, choose **Register**.
+  After that only the owner can use it. Passwords must be at least 8
+  characters (a few random words work well).
+- **Log in:** choosing a registered name asks for its password. "Stay logged
+  in" keeps you logged in on that device for 30 days.
+- **Rated battles** (the **Battle!** button) need a registered name.
+  Unregistered players still get matched, but their battles aren't rated.
+  Challenges are always unrated. To see ratings, type `/rank` or
+  `/rank [name]` in chat.
+
+### How it's protected
+
+- Passwords are hashed with Argon2id (OWASP's recommended algorithm: 19 MiB,
+  2 passes), with a random salt per password and a server-wide secret key
+  (`config/accounts-secret.key`) kept apart from the hashes
+  (`config/accounts.json`). Both files stay on the server: they're
+  git-ignored, so they never reach GitHub.
+- Password rules follow NIST SP 800-63B, at its 8-character floor rather than
+  the stricter 15 it prefers for password-only logins: no forced symbols, and
+  a check against passwords leaked in data breaches (Have I Been Pwned: only
+  the first 5 characters of the password's SHA-1 hash are sent, never the
+  password). Change `PASSWORD_MIN_LENGTH` in `server/local-accounts.ts` to
+  raise it.
+- 5 wrong passwords lock that IP out for 15 minutes. 50 wrong passwords on one
+  account in an hour pause password logins to it for an hour.
+- Passwords only travel over HTTPS: the site refuses to send them over
+  `http://`, HSTS tells browsers to always use HTTPS, and the game server only
+  accepts connections through Caddy. They're never written to any log or the
+  browser console.
+- "Stay logged in" tokens are random 256-bit values, stored on the server only
+  as hashes, and expire after 30 days. Logging out or changing your password
+  revokes them.
+
+### Managing accounts (server owner)
+
+There's no email, so you reset forgotten passwords yourself, on the VM:
+
+```bash
+cd ~/showdown/pokemon-showdown
+node tools/set-password SomeName            # reset (or create) a password; logs them out everywhere
+node tools/set-password --delete SomeName   # delete an account
+node tools/set-password --list              # list registered names
+```
+
+**Keep `config/accounts.json` and `config/accounts-secret.key` together.**
+Without the key, no existing password works. `update.sh` copies both into
+`~/showdown-config-backup-*` each time it runs.
+
 ## Admin powers
 
-There are currently no admins: `pokemon-showdown/config/usergroups.csv` is
-empty, so every name (including Starcrafter347) is free for anyone to pick.
-
-To make a name an admin later, add a line like `Starcrafter347,~` to that
-file. The name is then locked behind a password:
-
-1. Set the password (once on your PC, once on the VM, since it's stored in the
-   git-ignored `config/trusted-passwords.json`, never on GitHub):
-
-   ```
-   cd pokemon-showdown
-   node tools/set-password Starcrafter347
-   ```
-
-   On the VM that's `cd ~/showdown/pokemon-showdown` first. No restart is
-   needed.
-2. On your site, type this in any chat box (e.g. the Lobby):
-
-   ```
-   /trn Starcrafter347,0,yourpassword
-   ```
-
-   You're renamed to `~Starcrafter347` with admin powers. Do it again after
-   reloading the page. Five wrong passwords lock that IP out for 10 minutes.
-
-Don't use the **Choose name** button for a locked name: it has no password
-field, so it fails and the client keeps retrying it on every reload. If that
-happens, pick a normal name to clear it.
-
-Your real Pokémon Showdown account still works as a fallback: sign in through
-the official client at `http://<VM IP with dots replaced by dashes>--80.insecure.psim.us`
-(for example `http://136-118-31-1--80.insecure.psim.us`). That page shows
-standard Pokémon Showdown data, so use it for moderation only.
+There are currently no admins (`pokemon-showdown/config/usergroups.csv` is
+empty). To make a name an admin, add a line like `Starcrafter347,~` to that
+file, commit, push and run `update.sh`. If the name isn't registered yet, give
+it an account on the VM with `node tools/set-password Starcrafter347`. Then
+log in with that name on the site like any other account.
 
 ## What doesn't work (no login server)
 
-- Registered accounts and passwords, so anyone can use any unranked name.
+- Password reset by email (the server owner resets passwords instead).
 - The ladder page, uploading replays and custom avatars (these need PHP or the
   official servers).
 
-Battles, chat, the teambuilder, challenges and tournaments all work.
+Battles, chat, the teambuilder, challenges, tournaments, accounts and ratings
+(via `/rank`) all work.
 
 ## Optional: a free domain name and HTTPS
 

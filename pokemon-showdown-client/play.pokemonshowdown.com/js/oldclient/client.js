@@ -306,7 +306,85 @@ function toId() {
 				app.send('/trn ' + name);
 			}
 		},
-		passwordRename: function (name, password, special) {
+		/*
+		 * Self-hosted accounts (no login server): passwords and "stay logged in"
+		 * sessions are handled by our own server (pokemon-showdown/server/local-auth.ts).
+		 */
+		canSendSecrets: function () {
+			// never send a password over an unencrypted connection (localhost is fine for testing)
+			if (location.protocol === 'https:') return true;
+			if (location.hostname === 'localhost' || location.hostname === '127.0.0.1') return true;
+			app.addPopupMessage("For your security, passwords can only be used on the https:// version of this site.");
+			return false;
+		},
+		sendLocalAuth: function (request) {
+			if (request.password !== undefined && !this.canSendSecrets()) return false;
+			return app.sendSecret('/localauth ' + JSON.stringify(request));
+		},
+		getLocalSession: function () {
+			try {
+				var session = JSON.parse(localStorage.getItem('showdown_selfhosted_session') || 'null');
+				if (session && session.name && session.token) return session;
+			} catch (e) {}
+			return null;
+		},
+		setLocalSession: function (session) {
+			try {
+				if (session) {
+					localStorage.setItem('showdown_selfhosted_session', JSON.stringify(session));
+				} else {
+					localStorage.removeItem('showdown_selfhosted_session');
+				}
+			} catch (e) {}
+		},
+		handleLocalAuth: function (data) {
+			var session = this.getLocalSession();
+			switch (data.type) {
+			case 'authrequired':
+				this.trigger('login:authrequired', data.name);
+				break;
+			case 'loggedin':
+				this.set('registered', { username: data.name, userid: data.userid });
+				try {
+					localStorage.setItem('showdown_selfhosted_name', data.name);
+				} catch (e) {}
+				if (data.token) {
+					this.setLocalSession({ name: data.name, userid: data.userid, token: data.token });
+				} else if (!data.kept) {
+					// logged in without "stay logged in": forget any older session on this device
+					if (session) this.sendLocalAuth({ act: 'logout', name: session.name, token: session.token });
+					this.setLocalSession(null);
+				}
+				if (data.registered) app.addPopupMessage("Your name is now registered! Only you can use it, and your battles will be rated.");
+				break;
+			case 'tokeninvalid':
+				// expired or revoked: ask for the password instead
+				this.setLocalSession(null);
+				if (data.name) app.send('/trn ' + data.name);
+				break;
+			case 'passwordchanged':
+				this.setLocalSession(data.token ? { name: this.get('name'), userid: data.userid, token: data.token } : null);
+				app.addPopupMessage("Your password was changed, and your other devices were logged out.");
+				break;
+			case 'error':
+				var error = BattleLog.escapeHTML(data.error || 'Something went wrong.');
+				if (data.act === 'login') {
+					app.addPopup(LoginPasswordPopup, { username: data.name, error: data.error });
+				} else if (data.act === 'register') {
+					app.addPopup(window.RegisterPopup, { error: error });
+				} else if (data.act === 'changepassword') {
+					app.addPopup(window.ChangePasswordPopup, { error: error });
+				} else {
+					app.addPopupMessage(data.error || 'Something went wrong.');
+				}
+				break;
+			}
+		},
+		passwordRename: function (name, password, special, remember) {
+			if (Config.selfhosted) {
+				this.sendLocalAuth({ act: 'login', name: name, password: password, remember: remember !== false });
+				return;
+			}
 			var self = this;
 			$.post(this.getActionPHP(), {
 				act: 'login',
@@ -350,13 +428,17 @@ function toId() {
 				this.challstr = challstr;
 				var self = this;
 				if (Config.selfhosted) {
-					// no login server: reuse the name picked last time, if any
+					// no login server: resume a "stay logged in" session, or reuse
+					// the name picked last time, if any
 					this.loaded = true;
 					var savedName = null;
 					try {
 						savedName = localStorage.getItem('showdown_selfhosted_name');
 					} catch (e) {}
-					if (savedName) {
+					var session = this.getLocalSession();
+					if (session) {
+						this.sendLocalAuth({ act: 'token', name: session.name, token: session.token });
+					} else if (savedName) {
 						app.send('/trn ' + savedName);
 					} else {
 						app.topbar.updateUserbar();
@@ -394,6 +476,10 @@ function toId() {
 				try {
 					localStorage.removeItem('showdown_selfhosted_name');
 				} catch (e) {}
+				// end the "stay logged in" session on the server too, not just here
+				var session = this.getLocalSession();
+				if (session) this.sendLocalAuth({ act: 'logout', name: session.name, token: session.token });
+				this.setLocalSession(null);
 			} else {
 				$.post(this.getActionPHP(), {
 					act: 'logout',
@@ -902,7 +988,8 @@ function toId() {
 			};
 			this.socket.onmessage = function (msg) {
 				if (window.console && console.log) {
-					console.log('<< ' + msg.data);
+					// don't print session tokens
+					console.log('<< ' + (msg.data.indexOf('|localauth|') >= 0 ? '|localauth|[hidden]' : msg.data));
 				}
 				self.receive(msg.data);
 			};
@@ -960,6 +1047,19 @@ function toId() {
 				console.log('>> ' + data);
 			}
 			this.socket.send(data);
+		},
+		/**
+		 * Like `send`, but for passwords and session tokens: never written to the
+		 * console, and never queued (a queued secret would be logged when sent).
+		 */
+		sendSecret: function (data) {
+			if (!this.socket || (this.socket.readyState !== SockJS.OPEN)) {
+				this.addPopupMessage("You're not connected to the server right now. Please try again in a moment.");
+				return false;
+			}
+			if (window.console && console.log) console.log('>> |/localauth [hidden]');
+			this.socket.send('|' + data);
+			return true;
 		},
 		serializeForm: function (form, checkboxOnOff) {
 			// querySelector dates back to IE8 so we can use it
@@ -1184,6 +1284,13 @@ function toId() {
 
 			case 'formats':
 				this.parseFormats(parts);
+				break;
+
+			case 'localauth':
+				// self-hosted accounts (see User.handleLocalAuth)
+				try {
+					this.user.handleLocalAuth(JSON.parse(data.slice('|localauth|'.length)));
+				} catch (e) {}
 				break;
 
 			case 'updateuser':

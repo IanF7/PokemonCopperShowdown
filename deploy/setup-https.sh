@@ -52,10 +52,15 @@ if ! command -v caddy >/dev/null; then
 	apt-get install -y caddy
 fi
 
-echo "=== Moving Pokemon Showdown to port $SHOWDOWN_PORT ==="
-sed -i -E "s|^(ExecStart=.* pokemon-showdown( start)?( --skip-build)?) [0-9]+$|\1 $SHOWDOWN_PORT|" \
-	/etc/systemd/system/showdown.service
-grep '^ExecStart=' /etc/systemd/system/showdown.service
+echo "=== Moving Pokemon Showdown to port $SHOWDOWN_PORT (reachable only through Caddy) ==="
+SERVICE=/etc/systemd/system/showdown.service
+sed -i -E "s|^(ExecStart=.* pokemon-showdown( start)?( --skip-build)?) [0-9]+$|\1 $SHOWDOWN_PORT|" "$SERVICE"
+# listen on 127.0.0.1 only, so nobody can skip HTTPS by connecting to port 8000
+# directly (passwords must never travel unencrypted)
+if ! grep -q '^Environment=PS_BIND_ADDRESS=' "$SERVICE"; then
+	sed -i 's|^\[Service\]$|[Service]\nEnvironment=PS_BIND_ADDRESS=127.0.0.1|' "$SERVICE"
+fi
+grep -E '^(ExecStart|Environment)=' "$SERVICE"
 systemctl daemon-reload
 systemctl restart showdown
 
@@ -64,6 +69,17 @@ cat > /etc/caddy/Caddyfile <<EOF
 # Managed by deploy/setup-https.sh
 $DOMAIN {
 	encode gzip
+	header {
+		# browsers remember to only ever use https for this site (1 year), so a
+		# network attacker can't downgrade a visitor to http and read passwords
+		Strict-Transport-Security "max-age=31536000; includeSubDomains"
+		# don't let other sites load this one in a frame (clickjacking the login box)
+		Content-Security-Policy "frame-ancestors 'self'"
+		X-Frame-Options "SAMEORIGIN"
+		X-Content-Type-Options "nosniff"
+		Referrer-Policy "strict-origin-when-cross-origin"
+		-Server
+	}
 	reverse_proxy 127.0.0.1:$SHOWDOWN_PORT
 }
 EOF

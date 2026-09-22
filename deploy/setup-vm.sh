@@ -11,9 +11,12 @@
 set -euo pipefail
 
 PORT="${PORT:-80}"
-# after deploy/setup-https.sh, Caddy owns port 80 and Showdown lives on 8000
+BIND_ADDRESS=0.0.0.0
+# after deploy/setup-https.sh, Caddy owns port 80 and Showdown lives on 8000,
+# reachable only through Caddy
 if grep -qs 'setup-https.sh' /etc/caddy/Caddyfile; then
 	PORT=8000
+	BIND_ADDRESS=127.0.0.1
 fi
 REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 RUN_USER="${SUDO_USER:-$(whoami)}"
@@ -36,13 +39,12 @@ if ! swapon --show | grep -q '/swapfile'; then
 	grep -q '^/swapfile ' /etc/fstab || echo '/swapfile none swap sw 0 0' >> /etc/fstab
 fi
 
-# Pokemon Showdown needs Node.js 22+
-NODE_MAJOR="$(node -v 2>/dev/null | sed 's/^v\([0-9]*\).*/\1/' || true)"
-if [ -z "$NODE_MAJOR" ] || [ "$NODE_MAJOR" -lt 22 ]; then
-	echo "=== Installing Node.js 22 ==="
+# Needs Node.js 24.7+ (built-in Argon2 password hashing for accounts)
+if ! node -e "process.exit(require('crypto').argon2 ? 0 : 1)" 2>/dev/null; then
+	echo "=== Installing Node.js 24 ==="
 	apt-get update
 	apt-get install -y ca-certificates curl git
-	curl -fsSL https://deb.nodesource.com/setup_22.x | bash -
+	curl -fsSL https://deb.nodesource.com/setup_24.x | bash -
 	apt-get install -y nodejs
 fi
 
@@ -61,6 +63,7 @@ After=network-online.target
 Wants=network-online.target
 
 [Service]
+Environment=PS_BIND_ADDRESS=$BIND_ADDRESS
 User=$RUN_USER
 WorkingDirectory=$REPO_DIR/pokemon-showdown
 # setup-vm.sh and update.sh already build, so don't rebuild on every start

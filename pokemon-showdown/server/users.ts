@@ -45,8 +45,9 @@ const PERMALOCK_CACHE_TIME = 30 * 24 * 60 * 60 * 1000; // 30 days
 
 const DEFAULT_TRAINER_SPRITES = [1, 2, 101, 102, 169, 170, 265, 266];
 
-import * as crypto from 'crypto';
-import { FS, Utils, type ProcessManager } from '../lib';
+import { Utils, type ProcessManager } from '../lib';
+import * as LocalAccounts from './local-accounts';
+import * as LocalAuth from './local-auth';
 import {
 	Auth, GlobalAuth, PLAYER_SYMBOL, HOST_SYMBOL, type RoomPermission, type GlobalPermission,
 } from './user-groups';
@@ -55,44 +56,6 @@ const MINUTES = 60 * 1000;
 const IDLE_TIMER = 60 * MINUTES;
 const STAFF_IDLE_TIMER = 30 * MINUTES;
 const CONNECTION_EXPIRY_TIME = 24 * 60 * MINUTES;
-
-/*********************************************************
- * Self-hosted passwords for trusted names
- *********************************************************/
-
-// With no login server (Config.noguestsecurity), names with a rank in
-// usergroups.csv can log in with `/trn [name],0,[password]` instead of a
-// login-server token. Passwords are stored hashed in this git-ignored file;
-// set one with `node tools/set-password [name]` (see HOSTING.md).
-const TRUSTED_PASSWORDS_FILE = 'config/trusted-passwords.json';
-const PASSWORD_MAX_FAILURES = 5;
-const PASSWORD_LOCKOUT_TIME = 10 * MINUTES;
-const passwordFailures = new Map<string, { count: number, lockedUntil: number }>();
-
-function checkTrustedPassword(userid: ID, password: string, ip: string): 'ok' | 'wrong' | 'locked' | 'unset' {
-	const failures = passwordFailures.get(ip);
-	if (failures && failures.lockedUntil > Date.now()) return 'locked';
-
-	let stored: string | undefined;
-	try {
-		stored = JSON.parse(FS(TRUSTED_PASSWORDS_FILE).readIfExistsSync() || '{}')[userid];
-	} catch {}
-	if (!stored) return 'unset';
-
-	const [salt, hash] = stored.split(':');
-	const expected = Buffer.from(hash, 'hex');
-	const actual = crypto.scryptSync(password, salt, expected.length);
-	if (crypto.timingSafeEqual(actual, expected)) {
-		passwordFailures.delete(ip);
-		return 'ok';
-	}
-	const count = (failures?.count || 0) + 1;
-	passwordFailures.set(ip, {
-		count: count >= PASSWORD_MAX_FAILURES ? 0 : count,
-		lockedUntil: count >= PASSWORD_MAX_FAILURES ? Date.now() + PASSWORD_LOCKOUT_TIME : 0,
-	});
-	return 'wrong';
-}
 
 /*********************************************************
  * Utility functions
@@ -273,6 +236,10 @@ export class Connection {
 	 */
 	user: User;
 	challenge: string;
+	/** set by server/local-auth.ts only while it renames an authenticated user */
+	localAuthUserid: ID | null = null;
+	/** a local-auth request is being processed (one at a time per connection) */
+	localAuthBusy = false;
 	autojoins: string;
 	/** The last bot html page this connection requested, formatted as `${bot.id}-${pageid}` */
 	lastRequestedPage: string | null;
@@ -394,6 +361,8 @@ export class User extends Chat.MessageContext {
 	name: string;
 	named: boolean;
 	registered: boolean;
+	/** has seen the "your battles won't be rated" popup (server/ladders.ts) */
+	unratedNoticeShown = false;
 	id: ID;
 	tempGroup: GroupSymbol;
 	avatar: string | number;
@@ -675,19 +644,20 @@ export class User extends Chat.MessageContext {
 		}
 	}
 	async validateToken(token: string, name: string, userid: ID, connection: Connection) {
-		if (Config.noguestsecurity && Users.isTrusted(userid) && !token.includes(';')) {
-			// no login server: trusted names use a password instead (real tokens always contain ';')
-			const result = token.trim() ? checkTrustedPassword(userid, token.trim(), connection?.ip || '') : 'unset';
-			if (result === 'ok') return '2';
-			const message = {
-				unset: `This name is reserved. To use it, type /trn ${name},0,[your password] in the chat box.`,
-				wrong: `Wrong password for ${name}.`,
-				locked: `Too many wrong passwords. Try again in ${Chat.toDurationString(PASSWORD_LOCKOUT_TIME)}.`,
-			}[result];
-			this.send(`|nametaken|${name}|${message}`);
-			return null;
-		}
-		if (!token && Config.noguestsecurity) {
+		if (Config.noguestsecurity) {
+			// No login server: this server's own accounts (server/local-accounts.ts)
+			// are the only accounts. Registered names need a password or session,
+			// checked by server/local-auth.ts before it calls rename(). Login-server
+			// tokens are never accepted, so nobody can claim a local name with them.
+			if (connection?.localAuthUserid === userid) return '2';
+			if (LocalAccounts.exists(userid)) {
+				this.send(`|localauth|${JSON.stringify({ type: 'authrequired', name })}`);
+				return null;
+			}
+			if (Users.isTrusted(userid)) {
+				this.send(`|nametaken|${name}|This name is reserved for staff. The server owner can give it a password with: node tools/set-password ${name}`);
+				return null;
+			}
 			return '1';
 		}
 
@@ -1758,6 +1728,13 @@ function socketReceive(worker: ProcessManager.StreamWorker, workerid: number, so
 	// but that is no longer supported
 	const roomId = message.slice(0, pipeIndex) || '';
 	message = message.slice(pipeIndex + 1);
+
+	// Passwords and session tokens: handled here, before the emergency log,
+	// chat parsing, and crash/slow-command logging below can ever see them.
+	if (message.startsWith(LocalAuth.PREFIX)) {
+		void LocalAuth.handle(connection, message.slice(LocalAuth.PREFIX.length));
+		return;
+	}
 
 	const room = Rooms.get(roomId) || null;
 	const multilineMessage = Chat.multiLinePattern.test(message);

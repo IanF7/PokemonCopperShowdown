@@ -905,6 +905,13 @@
 		}
 	});
 
+	// self-hosted accounts (see pokemon-showdown/server/local-accounts.ts)
+	var NEW_PASSWORD_HINT = '<p><small>At least 8 characters. A few random words are<br />' +
+		'strong and easy to remember. Use a password you<br />' +
+		'don\'t use anywhere else.</small></p>';
+	var REMEMBER_CHECKBOX = '<p><label class="checkbox"><input type="checkbox" name="remember" checked /> ' +
+		'Stay logged in on this device (30 days)</label></p><p><small>Untick this on shared or public computers.</small></p>';
+
 	var LoginPopup = this.LoginPopup = Popup.extend({
 		type: 'semimodal',
 		initialize: function (data) {
@@ -996,12 +1003,27 @@
 			}
 			buf += '<p><label class="label">Username: <strong><input type="text" name="username" value="' + BattleLog.escapeHTML(app.user.get('name')) + '" style="color:inherit;background:transparent;border:0;font:inherit;font-size:inherit;display:block" readonly autocomplete="username" /></strong></label></p>';
 			buf += '<p><label class="label">Old password: <input class="textbox autofocus" type="password" name="oldpassword" autocomplete="current-password" /></label></p>';
+			if (Config.selfhosted) buf += NEW_PASSWORD_HINT;
 			buf += '<p><label class="label">New password: <input class="textbox" type="password" name="password" autocomplete="new-password" /></label></p>';
 			buf += '<p><label class="label">New password (confirm): <input class="textbox" type="password" name="cpassword" autocomplete="new-password" /></label></p>';
 			buf += '<p class="buttonbar"><button type="submit" class="button"><strong>Change password</strong></button> <button type="button" name="close" class="button">Cancel</button></p></form>';
 			this.$el.html(buf);
 		},
 		submit: function (data) {
+			if (Config.selfhosted) {
+				if (data.password !== data.cpassword) {
+					app.addPopup(ChangePasswordPopup, { error: "Your new passwords don't match." });
+					return;
+				}
+				app.user.sendLocalAuth({
+					act: 'changepassword',
+					oldpassword: data.oldpassword,
+					password: data.password,
+					cpassword: data.cpassword,
+					remember: !!app.user.getLocalSession()
+				});
+				return;
+			}
 			$.post(app.user.getActionPHP(), {
 				act: 'changepassword',
 				oldpassword: data.oldpassword,
@@ -1034,12 +1056,27 @@
 			buf += '<p><label class="label">Username: <strong><input type="text" name="name" value="' + BattleLog.escapeHTML(data.name || app.user.get('name')) + '" style="color:inherit;background:transparent;border:0;font:inherit;font-size:inherit;display:block" readonly autocomplete="username" /></strong></label></p>';
 			buf += '<p><label class="label">Password: <input class="textbox autofocus" type="password" name="password" autocomplete="new-password" /></label></p>';
 			buf += '<p><label class="label">Password (confirm): <input class="textbox" type="password" name="cpassword" autocomplete="new-password" /></label></p>';
-			buf += '<p><label class="label"><img src="' + Dex.resourcePrefix + 'sprites/gen5ani/pikachu.gif" alt="An Electric-type mouse that is the mascot of the Pok\u00E9mon franchise." /></label></p>';
-			buf += '<p><label class="label">What is this pokemon? <input class="textbox" type="text" name="captcha" value="' + BattleLog.escapeHTML(data.captcha) + '" /></label></p>';
+			if (Config.selfhosted) {
+				buf += NEW_PASSWORD_HINT;
+				buf += REMEMBER_CHECKBOX;
+			} else {
+				buf += '<p><label class="label"><img src="' + Dex.resourcePrefix + 'sprites/gen5ani/pikachu.gif" alt="An Electric-type mouse that is the mascot of the Pok\u00E9mon franchise." /></label></p>';
+				buf += '<p><label class="label">What is this pokemon? <input class="textbox" type="text" name="captcha" value="' + BattleLog.escapeHTML(data.captcha) + '" /></label></p>';
+			}
 			buf += '<p class="buttonbar"><button type="submit" class="button"><strong>Register</strong></button> <button type="button" name="close" class="button">Cancel</button></p></form>';
 			this.$el.html(buf);
 		},
 		submit: function (data) {
+			if (Config.selfhosted) {
+				if (data.password !== data.cpassword) {
+					app.addPopup(RegisterPopup, { error: "Your passwords don't match." });
+					return;
+				}
+				app.user.sendLocalAuth({
+					act: 'register', password: data.password, cpassword: data.cpassword, remember: !!data.remember
+				});
+				return;
+			}
 			var name = data.name;
 			var captcha = data.captcha;
 			$.post(app.user.getActionPHP(), {
@@ -1110,6 +1147,7 @@
 				buf += '<p class="buttonbar"><button name="close" class="button">Cancel</button></p>';
 			} else {
 				buf += '<p><label class="label">Password: <input class="textbox autofocus" type="password" name="password" autocomplete="current-password" style="width:173px"><button type="button" name="showPassword" aria-label="Show password" style="float:right;margin:-21px 0 10px;padding: 2px 6px" class="button"><i class="fa fa-eye"></i></button></label></p>';
+				if (Config.selfhosted) buf += REMEMBER_CHECKBOX;
 				buf += '<p class="buttonbar"><button type="submit" class="button"><strong>Log in</strong></button> <button type="button" name="close" class="button">Cancel</button></p>';
 			}
 
@@ -1139,7 +1177,7 @@
 		},
 		submit: function (data) {
 			this.close();
-			app.user.passwordRename(data.username, data.password);
+			app.user.passwordRename(data.username, data.password, undefined, !!data.remember);
 		}
 	});
 
