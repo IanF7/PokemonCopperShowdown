@@ -128,11 +128,23 @@ standard Pokémon Showdown data, so use it for moderation only.
 
 Battles, chat, the teambuilder, challenges and tournaments all work.
 
-## Optional: your own domain and HTTPS
+## Optional: a free domain name and HTTPS
 
-Buy a domain (about $10–15/year) and point it at the VM's static IP. Then run
-[Caddy](https://caddyserver.com/) as a reverse proxy in front of the server:
-Caddy on ports 80/443, Pokémon Showdown on 8000. To do that, re-run
-`sudo PORT=8000 bash showdown/deploy/setup-vm.sh` and allow port 443 in the
-firewall (**Allow HTTPS traffic**). The client picks up the new address
-automatically.
+1. Make the VM's IP static (**VPC network → IP addresses → Promote to static**).
+2. Get a free name at [duckdns.org](https://www.duckdns.org) (sign in, add a
+   subdomain, set its IP to the VM's IP), or point a domain you own at the IP.
+3. Edit the VM and tick **Allow HTTPS traffic** (keep **Allow HTTP traffic**
+   ticked too, since the certificate check and the http→https redirect use it).
+4. On the VM:
+
+   ```bash
+   cd ~/showdown && git pull
+   sudo bash deploy/setup-https.sh yourname.duckdns.org
+   ```
+
+This installs [Caddy](https://caddyserver.com/), which gets and renews a free
+Let's Encrypt certificate, serves `https://yourname.duckdns.org/`, and forwards
+to Pokémon Showdown, which moves to port 8000. The client picks up the new
+address automatically. The bare IP link stops working, so share the domain
+instead. `update.sh` works as before. If the certificate fails, check
+`sudo journalctl -u caddy -n 50`.

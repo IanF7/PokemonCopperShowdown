@@ -11,6 +11,10 @@
 set -euo pipefail
 
 PORT="${PORT:-80}"
+# after deploy/setup-https.sh, Caddy owns port 80 and Showdown lives on 8000
+if grep -qs 'setup-https.sh' /etc/caddy/Caddyfile; then
+	PORT=8000
+fi
 REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 RUN_USER="${SUDO_USER:-$(whoami)}"
 

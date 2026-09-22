@@ -82,7 +82,9 @@ Main's SSL deploy script from Let's Encrypt looks like:
  *   know what you are doing
  * @type {false | string[]}.
  */
-exports.proxyip = false;
+// Caddy (deploy/setup-https.sh) forwards visitors from this machine, so trust it
+// to report their real IPs. Harmless without Caddy: nothing else connects locally.
+exports.proxyip = ['127.0.0.1'];
 
 // subprocesses - the number of child processes to use for various tasks.
 //   Can be set to `0` instead of `{...}` to stop using subprocesses, if you're running out of RAM.
