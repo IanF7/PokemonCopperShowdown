@@ -58,7 +58,8 @@ Wants=network-online.target
 [Service]
 User=$RUN_USER
 WorkingDirectory=$REPO_DIR/pokemon-showdown
-ExecStart=$(command -v node) pokemon-showdown $PORT
+# setup-vm.sh and update.sh already build, so don't rebuild on every start
+ExecStart=$(command -v node) pokemon-showdown start --skip-build $PORT
 Restart=always
 RestartSec=5
 # lets a non-root user listen on port 80

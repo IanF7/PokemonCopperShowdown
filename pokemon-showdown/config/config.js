@@ -127,6 +127,9 @@ exports.subprocesses = {
 	/** datasearch - for the datasearch chat plugin */
 	datasearch: 1,
 };
+// The free-tier e2-micro VM has only 1 GB of RAM, and each subprocess is a
+// separate copy of Node, so run everything in the main process instead.
+exports.subprocesses = 0;
 
 /**
  * Various debug options
