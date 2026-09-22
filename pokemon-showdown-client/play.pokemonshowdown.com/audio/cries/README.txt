@@ -2,7 +2,9 @@ Cries for the new Pokemon go in this folder as MP3 files, named by the
 Pokemon's ID (lowercase, no spaces or punctuation), e.g. latremor.mp3.
 
 Megas and alternate formes reuse their base Pokemon's cry, so only one file
-per new Pokemon is needed. Real Pokemon (including your new megas/Azorian forms
+per new Pokemon is needed. Exceptions with their own cry: brawnsoonflood.mp3
+and puradoxdeadstate.mp3 (to add more, list the forme ID in CUSTOM_FORME_CRIES
+in src/battle-dex.ts and rebuild the client). Real Pokemon (including your new megas/Azorian forms
 of them) already use the official cries. A missing file just means no sound.
 
 Files this folder is looking for (113):

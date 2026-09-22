@@ -88,6 +88,11 @@ function isCustomPokemonSpriteId(id:string){
 	return CUSTOM_POKEMON_IDS.has(toID(id));
 }
 
+/** formes of our fakemon with their own cry (audio/cries/<formeid>.mp3) instead of the base Pokemon's */
+const CUSTOM_FORME_CRIES = new Set([
+	'brawnsoonflood', 'puradoxdeadstate',
+] as ID[]);
+
 if (typeof window === 'undefined') {
 	// Node
 	global.window = global;
@@ -686,7 +691,8 @@ export const Dex = new class implements ModdedDex {
 		const customBaseSpecies = isCustomPokemonSpriteId(species.baseSpecies);
 		if (customBaseSpecies) {
 			// Fakemon (and their megas): audio/cries/<basespecies>.mp3 on our own server
-			spriteData.cryurl = Dex.getCustomSpritePrefix() + 'audio/cries/' + toID(species.baseSpecies) + '.mp3';
+			const cryid = CUSTOM_FORME_CRIES.has(species.id) ? species.id : toID(species.baseSpecies);
+			spriteData.cryurl = Dex.getCustomSpritePrefix() + 'audio/cries/' + cryid + '.mp3';
 		} else if (isCustomPokemonSpriteId(species.id)) {
 			// custom forme of a real Pokemon (e.g. a new mega): use the base Pokemon's official cry
 			spriteData.cryurl = 'audio/cries/' + toID(species.baseSpecies) + '.mp3';

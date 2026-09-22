@@ -88,6 +88,11 @@ function isCustomPokemonSpriteId(id){
 return CUSTOM_POKEMON_IDS.has(toID(id));
 }
 
+
+var CUSTOM_FORME_CRIES=new Set([
+'brawnsoonflood','puradoxdeadstate']
+);
+
 if(typeof window==='undefined'){
 
 global.window=global;
@@ -686,7 +691,8 @@ if(!miscData)miscData={};
 var customBaseSpecies=isCustomPokemonSpriteId(species.baseSpecies);
 if(customBaseSpecies){
 
-spriteData.cryurl=Dex.getCustomSpritePrefix()+'audio/cries/'+toID(species.baseSpecies)+'.mp3';
+var cryid=CUSTOM_FORME_CRIES.has(species.id)?species.id:toID(species.baseSpecies);
+spriteData.cryurl=Dex.getCustomSpritePrefix()+'audio/cries/'+cryid+'.mp3';
 }else if(isCustomPokemonSpriteId(species.id)){
 
 spriteData.cryurl='audio/cries/'+toID(species.baseSpecies)+'.mp3';
