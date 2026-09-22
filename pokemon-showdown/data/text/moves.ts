@@ -7700,7 +7700,7 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	seismicbeam: {
 		name: "Seismic Beam",
-		shortDesc: "No additional effect.",
+		shortDesc: "20% chance to lower the target's Sp. Def by 1.",
 	},
 	frostbite: {
 		name: "Frostbite",

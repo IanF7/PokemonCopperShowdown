@@ -21258,7 +21258,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		basePower: 95,
 		category: "Special",
 		name: "Dark Wave",
-		pp: 15,
+		pp: 10,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1},
 		target: "allAdjacentFoes",
@@ -21336,6 +21336,27 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Fairy",
 		contestType: "Tough",
 	},
+	ragingblast: {
+		num: -146,
+		accuracy: 90,
+		basePower: 100,
+		category: "Special",
+		name: "Raging Blast",
+		pp: 10,
+		priority: 0,
+		flags: { protect: 1, mirror: 1, metronome: 1 },
+		secondary: {
+			chance: 10,
+			self: {
+				boosts: {
+					spa: 1,
+				},
+			},
+		},
+		target: "normal",
+		type: "Fighting",
+		contestType: "Cool",
+	},
 	scorchingblade: {
 		num: -106,
 		accuracy: 100,
@@ -21373,7 +21394,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	spectralstrike: {
 		num: -108,
 		accuracy: 100,
-		basePower: 90,
+		basePower: 80,
 		category: "Physical",
 		name: "Spectral Strike",
 		pp: 15,
@@ -21419,12 +21440,18 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	seismicbeam: {
 		num: -111,
 		accuracy: 100,
-		basePower: 80,
+		basePower: 75,
 		category: "Special",
 		name: "Seismic Beam",
 		pp: 15,
 		priority: 0,
 		flags: { protect: 1, mirror: 1 },
+		secondary: {
+			chance: 20,
+			boosts: {
+				spd: -1,
+			},
+		},
 		target: "normal",
 		type: "Ground",
     	contestType: "Cool",
@@ -21497,7 +21524,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	crystallinecannon: {
 		num: -114,
-		accuracy: 100,
+		accuracy: 90,
 		basePower: 90,
 		category: "Special",
 		name: "Crystalline Cannon",
@@ -21543,7 +21570,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Cute",
 	},
 	thorntrap: {
-		num: 662,
+		num: -145,
 		accuracy: 80,
 		basePower: 90,
 		category: "Physical",
@@ -21615,7 +21642,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	heist: {
 		num: -120,
 		accuracy: 100,
-		basePower: 40,
+		basePower: 55,
 		category: "Physical",
 		
 		name: "Heist",
@@ -21843,8 +21870,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: { snatch: 1, bypasssub: 1, metronome: 1 },
-		boosts: {
-			def: 1,
+		onHitSide(side) {
+			for (const pokemon of side.active) {
+				if (pokemon && !pokemon.fainted) {
+					this.boost({ def: 1 }, pokemon);
+				}
+			}
 		},
 		target: "allySide",
 		type: "Steel",
@@ -21863,7 +21894,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			chance: 30,
 			status: 'psn',
 		},
-		target: "allAdjacent",
+		target: "allAdjacentFoes",
 		type: "Poison",
 		contestType: "Cute",
 	},
@@ -21956,8 +21987,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	},
 	goldenstorm: {
 		num: -139,
-		accuracy: 100,
-		basePower: 90,
+		accuracy: 90,
+		basePower: 100,
 		category: "Special",
 		name: "Golden Storm",
 		pp: 10,
