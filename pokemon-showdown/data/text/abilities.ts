@@ -2337,7 +2337,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	thornybody: {
 		name: "Thorny Body",
 		desc: "Pokemon making contact with this Pokemon lose 1/16 of their maximum HP, rounded down, and their evasion is lowered by 1 stage.",
-		shortDesc: "Pokemon making contact with this Pokemon lose 1/8 of their max HP, and their evasion is lowered by 1 stage.",
+		shortDesc: "Pokemon making contact with this Pokemon lose 1/16 of their max HP, and their evasion is lowered by 1 stage.",
 
 		damage: "  [POKEMON] was hurt and had their evasion lowered!",
 	},
@@ -2361,6 +2361,6 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	auraguard: {
 		name: "Aura Guard",
-		shortDesc: "This Pokemon takes 1/2 damage from contact moves",
-	}
+		shortDesc: "This Pokemon takes 1/2 damage from contact moves.",
+	},
 };

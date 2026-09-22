@@ -2259,7 +2259,9 @@ export class Pokemon {
 		if (notImmune) return true;
 		if (!message) return false;
 		if (notImmune === null) {
-			this.battle.add('-immune', this, '[from] ability: Levitate');
+			// isGrounded() returns null only for a levitating ability, which is
+			// Levitate or one that includes it (Eelevate): name the real one
+			this.battle.add('-immune', this, `[from] ability: ${this.getAbility().name}`);
 		} else {
 			this.battle.add('-immune', this);
 		}
