@@ -22986,6 +22986,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 6,
 		weightkg: 245,
 		color: "Blue",
+		tags: ["Restricted Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	rokentro: {
@@ -22998,6 +22999,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 6,
 		weightkg: 235.8,
 		color: "Red",
+		tags: ["Restricted Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	coradios: {
@@ -23010,6 +23012,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 6.1,
 		weightkg: 310,
 		color: "Purple",
+		tags: ["Restricted Legendary"],
 		eggGroups: ["Undiscovered"],
 	},
 	faeolith: {
@@ -23022,6 +23025,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 6.8,
 		weightkg: 725.8,
 		color: "Brown",
+		tags: ["Mythical"],
 		eggGroups: ["Undiscovered"],
 	},
 	pyrotic: {
@@ -23034,6 +23038,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 1.6,
 		weightkg: 68.2,
 		color: "Red",
+		tags: ["Mythical"],
 		eggGroups: ["Undiscovered"],
 	},
 };
