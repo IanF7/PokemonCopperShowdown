@@ -46,7 +46,8 @@ chown -R "$RUN_USER":"$RUN_USER" "$REPO_DIR"
 
 echo "=== Installing server dependencies and building ==="
 # The client is already built and committed, so only the server needs building.
-sudo -u "$RUN_USER" bash -c "cd '$REPO_DIR/pokemon-showdown' && npm ci --omit=dev --no-audit --no-fund && node build"
+# logs/ isn't in git, and the server crashes on startup without logs/repl.
+sudo -u "$RUN_USER" bash -c "cd '$REPO_DIR/pokemon-showdown' && mkdir -p logs/repl && npm ci --omit=dev --no-audit --no-fund && node build"
 
 echo "=== Installing systemd service ==="
 cat > /etc/systemd/system/showdown.service <<EOF

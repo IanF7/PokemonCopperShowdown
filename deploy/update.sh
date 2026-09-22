@@ -24,6 +24,7 @@ NEW_LOCK="$(git rev-parse HEAD:pokemon-showdown/package-lock.json)"
 
 echo "=== Rebuilding server ==="
 cd pokemon-showdown
+mkdir -p logs/repl # not in git; the server crashes on startup without it
 # Reinstalling compiles better-sqlite3 from source, which takes 20+ minutes on
 # an e2-micro, so only do it when the dependencies actually changed.
 if [ "$OLD_LOCK" != "$NEW_LOCK" ] || [ ! -d node_modules ]; then
