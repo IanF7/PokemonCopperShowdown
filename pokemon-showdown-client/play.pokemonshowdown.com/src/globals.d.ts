@@ -14,6 +14,8 @@ declare const BattleAliases: { [id: string]: string };
 declare const BattleStatuses: { [id: string]: AnyObject };
 declare const BattlePokemonSprites: { [id: string]: AnyObject };
 declare const BattlePokemonSpritesBW: { [id: string]: AnyObject };
+/** sprite folder -> space-separated names this server has itself (data/local-sprites.js) */
+declare const BattleLocalSprites: { [dir: string]: string };
 declare const NonBattleGames: { [id: string]: string };
 
 // Window

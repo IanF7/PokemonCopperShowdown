@@ -85,6 +85,26 @@ always-free tier. Two caveats:
 Set a budget alert (**Billing → Budgets & alerts**, e.g. $5) so nothing
 surprises you.
 
+## Sprites
+
+Pokémon sprites live in `pokemon-showdown-client/play.pokemonshowdown.com/sprites/`:
+
+- `gen5/`, `gen5-back/`, `gen5-shiny/`, `gen5-back-shiny/` — battle sprites
+- `home-centered/`, `home-centered-shiny/` — the bigger teambuilder picture
+- `gen5icons/` — the little 64x64 party icons
+- `itemicons/` — 24x24 item icons, named after the item
+
+Name each file after the Pokémon, lowercase, with formes hyphenated:
+`charizard.png`, `charizard-megax.png`, `jinlong-mega.png`, `araquanid-azorian.png`.
+
+Anything in those folders is served from this server; anything missing falls back to
+play.pokemonshowdown.com. That list is built into `data/local-sprites.js`, so **run
+`node build` in `pokemon-showdown-client` after adding or removing sprites**, or the
+new ones won't be picked up. Then commit, push and run `update.sh`.
+
+Sprites are cached by browsers for an hour, so if you replace one under the same
+name, reload with Ctrl+F5 (Cmd+Shift+R on a Mac) to see it straight away.
+
 ## Custom cries
 
 Put MP3s in `pokemon-showdown-client/play.pokemonshowdown.com/audio/cries/`,

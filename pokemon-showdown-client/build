@@ -67,6 +67,10 @@ default:
 	break;
 }
 
+// which sprites this server has of its own changes whenever files are added or
+// removed, so refresh the list on every build
+execSync(`node ./build-tools/build-sprite-manifest`, options);
+
 execSync(`node ./build-tools/update` + full, options);
 
 if (full) {

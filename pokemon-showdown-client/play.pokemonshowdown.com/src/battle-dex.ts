@@ -62,6 +62,11 @@ declare const require: any;
 declare const global: any;
 declare const process: any;
 
+/**
+ * This game's own Pokemon. Sprites no longer go through this list (which of those we
+ * serve ourselves is decided by data/local-sprites.js, so that our artwork for the
+ * official Pokemon is used too) -- it now only says whose cry lives on this server.
+ */
 const CUSTOM_POKEMON_IDS = new Set<ID>([
 	'lagavo', 'lagavien', 'latremor', 'latremormega', 'sparcyx', 'aurorun', 'aurocyx', 'aurocyxmega',
 	'platyke', 'platyspar', 'platypunch', 'platypunchmega', 'wrini', 'wrengal', 'wrengade', 'wrenquiem',
@@ -368,6 +373,27 @@ export const Dex = new class implements ModdedDex {
 		return `${location.protocol}//${location.host}/`;
 	}
 
+	localSpriteCache: { [dir: string]: Set<string> } = {};
+	/**
+	 * Whether this server has its own copy of a sprite, from the list
+	 * build-tools/build-sprite-manifest writes out of the sprites folder. This game
+	 * draws the official Pokemon too, so anything we have we serve ourselves, and
+	 * only fall back to play.pokemonshowdown.com for what we don't.
+	 */
+	hasLocalSprite(dir: string, name: string) {
+		const manifest = window.BattleLocalSprites;
+		if (!manifest) return false;
+		if (!this.localSpriteCache[dir]) {
+			this.localSpriteCache[dir] = new Set(manifest[dir] ? manifest[dir].split(' ') : []);
+		}
+		return this.localSpriteCache[dir].has(name);
+	}
+
+	/** play.pokemonshowdown.com, unless this server has the sprite itself */
+	spritePrefix(dir: string, name: string) {
+		return this.hasLocalSprite(dir, name) ? Dex.getCustomSpritePrefix() : Dex.resourcePrefix;
+	}
+
 	getShortName(name: string) {
 		let shortName = name.replace(/[^A-Za-z0-9]+$/, '');
 		if (shortName.includes('(')) {
@@ -640,13 +666,12 @@ export const Dex = new class implements ModdedDex {
 		const species = Dex.species.get(pokemon);
 		// Gmax sprites are already extremely large, so we don't need to double.
 		if (species.name.endsWith('-Gmax')) isDynamax = false;
-		const spritePrefix = isCustomPokemonSpriteId(species.id) ? Dex.getCustomSpritePrefix() : Dex.resourcePrefix;
 		let spriteData = {
 			gen: mechanicsGen,
 			w: 96,
 			h: 96,
 			y: 0,
-			url: spritePrefix + 'sprites/',
+			url: '',
 			pixelated: true,
 			isFrontSprite: false,
 			cryurl: '',
@@ -723,7 +748,7 @@ export const Dex = new class implements ModdedDex {
 		if (Dex.afdMode || options.afd) {
 			// Explicit false check above means AFD will be off if the user disables it - no matter what
 			dir = 'afd' + dir;
-			spriteData.url += dir + '/' + name + '.png';
+			spriteData.url = Dex.spritePrefix(dir, name) + 'sprites/' + dir + '/' + name + '.png';
 			// Duplicate code but needed to make AFD tinymax work
 			// April Fool's 2020
 			if (isDynamax && !options.noScale) {
@@ -762,7 +787,7 @@ export const Dex = new class implements ModdedDex {
 				dir = animDir + 'ani' + dir;
 				spriteData.w = animationData[facing].w;
 				spriteData.h = animationData[facing].h;
-				spriteData.url += dir + '/' + name + '.gif';
+				spriteData.url = Dex.spritePrefix(dir, name) + 'sprites/' + dir + '/' + name + '.gif';
 				animatedSprite = true;
 				break;
 			}
@@ -778,7 +803,7 @@ export const Dex = new class implements ModdedDex {
 				name += '-f';
 			}
 
-			spriteData.url += dir + '/' + name + '.png';
+			spriteData.url = Dex.spritePrefix(dir, name) + 'sprites/' + dir + '/' + name + '.png';
 		}
 
 		if (!options.noScale) {
@@ -864,8 +889,12 @@ export const Dex = new class implements ModdedDex {
 		let left = (num % 12) * 40;
 		let fainted = ((pokemon as Pokemon | ServerPokemon)?.fainted ?
 			`;opacity:.3;filter:grayscale(100%) brightness(.5)` : ``);
-		if (isCustomPokemonSpriteId(id)) {
-			return `background:transparent url(${Dex.getCustomSpritePrefix()}sprites/gen5icons/${id}.png) no-repeat center center / 40px 30px${fainted}`;
+		if (Dex.hasLocalSprite('gen5icons', id)) {
+			// Our own icons are square (64x64), but a slot on the official icon sheet is 40x30,
+			// so stretching one to fill the slot squashes it. `contain` scales it to 30x30
+			// instead, which leaves the artwork the same size as the official icons next to it.
+			// They're always scaled down, so let the browser smooth them rather than drop pixels.
+			return `background:transparent url(${Dex.getCustomSpritePrefix()}sprites/gen5icons/${id}.png) no-repeat center center / contain;image-rendering:auto${fainted}`;
 		}
 		return `background:transparent url(${Dex.resourcePrefix}sprites/pokemonicons-sheet.png?v22) no-repeat scroll -${left}px -${top}px${fainted}`;
 	}
@@ -951,10 +980,18 @@ export const Dex = new class implements ModdedDex {
 		const data = this.getTeambuilderSpriteData(pokemon, dex);
 		const shiny = (data.shiny ? '-shiny' : '');
 		const resize = (data.h ? `background-size:${data.h}px` : '');
-		const spritePrefix = isCustomPokemonSpriteId(data.spriteid) ?
-			Dex.getCustomSpritePrefix() : Dex.resourcePrefix;
+		let dir = data.spriteDir + shiny;
+		let spritePrefix = Dex.resourcePrefix;
+		if (Dex.hasLocalSprite(dir.slice('sprites/'.length), data.spriteid)) {
+			spritePrefix = Dex.getCustomSpritePrefix();
+		} else if (data.spriteDir === 'sprites/home-centered' && Dex.hasLocalSprite(`gen5${shiny}`, data.spriteid)) {
+			// We only have Home-style sprites for this game's own Pokemon, but our battle
+			// sprites are the same drawings, so they sit in this box the same way.
+			dir = `sprites/gen5${shiny}`;
+			spritePrefix = Dex.getCustomSpritePrefix();
+		}
 
-		return `background-image:url(${spritePrefix}${data.spriteDir}${shiny}/${data.spriteid}.png);background-position:${data.x + xOffset}px ${data.y + yOffset}px;background-repeat:no-repeat;${resize}`;
+		return `background-image:url(${spritePrefix}${dir}/${data.spriteid}.png);background-position:${data.x + xOffset}px ${data.y + yOffset}px;background-repeat:no-repeat;${resize}`;
 	}
 
 	getItemIcon(item: any) {
