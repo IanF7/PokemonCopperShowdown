@@ -962,6 +962,13 @@ var num=0;
 if(typeof item==='string'&&window.BattleItems)item=window.BattleItems[toID(item)];
 if((_item=item)!=null&&_item.spritenum)num=item.spritenum;
 
+if(num<0){
+
+
+var url=Dex.getCustomSpritePrefix()+"sprites/itemicons/"+toID(item.name)+".png";
+return"background:transparent url("+url+") no-repeat scroll 0px 0px;background-size:24px 24px";
+}
+
 var top=Math.floor(num/16)*24;
 var left=num%16*24;
 return"background:transparent url("+Dex.resourcePrefix+"sprites/itemicons-sheet.png?v1) no-repeat scroll -"+left+"px -"+top+"px";

@@ -2305,6 +2305,13 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 
 		activate: "  [POKEMON] extends [MOVE] by 2 turns!",
 	},
+	fullcharge: {
+		name: "Full Charge",
+		shortDesc: "If this Pokemon is at full HP, its Electric-type moves have their priority increased by 1.",
+		gen6: {
+			shortDesc: "This Pokemon's Electric-type moves have their priority increased by 1.",
+		},
+	},
 	steelwool: {
 		name: "Steel Wool",
 		shortDesc: "Pokemon making contact with this Pokemon have their Speed lowered by 1 stage.",

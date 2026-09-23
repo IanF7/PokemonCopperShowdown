@@ -1360,6 +1360,63 @@ process.stdout.write("Building `data/teambuilder-tables.js`... ");
 		}
 	}
 
+	// Which Pokemon each Pokemon Copper format actually allows, so the teambuilder
+	// can hide the rest instead of letting people build an illegal team
+	// (the client can't work this out itself: these formats use custom rules).
+	{
+		const { TeamValidator } = require(path.join(serverDir, 'dist/sim/team-validator'));
+		const formatSpecies = {};
+		// some Pokemon are only allowed while holding a Mega Stone
+		const megaStoneFor = {};
+		for (const item of Dex.items.all()) {
+			if (!item.megaStone) continue;
+			if (typeof item.megaStone === 'string') {
+				megaStoneFor[toID(item.megaEvolves)] = item.name;
+			} else {
+				for (const base in item.megaStone) megaStoneFor[toID(base)] = item.name;
+			}
+		}
+		for (const format of Dex.formats.all()) {
+			if (format.effectType !== 'Format' || !format.section?.includes('Copper')) continue;
+			const validator = new TeamValidator(format.id);
+			const formatDex = Dex.forFormat(format);
+			const allowed = {};
+			for (const species of formatDex.species.all()) {
+				if (!species.exists || species.isNonstandard === 'CAP') continue;
+				// a minimal, otherwise-valid set: if it still fails, the species itself isn't allowed
+				let move = 'Tackle';
+				try {
+					const learnset = formatDex.species.getFullLearnset(species.id);
+					const moves = Object.keys(learnset[0]?.learnset || {});
+					if (moves.length) move = formatDex.moves.get(moves[0]).name;
+				} catch {}
+				const set = {
+					name: species.baseSpecies, species: species.name, item: species.requiredItem || '',
+					ability: species.abilities['0'], moves: [move], nature: 'Hardy',
+					evs: { hp: 4 }, ivs: { hp: 31, atk: 31, def: 31, spa: 31, spd: 31, spe: 31 },
+					level: 100, gender: species.gender || '',
+				};
+				const validate = () => {
+					try {
+						return validator.validateSet({ ...set }, {});
+					} catch {
+						return ['crashed'];
+					}
+				};
+				// keep anything whose only complaints are about the move we guessed
+				let problems = validate();
+				if (problems?.some(p => !p.includes(move)) && megaStoneFor[species.id]) {
+					// retry as a Mega: some formats allow a Pokemon only in that form
+					set.item = megaStoneFor[species.id];
+					problems = validate();
+				}
+				if (!problems || !problems.some(p => !p.includes(move))) allowed[species.id] = 1;
+			}
+			formatSpecies[format.id] = allowed;
+		}
+		BattleTeambuilderTable.formatSpecies = formatSpecies;
+	}
+
 	buf += `exports.BattleTeambuilderTable = JSON.parse('${JSON.stringify(BattleTeambuilderTable).replace(/['\\]/g, "\\$&")}');\n\n`;
 
 	fs.writeFileSync('play.pokemonshowdown.com/data/teambuilder-tables.js', buf);

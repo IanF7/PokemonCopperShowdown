@@ -492,7 +492,18 @@ export const Rulesets: import('../sim/dex-formats').FormatDataTable = {
 			const azoriExclusives = [
 				'Lagavo', 'Lagavien', 'Latremor', 'Sparcyx', 'Aurorun', 'Aurocyx', 'Platyke', 'Platyspar', 'Platypunch', 'Wrini', 'Wrengal', 'Wrengade', 'Wrenquiem', 'Burrot', 'Burthrow', 'Larfluff', 'Cocoonix', 'Luminoth', 'Bikkunise', 'Snuffluff', 'Kamakid', 'Kamasei', 'Stellopod', 'Cephastar', 'Celumina', 'Whimsijack', 'Tanukiroot', 'Branuki', 'Treenuki', 'Rolil', 'Rolidozer', 'Volten', 'Panthere', 'Phantohm', 'Parapossum', 'Charcupine', 'Scorcupine', 'Rattleghast', 'Spectrattle', 'Jabberoo', 'Clobberoo', 'Rootality', 'Marling', 'Martana', 'Parkel', 'Parktic', 'Cluddle', 'Adolem', 'Adobalith', 'Stalcria', 'Stalpaca', 'Embush', 'Horeburn', 'Eimole', 'Treimor', 'Cheimgar', 'Alacruico', 'Diablare', 'Diablaze', 'Cypup', 'Cyprowl', 'Apozip', 'Apozoom', 'Salaphyt', 'Phyloch', 'Torreloch', 'Dustcoon', 'Toxcoon', 'Stegodite', 'Stegeodon', 'Obsidodile', 'Obsidoruth', 'Brawnsoon', 'Polterick', 'Deceptjinn', 'Bullectric', 'Capacitaur', 'Magnetaur', 'Fridglet', 'Frigidae', 'Chupacarno', 'Spritanium', 'Titanimaam', 'Chember', 'Flaenix', 'Infernoix', 'Toxila', 'Gilagon', 'Oracub', 'Roaracle', 'Outlage', 'Sileam', 'Naiadance', 'Naiphoria', 'Puradox', 'Jarmbat', 'Dvarmbat', 'Dvarmith', 'Lediboss', 'Linturna', 'Volstrika', 'Fueghorn', 'Cuburn', 'Taiburn', 'Saburn', 'Qinlong', 'Yinlong', 'Jinlong', 'Azordin', 'Rokentro', 'Coradios', 'Faeolith', 'Pyrotic', 'Spearow', 'Fearow', 'Dragonite', 'Hoppip', 'Skiploom', 'Jumpluff', 'Blissey', 'Bouffalant', 'Dewpider', 'Araquanid'
 			];
+			// older Pokemon allowed in this format, but only as their Mega form
+			const megasAllowed = [
+				'Poliwrath', 'Crobat', 'Torkoal', 'Flygon', 'Roserade', 'Krookodile', 'Crustle', 'Hydreigon',
+				'Aegislash', 'Heliolisk',
+			];
 			const species = this.dex.species.get(set.species || set.name);
+			if (megasAllowed.includes(species.baseSpecies)) {
+				const item = this.dex.items.get(set.item);
+				const megaStone = typeof item.megaStone === 'string' ? item.megaStone : item.megaStone?.[species.baseSpecies];
+				if (megaStone) return;
+				return [`${species.baseSpecies} is only allowed in this format holding its Mega Stone.`];
+			}
 			if (!azoriExclusives.includes(species.baseSpecies) && !azoriExclusives.includes(species.name) &&
 				!this.ruleTable.has('+' + species.id)) {
 				return [`${species.baseSpecies} is not new to Pokémon Copper.`];

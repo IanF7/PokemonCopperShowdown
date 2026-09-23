@@ -5656,6 +5656,15 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3,
 		num: -3,
 	},
+	fullcharge: {
+		onModifyPriority(priority, pokemon, target, move) {
+			if (move?.type === 'Electric' && pokemon.hp === pokemon.maxhp) return priority + 1;
+		},
+		flags: {},
+		name: "Full Charge",
+		rating: 1.5,
+		num: -99,
+	},
 	steelwool: {
 		onDamagingHit(damage, target, source, move) {
 			if (this.checkMoveMakesContact(move, source, target, true)) {
@@ -5668,23 +5677,27 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 2,
 		num: -100,
 	},
-    stateshift: {
-        onStart(pokemon) {
-            if (pokemon.baseSpecies.baseSpecies !== 'Puradox' || pokemon.transformed) return;
+	stateshift: {
+		onStart(pokemon) {
+			if (pokemon.baseSpecies.baseSpecies !== 'Puradox' || pokemon.transformed) return;
+			// only roll once per switch-in: a form change re-applies the ability,
+			// which would call this again (and flip repeatedly)
+			if (this.effectState.rolled) return;
+			this.effectState.rolled = true;
 
-            if (this.randomChance(1, 2)) {
-                const targetForme = pokemon.species.name === 'Puradox' ?
-                    'Puradox-Dead-State' : 'Puradox';
+			if (this.randomChance(1, 2)) {
+				const targetForme = pokemon.species.name === 'Puradox' ?
+					'Puradox-Dead-State' : 'Puradox';
 
-                pokemon.formeChange(targetForme, this.effect, true);
-                this.add('-activate', pokemon, 'ability: State Shift');
-            }
-        },
+				// the form change message already names the ability
+				pokemon.formeChange(targetForme, this.effect, false);
+			}
+		},
 		flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1 },
-        name: "State Shift",
-        rating: 1,
-        num: -101,
-    },
+		name: "State Shift",
+		rating: 1,
+		num: -101,
+	},
 	eternalflame: {
 		onWeather(target, source, effect) {
 			if (target.effectiveWeather() !== effect.id) return;

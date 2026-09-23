@@ -569,6 +569,8 @@ abstract class BattleTypedSearch<T extends SearchType> {
 	 * "Doubles" and "Let's Go" from the name.
 	 */
 	format = '' as ID;
+	/** the format id exactly as given, before the gen number and other words are stripped out */
+	fullFormat = '' as ID;
 	/**
 	 * `species` is the second of two base filters. It constrains results to
 	 * things that species can use, and affects the default sort.
@@ -602,6 +604,7 @@ abstract class BattleTypedSearch<T extends SearchType> {
 
 	constructor(searchType: T, format = '' as ID, speciesOrSet: ID | Dex.PokemonSet = '' as ID) {
 		this.searchType = searchType;
+		this.fullFormat = format;
 
 		this.baseResults = null;
 		this.baseIllegalResults = null;
@@ -1240,6 +1243,20 @@ class BattlePokemonSearch extends BattleTypedSearch<'pokemon'> {
 				if (type === 'header' && id === 'AG by technicality') return false;
 				if (type === 'pokemon') return !id.endsWith('gmax');
 				return true;
+			});
+		}
+
+		// Pokemon Copper formats have custom rules the client can't work out, so
+		// build-indexes precomputes what each one allows (see BattleTeambuilderTable.formatSpecies).
+		// Without this, illegal Pokemon show up here and are only rejected at battle time.
+		const allowedSpecies = BattleTeambuilderTable.formatSpecies?.[this.fullFormat];
+		if (allowedSpecies) {
+			tierSet = tierSet.filter(([type, id]) => type !== 'pokemon' || id in allowedSpecies);
+			// drop headers that no longer have anything under them
+			tierSet = tierSet.filter(([type, id], i) => {
+				if (type !== 'header') return true;
+				const next = tierSet[i + 1];
+				return !!next && next[0] !== 'header';
 			});
 		}
 

@@ -916,8 +916,11 @@
 			buf += '<p><label class="label">Team:</label>' + this.renderTeams(format) + '</p>';
 			buf += '<p><label class="checkbox"><input type="checkbox" name="private" ' + (Storage.prefs('disallowspectators') ? 'checked' : '') + ' /> <abbr title="You can still invite spectators by giving them the URL or using the /invite command">Don\'t allow spectators</abbr></label></p>';
 			var bestOfDefault = format && BattleFormats[format] ? BattleFormats[format].bestOfDefault : false;
-			buf += '<p' + (!bestOfDefault ? ' class="hidden">' : '>');
-			buf += '<label class="checkbox"><input type="checkbox" name="bestof" /> <abbr title="Start a team-locked best-of-n series">Best-of-<input name="bestofvalue" type="number" min="3" max="9" step="2" value="3" style="width: 28px; vertical-align: initial;"></abbr></label></p>';
+			buf += '<p name="bestofrow"' + (!bestOfDefault ? ' class="hidden">' : '>');
+			buf += '<label class="label"><abbr title="A best-of-n series is team-locked: the same team is used for every game">Best of:</abbr> ';
+			buf += '<select name="bestofvalue" class="button"><option value="1" selected>1 (single battle)</option>';
+			buf += '<option value="3">3</option><option value="5">5</option><option value="7">7</option><option value="9">9</option>';
+			buf += '</select></label></p>';
 			var teraPreviewDefault = format && BattleFormats[format] ? BattleFormats[format].teraPreviewDefault : false;
 			buf += '<p' + (!teraPreviewDefault ? ' class="hidden">' : '>');
 			buf += '<label class="checkbox"><input type="checkbox" name="terapreview" /> <abbr title="Start a battle with Tera Type Preview">Tera Type Preview</abbr></label></p>';
@@ -968,9 +971,9 @@
 			var teamIndex = $pmWindow.find('button[name=team]').val();
 			var privacy = this.adjustPrivacy($pmWindow.find('input[name=private]').is(':checked'));
 
-			var bestOf = $pmWindow.find('input[name=bestof]').is(':checked');
-			var bestOfValue = $pmWindow.find('input[name=bestofvalue]').val();
-			if (bestOf && bestOfValue) {
+			// "1" means a normal single battle, which is just no Best Of rule
+			var bestOfValue = $pmWindow.find('[name=bestofvalue]').val();
+			if (bestOfValue && bestOfValue !== '1') {
 				var hasCustomRules = format.includes('@@@');
 				format += hasCustomRules ? ', ' : '@@@';
 				format += 'Best of = ' + bestOfValue;
@@ -1424,17 +1427,16 @@
 				var $teamButton = $form.find('button[name=team]');
 				if ($teamButton.length) $teamButton.replaceWith(app.rooms[''].renderTeams(format));
 
-				var $bestOfCheckbox = $form.find('input[name=bestof]');
-				var $bestOfValueInput = $form.find('input[name=bestofvalue]');
-				if ($bestOfCheckbox.length && $bestOfValueInput.length) {
-					var $parentTag = $bestOfCheckbox.parent().parent();
+				var $bestOfValueInput = $form.find('[name=bestofvalue]');
+				if ($bestOfValueInput.length) {
+					var $parentTag = $form.find('[name=bestofrow]');
 					var bestOfDefault = BattleFormats[format] && BattleFormats[format].bestOfDefault;
+					// always back to a single battle when the format changes
+					$bestOfValueInput.val(1);
 					if (bestOfDefault) {
 						$parentTag.removeClass('hidden');
-						$bestOfValueInput.val(3);
 					} else {
 						$parentTag.addClass('hidden');
-						$bestOfCheckbox.prop('checked', false);
 					}
 				}
 

@@ -962,6 +962,13 @@ export const Dex = new class implements ModdedDex {
 		if (typeof item === 'string' && window.BattleItems) item = window.BattleItems[toID(item)];
 		if (item?.spritenum) num = item.spritenum;
 
+		if (num < 0) {
+			// Custom items (negative spritenum) aren't on the official icon sheet:
+			// they use their own 24x24 png in sprites/itemicons/ on this server.
+			const url = `${Dex.getCustomSpritePrefix()}sprites/itemicons/${toID(item.name)}.png`;
+			return `background:transparent url(${url}) no-repeat scroll 0px 0px;background-size:24px 24px`;
+		}
+
 		let top = Math.floor(num / 16) * 24;
 		let left = (num % 16) * 24;
 		return `background:transparent url(${Dex.resourcePrefix}sprites/itemicons-sheet.png?v1) no-repeat scroll -${left}px -${top}px`;
