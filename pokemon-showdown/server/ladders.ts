@@ -14,6 +14,11 @@ const LadderStore: typeof import('./ladders-remote').LadderStore = (
 
 const SECONDS = 1000;
 const PERIODIC_MATCH_INTERVAL = 60 * SECONDS;
+/**
+ * At or below this many people online, two players are allowed to be matched against
+ * each other again straight away. See `matchmakingOK`.
+ */
+const REMATCH_ALWAYS_OK_ONLINE = 5;
 
 import type { ChallengeType } from './room-battle';
 import { BattleReady, BattleChallenge, GameChallenge, BattleInvite, challenges } from './ladders-challenges';
@@ -362,9 +367,13 @@ class Ladder extends LadderStore {
 		// users must have different IPs
 		if (new Set(users.map(user => user.latestIp)).size !== users.length) return false;
 
-		// users must not have been matched immediately previously
-		for (const user of users) {
-			if (userids.includes(user.lastMatch)) return false;
+		// Users must not have been matched immediately previously -- but on a quiet server
+		// there may be nobody else to match, and `lastMatch` is only ever overwritten by
+		// matching somebody else, so the last two people searching would wait forever.
+		if (Users.onlineCount > REMATCH_ALWAYS_OK_ONLINE) {
+			for (const user of users) {
+				if (userids.includes(user.lastMatch)) return false;
+			}
 		}
 
 		// search must be within range
