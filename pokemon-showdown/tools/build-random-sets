@@ -15,6 +15,11 @@
  * already exist are left alone, and generated ones are marked so they can be
  * rebuilt later ("generated": true).
  *
+ * Mega Evolutions get a set of their own, built around the Mega's stats and
+ * typing but keeping the base forme's ability, the way Showdown does it in
+ * Gen 6 and 7. The team holds the base Pokemon and its stone, so it Mega
+ * Evolves in battle rather than starting out Mega.
+ *
  * Re-run it after adding new Pokemon or changing learnsets, then rebuild.
  */
 'use strict';
@@ -67,6 +72,28 @@ const BAD_ABILITIES = new Set([
 	'hungerswitch', 'powerconstruct', 'battlebond', 'disguise', 'rkssystem', 'multitype', 'forecast',
 	'stancechange', 'shieldsdown', 'zerotohero', 'commander', 'flowergift', 'imposter', 'ripen',
 ]);
+
+/**
+ * The forme a Mega is sent out as, or null if holding the stone wouldn't actually
+ * produce this Mega. Mirrors BattleActions#canMegaEvo, so a Mega is only ever
+ * generated if the battle engine really turns that Pokemon into it: Mega Rayquaza
+ * needs a move rather than a stone, Mega Zygarde comes from a forme that can't be
+ * sent out, and Meowstic-F holding its stone turns into the male Mega, not the female one.
+ */
+const megaBaseOf = species => {
+	if (!species.isMega || !species.requiredItem) return null;
+	if (typeof species.battleOnly !== 'string') return null;
+	const base = Dex.species.get(species.battleOnly);
+	const stone = Dex.items.get(species.requiredItem);
+	if (!base.exists || !stone.megaStone) return null;
+	let target = stone.megaStone[base.name];
+	if (!target || Dex.species.get(target).gen < 9) {
+		target = stone.megaStone[base.baseSpecies];
+		if (target === base.name) target = null;
+	}
+	return Dex.species.get(target || '').id === species.id ? base : null;
+};
+const isMega = species => !!megaBaseOf(species);
 
 const bst = species => Object.values(species.baseStats).reduce((a, b) => a + b, 0);
 /** Showdown scales levels down as Pokemon get stronger; this matches its own curve closely */
@@ -167,10 +194,12 @@ function abilitiesFor(species) {
 function generate(species, isDoubles) {
 	const info = buildMovepool(species, isDoubles);
 	if (info.movepool.length < 2) return null; // nothing worth giving it
+	// A Mega starts the battle in its base forme, so it carries the base forme's ability
+	const abilitySource = megaBaseOf(species) || species;
 	return {
 		role: roleFor(species, info, isDoubles),
 		movepool: info.movepool.sort(),
-		abilities: abilitiesFor(species),
+		abilities: abilitiesFor(abilitySource),
 		teraTypes: [...new Set(species.types)],
 	};
 }
@@ -186,11 +215,17 @@ function build(file, isDoubles) {
 	// Totem and costume formes are near-duplicates of the ordinary Pokemon, so
 	// leaving them in would just mean seeing the same Pokemon twice as often
 	const DUPLICATE_FORMES = /-(Totem|Cosplay|Belle|Libre|PhD|Pop-Star|Rock-Star|Spiky-eared|Starter)/i;
-	const eligible = species => (
-		species.exists && !species.isNonstandard && !species.isMega && !species.battleOnly &&
-		species.forme !== 'Gmax' && !species.evos?.length && !DUPLICATE_FORMES.test(species.name) &&
-		!!Dex.species.getMovePool(species.id).size
-	);
+	const eligible = species => {
+		if (!species.exists || species.isNonstandard) return false;
+		if (species.forme === 'Gmax' || DUPLICATE_FORMES.test(species.name)) return false;
+		if (!Dex.species.getMovePool(species.id).size) return false;
+		// Megas get a set of their own, built around the Mega's stats and typing, the
+		// way Showdown does it in Gen 6 and 7. The team still holds the base Pokemon;
+		// the stone comes along with it, so it Mega Evolves in battle.
+		if (isMega(species)) return eligible(megaBaseOf(species));
+		if (species.isMega || species.battleOnly) return false;
+		return !species.evos?.length;
+	};
 
 	// drop generated sets for anything that no longer qualifies
 	for (const id of Object.keys(data)) {

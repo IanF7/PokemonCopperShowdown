@@ -1762,9 +1762,16 @@ export class RandomTeams {
 		const [pokemonPool, baseSpeciesPool] = this.getPokemonPool(type, pokemon, isMonotype, pokemonList);
 
 		let leadsRemaining = this.format.gameType === 'doubles' ? 2 : 1;
+		let hasMega = false;
 		while (baseSpeciesPool.length && pokemon.length < this.maxTeamSize) {
 			const baseSpecies = this.sampleNoReplace(baseSpeciesPool);
-			let species = this.dex.species.get(this.sample(pokemonPool[baseSpecies]));
+			// Only one Mega Evolution per side is allowed in a battle, so only one per team.
+			// Until the team has one, a Pokemon that can Mega Evolve always does.
+			const formes = pokemonPool[baseSpecies].filter(id => !hasMega || !this.dex.species.get(id).isMega);
+			const megaFormes = hasMega ? [] : formes.filter(id => this.dex.species.get(id).isMega);
+			const formePool = megaFormes.length ? megaFormes : formes;
+			if (!formePool.length) continue;
+			let species = this.dex.species.get(this.sample(formePool));
 			if (!species.exists) continue;
 
 			// Limit to one of each species (Species Clause)
@@ -1872,6 +1879,7 @@ export class RandomTeams {
 
 			// Now that our Pokemon has passed all checks, we can increment our counters
 			baseFormes[species.baseSpecies] = 1;
+			if (species.isMega) hasMega = true;
 
 			// Increment type counters
 			for (const typeName of types) {

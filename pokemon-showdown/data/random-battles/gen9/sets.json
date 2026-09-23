@@ -162,6 +162,34 @@
 		],
 		"generated": true
 	},
+	"jinlongmega": {
+		"level": 72,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Agility",
+					"Draco Meteor",
+					"Earth Power",
+					"Fire Blast",
+					"Ice Beam",
+					"Meteor Beam",
+					"Roar",
+					"Roost",
+					"Stealth Rock"
+				],
+				"abilities": [
+					"Golden Body",
+					"Levitate"
+				],
+				"teraTypes": [
+					"Dragon",
+					"Rock"
+				]
+			}
+		],
+		"generated": true
+	},
 	"saburn": {
 		"level": 83,
 		"sets": [
@@ -335,6 +363,35 @@
 		],
 		"generated": true
 	},
+	"dvarmithmega": {
+		"level": 77,
+		"sets": [
+			{
+				"role": "Wallbreaker",
+				"movepool": [
+					"Double-Edge",
+					"Earthquake",
+					"Head Smash",
+					"Meteor Mash",
+					"Rest",
+					"Stealth Rock",
+					"Superpower",
+					"Swords Dance",
+					"Yawn"
+				],
+				"abilities": [
+					"Steelworker",
+					"Battle Armor",
+					"Thick Fat"
+				],
+				"teraTypes": [
+					"Steel",
+					"Ground"
+				]
+			}
+		],
+		"generated": true
+	},
 	"puradox": {
 		"level": 87,
 		"sets": [
@@ -447,6 +504,35 @@
 		],
 		"generated": true
 	},
+	"roaraclemega": {
+		"level": 77,
+		"sets": [
+			{
+				"role": "Wallbreaker",
+				"movepool": [
+					"Calm Mind",
+					"Dark Pulse",
+					"Earth Power",
+					"Focus Blast",
+					"Future Sight",
+					"Hyper Voice",
+					"Knock Off",
+					"Recover",
+					"Substitute"
+				],
+				"abilities": [
+					"Magic Guard",
+					"Forewarn",
+					"Telepathy"
+				],
+				"teraTypes": [
+					"Normal",
+					"Psychic"
+				]
+			}
+		],
+		"generated": true
+	},
 	"gilagon": {
 		"level": 86,
 		"sets": [
@@ -503,11 +589,68 @@
 		],
 		"generated": true
 	},
+	"infernoixmega": {
+		"level": 76,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Air Slash",
+					"Calm Mind",
+					"Dazzling Gleam",
+					"Defog",
+					"Future Sight",
+					"Overheat",
+					"Roost",
+					"Shadow Ball",
+					"Will-O-Wisp"
+				],
+				"abilities": [
+					"Eternal Flame",
+					"Flame Body"
+				],
+				"teraTypes": [
+					"Fire",
+					"Psychic"
+				]
+			}
+		],
+		"generated": true
+	},
 	"titanimaam": {
 		"level": 86,
 		"sets": [
 			{
 				"role": "Bulky Attacker",
+				"movepool": [
+					"Calm Mind",
+					"Earth Power",
+					"Encore",
+					"Energy Ball",
+					"Flash Cannon",
+					"Knock Off",
+					"Meteor Beam",
+					"Moonblast",
+					"Rest"
+				],
+				"abilities": [
+					"Magic Guard",
+					"Clear Body",
+					"Adaptability"
+				],
+				"teraTypes": [
+					"Fairy",
+					"Steel"
+				]
+			}
+		],
+		"generated": true
+	},
+	"titanimaammega": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
 				"movepool": [
 					"Calm Mind",
 					"Earth Power",
@@ -590,8 +733,65 @@
 		],
 		"generated": true
 	},
+	"frigidaemega": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Hyper Voice",
+					"Ice Beam",
+					"Moonblast",
+					"Nasty Plot",
+					"Psychic",
+					"Roost",
+					"Shadow Ball",
+					"Substitute",
+					"U-turn"
+				],
+				"abilities": [
+					"Keen Eye",
+					"Snow Cloak",
+					"Inner Focus"
+				],
+				"teraTypes": [
+					"Ice",
+					"Ghost"
+				]
+			}
+		],
+		"generated": true
+	},
 	"magnetaur": {
 		"level": 84,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Bulk Up",
+					"Close Combat",
+					"Double-Edge",
+					"Megahorn",
+					"Outrage",
+					"Rest",
+					"Supercell Slam",
+					"Thunder Wave",
+					"Volt Switch"
+				],
+				"abilities": [
+					"Magnet Pull",
+					"Lightning Rod"
+				],
+				"teraTypes": [
+					"Electric",
+					"Fighting"
+				]
+			}
+		],
+		"generated": true
+	},
+	"magnetaurmega": {
+		"level": 77,
 		"sets": [
 			{
 				"role": "Setup Sweeper",
@@ -1201,6 +1401,35 @@
 		],
 		"generated": true
 	},
+	"phantohmmega": {
+		"level": 78,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Foul Play",
+					"Hone Claws",
+					"Knock Off",
+					"Lunge",
+					"Play Rough",
+					"Rest",
+					"Supercell Slam",
+					"Take Down",
+					"Volt Switch"
+				],
+				"abilities": [
+					"Full Charge",
+					"Tough Claws",
+					"Volt Absorb"
+				],
+				"teraTypes": [
+					"Electric",
+					"Dark"
+				]
+			}
+		],
+		"generated": true
+	},
 	"rolidozer": {
 		"level": 85,
 		"sets": [
@@ -1347,6 +1576,32 @@
 		"sets": [
 			{
 				"role": "Bulky Support",
+				"movepool": [
+					"Body Press",
+					"Double-Edge",
+					"Earthquake",
+					"Fae Strike",
+					"Iron Defense",
+					"Knock Off",
+					"Rest",
+					"Supercell Slam",
+					"Toxic"
+				],
+				"abilities": [
+					"Friend Guard"
+				],
+				"teraTypes": [
+					"Normal"
+				]
+			}
+		],
+		"generated": true
+	},
+	"snuffluffmega": {
+		"level": 80,
+		"sets": [
+			{
+				"role": "Bulky Attacker",
 				"movepool": [
 					"Body Press",
 					"Double-Edge",
@@ -1537,8 +1792,64 @@
 		],
 		"generated": true
 	},
+	"platypunchmega": {
+		"level": 76,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Bulk Up",
+					"Close Combat",
+					"Double-Edge",
+					"Gunk Shot",
+					"Hydro Smash",
+					"Ice Punch",
+					"Rest",
+					"Substitute",
+					"Toxic"
+				],
+				"abilities": [
+					"Torrent",
+					"Swift Swim"
+				],
+				"teraTypes": [
+					"Water",
+					"Poison"
+				]
+			}
+		],
+		"generated": true
+	},
 	"aurocyx": {
 		"level": 83,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Agility",
+					"Air Slash",
+					"Dazzling Gleam",
+					"Overheat",
+					"Power Gem",
+					"Psyshock",
+					"Roost",
+					"Taunt",
+					"Will-O-Wisp"
+				],
+				"abilities": [
+					"Blaze",
+					"Flash Fire"
+				],
+				"teraTypes": [
+					"Fire",
+					"Fairy"
+				]
+			}
+		],
+		"generated": true
+	},
+	"aurocyxmega": {
+		"level": 76,
 		"sets": [
 			{
 				"role": "Setup Sweeper",
@@ -1593,6 +1904,63 @@
 		],
 		"generated": true
 	},
+	"latremormega": {
+		"level": 76,
+		"sets": [
+			{
+				"role": "Wallbreaker",
+				"movepool": [
+					"Crunch",
+					"Earthquake",
+					"Iron Head",
+					"Power Whip",
+					"Sacred Sword",
+					"Spikes",
+					"Substitute",
+					"Swords Dance",
+					"Synthesis"
+				],
+				"abilities": [
+					"Overgrow",
+					"Chlorophyll"
+				],
+				"teraTypes": [
+					"Grass",
+					"Steel"
+				]
+			}
+		],
+		"generated": true
+	},
+	"helioliskmega": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Agility",
+					"Dragon Pulse",
+					"Focus Blast",
+					"Hyper Voice",
+					"Power Surge",
+					"Rest",
+					"Surf",
+					"Thunder Wave",
+					"U-turn"
+				],
+				"abilities": [
+					"Dry Skin",
+					"Sand Veil",
+					"Solar Power"
+				],
+				"teraTypes": [
+					"Electric",
+					"Dragon"
+				]
+			}
+		],
+		"generated": true
+	},
 	"venusaur": {
 		"level": 84,
 		"sets": [
@@ -1637,6 +2005,32 @@
 			}
 		]
 	},
+	"venusaurmega": {
+		"level": 77,
+		"sets": [
+			{
+				"role": "Wallbreaker",
+				"movepool": [
+					"Earth Power",
+					"Growth",
+					"Knock Off",
+					"Petal Dance",
+					"Sludge Bomb",
+					"Synthesis",
+					"Toxic"
+				],
+				"abilities": [
+					"Overgrow",
+					"Chlorophyll"
+				],
+				"teraTypes": [
+					"Grass",
+					"Poison"
+				]
+			}
+		],
+		"generated": true
+	},
 	"charizard": {
 		"level": 85,
 		"sets": [
@@ -1677,6 +2071,61 @@
 			}
 		]
 	},
+	"charizardmegax": {
+		"level": 76,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Double-Edge",
+					"Earthquake",
+					"Flare Blitz",
+					"Focus Blast",
+					"Outrage",
+					"Rest",
+					"Substitute",
+					"Swords Dance",
+					"Will-O-Wisp"
+				],
+				"abilities": [
+					"Blaze",
+					"Solar Power"
+				],
+				"teraTypes": [
+					"Fire",
+					"Dragon"
+				]
+			}
+		],
+		"generated": true
+	},
+	"charizardmegay": {
+		"level": 76,
+		"sets": [
+			{
+				"role": "Fast Attacker",
+				"movepool": [
+					"Dragon Pulse",
+					"Focus Blast",
+					"Hurricane",
+					"Overheat",
+					"Rest",
+					"Scorching Sands",
+					"Substitute",
+					"Will-O-Wisp"
+				],
+				"abilities": [
+					"Blaze",
+					"Solar Power"
+				],
+				"teraTypes": [
+					"Fire",
+					"Flying"
+				]
+			}
+		],
+		"generated": true
+	},
 	"blastoise": {
 		"level": 80,
 		"sets": [
@@ -1714,6 +2163,33 @@
 				]
 			}
 		]
+	},
+	"blastoisemega": {
+		"level": 76,
+		"sets": [
+			{
+				"role": "Wallbreaker",
+				"movepool": [
+					"Dark Pulse",
+					"Dragon Pulse",
+					"Flip Turn",
+					"Focus Blast",
+					"Ice Beam",
+					"Rest",
+					"Shell Smash",
+					"Substitute",
+					"Water Spout"
+				],
+				"abilities": [
+					"Torrent",
+					"Rain Dish"
+				],
+				"teraTypes": [
+					"Water"
+				]
+			}
+		],
+		"generated": true
 	},
 	"butterfree": {
 		"level": 91,
@@ -1771,6 +2247,34 @@
 		],
 		"generated": true
 	},
+	"beedrillmega": {
+		"level": 85,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Double-Edge",
+					"Drill Run",
+					"Knock Off",
+					"Poison Jab",
+					"Roost",
+					"Swords Dance",
+					"Throat Chop",
+					"U-turn",
+					"X-Scissor"
+				],
+				"abilities": [
+					"Swarm",
+					"Sniper"
+				],
+				"teraTypes": [
+					"Bug",
+					"Poison"
+				]
+			}
+		],
+		"generated": true
+	},
 	"pidgeot": {
 		"level": 86,
 		"sets": [
@@ -1785,6 +2289,35 @@
 					"Steel Wing",
 					"Substitute",
 					"U-turn",
+					"Work Up"
+				],
+				"abilities": [
+					"Keen Eye",
+					"Tangled Feet",
+					"Big Pecks"
+				],
+				"teraTypes": [
+					"Normal",
+					"Flying"
+				]
+			}
+		],
+		"generated": true
+	},
+	"pidgeotmega": {
+		"level": 80,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Defog",
+					"Heat Wave",
+					"Hurricane",
+					"Ominous Wind",
+					"Roost",
+					"Substitute",
+					"U-turn",
+					"Uproar",
 					"Work Up"
 				],
 				"abilities": [
@@ -2297,6 +2830,60 @@
 			}
 		]
 	},
+	"raichumegax": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Agility",
+					"Body Slam",
+					"Brick Break",
+					"Iron Tail",
+					"Knock Off",
+					"Play Rough",
+					"Rest",
+					"Volt Switch",
+					"Volt Tackle"
+				],
+				"abilities": [
+					"Static",
+					"Lightning Rod"
+				],
+				"teraTypes": [
+					"Electric"
+				]
+			}
+		],
+		"generated": true
+	},
+	"raichumegay": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Alluring Voice",
+					"Focus Blast",
+					"Knock Off",
+					"Nasty Plot",
+					"Power Surge",
+					"Rest",
+					"Surf",
+					"Swift",
+					"Volt Switch"
+				],
+				"abilities": [
+					"Static",
+					"Lightning Rod"
+				],
+				"teraTypes": [
+					"Electric"
+				]
+			}
+		],
+		"generated": true
+	},
 	"sandslash": {
 		"level": 89,
 		"sets": [
@@ -2459,6 +3046,35 @@
 				]
 			}
 		]
+	},
+	"clefablemega": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Wallbreaker",
+				"movepool": [
+					"Calm Mind",
+					"Fire Blast",
+					"Future Sight",
+					"Hyper Voice",
+					"Knock Off",
+					"Meteor Beam",
+					"Moonblast",
+					"Moonlight",
+					"Thunder Wave"
+				],
+				"abilities": [
+					"Cute Charm",
+					"Magic Guard",
+					"Unaware"
+				],
+				"teraTypes": [
+					"Fairy",
+					"Flying"
+				]
+			}
+		],
+		"generated": true
 	},
 	"ninetales": {
 		"level": 85,
@@ -2934,8 +3550,65 @@
 			}
 		]
 	},
+	"poliwrathmega": {
+		"level": 78,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Bulk Up",
+					"Close Combat",
+					"Double-Edge",
+					"Earthquake",
+					"Knock Off",
+					"Liquidation",
+					"Poison Jab",
+					"Rest",
+					"Taunt"
+				],
+				"abilities": [
+					"Water Absorb",
+					"Damp",
+					"Swift Swim"
+				],
+				"teraTypes": [
+					"Water",
+					"Fighting"
+				]
+			}
+		],
+		"generated": true
+	},
 	"alakazam": {
 		"level": 85,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Dazzling Gleam",
+					"Energy Ball",
+					"Focus Blast",
+					"Future Sight",
+					"Knock Off",
+					"Nasty Plot",
+					"Recover",
+					"Shadow Ball",
+					"Thunder Wave"
+				],
+				"abilities": [
+					"Synchronize",
+					"Inner Focus",
+					"Magic Guard"
+				],
+				"teraTypes": [
+					"Psychic"
+				]
+			}
+		],
+		"generated": true
+	},
+	"alakazammega": {
+		"level": 78,
 		"sets": [
 			{
 				"role": "Setup Sweeper",
@@ -3043,6 +3716,34 @@
 				]
 			}
 		]
+	},
+	"victreebelmega": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Wallbreaker",
+				"movepool": [
+					"Body Slam",
+					"Growth",
+					"Knock Off",
+					"Leaf Storm",
+					"Leech Life",
+					"Sludge Wave",
+					"Sucker Punch",
+					"Synthesis",
+					"Toxic"
+				],
+				"abilities": [
+					"Chlorophyll",
+					"Gluttony"
+				],
+				"teraTypes": [
+					"Grass",
+					"Poison"
+				]
+			}
+		],
+		"generated": true
 	},
 	"tentacruel": {
 		"level": 84,
@@ -3302,6 +4003,35 @@
 			}
 		]
 	},
+	"slowbromega": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Wallbreaker",
+				"movepool": [
+					"Belch",
+					"Fire Blast",
+					"Future Sight",
+					"Ice Beam",
+					"Nasty Plot",
+					"Slack Off",
+					"Substitute",
+					"Surf",
+					"Thunder Wave"
+				],
+				"abilities": [
+					"Oblivious",
+					"Own Tempo",
+					"Regenerator"
+				],
+				"teraTypes": [
+					"Water",
+					"Psychic"
+				]
+			}
+		],
+		"generated": true
+	},
 	"farfetchd": {
 		"level": 92,
 		"sets": [
@@ -3558,6 +4288,33 @@
 				]
 			}
 		]
+	},
+	"gengarmega": {
+		"level": 78,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Energy Ball",
+					"Knock Off",
+					"Nasty Plot",
+					"Psychic",
+					"Rest",
+					"Shadow Ball",
+					"Sludge Wave",
+					"Thunderbolt",
+					"Will-O-Wisp"
+				],
+				"abilities": [
+					"Cursed Body"
+				],
+				"teraTypes": [
+					"Ghost",
+					"Poison"
+				]
+			}
+		],
+		"generated": true
 	},
 	"hypno": {
 		"level": 95,
@@ -4093,6 +4850,34 @@
 		],
 		"generated": true
 	},
+	"kangaskhanmega": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Aqua Tail",
+					"Double-Edge",
+					"Earthquake",
+					"Hammer Arm",
+					"Outrage",
+					"Rest",
+					"Roar",
+					"Substitute",
+					"Work Up"
+				],
+				"abilities": [
+					"Early Bird",
+					"Scrappy",
+					"Inner Focus"
+				],
+				"teraTypes": [
+					"Normal"
+				]
+			}
+		],
+		"generated": true
+	},
 	"seaking": {
 		"level": 88,
 		"sets": [
@@ -4123,6 +4908,34 @@
 	},
 	"starmie": {
 		"level": 83,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Agility",
+					"Flip Turn",
+					"Ice Beam",
+					"Meteor Beam",
+					"Psychic",
+					"Recover",
+					"Surf",
+					"Thunder Wave",
+					"Thunderbolt"
+				],
+				"abilities": [
+					"Natural Cure",
+					"Analytic"
+				],
+				"teraTypes": [
+					"Water",
+					"Psychic"
+				]
+			}
+		],
+		"generated": true
+	},
+	"starmiemega": {
+		"level": 77,
 		"sets": [
 			{
 				"role": "Setup Sweeper",
@@ -4265,6 +5078,35 @@
 				],
 				"teraTypes": [
 					"Bug"
+				]
+			}
+		],
+		"generated": true
+	},
+	"pinsirmega": {
+		"level": 78,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Close Combat",
+					"Double-Edge",
+					"Earthquake",
+					"Knock Off",
+					"Rest",
+					"Stone Edge",
+					"Substitute",
+					"Swords Dance",
+					"X-Scissor"
+				],
+				"abilities": [
+					"Hyper Cutter",
+					"Mold Breaker",
+					"Moxie"
+				],
+				"teraTypes": [
+					"Bug",
+					"Flying"
 				]
 			}
 		],
@@ -4456,6 +5298,34 @@
 				]
 			}
 		]
+	},
+	"gyaradosmega": {
+		"level": 76,
+		"sets": [
+			{
+				"role": "Wallbreaker",
+				"movepool": [
+					"Aqua Tail",
+					"Crunch",
+					"Double-Edge",
+					"Dragon Dance",
+					"Earthquake",
+					"Outrage",
+					"Rest",
+					"Taunt",
+					"Thunder Wave"
+				],
+				"abilities": [
+					"Intimidate",
+					"Moxie"
+				],
+				"teraTypes": [
+					"Water",
+					"Dark"
+				]
+			}
+		],
+		"generated": true
 	},
 	"lapras": {
 		"level": 87,
@@ -4706,6 +5576,35 @@
 	},
 	"aerodactyl": {
 		"level": 84,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Double-Edge",
+					"Dragon Dance",
+					"Earthquake",
+					"Pressure Wave",
+					"Psychic Fangs",
+					"Roost",
+					"Stone Edge",
+					"Substitute",
+					"Taunt"
+				],
+				"abilities": [
+					"Rock Head",
+					"Pressure",
+					"Unnerve"
+				],
+				"teraTypes": [
+					"Rock",
+					"Flying"
+				]
+			}
+		],
+		"generated": true
+	},
+	"aerodactylmega": {
+		"level": 77,
 		"sets": [
 			{
 				"role": "Setup Sweeper",
@@ -4985,6 +5884,34 @@
 		],
 		"generated": true
 	},
+	"dragonitemega": {
+		"level": 72,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Agility",
+					"Draco Meteor",
+					"Fire Blast",
+					"Hurricane",
+					"Ice Beam",
+					"Roost",
+					"Substitute",
+					"Surf",
+					"Thunder Wave"
+				],
+				"abilities": [
+					"Inner Focus",
+					"Multiscale"
+				],
+				"teraTypes": [
+					"Dragon",
+					"Flying"
+				]
+			}
+		],
+		"generated": true
+	},
 	"mewtwo": {
 		"level": 72,
 		"sets": [
@@ -5010,6 +5937,61 @@
 				]
 			}
 		]
+	},
+	"mewtwomegax": {
+		"level": 70,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Brick Break",
+					"Bulk Up",
+					"Double-Edge",
+					"Earthquake",
+					"Knock Off",
+					"Recover",
+					"Vengeance",
+					"Will-O-Wisp",
+					"Zen Headbutt"
+				],
+				"abilities": [
+					"Pressure",
+					"Unnerve"
+				],
+				"teraTypes": [
+					"Psychic",
+					"Fighting"
+				]
+			}
+		],
+		"generated": true
+	},
+	"mewtwomegay": {
+		"level": 70,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Earth Power",
+					"Energy Ball",
+					"Fire Blast",
+					"Future Sight",
+					"Ice Beam",
+					"Knock Off",
+					"Nasty Plot",
+					"Recover",
+					"Will-O-Wisp"
+				],
+				"abilities": [
+					"Pressure",
+					"Unnerve"
+				],
+				"teraTypes": [
+					"Psychic"
+				]
+			}
+		],
+		"generated": true
 	},
 	"mew": {
 		"level": 82,
@@ -5119,6 +6101,31 @@
 			}
 		]
 	},
+	"meganiummega": {
+		"level": 77,
+		"sets": [
+			{
+				"role": "Wallbreaker",
+				"movepool": [
+					"Ancient Power",
+					"Dazzling Gleam",
+					"Knock Off",
+					"Petal Dance",
+					"Substitute",
+					"Synthesis"
+				],
+				"abilities": [
+					"Overgrow",
+					"Leaf Guard"
+				],
+				"teraTypes": [
+					"Grass",
+					"Fairy"
+				]
+			}
+		],
+		"generated": true
+	},
 	"typhlosion": {
 		"level": 84,
 		"sets": [
@@ -5217,6 +6224,34 @@
 				]
 			}
 		]
+	},
+	"feraligatrmega": {
+		"level": 76,
+		"sets": [
+			{
+				"role": "Wallbreaker",
+				"movepool": [
+					"Double-Edge",
+					"Earthquake",
+					"Flip Turn",
+					"Liquidation",
+					"Outrage",
+					"Rest",
+					"Substitute",
+					"Superpower",
+					"Swords Dance"
+				],
+				"abilities": [
+					"Torrent",
+					"Sheer Force"
+				],
+				"teraTypes": [
+					"Water",
+					"Dragon"
+				]
+			}
+		],
+		"generated": true
 	},
 	"furret": {
 		"level": 94,
@@ -5359,6 +6394,34 @@
 		],
 		"generated": true
 	},
+	"crobatmega": {
+		"level": 76,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Brave Bird",
+					"Cross Poison",
+					"Crunch",
+					"Curse",
+					"Double-Edge",
+					"Leech Life",
+					"Roost",
+					"Taunt",
+					"U-turn"
+				],
+				"abilities": [
+					"Inner Focus",
+					"Infiltrator"
+				],
+				"teraTypes": [
+					"Poison",
+					"Flying"
+				]
+			}
+		],
+		"generated": true
+	},
 	"lanturn": {
 		"level": 89,
 		"sets": [
@@ -5461,6 +6524,34 @@
 				]
 			}
 		]
+	},
+	"ampharosmega": {
+		"level": 78,
+		"sets": [
+			{
+				"role": "Wallbreaker",
+				"movepool": [
+					"Agility",
+					"Dazzling Gleam",
+					"Dragon Pulse",
+					"Focus Blast",
+					"Meteor Beam",
+					"Power Surge",
+					"Rest",
+					"Thunder Wave",
+					"Volt Switch"
+				],
+				"abilities": [
+					"Static",
+					"Plus"
+				],
+				"teraTypes": [
+					"Electric",
+					"Dragon"
+				]
+			}
+		],
+		"generated": true
 	},
 	"bellossom": {
 		"level": 84,
@@ -6020,6 +7111,35 @@
 		],
 		"generated": true
 	},
+	"steelixmega": {
+		"level": 78,
+		"sets": [
+			{
+				"role": "Wallbreaker",
+				"movepool": [
+					"Double-Edge",
+					"Dragon Dance",
+					"Earthquake",
+					"Head Smash",
+					"Psychic Fangs",
+					"Rest",
+					"Steel Roller",
+					"Substitute",
+					"Taunt"
+				],
+				"abilities": [
+					"Rock Head",
+					"Sturdy",
+					"Sheer Force"
+				],
+				"teraTypes": [
+					"Steel",
+					"Ground"
+				]
+			}
+		],
+		"generated": true
+	},
 	"granbull": {
 		"level": 88,
 		"sets": [
@@ -6172,6 +7292,35 @@
 			}
 		]
 	},
+	"scizormega": {
+		"level": 78,
+		"sets": [
+			{
+				"role": "Wallbreaker",
+				"movepool": [
+					"Close Combat",
+					"Double-Edge",
+					"Iron Head",
+					"Knock Off",
+					"Lunge",
+					"Pressure Wave",
+					"Rest",
+					"Swords Dance",
+					"U-turn"
+				],
+				"abilities": [
+					"Swarm",
+					"Technician",
+					"Light Metal"
+				],
+				"teraTypes": [
+					"Bug",
+					"Steel"
+				]
+			}
+		],
+		"generated": true
+	},
 	"shuckle": {
 		"level": 84,
 		"sets": [
@@ -6238,6 +7387,35 @@
 				]
 			}
 		]
+	},
+	"heracrossmega": {
+		"level": 78,
+		"sets": [
+			{
+				"role": "Wallbreaker",
+				"movepool": [
+					"Close Combat",
+					"Double-Edge",
+					"Earthquake",
+					"Knock Off",
+					"Megahorn",
+					"Rest",
+					"Stone Edge",
+					"Substitute",
+					"Swords Dance"
+				],
+				"abilities": [
+					"Swarm",
+					"Guts",
+					"Moxie"
+				],
+				"teraTypes": [
+					"Bug",
+					"Fighting"
+				]
+			}
+		],
+		"generated": true
 	},
 	"ursaring": {
 		"level": 84,
@@ -6514,6 +7692,35 @@
 			}
 		]
 	},
+	"skarmorymega": {
+		"level": 80,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Body Press",
+					"Brave Bird",
+					"Iron Head",
+					"Roost",
+					"Substitute",
+					"Swords Dance",
+					"Take Down",
+					"Taunt",
+					"X-Scissor"
+				],
+				"abilities": [
+					"Keen Eye",
+					"Sturdy",
+					"Weak Armor"
+				],
+				"teraTypes": [
+					"Steel",
+					"Flying"
+				]
+			}
+		],
+		"generated": true
+	},
 	"houndoom": {
 		"level": 87,
 		"sets": [
@@ -6536,6 +7743,35 @@
 				]
 			}
 		]
+	},
+	"houndoommega": {
+		"level": 78,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Dark Wave",
+					"Hyper Voice",
+					"Nasty Plot",
+					"Overheat",
+					"Rest",
+					"Shadow Ball",
+					"Sludge Bomb",
+					"Taunt",
+					"Will-O-Wisp"
+				],
+				"abilities": [
+					"Early Bird",
+					"Flash Fire",
+					"Unnerve"
+				],
+				"teraTypes": [
+					"Dark",
+					"Fire"
+				]
+			}
+		],
+		"generated": true
 	},
 	"kingdra": {
 		"level": 84,
@@ -6973,6 +8209,34 @@
 			}
 		]
 	},
+	"tyranitarmega": {
+		"level": 72,
+		"sets": [
+			{
+				"role": "Wallbreaker",
+				"movepool": [
+					"Double-Edge",
+					"Dragon Dance",
+					"Earthquake",
+					"Foul Play",
+					"Knock Off",
+					"Outrage",
+					"Rest",
+					"Stone Edge",
+					"Thunder Wave"
+				],
+				"abilities": [
+					"Sand Stream",
+					"Unnerve"
+				],
+				"teraTypes": [
+					"Rock",
+					"Dark"
+				]
+			}
+		],
+		"generated": true
+	},
 	"lugia": {
 		"level": 73,
 		"sets": [
@@ -7111,6 +8375,33 @@
 			}
 		]
 	},
+	"sceptilemega": {
+		"level": 76,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Agility",
+					"Dragon Pulse",
+					"Focus Blast",
+					"Leaf Storm",
+					"Leech Seed",
+					"Substitute",
+					"Swift",
+					"Synthesis"
+				],
+				"abilities": [
+					"Overgrow",
+					"Unburden"
+				],
+				"teraTypes": [
+					"Grass",
+					"Dragon"
+				]
+			}
+		],
+		"generated": true
+	},
 	"blaziken": {
 		"level": 76,
 		"sets": [
@@ -7133,6 +8424,34 @@
 				]
 			}
 		]
+	},
+	"blazikenmega": {
+		"level": 76,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Brave Bird",
+					"Close Combat",
+					"Double-Edge",
+					"Earthquake",
+					"Flare Blitz",
+					"Knock Off",
+					"Rest",
+					"Swords Dance",
+					"U-turn"
+				],
+				"abilities": [
+					"Blaze",
+					"Speed Boost"
+				],
+				"teraTypes": [
+					"Fire",
+					"Fighting"
+				]
+			}
+		],
+		"generated": true
 	},
 	"swampert": {
 		"level": 83,
@@ -7158,6 +8477,34 @@
 				]
 			}
 		]
+	},
+	"swampertmega": {
+		"level": 76,
+		"sets": [
+			{
+				"role": "Wallbreaker",
+				"movepool": [
+					"Bulk Up",
+					"Double-Edge",
+					"Earthquake",
+					"Flip Turn",
+					"Hammer Arm",
+					"Knock Off",
+					"Liquidation",
+					"Outrage",
+					"Rest"
+				],
+				"abilities": [
+					"Torrent",
+					"Damp"
+				],
+				"teraTypes": [
+					"Water",
+					"Ground"
+				]
+			}
+		],
+		"generated": true
 	},
 	"mightyena": {
 		"level": 96,
@@ -7468,6 +8815,35 @@
 			}
 		]
 	},
+	"gardevoirmega": {
+		"level": 77,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Calm Mind",
+					"Energy Ball",
+					"Future Sight",
+					"Hyper Voice",
+					"Knock Off",
+					"Moonblast",
+					"Rest",
+					"Thunderbolt",
+					"Will-O-Wisp"
+				],
+				"abilities": [
+					"Synchronize",
+					"Trace",
+					"Telepathy"
+				],
+				"teraTypes": [
+					"Psychic",
+					"Fairy"
+				]
+			}
+		],
+		"generated": true
+	},
 	"masquerain": {
 		"level": 87,
 		"sets": [
@@ -7770,8 +9146,65 @@
 			}
 		]
 	},
+	"sableyemega": {
+		"level": 86,
+		"sets": [
+			{
+				"role": "Bulky Attacker",
+				"movepool": [
+					"Body Slam",
+					"Bulk Up",
+					"Energy Ball",
+					"Foul Play",
+					"Knock Off",
+					"Poltergeist",
+					"Psychic",
+					"Recover",
+					"Will-O-Wisp"
+				],
+				"abilities": [
+					"Keen Eye",
+					"Prankster"
+				],
+				"teraTypes": [
+					"Dark",
+					"Ghost"
+				]
+			}
+		],
+		"generated": true
+	},
 	"mawile": {
 		"level": 92,
+		"sets": [
+			{
+				"role": "Bulky Attacker",
+				"movepool": [
+					"Double-Edge",
+					"Fae Strike",
+					"Foul Play",
+					"Iron Head",
+					"Knock Off",
+					"Psychic Fangs",
+					"Rest",
+					"Swords Dance",
+					"Taunt"
+				],
+				"abilities": [
+					"Hyper Cutter",
+					"Intimidate",
+					"Sheer Force"
+				],
+				"teraTypes": [
+					"Steel",
+					"Fairy"
+				]
+			}
+		],
+		"generated": true
+	},
+	"mawilemega": {
+		"level": 86,
 		"sets": [
 			{
 				"role": "Bulky Attacker",
@@ -7828,6 +9261,34 @@
 		],
 		"generated": true
 	},
+	"aggronmega": {
+		"level": 76,
+		"sets": [
+			{
+				"role": "Wallbreaker",
+				"movepool": [
+					"Double-Edge",
+					"Head Smash",
+					"Hone Claws",
+					"Outrage",
+					"Rest",
+					"Steel Roller",
+					"Superpower",
+					"Taunt",
+					"Thunder Wave"
+				],
+				"abilities": [
+					"Sturdy",
+					"Rock Head",
+					"Heavy Metal"
+				],
+				"teraTypes": [
+					"Steel"
+				]
+			}
+		],
+		"generated": true
+	},
 	"medicham": {
 		"level": 86,
 		"sets": [
@@ -7850,8 +9311,64 @@
 			}
 		]
 	},
+	"medichammega": {
+		"level": 84,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Body Slam",
+					"Bulk Up",
+					"Close Combat",
+					"Poison Jab",
+					"Pressure Wave",
+					"Recover",
+					"Substitute",
+					"Taunt",
+					"Zen Headbutt"
+				],
+				"abilities": [
+					"Pure Power",
+					"Telepathy"
+				],
+				"teraTypes": [
+					"Fighting",
+					"Psychic"
+				]
+			}
+		],
+		"generated": true
+	},
 	"manectric": {
 		"level": 86,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Agility",
+					"Hyper Voice",
+					"Overheat",
+					"Rest",
+					"Signal Beam",
+					"Snarl",
+					"Thunder Wave",
+					"Thunderbolt",
+					"Volt Switch"
+				],
+				"abilities": [
+					"Static",
+					"Lightning Rod",
+					"Minus"
+				],
+				"teraTypes": [
+					"Electric"
+				]
+			}
+		],
+		"generated": true
+	},
+	"manectricmega": {
+		"level": 80,
 		"sets": [
 			{
 				"role": "Setup Sweeper",
@@ -8066,6 +9583,34 @@
 		],
 		"generated": true
 	},
+	"sharpedomega": {
+		"level": 81,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Agility",
+					"Close Combat",
+					"Crunch",
+					"Double-Edge",
+					"Earthquake",
+					"Flip Turn",
+					"Liquidation",
+					"Rest",
+					"Taunt"
+				],
+				"abilities": [
+					"Rough Skin",
+					"Speed Boost"
+				],
+				"teraTypes": [
+					"Water",
+					"Dark"
+				]
+			}
+		],
+		"generated": true
+	},
 	"wailord": {
 		"level": 85,
 		"sets": [
@@ -8116,6 +9661,34 @@
 			}
 		]
 	},
+	"cameruptmega": {
+		"level": 81,
+		"sets": [
+			{
+				"role": "Wallbreaker",
+				"movepool": [
+					"Ancient Power",
+					"Earth Power",
+					"Eruption",
+					"Flash Cannon",
+					"Growth",
+					"Rest",
+					"Substitute",
+					"Will-O-Wisp"
+				],
+				"abilities": [
+					"Magma Armor",
+					"Solid Rock",
+					"Anger Point"
+				],
+				"teraTypes": [
+					"Fire",
+					"Ground"
+				]
+			}
+		],
+		"generated": true
+	},
 	"torkoal": {
 		"level": 88,
 		"sets": [
@@ -8155,6 +9728,33 @@
 				]
 			}
 		]
+	},
+	"torkoalmega": {
+		"level": 80,
+		"sets": [
+			{
+				"role": "Bulky Attacker",
+				"movepool": [
+					"Ancient Power",
+					"Earth Power",
+					"Eruption",
+					"Rest",
+					"Shell Smash",
+					"Sludge Bomb",
+					"Substitute",
+					"Will-O-Wisp"
+				],
+				"abilities": [
+					"White Smoke",
+					"Drought",
+					"Shell Armor"
+				],
+				"teraTypes": [
+					"Fire"
+				]
+			}
+		],
+		"generated": true
 	},
 	"grumpig": {
 		"level": 92,
@@ -8266,6 +9866,33 @@
 			}
 		]
 	},
+	"flygonmega": {
+		"level": 77,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Double-Edge",
+					"Dragon Dance",
+					"Earthquake",
+					"First Impression",
+					"Outrage",
+					"Rest",
+					"Substitute",
+					"Superpower",
+					"U-turn"
+				],
+				"abilities": [
+					"Levitate"
+				],
+				"teraTypes": [
+					"Dragon",
+					"Bug"
+				]
+			}
+		],
+		"generated": true
+	},
 	"cacturne": {
 		"level": 92,
 		"sets": [
@@ -8343,6 +9970,34 @@
 				]
 			}
 		]
+	},
+	"altariamega": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Bulky Attacker",
+				"movepool": [
+					"Brave Bird",
+					"Double-Edge",
+					"Dragon Dance",
+					"Earthquake",
+					"Moonblast",
+					"Outrage",
+					"Roost",
+					"Substitute",
+					"Will-O-Wisp"
+				],
+				"abilities": [
+					"Natural Cure",
+					"Cloud Nine"
+				],
+				"teraTypes": [
+					"Dragon",
+					"Fairy"
+				]
+			}
+		],
+		"generated": true
 	},
 	"zangoose": {
 		"level": 85,
@@ -8719,6 +10374,34 @@
 			}
 		]
 	},
+	"banettemega": {
+		"level": 81,
+		"sets": [
+			{
+				"role": "Wallbreaker",
+				"movepool": [
+					"Facade",
+					"Foul Play",
+					"Gunk Shot",
+					"Knock Off",
+					"Rest",
+					"Skitter Smack",
+					"Swords Dance",
+					"Vengeance",
+					"Will-O-Wisp"
+				],
+				"abilities": [
+					"Insomnia",
+					"Frisk",
+					"Cursed Body"
+				],
+				"teraTypes": [
+					"Ghost"
+				]
+			}
+		],
+		"generated": true
+	},
 	"tropius": {
 		"level": 91,
 		"sets": [
@@ -8814,6 +10497,33 @@
 			}
 		]
 	},
+	"chimechomega": {
+		"level": 81,
+		"sets": [
+			{
+				"role": "Wallbreaker",
+				"movepool": [
+					"Calm Mind",
+					"Dazzling Gleam",
+					"Energy Ball",
+					"Future Sight",
+					"Hyper Voice",
+					"Knock Off",
+					"Recover",
+					"Shadow Ball",
+					"Thunder Wave"
+				],
+				"abilities": [
+					"Levitate"
+				],
+				"teraTypes": [
+					"Psychic",
+					"Steel"
+				]
+			}
+		],
+		"generated": true
+	},
 	"absol": {
 		"level": 87,
 		"sets": [
@@ -8842,6 +10552,63 @@
 		],
 		"generated": true
 	},
+	"absolmega": {
+		"level": 80,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Close Combat",
+					"Double-Edge",
+					"Foul Play",
+					"Knock Off",
+					"Megahorn",
+					"Play Rough",
+					"Rest",
+					"Swords Dance",
+					"Will-O-Wisp"
+				],
+				"abilities": [
+					"Pressure",
+					"Super Luck",
+					"Justified"
+				],
+				"teraTypes": [
+					"Dark"
+				]
+			}
+		],
+		"generated": true
+	},
+	"absolmegaz": {
+		"level": 80,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Close Combat",
+					"Double-Edge",
+					"Foul Play",
+					"Knock Off",
+					"Megahorn",
+					"Rest",
+					"Spectral Strike",
+					"Swords Dance",
+					"Will-O-Wisp"
+				],
+				"abilities": [
+					"Pressure",
+					"Super Luck",
+					"Justified"
+				],
+				"teraTypes": [
+					"Dark",
+					"Ghost"
+				]
+			}
+		],
+		"generated": true
+	},
 	"glalie": {
 		"level": 96,
 		"sets": [
@@ -8863,6 +10630,33 @@
 				]
 			}
 		]
+	},
+	"glaliemega": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Fast Attacker",
+				"movepool": [
+					"Body Slam",
+					"Earthquake",
+					"Foul Play",
+					"Ice Beam",
+					"Iron Head",
+					"Rest",
+					"Substitute",
+					"Taunt"
+				],
+				"abilities": [
+					"Inner Focus",
+					"Ice Body",
+					"Moody"
+				],
+				"teraTypes": [
+					"Ice"
+				]
+			}
+		],
+		"generated": true
 	},
 	"walrein": {
 		"level": 83,
@@ -9033,6 +10827,34 @@
 			}
 		]
 	},
+	"salamencemega": {
+		"level": 72,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Aerial Ace",
+					"Double-Edge",
+					"Dragon Dance",
+					"Earthquake",
+					"Outrage",
+					"Psychic Fangs",
+					"Roar",
+					"Roost",
+					"Substitute"
+				],
+				"abilities": [
+					"Intimidate",
+					"Moxie"
+				],
+				"teraTypes": [
+					"Dragon",
+					"Flying"
+				]
+			}
+		],
+		"generated": true
+	},
 	"metagross": {
 		"level": 79,
 		"sets": [
@@ -9070,6 +10892,34 @@
 				]
 			}
 		]
+	},
+	"metagrossmega": {
+		"level": 72,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Double-Edge",
+					"Earthquake",
+					"Hammer Arm",
+					"Hone Claws",
+					"Knock Off",
+					"Meteor Mash",
+					"Psychic Fangs",
+					"Rest",
+					"Substitute"
+				],
+				"abilities": [
+					"Clear Body",
+					"Light Metal"
+				],
+				"teraTypes": [
+					"Steel",
+					"Psychic"
+				]
+			}
+		],
+		"generated": true
 	},
 	"regirock": {
 		"level": 83,
@@ -9186,6 +11036,33 @@
 			}
 		]
 	},
+	"latiasmega": {
+		"level": 72,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Calm Mind",
+					"Draco Meteor",
+					"Energy Ball",
+					"Future Sight",
+					"Ice Beam",
+					"Recover",
+					"Substitute",
+					"Surf",
+					"Thunder Wave"
+				],
+				"abilities": [
+					"Levitate"
+				],
+				"teraTypes": [
+					"Dragon",
+					"Psychic"
+				]
+			}
+		],
+		"generated": true
+	},
 	"latios": {
 		"level": 78,
 		"sets": [
@@ -9239,6 +11116,33 @@
 				]
 			}
 		]
+	},
+	"latiosmega": {
+		"level": 72,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Calm Mind",
+					"Draco Meteor",
+					"Energy Ball",
+					"Flip Turn",
+					"Future Sight",
+					"Ice Beam",
+					"Recover",
+					"Surf",
+					"Thunder Wave"
+				],
+				"abilities": [
+					"Levitate"
+				],
+				"teraTypes": [
+					"Dragon",
+					"Psychic"
+				]
+			}
+		],
+		"generated": true
 	},
 	"kyogre": {
 		"level": 71,
@@ -9704,6 +11608,34 @@
 			}
 		]
 	},
+	"staraptormega": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Agility",
+					"Brave Bird",
+					"Close Combat",
+					"Double-Edge",
+					"Rest",
+					"Substitute",
+					"Thief",
+					"U-turn",
+					"Whirlwind"
+				],
+				"abilities": [
+					"Intimidate",
+					"Reckless"
+				],
+				"teraTypes": [
+					"Fighting",
+					"Flying"
+				]
+			}
+		],
+		"generated": true
+	},
 	"bibarel": {
 		"level": 90,
 		"sets": [
@@ -9793,6 +11725,35 @@
 	},
 	"roserade": {
 		"level": 84,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Dazzling Gleam",
+					"Growth",
+					"Petal Dance",
+					"Shadow Ball",
+					"Sludge Bomb",
+					"Substitute",
+					"Synthesis",
+					"Toxic",
+					"Uproar"
+				],
+				"abilities": [
+					"Natural Cure",
+					"Poison Point",
+					"Technician"
+				],
+				"teraTypes": [
+					"Grass",
+					"Poison"
+				]
+			}
+		],
+		"generated": true
+	},
+	"roserademega": {
+		"level": 77,
 		"sets": [
 			{
 				"role": "Setup Sweeper",
@@ -10265,6 +12226,34 @@
 		],
 		"generated": true
 	},
+	"lopunnymega": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Close Combat",
+					"Fire Punch",
+					"Ice Punch",
+					"Mega Kick",
+					"Play Rough",
+					"Rest",
+					"Thunder Wave",
+					"U-turn",
+					"Work Up"
+				],
+				"abilities": [
+					"Cute Charm",
+					"Limber"
+				],
+				"teraTypes": [
+					"Normal",
+					"Fighting"
+				]
+			}
+		],
+		"generated": true
+	},
 	"mismagius": {
 		"level": 86,
 		"sets": [
@@ -10546,6 +12535,60 @@
 			}
 		]
 	},
+	"garchompmega": {
+		"level": 72,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Crunch",
+					"Double-Edge",
+					"Earthquake",
+					"Liquidation",
+					"Outrage",
+					"Rest",
+					"Stealth Rock",
+					"Substitute",
+					"Swords Dance"
+				],
+				"abilities": [
+					"Sand Veil",
+					"Rough Skin"
+				],
+				"teraTypes": [
+					"Dragon",
+					"Ground"
+				]
+			}
+		],
+		"generated": true
+	},
+	"garchompmegaz": {
+		"level": 72,
+		"sets": [
+			{
+				"role": "Fast Attacker",
+				"movepool": [
+					"Draco Meteor",
+					"Earth Power",
+					"Fire Blast",
+					"Power Gem",
+					"Rest",
+					"Stealth Rock",
+					"Substitute",
+					"Surf"
+				],
+				"abilities": [
+					"Sand Veil",
+					"Rough Skin"
+				],
+				"teraTypes": [
+					"Dragon"
+				]
+			}
+		],
+		"generated": true
+	},
 	"lucario": {
 		"level": 84,
 		"sets": [
@@ -10582,6 +12625,64 @@
 				]
 			}
 		]
+	},
+	"lucariomega": {
+		"level": 77,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Body Slam",
+					"Close Combat",
+					"Earthquake",
+					"Meteor Mash",
+					"Psychic",
+					"Rest",
+					"Roar",
+					"Substitute",
+					"Swords Dance"
+				],
+				"abilities": [
+					"Steadfast",
+					"Inner Focus",
+					"Justified"
+				],
+				"teraTypes": [
+					"Fighting",
+					"Steel"
+				]
+			}
+		],
+		"generated": true
+	},
+	"lucariomegaz": {
+		"level": 77,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Dark Pulse",
+					"Dragon Pulse",
+					"Flash Cannon",
+					"Focus Blast",
+					"Nasty Plot",
+					"Psychic",
+					"Rest",
+					"Roar",
+					"Substitute"
+				],
+				"abilities": [
+					"Steadfast",
+					"Inner Focus",
+					"Justified"
+				],
+				"teraTypes": [
+					"Fighting",
+					"Steel"
+				]
+			}
+		],
+		"generated": true
 	},
 	"hippowdon": {
 		"level": 82,
@@ -10777,6 +12878,34 @@
 				]
 			}
 		]
+	},
+	"abomasnowmega": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Wallbreaker",
+				"movepool": [
+					"Double-Edge",
+					"Earthquake",
+					"Ice Beam",
+					"Leech Seed",
+					"Outrage",
+					"Rest",
+					"Substitute",
+					"Swords Dance",
+					"Wood Hammer"
+				],
+				"abilities": [
+					"Snow Warning",
+					"Soundproof"
+				],
+				"teraTypes": [
+					"Grass",
+					"Ice"
+				]
+			}
+		],
+		"generated": true
 	},
 	"weavile": {
 		"level": 79,
@@ -11298,6 +13427,35 @@
 			}
 		]
 	},
+	"gallademega": {
+		"level": 77,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Body Slam",
+					"Close Combat",
+					"Earthquake",
+					"Knock Off",
+					"Leaf Blade",
+					"Rest",
+					"Swords Dance",
+					"Will-O-Wisp",
+					"Zen Headbutt"
+				],
+				"abilities": [
+					"Steadfast",
+					"Sharpness",
+					"Justified"
+				],
+				"teraTypes": [
+					"Psychic",
+					"Fighting"
+				]
+			}
+		],
+		"generated": true
+	},
 	"probopass": {
 		"level": 91,
 		"sets": [
@@ -11397,6 +13555,33 @@
 				]
 			}
 		]
+	},
+	"froslassmega": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Fast Attacker",
+				"movepool": [
+					"Ice Beam",
+					"Psychic",
+					"Rest",
+					"Shadow Ball",
+					"Thunder Wave",
+					"Thunderbolt",
+					"Water Pulse",
+					"Will-O-Wisp"
+				],
+				"abilities": [
+					"Snow Cloak",
+					"Cursed Body"
+				],
+				"teraTypes": [
+					"Ice",
+					"Ghost"
+				]
+			}
+		],
+		"generated": true
 	},
 	"rotom": {
 		"level": 88,
@@ -11871,6 +14056,34 @@
 			}
 		]
 	},
+	"heatranmega": {
+		"level": 72,
+		"sets": [
+			{
+				"role": "Wallbreaker",
+				"movepool": [
+					"Dark Pulse",
+					"Dragon Pulse",
+					"Earth Power",
+					"Iron Defense",
+					"Mineral Burst",
+					"Overheat",
+					"Rest",
+					"Taunt",
+					"Will-O-Wisp"
+				],
+				"abilities": [
+					"Flash Fire",
+					"Flame Body"
+				],
+				"teraTypes": [
+					"Fire",
+					"Steel"
+				]
+			}
+		],
+		"generated": true
+	},
 	"regigigas": {
 		"level": 84,
 		"sets": [
@@ -12088,6 +14301,32 @@
 				]
 			}
 		]
+	},
+	"darkraimega": {
+		"level": 72,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Dark Wave",
+					"Focus Blast",
+					"Ice Beam",
+					"Knock Off",
+					"Nasty Plot",
+					"Psychic",
+					"Rest",
+					"Sludge Bomb",
+					"Will-O-Wisp"
+				],
+				"abilities": [
+					"Bad Dreams"
+				],
+				"teraTypes": [
+					"Dark"
+				]
+			}
+		],
+		"generated": true
 	},
 	"shaymin": {
 		"level": 82,
@@ -12875,6 +15114,34 @@
 			}
 		]
 	},
+	"emboarmega": {
+		"level": 76,
+		"sets": [
+			{
+				"role": "Wallbreaker",
+				"movepool": [
+					"Bulk Up",
+					"Close Combat",
+					"Double-Edge",
+					"Earthquake",
+					"Flare Blitz",
+					"Head Smash",
+					"Knock Off",
+					"Rest",
+					"Will-O-Wisp"
+				],
+				"abilities": [
+					"Blaze",
+					"Reckless"
+				],
+				"teraTypes": [
+					"Fire",
+					"Fighting"
+				]
+			}
+		],
+		"generated": true
+	},
 	"samurott": {
 		"level": 88,
 		"sets": [
@@ -13280,6 +15547,35 @@
 			}
 		]
 	},
+	"excadrillmega": {
+		"level": 78,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Double-Edge",
+					"Earthquake",
+					"Iron Head",
+					"Poison Jab",
+					"Rest",
+					"Stealth Rock",
+					"Substitute",
+					"Swords Dance",
+					"Throat Chop"
+				],
+				"abilities": [
+					"Sand Rush",
+					"Sand Force",
+					"Mold Breaker"
+				],
+				"teraTypes": [
+					"Ground",
+					"Steel"
+				]
+			}
+		],
+		"generated": true
+	},
 	"audino": {
 		"level": 88,
 		"sets": [
@@ -13302,6 +15598,34 @@
 				],
 				"teraTypes": [
 					"Normal"
+				]
+			}
+		],
+		"generated": true
+	},
+	"audinomega": {
+		"level": 82,
+		"sets": [
+			{
+				"role": "Bulky Support",
+				"movepool": [
+					"Calm Mind",
+					"Dazzling Gleam",
+					"Fire Blast",
+					"Hyper Voice",
+					"Ice Beam",
+					"Knock Off",
+					"Psychic",
+					"Rest",
+					"Thunder Wave"
+				],
+				"abilities": [
+					"Healer",
+					"Regenerator"
+				],
+				"teraTypes": [
+					"Normal",
+					"Fairy"
 				]
 			}
 		],
@@ -13475,6 +15799,35 @@
 		"sets": [
 			{
 				"role": "Setup Sweeper",
+				"movepool": [
+					"Double-Edge",
+					"Megahorn",
+					"Poison Jab",
+					"Rest",
+					"Steel Roller",
+					"Substitute",
+					"Superpower",
+					"Swords Dance",
+					"Toxic"
+				],
+				"abilities": [
+					"Poison Point",
+					"Swarm",
+					"Speed Boost"
+				],
+				"teraTypes": [
+					"Bug",
+					"Poison"
+				]
+			}
+		],
+		"generated": true
+	},
+	"scolipedemega": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Wallbreaker",
 				"movepool": [
 					"Double-Edge",
 					"Megahorn",
@@ -13681,6 +16034,35 @@
 			}
 		]
 	},
+	"krookodilemega": {
+		"level": 77,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Bulk Up",
+					"Close Combat",
+					"Double-Edge",
+					"Earthquake",
+					"Foul Play",
+					"Knock Off",
+					"Outrage",
+					"Rest",
+					"Taunt"
+				],
+				"abilities": [
+					"Intimidate",
+					"Moxie",
+					"Anger Point"
+				],
+				"teraTypes": [
+					"Ground",
+					"Dark"
+				]
+			}
+		],
+		"generated": true
+	},
 	"darmanitan": {
 		"level": 86,
 		"sets": [
@@ -13787,6 +16169,35 @@
 		],
 		"generated": true
 	},
+	"crustlemega": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Wallbreaker",
+				"movepool": [
+					"Body Press",
+					"Earthquake",
+					"Knock Off",
+					"Poison Jab",
+					"Rest",
+					"Stone Edge",
+					"Swords Dance",
+					"Toxic",
+					"X-Scissor"
+				],
+				"abilities": [
+					"Sturdy",
+					"Shell Armor",
+					"Weak Armor"
+				],
+				"teraTypes": [
+					"Bug",
+					"Rock"
+				]
+			}
+		],
+		"generated": true
+	},
 	"scrafty": {
 		"level": 83,
 		"sets": [
@@ -13821,6 +16232,35 @@
 				]
 			}
 		]
+	},
+	"scraftymega": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Wallbreaker",
+				"movepool": [
+					"Close Combat",
+					"Double-Edge",
+					"Foul Play",
+					"Head Smash",
+					"Knock Off",
+					"Outrage",
+					"Rest",
+					"Swords Dance",
+					"Taunt"
+				],
+				"abilities": [
+					"Shed Skin",
+					"Moxie",
+					"Intimidate"
+				],
+				"teraTypes": [
+					"Dark",
+					"Fighting"
+				]
+			}
+		],
+		"generated": true
 	},
 	"sigilyph": {
 		"level": 85,
@@ -14500,6 +16940,32 @@
 			}
 		]
 	},
+	"eelektrossmega": {
+		"level": 77,
+		"sets": [
+			{
+				"role": "Wallbreaker",
+				"movepool": [
+					"Bulk Up",
+					"Close Combat",
+					"Flamethrower",
+					"Knock Off",
+					"Outrage",
+					"Power Surge",
+					"Rest",
+					"Thrash",
+					"U-turn"
+				],
+				"abilities": [
+					"Levitate"
+				],
+				"teraTypes": [
+					"Electric"
+				]
+			}
+		],
+		"generated": true
+	},
 	"beheeyem": {
 		"level": 86,
 		"sets": [
@@ -14571,6 +17037,35 @@
 				]
 			}
 		]
+	},
+	"chandeluremega": {
+		"level": 77,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Calm Mind",
+					"Dark Pulse",
+					"Energy Ball",
+					"Overheat",
+					"Psychic",
+					"Rest",
+					"Shadow Ball",
+					"Taunt",
+					"Will-O-Wisp"
+				],
+				"abilities": [
+					"Flash Fire",
+					"Flame Body",
+					"Infiltrator"
+				],
+				"teraTypes": [
+					"Ghost",
+					"Fire"
+				]
+			}
+		],
+		"generated": true
 	},
 	"haxorus": {
 		"level": 77,
@@ -14859,6 +17354,34 @@
 			}
 		]
 	},
+	"golurkmega": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Wallbreaker",
+				"movepool": [
+					"Close Combat",
+					"Curse",
+					"Double-Edge",
+					"Earthquake",
+					"Knock Off",
+					"Rest",
+					"Stone Edge",
+					"Substitute",
+					"Vengeance"
+				],
+				"abilities": [
+					"Iron Fist",
+					"No Guard"
+				],
+				"teraTypes": [
+					"Ground",
+					"Ghost"
+				]
+			}
+		],
+		"generated": true
+	},
 	"bisharp": {
 		"level": 79,
 		"sets": [
@@ -15135,6 +17658,33 @@
 				]
 			}
 		]
+	},
+	"hydreigonmega": {
+		"level": 72,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Belch",
+					"Dark Wave",
+					"Draco Meteor",
+					"Earth Power",
+					"Fire Blast",
+					"Nasty Plot",
+					"Rest",
+					"Thunder Wave",
+					"U-turn"
+				],
+				"abilities": [
+					"Levitate"
+				],
+				"teraTypes": [
+					"Dark",
+					"Dragon"
+				]
+			}
+		],
+		"generated": true
 	},
 	"volcarona": {
 		"level": 77,
@@ -15957,6 +18507,34 @@
 			}
 		]
 	},
+	"chesnaughtmega": {
+		"level": 76,
+		"sets": [
+			{
+				"role": "Wallbreaker",
+				"movepool": [
+					"Close Combat",
+					"Crunch",
+					"Double-Edge",
+					"Earthquake",
+					"Knock Off",
+					"Swords Dance",
+					"Synthesis",
+					"Taunt",
+					"Wood Hammer"
+				],
+				"abilities": [
+					"Overgrow",
+					"Bulletproof"
+				],
+				"teraTypes": [
+					"Grass",
+					"Fighting"
+				]
+			}
+		],
+		"generated": true
+	},
 	"delphox": {
 		"level": 84,
 		"sets": [
@@ -15979,6 +18557,34 @@
 				]
 			}
 		]
+	},
+	"delphoxmega": {
+		"level": 76,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Dazzling Gleam",
+					"Focus Blast",
+					"Future Sight",
+					"Hyper Voice",
+					"Nasty Plot",
+					"Overheat",
+					"Rest",
+					"Substitute",
+					"Will-O-Wisp"
+				],
+				"abilities": [
+					"Blaze",
+					"Magician"
+				],
+				"teraTypes": [
+					"Fire",
+					"Psychic"
+				]
+			}
+		],
+		"generated": true
 	},
 	"greninja": {
 		"level": 80,
@@ -16042,6 +18648,34 @@
 				]
 			}
 		]
+	},
+	"greninjamega": {
+		"level": 76,
+		"sets": [
+			{
+				"role": "Fast Attacker",
+				"movepool": [
+					"Dark Wave",
+					"Extrasensory",
+					"Gunk Shot",
+					"Ice Beam",
+					"Rest",
+					"Substitute",
+					"Surf",
+					"Taunt",
+					"U-turn"
+				],
+				"abilities": [
+					"Torrent",
+					"Protean"
+				],
+				"teraTypes": [
+					"Water",
+					"Dark"
+				]
+			}
+		],
+		"generated": true
 	},
 	"diggersby": {
 		"level": 90,
@@ -16720,6 +19354,33 @@
 			}
 		]
 	},
+	"pyroarmega": {
+		"level": 78,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Dark Pulse",
+					"Hyper Voice",
+					"Overheat",
+					"Rest",
+					"Taunt",
+					"Will-O-Wisp",
+					"Work Up"
+				],
+				"abilities": [
+					"Rivalry",
+					"Unnerve",
+					"Moxie"
+				],
+				"teraTypes": [
+					"Fire",
+					"Normal"
+				]
+			}
+		],
+		"generated": true
+	},
 	"floetteeternal": {
 		"level": 81,
 		"sets": [
@@ -16734,6 +19395,33 @@
 					"Rest",
 					"Substitute",
 					"Swift",
+					"Wish"
+				],
+				"abilities": [
+					"Flower Veil",
+					"Symbiosis"
+				],
+				"teraTypes": [
+					"Fairy"
+				]
+			}
+		],
+		"generated": true
+	},
+	"floettemega": {
+		"level": 75,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Calm Mind",
+					"Light of Ruin",
+					"Petal Dance",
+					"Pollen Puff",
+					"Psychic",
+					"Substitute",
+					"Swift",
+					"Synthesis",
 					"Wish"
 				],
 				"abilities": [
@@ -16905,11 +19593,94 @@
 			}
 		]
 	},
+	"meowsticfmega": {
+		"level": 80,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Alluring Voice",
+					"Dark Pulse",
+					"Energy Ball",
+					"Future Sight",
+					"Nasty Plot",
+					"Rest",
+					"Substitute",
+					"Thunder Wave",
+					"Thunderbolt"
+				],
+				"abilities": [
+					"Keen Eye",
+					"Infiltrator",
+					"Competitive"
+				],
+				"teraTypes": [
+					"Psychic"
+				]
+			}
+		],
+		"generated": true
+	},
+	"meowsticmmega": {
+		"level": 80,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Alluring Voice",
+					"Dark Pulse",
+					"Energy Ball",
+					"Nasty Plot",
+					"Psychic",
+					"Rest",
+					"Substitute",
+					"Thunder Wave",
+					"Thunderbolt"
+				],
+				"abilities": [
+					"Keen Eye",
+					"Infiltrator",
+					"Prankster"
+				],
+				"teraTypes": [
+					"Psychic"
+				]
+			}
+		],
+		"generated": true
+	},
 	"aegislash": {
 		"level": 85,
 		"sets": [
 			{
 				"role": "Bulky Support",
+				"movepool": [
+					"Air Slash",
+					"Close Combat",
+					"Flash Cannon",
+					"Head Smash",
+					"Rest",
+					"Shadow Ball",
+					"Substitute",
+					"Swords Dance",
+					"Toxic"
+				],
+				"abilities": [
+					"Stance Change"
+				],
+				"teraTypes": [
+					"Steel",
+					"Ghost"
+				]
+			}
+		],
+		"generated": true
+	},
+	"aegislashmega": {
+		"level": 78,
+		"sets": [
+			{
+				"role": "Wallbreaker",
 				"movepool": [
 					"Air Slash",
 					"Close Combat",
@@ -17025,6 +19796,34 @@
 			}
 		]
 	},
+	"malamarmega": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Bulky Attacker",
+				"movepool": [
+					"Flamethrower",
+					"Foul Play",
+					"Future Sight",
+					"Knock Off",
+					"Rest",
+					"Superpower",
+					"Taunt",
+					"Thunderbolt"
+				],
+				"abilities": [
+					"Contrary",
+					"Suction Cups",
+					"Infiltrator"
+				],
+				"teraTypes": [
+					"Dark",
+					"Psychic"
+				]
+			}
+		],
+		"generated": true
+	},
 	"barbaracle": {
 		"level": 85,
 		"sets": [
@@ -17054,6 +19853,35 @@
 		],
 		"generated": true
 	},
+	"barbaraclemega": {
+		"level": 78,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Dragon Claw",
+					"Earthquake",
+					"Liquidation",
+					"Rest",
+					"Stone Edge",
+					"Superpower",
+					"Swords Dance",
+					"Taunt",
+					"Toxic"
+				],
+				"abilities": [
+					"Tough Claws",
+					"Sniper",
+					"Pickpocket"
+				],
+				"teraTypes": [
+					"Rock",
+					"Fighting"
+				]
+			}
+		],
+		"generated": true
+	},
 	"dragalge": {
 		"level": 88,
 		"sets": [
@@ -17076,6 +19904,35 @@
 				]
 			}
 		]
+	},
+	"dragalgemega": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Wallbreaker",
+				"movepool": [
+					"Acid Armor",
+					"Draco Meteor",
+					"Flip Turn",
+					"Focus Blast",
+					"Rest",
+					"Sludge Wave",
+					"Surf",
+					"Thunderbolt",
+					"Toxic"
+				],
+				"abilities": [
+					"Poison Point",
+					"Poison Touch",
+					"Adaptability"
+				],
+				"teraTypes": [
+					"Poison",
+					"Dragon"
+				]
+			}
+		],
+		"generated": true
 	},
 	"clawitzer": {
 		"level": 87,
@@ -17245,6 +20102,35 @@
 				]
 			}
 		]
+	},
+	"hawluchamega": {
+		"level": 78,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Body Slam",
+					"Brave Bird",
+					"Close Combat",
+					"Iron Head",
+					"Lunge",
+					"Roost",
+					"Swords Dance",
+					"Taunt",
+					"U-turn"
+				],
+				"abilities": [
+					"Limber",
+					"Unburden",
+					"Mold Breaker"
+				],
+				"teraTypes": [
+					"Fighting",
+					"Flying"
+				]
+			}
+		],
+		"generated": true
 	},
 	"dedenne": {
 		"level": 88,
@@ -17758,6 +20644,33 @@
 			}
 		]
 	},
+	"dianciemega": {
+		"level": 72,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Earth Power",
+					"Meteor Beam",
+					"Mineral Burst",
+					"Moonblast",
+					"Psychic",
+					"Rest",
+					"Rock Polish",
+					"Stealth Rock",
+					"Substitute"
+				],
+				"abilities": [
+					"Clear Body"
+				],
+				"teraTypes": [
+					"Rock",
+					"Fairy"
+				]
+			}
+		],
+		"generated": true
+	},
 	"hoopa": {
 		"level": 85,
 		"sets": [
@@ -18139,6 +21052,35 @@
 				]
 			}
 		]
+	},
+	"crabominablemega": {
+		"level": 80,
+		"sets": [
+			{
+				"role": "Wallbreaker",
+				"movepool": [
+					"Bulk Up",
+					"Close Combat",
+					"Crabhammer",
+					"Earthquake",
+					"Gunk Shot",
+					"Ice Hammer",
+					"Knock Off",
+					"Rest",
+					"Substitute"
+				],
+				"abilities": [
+					"Hyper Cutter",
+					"Iron Fist",
+					"Anger Point"
+				],
+				"teraTypes": [
+					"Fighting",
+					"Ice"
+				]
+			}
+		],
+		"generated": true
 	},
 	"oricorio": {
 		"level": 84,
@@ -18763,6 +21705,33 @@
 				"teraTypes": [
 					"Bug",
 					"Water"
+				]
+			}
+		],
+		"generated": true
+	},
+	"golisopodmega": {
+		"level": 76,
+		"sets": [
+			{
+				"role": "Wallbreaker",
+				"movepool": [
+					"Close Combat",
+					"First Impression",
+					"Iron Head",
+					"Knock Off",
+					"Liquidation",
+					"Poison Jab",
+					"Rest",
+					"Swords Dance",
+					"Taunt"
+				],
+				"abilities": [
+					"Emergency Exit"
+				],
+				"teraTypes": [
+					"Bug",
+					"Steel"
 				]
 			}
 		],
@@ -19633,6 +22602,35 @@
 		],
 		"generated": true
 	},
+	"drampamega": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Wallbreaker",
+				"movepool": [
+					"Calm Mind",
+					"Draco Meteor",
+					"Energy Ball",
+					"Fire Blast",
+					"Hyper Voice",
+					"Ice Beam",
+					"Roost",
+					"Thunder Wave",
+					"Toxic"
+				],
+				"abilities": [
+					"Berserk",
+					"Sap Sipper",
+					"Cloud Nine"
+				],
+				"teraTypes": [
+					"Normal",
+					"Dragon"
+				]
+			}
+		],
+		"generated": true
+	},
 	"dhelmise": {
 		"level": 84,
 		"sets": [
@@ -20267,11 +23265,65 @@
 			}
 		]
 	},
+	"magearnamega": {
+		"level": 72,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Calm Mind",
+					"Energy Ball",
+					"Flash Cannon",
+					"Fleur Cannon",
+					"Ice Beam",
+					"Psychic",
+					"Rest",
+					"Thunder Wave",
+					"Volt Switch"
+				],
+				"abilities": [
+					"Soul-Heart"
+				],
+				"teraTypes": [
+					"Steel",
+					"Fairy"
+				]
+			}
+		],
+		"generated": true
+	},
 	"magearnaoriginal": {
 		"level": 78,
 		"sets": [
 			{
 				"role": "Wallbreaker",
+				"movepool": [
+					"Calm Mind",
+					"Energy Ball",
+					"Flash Cannon",
+					"Fleur Cannon",
+					"Ice Beam",
+					"Psychic",
+					"Rest",
+					"Thunder Wave",
+					"Volt Switch"
+				],
+				"abilities": [
+					"Soul-Heart"
+				],
+				"teraTypes": [
+					"Steel",
+					"Fairy"
+				]
+			}
+		],
+		"generated": true
+	},
+	"magearnaoriginalmega": {
+		"level": 72,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
 				"movepool": [
 					"Calm Mind",
 					"Energy Ball",
@@ -20404,6 +23456,32 @@
 	},
 	"zeraora": {
 		"level": 78,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Bulk Up",
+					"Close Combat",
+					"Knock Off",
+					"Mega Kick",
+					"Outrage",
+					"Play Rough",
+					"Power Surge",
+					"Rest",
+					"Volt Switch"
+				],
+				"abilities": [
+					"Volt Absorb"
+				],
+				"teraTypes": [
+					"Electric"
+				]
+			}
+		],
+		"generated": true
+	},
+	"zeraoramega": {
+		"level": 72,
 		"sets": [
 			{
 				"role": "Setup Sweeper",
@@ -21637,6 +24715,33 @@
 				]
 			}
 		]
+	},
+	"falinksmega": {
+		"level": 80,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Body Slam",
+					"Close Combat",
+					"High Horsepower",
+					"Iron Head",
+					"Knock Off",
+					"Megahorn",
+					"Rest",
+					"Substitute",
+					"Swords Dance"
+				],
+				"abilities": [
+					"Battle Armor",
+					"Defiant"
+				],
+				"teraTypes": [
+					"Fighting"
+				]
+			}
+		],
+		"generated": true
 	},
 	"pincurchin": {
 		"level": 100,
@@ -23793,6 +26898,35 @@
 			}
 		]
 	},
+	"scovillainmega": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Wallbreaker",
+				"movepool": [
+					"Crunch",
+					"Growth",
+					"Leaf Storm",
+					"Overheat",
+					"Rest",
+					"Stomping Tantrum",
+					"Substitute",
+					"Take Down",
+					"Will-O-Wisp"
+				],
+				"abilities": [
+					"Chlorophyll",
+					"Insomnia",
+					"Moody"
+				],
+				"teraTypes": [
+					"Grass",
+					"Fire"
+				]
+			}
+		],
+		"generated": true
+	},
 	"rabsca": {
 		"level": 91,
 		"sets": [
@@ -24112,6 +27246,34 @@
 			}
 		]
 	},
+	"glimmoramega": {
+		"level": 77,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Dazzling Gleam",
+					"Earth Power",
+					"Energy Ball",
+					"Meteor Beam",
+					"Rest",
+					"Rock Polish",
+					"Sludge Wave",
+					"Substitute",
+					"Toxic"
+				],
+				"abilities": [
+					"Toxic Debris",
+					"Corrosion"
+				],
+				"teraTypes": [
+					"Rock",
+					"Poison"
+				]
+			}
+		],
+		"generated": true
+	},
 	"houndstone": {
 		"level": 86,
 		"sets": [
@@ -24337,6 +27499,31 @@
 			}
 		]
 	},
+	"tatsugiricurlymega": {
+		"level": 80,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Draco Meteor",
+					"Icy Wind",
+					"Nasty Plot",
+					"Rest",
+					"Substitute",
+					"Surf",
+					"Taunt"
+				],
+				"abilities": [
+					"Storm Drain"
+				],
+				"teraTypes": [
+					"Dragon",
+					"Water"
+				]
+			}
+		],
+		"generated": true
+	},
 	"tatsugiridroopy": {
 		"level": 86,
 		"sets": [
@@ -24362,11 +27549,61 @@
 		],
 		"generated": true
 	},
+	"tatsugiridroopymega": {
+		"level": 80,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Draco Meteor",
+					"Icy Wind",
+					"Nasty Plot",
+					"Rest",
+					"Substitute",
+					"Surf",
+					"Taunt"
+				],
+				"abilities": [
+					"Storm Drain"
+				],
+				"teraTypes": [
+					"Dragon",
+					"Water"
+				]
+			}
+		],
+		"generated": true
+	},
 	"tatsugiristretchy": {
 		"level": 86,
 		"sets": [
 			{
 				"role": "Wallbreaker",
+				"movepool": [
+					"Draco Meteor",
+					"Icy Wind",
+					"Nasty Plot",
+					"Rest",
+					"Substitute",
+					"Surf",
+					"Taunt"
+				],
+				"abilities": [
+					"Storm Drain"
+				],
+				"teraTypes": [
+					"Dragon",
+					"Water"
+				]
+			}
+		],
+		"generated": true
+	},
+	"tatsugiristretchymega": {
+		"level": 80,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
 				"movepool": [
 					"Draco Meteor",
 					"Icy Wind",
@@ -25089,6 +28326,33 @@
 				]
 			}
 		]
+	},
+	"baxcaliburmega": {
+		"level": 72,
+		"sets": [
+			{
+				"role": "Setup Sweeper",
+				"movepool": [
+					"Aqua Tail",
+					"Double-Edge",
+					"Earthquake",
+					"Glaive Rush",
+					"Icicle Crash",
+					"Rest",
+					"Substitute",
+					"Swords Dance"
+				],
+				"abilities": [
+					"Thermal Exchange",
+					"Ice Body"
+				],
+				"teraTypes": [
+					"Dragon",
+					"Ice"
+				]
+			}
+		],
+		"generated": true
 	},
 	"gholdengo": {
 		"level": 77,

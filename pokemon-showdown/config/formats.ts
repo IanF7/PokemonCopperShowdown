@@ -128,7 +128,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		desc: "Randomly generated teams, drawn from every Pok&eacute;mon in this game. No teambuilding needed.",
 		mod: "gen9",
 		team: "random",
-		ruleset: ["Obtainable", "Species Clause", "HP Percentage Mod", "Cancel Mod", "Sleep Clause Mod", "Illusion Level Mod"],
+		ruleset: ["Obtainable", "Species Clause", "HP Percentage Mod", "Cancel Mod", "Sleep Clause Mod", "Illusion Level Mod", "Terastal Clause"],
 	},
 	{
 		name: "[Gen 9] Copper Random Doubles 6v6",
@@ -136,6 +136,6 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		mod: "gen9",
 		gameType: "doubles",
 		team: "random",
-		ruleset: ["Obtainable", "Species Clause", "HP Percentage Mod", "Cancel Mod", "Sleep Clause Mod"],
+		ruleset: ["Obtainable", "Species Clause", "HP Percentage Mod", "Cancel Mod", "Sleep Clause Mod", "Terastal Clause"],
 	},
 ];

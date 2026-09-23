@@ -162,6 +162,34 @@
 		],
 		"generated": true
 	},
+	"jinlongmega": {
+		"level": 72,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Agility",
+					"Draco Meteor",
+					"Earth Power",
+					"Fire Blast",
+					"Meteor Beam",
+					"Protect",
+					"Roost",
+					"Stealth Rock",
+					"Tailwind"
+				],
+				"abilities": [
+					"Golden Body",
+					"Levitate"
+				],
+				"teraTypes": [
+					"Dragon",
+					"Rock"
+				]
+			}
+		],
+		"generated": true
+	},
 	"saburn": {
 		"level": 83,
 		"sets": [
@@ -335,6 +363,35 @@
 		],
 		"generated": true
 	},
+	"dvarmithmega": {
+		"level": 77,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Double-Edge",
+					"Earthquake",
+					"Head Smash",
+					"Helping Hand",
+					"Meteor Mash",
+					"Protect",
+					"Rest",
+					"Stealth Rock",
+					"Swords Dance"
+				],
+				"abilities": [
+					"Steelworker",
+					"Battle Armor",
+					"Thick Fat"
+				],
+				"teraTypes": [
+					"Steel",
+					"Ground"
+				]
+			}
+		],
+		"generated": true
+	},
 	"puradox": {
 		"level": 87,
 		"sets": [
@@ -447,6 +504,35 @@
 		],
 		"generated": true
 	},
+	"roaraclemega": {
+		"level": 77,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Calm Mind",
+					"Earth Power",
+					"Fake Out",
+					"Focus Blast",
+					"Future Sight",
+					"Helping Hand",
+					"Hyper Voice",
+					"Protect",
+					"Recover"
+				],
+				"abilities": [
+					"Magic Guard",
+					"Forewarn",
+					"Telepathy"
+				],
+				"teraTypes": [
+					"Normal",
+					"Psychic"
+				]
+			}
+		],
+		"generated": true
+	},
 	"gilagon": {
 		"level": 86,
 		"sets": [
@@ -503,11 +589,68 @@
 		],
 		"generated": true
 	},
+	"infernoixmega": {
+		"level": 76,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Calm Mind",
+					"Dazzling Gleam",
+					"Future Sight",
+					"Helping Hand",
+					"Overheat",
+					"Protect",
+					"Roost",
+					"Shadow Ball",
+					"Will-O-Wisp"
+				],
+				"abilities": [
+					"Eternal Flame",
+					"Flame Body"
+				],
+				"teraTypes": [
+					"Fire",
+					"Psychic"
+				]
+			}
+		],
+		"generated": true
+	},
 	"titanimaam": {
 		"level": 86,
 		"sets": [
 			{
 				"role": "Doubles Setup Sweeper",
+				"movepool": [
+					"Calm Mind",
+					"Earth Power",
+					"Flash Cannon",
+					"Helping Hand",
+					"Meteor Beam",
+					"Moonblast",
+					"Protect",
+					"Rest",
+					"Trick Room"
+				],
+				"abilities": [
+					"Magic Guard",
+					"Clear Body",
+					"Adaptability"
+				],
+				"teraTypes": [
+					"Fairy",
+					"Steel"
+				]
+			}
+		],
+		"generated": true
+	},
+	"titanimaammega": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Offensive Protect",
 				"movepool": [
 					"Calm Mind",
 					"Earth Power",
@@ -590,8 +733,65 @@
 		],
 		"generated": true
 	},
+	"frigidaemega": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Hyper Voice",
+					"Ice Beam",
+					"Icy Wind",
+					"Moonblast",
+					"Nasty Plot",
+					"Protect",
+					"Roost",
+					"Shadow Ball",
+					"Tailwind"
+				],
+				"abilities": [
+					"Keen Eye",
+					"Snow Cloak",
+					"Inner Focus"
+				],
+				"teraTypes": [
+					"Ice",
+					"Ghost"
+				]
+			}
+		],
+		"generated": true
+	},
 	"magnetaur": {
 		"level": 84,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Bulk Up",
+					"Close Combat",
+					"Double-Edge",
+					"Electroweb",
+					"Outrage",
+					"Protect",
+					"Rest",
+					"Supercell Slam",
+					"Volt Switch"
+				],
+				"abilities": [
+					"Magnet Pull",
+					"Lightning Rod"
+				],
+				"teraTypes": [
+					"Electric",
+					"Fighting"
+				]
+			}
+		],
+		"generated": true
+	},
+	"magnetaurmega": {
+		"level": 77,
 		"sets": [
 			{
 				"role": "Offensive Protect",
@@ -1205,6 +1405,35 @@
 		],
 		"generated": true
 	},
+	"phantohmmega": {
+		"level": 78,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Fake Out",
+					"Foul Play",
+					"Hone Claws",
+					"Lunge",
+					"Play Rough",
+					"Protect",
+					"Rest",
+					"Snarl",
+					"Supercell Slam"
+				],
+				"abilities": [
+					"Full Charge",
+					"Tough Claws",
+					"Volt Absorb"
+				],
+				"teraTypes": [
+					"Electric",
+					"Dark"
+				]
+			}
+		],
+		"generated": true
+	},
 	"rolidozer": {
 		"level": 85,
 		"sets": [
@@ -1348,6 +1577,32 @@
 	},
 	"snuffluff": {
 		"level": 87,
+		"sets": [
+			{
+				"role": "Bulky Protect",
+				"movepool": [
+					"Double-Edge",
+					"Earthquake",
+					"Fae Strike",
+					"Fake Out",
+					"Helping Hand",
+					"Iron Defense",
+					"Protect",
+					"Rest",
+					"Supercell Slam"
+				],
+				"abilities": [
+					"Friend Guard"
+				],
+				"teraTypes": [
+					"Normal"
+				]
+			}
+		],
+		"generated": true
+	},
+	"snuffluffmega": {
+		"level": 80,
 		"sets": [
 			{
 				"role": "Bulky Protect",
@@ -1541,8 +1796,64 @@
 		],
 		"generated": true
 	},
+	"platypunchmega": {
+		"level": 76,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Bulk Up",
+					"Close Combat",
+					"Double-Edge",
+					"Gunk Shot",
+					"Hydro Smash",
+					"Protect",
+					"Rest",
+					"Toxic",
+					"Wide Guard"
+				],
+				"abilities": [
+					"Torrent",
+					"Swift Swim"
+				],
+				"teraTypes": [
+					"Water",
+					"Poison"
+				]
+			}
+		],
+		"generated": true
+	},
 	"aurocyx": {
 		"level": 83,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Agility",
+					"Dazzling Gleam",
+					"Helping Hand",
+					"Overheat",
+					"Power Gem",
+					"Protect",
+					"Psyshock",
+					"Roost",
+					"Tailwind"
+				],
+				"abilities": [
+					"Blaze",
+					"Flash Fire"
+				],
+				"teraTypes": [
+					"Fire",
+					"Fairy"
+				]
+			}
+		],
+		"generated": true
+	},
+	"aurocyxmega": {
+		"level": 76,
 		"sets": [
 			{
 				"role": "Offensive Protect",
@@ -1597,6 +1908,63 @@
 		],
 		"generated": true
 	},
+	"latremormega": {
+		"level": 76,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Earthquake",
+					"Iron Head",
+					"Power Whip",
+					"Protect",
+					"Sacred Sword",
+					"Spikes",
+					"Substitute",
+					"Swords Dance",
+					"Synthesis"
+				],
+				"abilities": [
+					"Overgrow",
+					"Chlorophyll"
+				],
+				"teraTypes": [
+					"Grass",
+					"Steel"
+				]
+			}
+		],
+		"generated": true
+	},
+	"helioliskmega": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Agility",
+					"Dragon Pulse",
+					"Electroweb",
+					"Hyper Voice",
+					"Power Surge",
+					"Protect",
+					"Rest",
+					"Surf",
+					"U-turn"
+				],
+				"abilities": [
+					"Dry Skin",
+					"Sand Veil",
+					"Solar Power"
+				],
+				"teraTypes": [
+					"Electric",
+					"Dragon"
+				]
+			}
+		],
+		"generated": true
+	},
 	"venusaur": {
 		"level": 87,
 		"sets": [
@@ -1621,6 +1989,34 @@
 			}
 		]
 	},
+	"venusaurmega": {
+		"level": 77,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Earth Power",
+					"Growth",
+					"Helping Hand",
+					"Knock Off",
+					"Petal Dance",
+					"Protect",
+					"Sludge Bomb",
+					"Synthesis",
+					"Toxic"
+				],
+				"abilities": [
+					"Overgrow",
+					"Chlorophyll"
+				],
+				"teraTypes": [
+					"Grass",
+					"Poison"
+				]
+			}
+		],
+		"generated": true
+	},
 	"charizard": {
 		"level": 82,
 		"sets": [
@@ -1644,6 +2040,62 @@
 				]
 			}
 		]
+	},
+	"charizardmegax": {
+		"level": 76,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Double-Edge",
+					"Earthquake",
+					"Flare Blitz",
+					"Helping Hand",
+					"Outrage",
+					"Protect",
+					"Rest",
+					"Swords Dance",
+					"Will-O-Wisp"
+				],
+				"abilities": [
+					"Blaze",
+					"Solar Power"
+				],
+				"teraTypes": [
+					"Fire",
+					"Dragon"
+				]
+			}
+		],
+		"generated": true
+	},
+	"charizardmegay": {
+		"level": 76,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Dragon Pulse",
+					"Focus Blast",
+					"Helping Hand",
+					"Hurricane",
+					"Overheat",
+					"Protect",
+					"Rest",
+					"Substitute",
+					"Will-O-Wisp"
+				],
+				"abilities": [
+					"Blaze",
+					"Solar Power"
+				],
+				"teraTypes": [
+					"Fire",
+					"Flying"
+				]
+			}
+		],
+		"generated": true
 	},
 	"blastoise": {
 		"level": 83,
@@ -1683,6 +2135,33 @@
 				]
 			}
 		]
+	},
+	"blastoisemega": {
+		"level": 76,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Dragon Pulse",
+					"Fake Out",
+					"Focus Blast",
+					"Helping Hand",
+					"Ice Beam",
+					"Protect",
+					"Rest",
+					"Shell Smash",
+					"Water Spout"
+				],
+				"abilities": [
+					"Torrent",
+					"Rain Dish"
+				],
+				"teraTypes": [
+					"Water"
+				]
+			}
+		],
+		"generated": true
 	},
 	"butterfree": {
 		"level": 91,
@@ -1740,6 +2219,34 @@
 		],
 		"generated": true
 	},
+	"beedrillmega": {
+		"level": 85,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Double-Edge",
+					"Electroweb",
+					"Poison Jab",
+					"Protect",
+					"Roost",
+					"Swords Dance",
+					"Tailwind",
+					"Throat Chop",
+					"X-Scissor"
+				],
+				"abilities": [
+					"Swarm",
+					"Sniper"
+				],
+				"teraTypes": [
+					"Bug",
+					"Poison"
+				]
+			}
+		],
+		"generated": true
+	},
 	"pidgeot": {
 		"level": 86,
 		"sets": [
@@ -1754,6 +2261,35 @@
 					"Substitute",
 					"Tailwind",
 					"U-turn",
+					"Work Up"
+				],
+				"abilities": [
+					"Keen Eye",
+					"Tangled Feet",
+					"Big Pecks"
+				],
+				"teraTypes": [
+					"Normal",
+					"Flying"
+				]
+			}
+		],
+		"generated": true
+	},
+	"pidgeotmega": {
+		"level": 80,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Heat Wave",
+					"Hurricane",
+					"Ominous Wind",
+					"Protect",
+					"Roost",
+					"Tailwind",
+					"U-turn",
+					"Uproar",
 					"Work Up"
 				],
 				"abilities": [
@@ -2237,6 +2773,60 @@
 			}
 		]
 	},
+	"raichumegax": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Agility",
+					"Body Slam",
+					"Brick Break",
+					"Fake Out",
+					"Helping Hand",
+					"Play Rough",
+					"Protect",
+					"Rest",
+					"Volt Tackle"
+				],
+				"abilities": [
+					"Static",
+					"Lightning Rod"
+				],
+				"teraTypes": [
+					"Electric"
+				]
+			}
+		],
+		"generated": true
+	},
+	"raichumegay": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Alluring Voice",
+					"Fake Out",
+					"Focus Blast",
+					"Helping Hand",
+					"Nasty Plot",
+					"Power Surge",
+					"Protect",
+					"Rest",
+					"Surf"
+				],
+				"abilities": [
+					"Static",
+					"Lightning Rod"
+				],
+				"teraTypes": [
+					"Electric"
+				]
+			}
+		],
+		"generated": true
+	},
 	"sandslash": {
 		"level": 93,
 		"sets": [
@@ -2437,6 +3027,35 @@
 				]
 			}
 		]
+	},
+	"clefablemega": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Calm Mind",
+					"Fire Blast",
+					"Follow Me",
+					"Future Sight",
+					"Helping Hand",
+					"Meteor Beam",
+					"Moonblast",
+					"Moonlight",
+					"Protect"
+				],
+				"abilities": [
+					"Cute Charm",
+					"Magic Guard",
+					"Unaware"
+				],
+				"teraTypes": [
+					"Fairy",
+					"Flying"
+				]
+			}
+		],
+		"generated": true
 	},
 	"ninetales": {
 		"level": 79,
@@ -2846,8 +3465,65 @@
 			}
 		]
 	},
+	"poliwrathmega": {
+		"level": 78,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Bulk Up",
+					"Close Combat",
+					"Double-Edge",
+					"Earthquake",
+					"Helping Hand",
+					"Icy Wind",
+					"Liquidation",
+					"Protect",
+					"Rest"
+				],
+				"abilities": [
+					"Water Absorb",
+					"Damp",
+					"Swift Swim"
+				],
+				"teraTypes": [
+					"Water",
+					"Fighting"
+				]
+			}
+		],
+		"generated": true
+	},
 	"alakazam": {
 		"level": 85,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Dazzling Gleam",
+					"Energy Ball",
+					"Focus Blast",
+					"Future Sight",
+					"Knock Off",
+					"Nasty Plot",
+					"Protect",
+					"Recover",
+					"Trick Room"
+				],
+				"abilities": [
+					"Synchronize",
+					"Inner Focus",
+					"Magic Guard"
+				],
+				"teraTypes": [
+					"Psychic"
+				]
+			}
+		],
+		"generated": true
+	},
+	"alakazammega": {
+		"level": 78,
 		"sets": [
 			{
 				"role": "Offensive Protect",
@@ -2923,6 +3599,34 @@
 				]
 			}
 		]
+	},
+	"victreebelmega": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Body Slam",
+					"Growth",
+					"Knock Off",
+					"Leaf Storm",
+					"Leech Life",
+					"Protect",
+					"Sludge Wave",
+					"Synthesis",
+					"Toxic"
+				],
+				"abilities": [
+					"Chlorophyll",
+					"Gluttony"
+				],
+				"teraTypes": [
+					"Grass",
+					"Poison"
+				]
+			}
+		],
+		"generated": true
 	},
 	"tentacruel": {
 		"level": 85,
@@ -3140,6 +3844,35 @@
 			}
 		]
 	},
+	"slowbromega": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Belch",
+					"Fire Blast",
+					"Future Sight",
+					"Helping Hand",
+					"Icy Wind",
+					"Nasty Plot",
+					"Protect",
+					"Slack Off",
+					"Surf"
+				],
+				"abilities": [
+					"Oblivious",
+					"Own Tempo",
+					"Regenerator"
+				],
+				"teraTypes": [
+					"Water",
+					"Psychic"
+				]
+			}
+		],
+		"generated": true
+	},
 	"farfetchd": {
 		"level": 92,
 		"sets": [
@@ -3335,6 +4068,33 @@
 				]
 			}
 		]
+	},
+	"gengarmega": {
+		"level": 78,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Energy Ball",
+					"Icy Wind",
+					"Nasty Plot",
+					"Protect",
+					"Psychic",
+					"Rest",
+					"Shadow Ball",
+					"Sludge Wave",
+					"Trick Room"
+				],
+				"abilities": [
+					"Cursed Body"
+				],
+				"teraTypes": [
+					"Ghost",
+					"Poison"
+				]
+			}
+		],
+		"generated": true
 	},
 	"hypno": {
 		"level": 95,
@@ -3730,6 +4490,34 @@
 		],
 		"generated": true
 	},
+	"kangaskhanmega": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Double-Edge",
+					"Earthquake",
+					"Fake Out",
+					"Hammer Arm",
+					"Helping Hand",
+					"Outrage",
+					"Protect",
+					"Rest",
+					"Work Up"
+				],
+				"abilities": [
+					"Early Bird",
+					"Scrappy",
+					"Inner Focus"
+				],
+				"teraTypes": [
+					"Normal"
+				]
+			}
+		],
+		"generated": true
+	},
 	"seaking": {
 		"level": 88,
 		"sets": [
@@ -3760,6 +4548,34 @@
 	},
 	"starmie": {
 		"level": 83,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Agility",
+					"Ice Beam",
+					"Icy Wind",
+					"Meteor Beam",
+					"Protect",
+					"Psychic",
+					"Recover",
+					"Surf",
+					"Trick Room"
+				],
+				"abilities": [
+					"Natural Cure",
+					"Analytic"
+				],
+				"teraTypes": [
+					"Water",
+					"Psychic"
+				]
+			}
+		],
+		"generated": true
+	},
+	"starmiemega": {
+		"level": 77,
 		"sets": [
 			{
 				"role": "Offensive Protect",
@@ -3931,6 +4747,35 @@
 				],
 				"teraTypes": [
 					"Bug"
+				]
+			}
+		],
+		"generated": true
+	},
+	"pinsirmega": {
+		"level": 78,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Close Combat",
+					"Double-Edge",
+					"Earthquake",
+					"Helping Hand",
+					"Knock Off",
+					"Protect",
+					"Rest",
+					"Swords Dance",
+					"X-Scissor"
+				],
+				"abilities": [
+					"Hyper Cutter",
+					"Mold Breaker",
+					"Moxie"
+				],
+				"teraTypes": [
+					"Bug",
+					"Flying"
 				]
 			}
 		],
@@ -4132,6 +4977,34 @@
 				]
 			}
 		]
+	},
+	"gyaradosmega": {
+		"level": 76,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Aqua Tail",
+					"Crunch",
+					"Double-Edge",
+					"Dragon Dance",
+					"Helping Hand",
+					"Icy Wind",
+					"Outrage",
+					"Protect",
+					"Rest"
+				],
+				"abilities": [
+					"Intimidate",
+					"Moxie"
+				],
+				"teraTypes": [
+					"Water",
+					"Dark"
+				]
+			}
+		],
+		"generated": true
 	},
 	"lapras": {
 		"level": 83,
@@ -4347,6 +5220,35 @@
 	},
 	"aerodactyl": {
 		"level": 84,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Double-Edge",
+					"Dragon Dance",
+					"Earthquake",
+					"Pressure Wave",
+					"Protect",
+					"Roost",
+					"Stone Edge",
+					"Tailwind",
+					"Wide Guard"
+				],
+				"abilities": [
+					"Rock Head",
+					"Pressure",
+					"Unnerve"
+				],
+				"teraTypes": [
+					"Rock",
+					"Flying"
+				]
+			}
+		],
+		"generated": true
+	},
+	"aerodactylmega": {
+		"level": 77,
 		"sets": [
 			{
 				"role": "Offensive Protect",
@@ -4681,6 +5583,34 @@
 		],
 		"generated": true
 	},
+	"dragonitemega": {
+		"level": 72,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Agility",
+					"Draco Meteor",
+					"Fire Blast",
+					"Helping Hand",
+					"Hurricane",
+					"Ice Beam",
+					"Icy Wind",
+					"Protect",
+					"Roost"
+				],
+				"abilities": [
+					"Inner Focus",
+					"Multiscale"
+				],
+				"teraTypes": [
+					"Dragon",
+					"Flying"
+				]
+			}
+		],
+		"generated": true
+	},
 	"mewtwo": {
 		"level": 73,
 		"sets": [
@@ -4719,6 +5649,61 @@
 				]
 			}
 		]
+	},
+	"mewtwomegax": {
+		"level": 70,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Brick Break",
+					"Bulk Up",
+					"Double-Edge",
+					"Helping Hand",
+					"Icy Wind",
+					"Protect",
+					"Recover",
+					"Vengeance",
+					"Zen Headbutt"
+				],
+				"abilities": [
+					"Pressure",
+					"Unnerve"
+				],
+				"teraTypes": [
+					"Psychic",
+					"Fighting"
+				]
+			}
+		],
+		"generated": true
+	},
+	"mewtwomegay": {
+		"level": 70,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Earth Power",
+					"Energy Ball",
+					"Fire Blast",
+					"Future Sight",
+					"Helping Hand",
+					"Icy Wind",
+					"Nasty Plot",
+					"Protect",
+					"Recover"
+				],
+				"abilities": [
+					"Pressure",
+					"Unnerve"
+				],
+				"teraTypes": [
+					"Psychic"
+				]
+			}
+		],
+		"generated": true
 	},
 	"mew": {
 		"level": 84,
@@ -4799,6 +5784,33 @@
 			}
 		]
 	},
+	"meganiummega": {
+		"level": 77,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Ancient Power",
+					"Dazzling Gleam",
+					"Helping Hand",
+					"Knock Off",
+					"Petal Dance",
+					"Protect",
+					"Substitute",
+					"Synthesis"
+				],
+				"abilities": [
+					"Overgrow",
+					"Leaf Guard"
+				],
+				"teraTypes": [
+					"Grass",
+					"Fairy"
+				]
+			}
+		],
+		"generated": true
+	},
 	"typhlosion": {
 		"level": 79,
 		"sets": [
@@ -4876,6 +5888,34 @@
 				]
 			}
 		]
+	},
+	"feraligatrmega": {
+		"level": 76,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Double-Edge",
+					"Helping Hand",
+					"Icy Wind",
+					"Liquidation",
+					"Outrage",
+					"Protect",
+					"Rest",
+					"Superpower",
+					"Swords Dance"
+				],
+				"abilities": [
+					"Torrent",
+					"Sheer Force"
+				],
+				"teraTypes": [
+					"Water",
+					"Dragon"
+				]
+			}
+		],
+		"generated": true
 	},
 	"furret": {
 		"level": 98,
@@ -5016,6 +6056,34 @@
 		],
 		"generated": true
 	},
+	"crobatmega": {
+		"level": 76,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Brave Bird",
+					"Cross Poison",
+					"Crunch",
+					"Curse",
+					"Double-Edge",
+					"Protect",
+					"Quick Guard",
+					"Roost",
+					"Tailwind"
+				],
+				"abilities": [
+					"Inner Focus",
+					"Infiltrator"
+				],
+				"teraTypes": [
+					"Poison",
+					"Flying"
+				]
+			}
+		],
+		"generated": true
+	},
 	"lanturn": {
 		"level": 87,
 		"sets": [
@@ -5100,6 +6168,34 @@
 				]
 			}
 		]
+	},
+	"ampharosmega": {
+		"level": 78,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Agility",
+					"Dragon Pulse",
+					"Electroweb",
+					"Focus Blast",
+					"Helping Hand",
+					"Meteor Beam",
+					"Power Surge",
+					"Protect",
+					"Rest"
+				],
+				"abilities": [
+					"Static",
+					"Plus"
+				],
+				"teraTypes": [
+					"Electric",
+					"Dragon"
+				]
+			}
+		],
+		"generated": true
 	},
 	"bellossom": {
 		"level": 87,
@@ -5544,6 +6640,35 @@
 		],
 		"generated": true
 	},
+	"steelixmega": {
+		"level": 78,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Double-Edge",
+					"Dragon Dance",
+					"Earthquake",
+					"Head Smash",
+					"Protect",
+					"Rest",
+					"Steel Roller",
+					"Taunt",
+					"Wide Guard"
+				],
+				"abilities": [
+					"Rock Head",
+					"Sturdy",
+					"Sheer Force"
+				],
+				"teraTypes": [
+					"Steel",
+					"Ground"
+				]
+			}
+		],
+		"generated": true
+	},
 	"granbull": {
 		"level": 88,
 		"sets": [
@@ -5675,6 +6800,35 @@
 			}
 		]
 	},
+	"scizormega": {
+		"level": 78,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Close Combat",
+					"Double-Edge",
+					"Helping Hand",
+					"Iron Head",
+					"Lunge",
+					"Protect",
+					"Quick Guard",
+					"Rest",
+					"Swords Dance"
+				],
+				"abilities": [
+					"Swarm",
+					"Technician",
+					"Light Metal"
+				],
+				"teraTypes": [
+					"Bug",
+					"Steel"
+				]
+			}
+		],
+		"generated": true
+	},
 	"shuckle": {
 		"level": 84,
 		"sets": [
@@ -5740,6 +6894,35 @@
 				]
 			}
 		]
+	},
+	"heracrossmega": {
+		"level": 78,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Close Combat",
+					"Double-Edge",
+					"Earthquake",
+					"Helping Hand",
+					"Knock Off",
+					"Megahorn",
+					"Protect",
+					"Rest",
+					"Swords Dance"
+				],
+				"abilities": [
+					"Swarm",
+					"Guts",
+					"Moxie"
+				],
+				"teraTypes": [
+					"Bug",
+					"Fighting"
+				]
+			}
+		],
+		"generated": true
 	},
 	"magcargo": {
 		"level": 93,
@@ -5913,6 +7096,35 @@
 			}
 		]
 	},
+	"skarmorymega": {
+		"level": 80,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Body Press",
+					"Brave Bird",
+					"Icy Wind",
+					"Iron Head",
+					"Protect",
+					"Roost",
+					"Swords Dance",
+					"Tailwind",
+					"X-Scissor"
+				],
+				"abilities": [
+					"Keen Eye",
+					"Sturdy",
+					"Weak Armor"
+				],
+				"teraTypes": [
+					"Steel",
+					"Flying"
+				]
+			}
+		],
+		"generated": true
+	},
 	"houndoom": {
 		"level": 86,
 		"sets": [
@@ -5956,6 +7168,35 @@
 				]
 			}
 		]
+	},
+	"houndoommega": {
+		"level": 78,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Dark Wave",
+					"Helping Hand",
+					"Hyper Voice",
+					"Nasty Plot",
+					"Overheat",
+					"Protect",
+					"Rest",
+					"Sludge Bomb",
+					"Snarl"
+				],
+				"abilities": [
+					"Early Bird",
+					"Flash Fire",
+					"Unnerve"
+				],
+				"teraTypes": [
+					"Dark",
+					"Fire"
+				]
+			}
+		],
+		"generated": true
 	},
 	"kingdra": {
 		"level": 85,
@@ -6343,6 +7584,34 @@
 			}
 		]
 	},
+	"tyranitarmega": {
+		"level": 72,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Double-Edge",
+					"Dragon Dance",
+					"Foul Play",
+					"Helping Hand",
+					"Icy Wind",
+					"Outrage",
+					"Protect",
+					"Rest",
+					"Stone Edge"
+				],
+				"abilities": [
+					"Sand Stream",
+					"Unnerve"
+				],
+				"teraTypes": [
+					"Rock",
+					"Dark"
+				]
+			}
+		],
+		"generated": true
+	},
 	"lugia": {
 		"level": 71,
 		"sets": [
@@ -6449,6 +7718,34 @@
 			}
 		]
 	},
+	"sceptilemega": {
+		"level": 76,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Agility",
+					"Dragon Pulse",
+					"Focus Blast",
+					"Helping Hand",
+					"Leaf Storm",
+					"Protect",
+					"Quick Guard",
+					"Swift",
+					"Synthesis"
+				],
+				"abilities": [
+					"Overgrow",
+					"Unburden"
+				],
+				"teraTypes": [
+					"Grass",
+					"Dragon"
+				]
+			}
+		],
+		"generated": true
+	},
 	"blaziken": {
 		"level": 79,
 		"sets": [
@@ -6485,6 +7782,34 @@
 			}
 		]
 	},
+	"blazikenmega": {
+		"level": 76,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Brave Bird",
+					"Close Combat",
+					"Double-Edge",
+					"Flare Blitz",
+					"Helping Hand",
+					"Protect",
+					"Rest",
+					"Swords Dance",
+					"U-turn"
+				],
+				"abilities": [
+					"Blaze",
+					"Speed Boost"
+				],
+				"teraTypes": [
+					"Fire",
+					"Fighting"
+				]
+			}
+		],
+		"generated": true
+	},
 	"swampert": {
 		"level": 82,
 		"sets": [
@@ -6506,6 +7831,34 @@
 				]
 			}
 		]
+	},
+	"swampertmega": {
+		"level": 76,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Bulk Up",
+					"Double-Edge",
+					"Earthquake",
+					"Helping Hand",
+					"Icy Wind",
+					"Liquidation",
+					"Outrage",
+					"Protect",
+					"Rest"
+				],
+				"abilities": [
+					"Torrent",
+					"Damp"
+				],
+				"teraTypes": [
+					"Water",
+					"Ground"
+				]
+			}
+		],
+		"generated": true
 	},
 	"mightyena": {
 		"level": 95,
@@ -6773,6 +8126,35 @@
 				]
 			}
 		]
+	},
+	"gardevoirmega": {
+		"level": 77,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Calm Mind",
+					"Energy Ball",
+					"Future Sight",
+					"Helping Hand",
+					"Hyper Voice",
+					"Icy Wind",
+					"Moonblast",
+					"Protect",
+					"Rest"
+				],
+				"abilities": [
+					"Synchronize",
+					"Trace",
+					"Telepathy"
+				],
+				"teraTypes": [
+					"Psychic",
+					"Fairy"
+				]
+			}
+		],
+		"generated": true
 	},
 	"masquerain": {
 		"level": 90,
@@ -7076,11 +8458,68 @@
 			}
 		]
 	},
+	"sableyemega": {
+		"level": 86,
+		"sets": [
+			{
+				"role": "Bulky Protect",
+				"movepool": [
+					"Bulk Up",
+					"Energy Ball",
+					"Fake Out",
+					"Foul Play",
+					"Helping Hand",
+					"Poltergeist",
+					"Protect",
+					"Psychic",
+					"Recover"
+				],
+				"abilities": [
+					"Keen Eye",
+					"Prankster"
+				],
+				"teraTypes": [
+					"Dark",
+					"Ghost"
+				]
+			}
+		],
+		"generated": true
+	},
 	"mawile": {
 		"level": 92,
 		"sets": [
 			{
 				"role": "Doubles Setup Sweeper",
+				"movepool": [
+					"Double-Edge",
+					"Fae Strike",
+					"Foul Play",
+					"Helping Hand",
+					"Icy Wind",
+					"Iron Head",
+					"Protect",
+					"Rest",
+					"Swords Dance"
+				],
+				"abilities": [
+					"Hyper Cutter",
+					"Intimidate",
+					"Sheer Force"
+				],
+				"teraTypes": [
+					"Steel",
+					"Fairy"
+				]
+			}
+		],
+		"generated": true
+	},
+	"mawilemega": {
+		"level": 86,
+		"sets": [
+			{
+				"role": "Offensive Protect",
 				"movepool": [
 					"Double-Edge",
 					"Fae Strike",
@@ -7129,6 +8568,34 @@
 				"teraTypes": [
 					"Steel",
 					"Rock"
+				]
+			}
+		],
+		"generated": true
+	},
+	"aggronmega": {
+		"level": 76,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Double-Edge",
+					"Hone Claws",
+					"Icy Wind",
+					"Outrage",
+					"Protect",
+					"Rest",
+					"Steel Roller",
+					"Superpower",
+					"Thunder Wave"
+				],
+				"abilities": [
+					"Sturdy",
+					"Rock Head",
+					"Heavy Metal"
+				],
+				"teraTypes": [
+					"Steel"
 				]
 			}
 		],
@@ -7188,8 +8655,64 @@
 			}
 		]
 	},
+	"medichammega": {
+		"level": 84,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Body Slam",
+					"Bulk Up",
+					"Close Combat",
+					"Fake Out",
+					"Helping Hand",
+					"Poison Jab",
+					"Protect",
+					"Recover",
+					"Zen Headbutt"
+				],
+				"abilities": [
+					"Pure Power",
+					"Telepathy"
+				],
+				"teraTypes": [
+					"Fighting",
+					"Psychic"
+				]
+			}
+		],
+		"generated": true
+	},
 	"manectric": {
 		"level": 86,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Agility",
+					"Hyper Voice",
+					"Overheat",
+					"Protect",
+					"Rest",
+					"Signal Beam",
+					"Snarl",
+					"Thunderbolt",
+					"Volt Switch"
+				],
+				"abilities": [
+					"Static",
+					"Lightning Rod",
+					"Minus"
+				],
+				"teraTypes": [
+					"Electric"
+				]
+			}
+		],
+		"generated": true
+	},
+	"manectricmega": {
+		"level": 80,
 		"sets": [
 			{
 				"role": "Offensive Protect",
@@ -7379,6 +8902,34 @@
 		],
 		"generated": true
 	},
+	"sharpedomega": {
+		"level": 81,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Agility",
+					"Close Combat",
+					"Crunch",
+					"Double-Edge",
+					"Icy Wind",
+					"Liquidation",
+					"Protect",
+					"Rest",
+					"Snarl"
+				],
+				"abilities": [
+					"Rough Skin",
+					"Speed Boost"
+				],
+				"teraTypes": [
+					"Water",
+					"Dark"
+				]
+			}
+		],
+		"generated": true
+	},
 	"wailord": {
 		"level": 85,
 		"sets": [
@@ -7428,6 +8979,35 @@
 			}
 		]
 	},
+	"cameruptmega": {
+		"level": 81,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Ancient Power",
+					"Earth Power",
+					"Eruption",
+					"Flash Cannon",
+					"Growth",
+					"Helping Hand",
+					"Protect",
+					"Rest",
+					"Will-O-Wisp"
+				],
+				"abilities": [
+					"Magma Armor",
+					"Solid Rock",
+					"Anger Point"
+				],
+				"teraTypes": [
+					"Fire",
+					"Ground"
+				]
+			}
+		],
+		"generated": true
+	},
 	"torkoal": {
 		"level": 86,
 		"sets": [
@@ -7450,6 +9030,34 @@
 				]
 			}
 		]
+	},
+	"torkoalmega": {
+		"level": 80,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Ancient Power",
+					"Earth Power",
+					"Eruption",
+					"Helping Hand",
+					"Protect",
+					"Rest",
+					"Shell Smash",
+					"Sludge Bomb",
+					"Will-O-Wisp"
+				],
+				"abilities": [
+					"White Smoke",
+					"Drought",
+					"Shell Armor"
+				],
+				"teraTypes": [
+					"Fire"
+				]
+			}
+		],
+		"generated": true
 	},
 	"grumpig": {
 		"level": 91,
@@ -7536,6 +9144,33 @@
 			}
 		]
 	},
+	"flygonmega": {
+		"level": 77,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Double-Edge",
+					"Dragon Dance",
+					"First Impression",
+					"Helping Hand",
+					"Outrage",
+					"Protect",
+					"Rest",
+					"Superpower",
+					"Tailwind"
+				],
+				"abilities": [
+					"Levitate"
+				],
+				"teraTypes": [
+					"Dragon",
+					"Bug"
+				]
+			}
+		],
+		"generated": true
+	},
 	"cacturne": {
 		"level": 91,
 		"sets": [
@@ -7594,6 +9229,34 @@
 				]
 			}
 		]
+	},
+	"altariamega": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Brave Bird",
+					"Double-Edge",
+					"Dragon Dance",
+					"Helping Hand",
+					"Moonblast",
+					"Outrage",
+					"Protect",
+					"Roost",
+					"Tailwind"
+				],
+				"abilities": [
+					"Natural Cure",
+					"Cloud Nine"
+				],
+				"teraTypes": [
+					"Dragon",
+					"Fairy"
+				]
+			}
+		],
+		"generated": true
 	},
 	"zangoose": {
 		"level": 87,
@@ -7946,6 +9609,34 @@
 			}
 		]
 	},
+	"banettemega": {
+		"level": 81,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Facade",
+					"Foul Play",
+					"Gunk Shot",
+					"Helping Hand",
+					"Icy Wind",
+					"Protect",
+					"Rest",
+					"Swords Dance",
+					"Vengeance"
+				],
+				"abilities": [
+					"Insomnia",
+					"Frisk",
+					"Cursed Body"
+				],
+				"teraTypes": [
+					"Ghost"
+				]
+			}
+		],
+		"generated": true
+	},
 	"tropius": {
 		"level": 93,
 		"sets": [
@@ -7992,6 +9683,33 @@
 			}
 		]
 	},
+	"chimechomega": {
+		"level": 81,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Calm Mind",
+					"Dazzling Gleam",
+					"Energy Ball",
+					"Future Sight",
+					"Helping Hand",
+					"Hyper Voice",
+					"Icy Wind",
+					"Protect",
+					"Recover"
+				],
+				"abilities": [
+					"Levitate"
+				],
+				"teraTypes": [
+					"Psychic",
+					"Steel"
+				]
+			}
+		],
+		"generated": true
+	},
 	"absol": {
 		"level": 87,
 		"sets": [
@@ -8020,6 +9738,63 @@
 		],
 		"generated": true
 	},
+	"absolmega": {
+		"level": 80,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Close Combat",
+					"Double-Edge",
+					"Foul Play",
+					"Icy Wind",
+					"Megahorn",
+					"Protect",
+					"Rest",
+					"Snarl",
+					"Swords Dance"
+				],
+				"abilities": [
+					"Pressure",
+					"Super Luck",
+					"Justified"
+				],
+				"teraTypes": [
+					"Dark"
+				]
+			}
+		],
+		"generated": true
+	},
+	"absolmegaz": {
+		"level": 80,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Close Combat",
+					"Double-Edge",
+					"Foul Play",
+					"Icy Wind",
+					"Protect",
+					"Rest",
+					"Snarl",
+					"Spectral Strike",
+					"Swords Dance"
+				],
+				"abilities": [
+					"Pressure",
+					"Super Luck",
+					"Justified"
+				],
+				"teraTypes": [
+					"Dark",
+					"Ghost"
+				]
+			}
+		],
+		"generated": true
+	},
 	"glalie": {
 		"level": 94,
 		"sets": [
@@ -8042,6 +9817,34 @@
 				]
 			}
 		]
+	},
+	"glaliemega": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Body Slam",
+					"Earthquake",
+					"Foul Play",
+					"Helping Hand",
+					"Ice Beam",
+					"Icy Wind",
+					"Protect",
+					"Rest",
+					"Taunt"
+				],
+				"abilities": [
+					"Inner Focus",
+					"Ice Body",
+					"Moody"
+				],
+				"teraTypes": [
+					"Ice"
+				]
+			}
+		],
+		"generated": true
 	},
 	"walrein": {
 		"level": 83,
@@ -8199,6 +10002,34 @@
 			}
 		]
 	},
+	"salamencemega": {
+		"level": 72,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Aerial Ace",
+					"Double-Edge",
+					"Dragon Dance",
+					"Earthquake",
+					"Helping Hand",
+					"Outrage",
+					"Protect",
+					"Roost",
+					"Tailwind"
+				],
+				"abilities": [
+					"Intimidate",
+					"Moxie"
+				],
+				"teraTypes": [
+					"Dragon",
+					"Flying"
+				]
+			}
+		],
+		"generated": true
+	},
 	"metagross": {
 		"level": 80,
 		"sets": [
@@ -8238,6 +10069,34 @@
 				]
 			}
 		]
+	},
+	"metagrossmega": {
+		"level": 72,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Double-Edge",
+					"Earthquake",
+					"Hone Claws",
+					"Icy Wind",
+					"Knock Off",
+					"Meteor Mash",
+					"Protect",
+					"Psychic Fangs",
+					"Rest"
+				],
+				"abilities": [
+					"Clear Body",
+					"Light Metal"
+				],
+				"teraTypes": [
+					"Steel",
+					"Psychic"
+				]
+			}
+		],
+		"generated": true
 	},
 	"regirock": {
 		"level": 82,
@@ -8371,6 +10230,33 @@
 			}
 		]
 	},
+	"latiasmega": {
+		"level": 72,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Calm Mind",
+					"Draco Meteor",
+					"Energy Ball",
+					"Future Sight",
+					"Helping Hand",
+					"Ice Beam",
+					"Icy Wind",
+					"Protect",
+					"Recover"
+				],
+				"abilities": [
+					"Levitate"
+				],
+				"teraTypes": [
+					"Dragon",
+					"Psychic"
+				]
+			}
+		],
+		"generated": true
+	},
 	"latios": {
 		"level": 79,
 		"sets": [
@@ -8407,6 +10293,33 @@
 				]
 			}
 		]
+	},
+	"latiosmega": {
+		"level": 72,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Calm Mind",
+					"Draco Meteor",
+					"Energy Ball",
+					"Future Sight",
+					"Helping Hand",
+					"Ice Beam",
+					"Icy Wind",
+					"Protect",
+					"Recover"
+				],
+				"abilities": [
+					"Levitate"
+				],
+				"teraTypes": [
+					"Dragon",
+					"Psychic"
+				]
+			}
+		],
+		"generated": true
 	},
 	"kyogre": {
 		"level": 65,
@@ -8799,6 +10712,34 @@
 			}
 		]
 	},
+	"staraptormega": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Agility",
+					"Brave Bird",
+					"Close Combat",
+					"Double-Edge",
+					"Helping Hand",
+					"Protect",
+					"Rest",
+					"Tailwind",
+					"U-turn"
+				],
+				"abilities": [
+					"Intimidate",
+					"Reckless"
+				],
+				"teraTypes": [
+					"Fighting",
+					"Flying"
+				]
+			}
+		],
+		"generated": true
+	},
 	"bibarel": {
 		"level": 90,
 		"sets": [
@@ -8876,6 +10817,35 @@
 	},
 	"roserade": {
 		"level": 84,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Dazzling Gleam",
+					"Growth",
+					"Petal Dance",
+					"Protect",
+					"Sludge Bomb",
+					"Substitute",
+					"Synthesis",
+					"Toxic",
+					"Uproar"
+				],
+				"abilities": [
+					"Natural Cure",
+					"Poison Point",
+					"Technician"
+				],
+				"teraTypes": [
+					"Grass",
+					"Poison"
+				]
+			}
+		],
+		"generated": true
+	},
+	"roserademega": {
+		"level": 77,
 		"sets": [
 			{
 				"role": "Offensive Protect",
@@ -9297,6 +11267,34 @@
 		],
 		"generated": true
 	},
+	"lopunnymega": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Close Combat",
+					"Fake Out",
+					"Fire Punch",
+					"Helping Hand",
+					"Mega Kick",
+					"Play Rough",
+					"Protect",
+					"Rest",
+					"Work Up"
+				],
+				"abilities": [
+					"Cute Charm",
+					"Limber"
+				],
+				"teraTypes": [
+					"Normal",
+					"Fighting"
+				]
+			}
+		],
+		"generated": true
+	},
 	"mismagius": {
 		"level": 88,
 		"sets": [
@@ -9518,6 +11516,61 @@
 			}
 		]
 	},
+	"garchompmega": {
+		"level": 72,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Double-Edge",
+					"Earthquake",
+					"Helping Hand",
+					"Liquidation",
+					"Outrage",
+					"Protect",
+					"Rest",
+					"Substitute",
+					"Swords Dance"
+				],
+				"abilities": [
+					"Sand Veil",
+					"Rough Skin"
+				],
+				"teraTypes": [
+					"Dragon",
+					"Ground"
+				]
+			}
+		],
+		"generated": true
+	},
+	"garchompmegaz": {
+		"level": 72,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Draco Meteor",
+					"Earth Power",
+					"Fire Blast",
+					"Helping Hand",
+					"Protect",
+					"Rest",
+					"Stealth Rock",
+					"Substitute",
+					"Surf"
+				],
+				"abilities": [
+					"Sand Veil",
+					"Rough Skin"
+				],
+				"teraTypes": [
+					"Dragon"
+				]
+			}
+		],
+		"generated": true
+	},
 	"lucario": {
 		"level": 86,
 		"sets": [
@@ -9552,6 +11605,64 @@
 				]
 			}
 		]
+	},
+	"lucariomega": {
+		"level": 77,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Close Combat",
+					"Earthquake",
+					"Helping Hand",
+					"Meteor Mash",
+					"Protect",
+					"Psychic",
+					"Quick Guard",
+					"Rest",
+					"Swords Dance"
+				],
+				"abilities": [
+					"Steadfast",
+					"Inner Focus",
+					"Justified"
+				],
+				"teraTypes": [
+					"Fighting",
+					"Steel"
+				]
+			}
+		],
+		"generated": true
+	},
+	"lucariomegaz": {
+		"level": 77,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Dragon Pulse",
+					"Flash Cannon",
+					"Focus Blast",
+					"Helping Hand",
+					"Nasty Plot",
+					"Protect",
+					"Psychic",
+					"Quick Guard",
+					"Rest"
+				],
+				"abilities": [
+					"Steadfast",
+					"Inner Focus",
+					"Justified"
+				],
+				"teraTypes": [
+					"Fighting",
+					"Steel"
+				]
+			}
+		],
+		"generated": true
 	},
 	"hippowdon": {
 		"level": 86,
@@ -9715,6 +11826,34 @@
 				]
 			}
 		]
+	},
+	"abomasnowmega": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Double-Edge",
+					"Helping Hand",
+					"Ice Beam",
+					"Icy Wind",
+					"Outrage",
+					"Protect",
+					"Rest",
+					"Swords Dance",
+					"Wood Hammer"
+				],
+				"abilities": [
+					"Snow Warning",
+					"Soundproof"
+				],
+				"teraTypes": [
+					"Grass",
+					"Ice"
+				]
+			}
+		],
+		"generated": true
 	},
 	"weavile": {
 		"level": 81,
@@ -10238,6 +12377,35 @@
 			}
 		]
 	},
+	"gallademega": {
+		"level": 77,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Close Combat",
+					"Earthquake",
+					"Helping Hand",
+					"Icy Wind",
+					"Leaf Blade",
+					"Protect",
+					"Rest",
+					"Swords Dance",
+					"Zen Headbutt"
+				],
+				"abilities": [
+					"Steadfast",
+					"Sharpness",
+					"Justified"
+				],
+				"teraTypes": [
+					"Psychic",
+					"Fighting"
+				]
+			}
+		],
+		"generated": true
+	},
 	"probopass": {
 		"level": 90,
 		"sets": [
@@ -10332,6 +12500,34 @@
 				]
 			}
 		]
+	},
+	"froslassmega": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Helping Hand",
+					"Ice Beam",
+					"Icy Wind",
+					"Protect",
+					"Psychic",
+					"Rest",
+					"Shadow Ball",
+					"Thunderbolt",
+					"Will-O-Wisp"
+				],
+				"abilities": [
+					"Snow Cloak",
+					"Cursed Body"
+				],
+				"teraTypes": [
+					"Ice",
+					"Ghost"
+				]
+			}
+		],
+		"generated": true
 	},
 	"rotom": {
 		"level": 90,
@@ -10722,6 +12918,34 @@
 			}
 		]
 	},
+	"heatranmega": {
+		"level": 72,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Dragon Pulse",
+					"Earth Power",
+					"Iron Defense",
+					"Mineral Burst",
+					"Overheat",
+					"Protect",
+					"Rest",
+					"Taunt",
+					"Will-O-Wisp"
+				],
+				"abilities": [
+					"Flash Fire",
+					"Flame Body"
+				],
+				"teraTypes": [
+					"Fire",
+					"Steel"
+				]
+			}
+		],
+		"generated": true
+	},
 	"regigigas": {
 		"level": 86,
 		"sets": [
@@ -10926,6 +13150,32 @@
 				]
 			}
 		]
+	},
+	"darkraimega": {
+		"level": 72,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Dark Wave",
+					"Ice Beam",
+					"Icy Wind",
+					"Nasty Plot",
+					"Protect",
+					"Psychic",
+					"Rest",
+					"Sludge Bomb",
+					"Snarl"
+				],
+				"abilities": [
+					"Bad Dreams"
+				],
+				"teraTypes": [
+					"Dark"
+				]
+			}
+		],
+		"generated": true
 	},
 	"shaymin": {
 		"level": 81,
@@ -11555,6 +13805,34 @@
 			}
 		]
 	},
+	"emboarmega": {
+		"level": 76,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Bulk Up",
+					"Close Combat",
+					"Double-Edge",
+					"Flare Blitz",
+					"Head Smash",
+					"Helping Hand",
+					"Knock Off",
+					"Protect",
+					"Rest"
+				],
+				"abilities": [
+					"Blaze",
+					"Reckless"
+				],
+				"teraTypes": [
+					"Fire",
+					"Fighting"
+				]
+			}
+		],
+		"generated": true
+	},
 	"samurott": {
 		"level": 89,
 		"sets": [
@@ -11994,6 +14272,35 @@
 			}
 		]
 	},
+	"excadrillmega": {
+		"level": 78,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Double-Edge",
+					"Earthquake",
+					"Helping Hand",
+					"Iron Head",
+					"Poison Jab",
+					"Protect",
+					"Rest",
+					"Substitute",
+					"Swords Dance"
+				],
+				"abilities": [
+					"Sand Rush",
+					"Sand Force",
+					"Mold Breaker"
+				],
+				"teraTypes": [
+					"Ground",
+					"Steel"
+				]
+			}
+		],
+		"generated": true
+	},
 	"audino": {
 		"level": 88,
 		"sets": [
@@ -12016,6 +14323,34 @@
 				],
 				"teraTypes": [
 					"Normal"
+				]
+			}
+		],
+		"generated": true
+	},
+	"audinomega": {
+		"level": 82,
+		"sets": [
+			{
+				"role": "Bulky Protect",
+				"movepool": [
+					"Calm Mind",
+					"Dazzling Gleam",
+					"Fire Blast",
+					"Helping Hand",
+					"Hyper Voice",
+					"Ice Beam",
+					"Icy Wind",
+					"Protect",
+					"Rest"
+				],
+				"abilities": [
+					"Healer",
+					"Regenerator"
+				],
+				"teraTypes": [
+					"Normal",
+					"Fairy"
 				]
 			}
 		],
@@ -12185,6 +14520,35 @@
 	},
 	"scolipede": {
 		"level": 86,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Double-Edge",
+					"Megahorn",
+					"Poison Jab",
+					"Protect",
+					"Rest",
+					"Steel Roller",
+					"Substitute",
+					"Swords Dance",
+					"Toxic"
+				],
+				"abilities": [
+					"Poison Point",
+					"Swarm",
+					"Speed Boost"
+				],
+				"teraTypes": [
+					"Bug",
+					"Poison"
+				]
+			}
+		],
+		"generated": true
+	},
+	"scolipedemega": {
+		"level": 79,
 		"sets": [
 			{
 				"role": "Offensive Protect",
@@ -12430,6 +14794,35 @@
 			}
 		]
 	},
+	"krookodilemega": {
+		"level": 77,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Bulk Up",
+					"Close Combat",
+					"Double-Edge",
+					"Earthquake",
+					"Foul Play",
+					"Helping Hand",
+					"Protect",
+					"Rest",
+					"Snarl"
+				],
+				"abilities": [
+					"Intimidate",
+					"Moxie",
+					"Anger Point"
+				],
+				"teraTypes": [
+					"Ground",
+					"Dark"
+				]
+			}
+		],
+		"generated": true
+	},
 	"darmanitan": {
 		"level": 86,
 		"sets": [
@@ -12538,6 +14931,35 @@
 		],
 		"generated": true
 	},
+	"crustlemega": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Body Press",
+					"Earthquake",
+					"Knock Off",
+					"Protect",
+					"Rest",
+					"Stone Edge",
+					"Swords Dance",
+					"Wide Guard",
+					"X-Scissor"
+				],
+				"abilities": [
+					"Sturdy",
+					"Shell Armor",
+					"Weak Armor"
+				],
+				"teraTypes": [
+					"Bug",
+					"Rock"
+				]
+			}
+		],
+		"generated": true
+	},
 	"scrafty": {
 		"level": 83,
 		"sets": [
@@ -12559,6 +14981,35 @@
 				]
 			}
 		]
+	},
+	"scraftymega": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Close Combat",
+					"Double-Edge",
+					"Fake Out",
+					"Foul Play",
+					"Head Smash",
+					"Helping Hand",
+					"Protect",
+					"Rest",
+					"Swords Dance"
+				],
+				"abilities": [
+					"Shed Skin",
+					"Moxie",
+					"Intimidate"
+				],
+				"teraTypes": [
+					"Dark",
+					"Fighting"
+				]
+			}
+		],
+		"generated": true
 	},
 	"sigilyph": {
 		"level": 85,
@@ -13171,6 +15622,32 @@
 			}
 		]
 	},
+	"eelektrossmega": {
+		"level": 77,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Bulk Up",
+					"Close Combat",
+					"Electroweb",
+					"Outrage",
+					"Power Surge",
+					"Protect",
+					"Rest",
+					"Thrash",
+					"U-turn"
+				],
+				"abilities": [
+					"Levitate"
+				],
+				"teraTypes": [
+					"Electric"
+				]
+			}
+		],
+		"generated": true
+	},
 	"beheeyem": {
 		"level": 86,
 		"sets": [
@@ -13220,6 +15697,35 @@
 				]
 			}
 		]
+	},
+	"chandeluremega": {
+		"level": 77,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Calm Mind",
+					"Energy Ball",
+					"Overheat",
+					"Protect",
+					"Psychic",
+					"Rest",
+					"Shadow Ball",
+					"Trick Room",
+					"Will-O-Wisp"
+				],
+				"abilities": [
+					"Flash Fire",
+					"Flame Body",
+					"Infiltrator"
+				],
+				"teraTypes": [
+					"Ghost",
+					"Fire"
+				]
+			}
+		],
+		"generated": true
 	},
 	"haxorus": {
 		"level": 84,
@@ -13505,6 +16011,34 @@
 			}
 		]
 	},
+	"golurkmega": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Close Combat",
+					"Curse",
+					"Double-Edge",
+					"Earthquake",
+					"Helping Hand",
+					"Icy Wind",
+					"Protect",
+					"Rest",
+					"Vengeance"
+				],
+				"abilities": [
+					"Iron Fist",
+					"No Guard"
+				],
+				"teraTypes": [
+					"Ground",
+					"Ghost"
+				]
+			}
+		],
+		"generated": true
+	},
 	"bouffalant": {
 		"level": 85,
 		"sets": [
@@ -13752,6 +16286,33 @@
 				]
 			}
 		]
+	},
+	"hydreigonmega": {
+		"level": 72,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Belch",
+					"Dark Wave",
+					"Draco Meteor",
+					"Fire Blast",
+					"Helping Hand",
+					"Nasty Plot",
+					"Protect",
+					"Rest",
+					"Snarl"
+				],
+				"abilities": [
+					"Levitate"
+				],
+				"teraTypes": [
+					"Dark",
+					"Dragon"
+				]
+			}
+		],
+		"generated": true
 	},
 	"volcarona": {
 		"level": 78,
@@ -14532,6 +17093,34 @@
 			}
 		]
 	},
+	"chesnaughtmega": {
+		"level": 76,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Close Combat",
+					"Double-Edge",
+					"Earthquake",
+					"Helping Hand",
+					"Protect",
+					"Swords Dance",
+					"Synthesis",
+					"Wide Guard",
+					"Wood Hammer"
+				],
+				"abilities": [
+					"Overgrow",
+					"Bulletproof"
+				],
+				"teraTypes": [
+					"Grass",
+					"Fighting"
+				]
+			}
+		],
+		"generated": true
+	},
 	"delphox": {
 		"level": 83,
 		"sets": [
@@ -14552,6 +17141,34 @@
 				]
 			}
 		]
+	},
+	"delphoxmega": {
+		"level": 76,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Focus Blast",
+					"Future Sight",
+					"Helping Hand",
+					"Hyper Voice",
+					"Nasty Plot",
+					"Overheat",
+					"Protect",
+					"Rest",
+					"Trick Room"
+				],
+				"abilities": [
+					"Blaze",
+					"Magician"
+				],
+				"teraTypes": [
+					"Fire",
+					"Psychic"
+				]
+			}
+		],
+		"generated": true
 	},
 	"greninja": {
 		"level": 83,
@@ -14604,6 +17221,34 @@
 				]
 			}
 		]
+	},
+	"greninjamega": {
+		"level": 76,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Dark Wave",
+					"Gunk Shot",
+					"Helping Hand",
+					"Ice Beam",
+					"Icy Wind",
+					"Protect",
+					"Rest",
+					"Surf",
+					"U-turn"
+				],
+				"abilities": [
+					"Torrent",
+					"Protean"
+				],
+				"teraTypes": [
+					"Water",
+					"Dark"
+				]
+			}
+		],
+		"generated": true
 	},
 	"diggersby": {
 		"level": 90,
@@ -15283,6 +17928,35 @@
 			}
 		]
 	},
+	"pyroarmega": {
+		"level": 78,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Dark Pulse",
+					"Helping Hand",
+					"Hyper Voice",
+					"Overheat",
+					"Protect",
+					"Rest",
+					"Snarl",
+					"Will-O-Wisp",
+					"Work Up"
+				],
+				"abilities": [
+					"Rivalry",
+					"Unnerve",
+					"Moxie"
+				],
+				"teraTypes": [
+					"Fire",
+					"Normal"
+				]
+			}
+		],
+		"generated": true
+	},
 	"floetteeternal": {
 		"level": 81,
 		"sets": [
@@ -15298,6 +17972,33 @@
 					"Psychic",
 					"Rest",
 					"Substitute"
+				],
+				"abilities": [
+					"Flower Veil",
+					"Symbiosis"
+				],
+				"teraTypes": [
+					"Fairy"
+				]
+			}
+		],
+		"generated": true
+	},
+	"floettemega": {
+		"level": 75,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Calm Mind",
+					"Helping Hand",
+					"Light of Ruin",
+					"Petal Dance",
+					"Pollen Puff",
+					"Protect",
+					"Psychic",
+					"Substitute",
+					"Synthesis"
 				],
 				"abilities": [
 					"Flower Veil",
@@ -15453,11 +18154,94 @@
 			}
 		]
 	},
+	"meowsticfmega": {
+		"level": 80,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Alluring Voice",
+					"Energy Ball",
+					"Fake Out",
+					"Future Sight",
+					"Helping Hand",
+					"Nasty Plot",
+					"Protect",
+					"Rest",
+					"Thunderbolt"
+				],
+				"abilities": [
+					"Keen Eye",
+					"Infiltrator",
+					"Competitive"
+				],
+				"teraTypes": [
+					"Psychic"
+				]
+			}
+		],
+		"generated": true
+	},
+	"meowsticmmega": {
+		"level": 80,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Alluring Voice",
+					"Energy Ball",
+					"Fake Out",
+					"Helping Hand",
+					"Nasty Plot",
+					"Protect",
+					"Psychic",
+					"Rest",
+					"Thunderbolt"
+				],
+				"abilities": [
+					"Keen Eye",
+					"Infiltrator",
+					"Prankster"
+				],
+				"teraTypes": [
+					"Psychic"
+				]
+			}
+		],
+		"generated": true
+	},
 	"aegislash": {
 		"level": 85,
 		"sets": [
 			{
 				"role": "Bulky Protect",
+				"movepool": [
+					"Close Combat",
+					"Flash Cannon",
+					"Head Smash",
+					"Protect",
+					"Rest",
+					"Shadow Ball",
+					"Swords Dance",
+					"Toxic",
+					"Wide Guard"
+				],
+				"abilities": [
+					"Stance Change"
+				],
+				"teraTypes": [
+					"Steel",
+					"Ghost"
+				]
+			}
+		],
+		"generated": true
+	},
+	"aegislashmega": {
+		"level": 78,
+		"sets": [
+			{
+				"role": "Offensive Protect",
 				"movepool": [
 					"Close Combat",
 					"Flash Cannon",
@@ -15555,6 +18339,35 @@
 			}
 		]
 	},
+	"malamarmega": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Flamethrower",
+					"Foul Play",
+					"Future Sight",
+					"Helping Hand",
+					"Knock Off",
+					"Protect",
+					"Rest",
+					"Superpower",
+					"Trick Room"
+				],
+				"abilities": [
+					"Contrary",
+					"Suction Cups",
+					"Infiltrator"
+				],
+				"teraTypes": [
+					"Dark",
+					"Psychic"
+				]
+			}
+		],
+		"generated": true
+	},
 	"barbaracle": {
 		"level": 85,
 		"sets": [
@@ -15584,6 +18397,35 @@
 		],
 		"generated": true
 	},
+	"barbaraclemega": {
+		"level": 78,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Earthquake",
+					"Helping Hand",
+					"Icy Wind",
+					"Liquidation",
+					"Protect",
+					"Rest",
+					"Stone Edge",
+					"Superpower",
+					"Swords Dance"
+				],
+				"abilities": [
+					"Tough Claws",
+					"Sniper",
+					"Pickpocket"
+				],
+				"teraTypes": [
+					"Rock",
+					"Fighting"
+				]
+			}
+		],
+		"generated": true
+	},
 	"dragalge": {
 		"level": 88,
 		"sets": [
@@ -15603,6 +18445,35 @@
 				]
 			}
 		]
+	},
+	"dragalgemega": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Acid Armor",
+					"Draco Meteor",
+					"Flip Turn",
+					"Icy Wind",
+					"Protect",
+					"Rest",
+					"Sludge Wave",
+					"Surf",
+					"Thunderbolt"
+				],
+				"abilities": [
+					"Poison Point",
+					"Poison Touch",
+					"Adaptability"
+				],
+				"teraTypes": [
+					"Poison",
+					"Dragon"
+				]
+			}
+		],
+		"generated": true
 	},
 	"clawitzer": {
 		"level": 84,
@@ -15784,6 +18655,35 @@
 				]
 			}
 		]
+	},
+	"hawluchamega": {
+		"level": 78,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Body Slam",
+					"Brave Bird",
+					"Close Combat",
+					"Helping Hand",
+					"Iron Head",
+					"Protect",
+					"Quick Guard",
+					"Roost",
+					"Swords Dance"
+				],
+				"abilities": [
+					"Limber",
+					"Unburden",
+					"Mold Breaker"
+				],
+				"teraTypes": [
+					"Fighting",
+					"Flying"
+				]
+			}
+		],
+		"generated": true
 	},
 	"dedenne": {
 		"level": 85,
@@ -16275,6 +19175,33 @@
 			}
 		]
 	},
+	"dianciemega": {
+		"level": 72,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Earth Power",
+					"Helping Hand",
+					"Meteor Beam",
+					"Moonblast",
+					"Protect",
+					"Psychic",
+					"Rest",
+					"Rock Polish",
+					"Trick Room"
+				],
+				"abilities": [
+					"Clear Body"
+				],
+				"teraTypes": [
+					"Rock",
+					"Fairy"
+				]
+			}
+		],
+		"generated": true
+	},
 	"hoopa": {
 		"level": 86,
 		"sets": [
@@ -16561,6 +19488,35 @@
 				]
 			}
 		]
+	},
+	"crabominablemega": {
+		"level": 80,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Bulk Up",
+					"Close Combat",
+					"Earthquake",
+					"Gunk Shot",
+					"Helping Hand",
+					"Ice Hammer",
+					"Icy Wind",
+					"Protect",
+					"Rest"
+				],
+				"abilities": [
+					"Hyper Cutter",
+					"Iron Fist",
+					"Anger Point"
+				],
+				"teraTypes": [
+					"Fighting",
+					"Ice"
+				]
+			}
+		],
+		"generated": true
 	},
 	"oricorio": {
 		"level": 85,
@@ -17195,6 +20151,33 @@
 				"teraTypes": [
 					"Bug",
 					"Water"
+				]
+			}
+		],
+		"generated": true
+	},
+	"golisopodmega": {
+		"level": 76,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Close Combat",
+					"First Impression",
+					"Icy Wind",
+					"Iron Head",
+					"Liquidation",
+					"Protect",
+					"Rest",
+					"Snarl",
+					"Swords Dance"
+				],
+				"abilities": [
+					"Emergency Exit"
+				],
+				"teraTypes": [
+					"Bug",
+					"Steel"
 				]
 			}
 		],
@@ -18067,6 +21050,35 @@
 		],
 		"generated": true
 	},
+	"drampamega": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Calm Mind",
+					"Draco Meteor",
+					"Energy Ball",
+					"Fire Blast",
+					"Helping Hand",
+					"Hyper Voice",
+					"Icy Wind",
+					"Protect",
+					"Roost"
+				],
+				"abilities": [
+					"Berserk",
+					"Sap Sipper",
+					"Cloud Nine"
+				],
+				"teraTypes": [
+					"Normal",
+					"Dragon"
+				]
+			}
+		],
+		"generated": true
+	},
 	"dhelmise": {
 		"level": 84,
 		"sets": [
@@ -18721,8 +21733,62 @@
 			}
 		]
 	},
+	"magearnamega": {
+		"level": 72,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Calm Mind",
+					"Electroweb",
+					"Energy Ball",
+					"Flash Cannon",
+					"Fleur Cannon",
+					"Helping Hand",
+					"Ice Beam",
+					"Protect",
+					"Rest"
+				],
+				"abilities": [
+					"Soul-Heart"
+				],
+				"teraTypes": [
+					"Steel",
+					"Fairy"
+				]
+			}
+		],
+		"generated": true
+	},
 	"magearnaoriginal": {
 		"level": 78,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Calm Mind",
+					"Electroweb",
+					"Energy Ball",
+					"Flash Cannon",
+					"Fleur Cannon",
+					"Helping Hand",
+					"Ice Beam",
+					"Protect",
+					"Rest"
+				],
+				"abilities": [
+					"Soul-Heart"
+				],
+				"teraTypes": [
+					"Steel",
+					"Fairy"
+				]
+			}
+		],
+		"generated": true
+	},
+	"magearnaoriginalmega": {
+		"level": 72,
 		"sets": [
 			{
 				"role": "Offensive Protect",
@@ -18858,6 +21924,32 @@
 	},
 	"zeraora": {
 		"level": 78,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Bulk Up",
+					"Close Combat",
+					"Fake Out",
+					"Helping Hand",
+					"Mega Kick",
+					"Outrage",
+					"Power Surge",
+					"Protect",
+					"Rest"
+				],
+				"abilities": [
+					"Volt Absorb"
+				],
+				"teraTypes": [
+					"Electric"
+				]
+			}
+		],
+		"generated": true
+	},
+	"zeraoramega": {
+		"level": 72,
 		"sets": [
 			{
 				"role": "Offensive Protect",
@@ -20111,6 +23203,33 @@
 				]
 			}
 		]
+	},
+	"falinksmega": {
+		"level": 80,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Body Slam",
+					"Close Combat",
+					"Helping Hand",
+					"High Horsepower",
+					"Knock Off",
+					"Megahorn",
+					"Protect",
+					"Rest",
+					"Swords Dance"
+				],
+				"abilities": [
+					"Battle Armor",
+					"Defiant"
+				],
+				"teraTypes": [
+					"Fighting"
+				]
+			}
+		],
+		"generated": true
 	},
 	"pincurchin": {
 		"level": 97,
@@ -22168,6 +25287,35 @@
 			}
 		]
 	},
+	"scovillainmega": {
+		"level": 79,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Crunch",
+					"Growth",
+					"Helping Hand",
+					"Leaf Storm",
+					"Overheat",
+					"Protect",
+					"Rage Powder",
+					"Rest",
+					"Take Down"
+				],
+				"abilities": [
+					"Chlorophyll",
+					"Insomnia",
+					"Moody"
+				],
+				"teraTypes": [
+					"Grass",
+					"Fire"
+				]
+			}
+		],
+		"generated": true
+	},
 	"rabsca": {
 		"level": 87,
 		"sets": [
@@ -22492,6 +25640,34 @@
 			}
 		]
 	},
+	"glimmoramega": {
+		"level": 77,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Earth Power",
+					"Energy Ball",
+					"Meteor Beam",
+					"Protect",
+					"Rest",
+					"Rock Polish",
+					"Sludge Wave",
+					"Substitute",
+					"Toxic"
+				],
+				"abilities": [
+					"Toxic Debris",
+					"Corrosion"
+				],
+				"teraTypes": [
+					"Rock",
+					"Poison"
+				]
+			}
+		],
+		"generated": true
+	},
 	"houndstone": {
 		"level": 73,
 		"sets": [
@@ -22655,6 +25831,33 @@
 			}
 		]
 	},
+	"tatsugiricurlymega": {
+		"level": 80,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Draco Meteor",
+					"Helping Hand",
+					"Icy Wind",
+					"Nasty Plot",
+					"Protect",
+					"Rest",
+					"Substitute",
+					"Surf",
+					"Taunt"
+				],
+				"abilities": [
+					"Storm Drain"
+				],
+				"teraTypes": [
+					"Dragon",
+					"Water"
+				]
+			}
+		],
+		"generated": true
+	},
 	"tatsugiridroopy": {
 		"level": 86,
 		"sets": [
@@ -22682,8 +25885,62 @@
 		],
 		"generated": true
 	},
+	"tatsugiridroopymega": {
+		"level": 80,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Draco Meteor",
+					"Helping Hand",
+					"Icy Wind",
+					"Nasty Plot",
+					"Protect",
+					"Rest",
+					"Substitute",
+					"Surf",
+					"Taunt"
+				],
+				"abilities": [
+					"Storm Drain"
+				],
+				"teraTypes": [
+					"Dragon",
+					"Water"
+				]
+			}
+		],
+		"generated": true
+	},
 	"tatsugiristretchy": {
 		"level": 86,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Draco Meteor",
+					"Helping Hand",
+					"Icy Wind",
+					"Nasty Plot",
+					"Protect",
+					"Rest",
+					"Substitute",
+					"Surf",
+					"Taunt"
+				],
+				"abilities": [
+					"Storm Drain"
+				],
+				"teraTypes": [
+					"Dragon",
+					"Water"
+				]
+			}
+		],
+		"generated": true
+	},
+	"tatsugiristretchymega": {
+		"level": 80,
 		"sets": [
 			{
 				"role": "Offensive Protect",
@@ -23335,6 +26592,34 @@
 				]
 			}
 		]
+	},
+	"baxcaliburmega": {
+		"level": 72,
+		"sets": [
+			{
+				"role": "Offensive Protect",
+				"movepool": [
+					"Double-Edge",
+					"Earthquake",
+					"Glaive Rush",
+					"Helping Hand",
+					"Icicle Crash",
+					"Icy Wind",
+					"Protect",
+					"Rest",
+					"Swords Dance"
+				],
+				"abilities": [
+					"Thermal Exchange",
+					"Ice Body"
+				],
+				"teraTypes": [
+					"Dragon",
+					"Ice"
+				]
+			}
+		],
+		"generated": true
 	},
 	"gholdengo": {
 		"level": 78,

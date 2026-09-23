@@ -123,6 +123,13 @@ The two Random Battle formats build teams for you, so there's no teambuilding
 and no team to validate. They pull from every fully evolved Pokémon in the game,
 this game's own Pokémon included.
 
+Most teams get one Mega Evolution: a Pokémon that can Mega Evolve is handed its
+stone, and its moves are picked for the Mega's stats and typing, so Mega
+Charizard X gets physical Dragon moves rather than the ordinary Charizard's
+special ones. Only one per team, since only one Pokémon a side can Mega Evolve
+in a battle. Terastallizing is off in these formats, so Mega Evolution is the
+battle's one big turning point.
+
 Showdown only ships sets for the Pokémon in Scarlet/Violet, so the rest are
 generated from what each Pokémon can learn:
 
