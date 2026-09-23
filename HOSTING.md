@@ -91,6 +91,53 @@ Put MP3s in `pokemon-showdown-client/play.pokemonshowdown.com/audio/cries/`,
 named by Pokémon ID (e.g. `latremor.mp3`). The README in that folder lists all
 113 expected names. Commit, push and run `update.sh`. No rebuild is needed.
 
+## Seeing which Pokémon get used
+
+Every battle is saved to `pokemon-showdown/logs/<month>/<format>/<date>/`, with
+both full teams and the winner, so usage data builds up on its own.
+
+In the game, anyone can type:
+
+```
+/usage                        every format, with its most-used Pokémon
+/usage [format]               usage and win rate for every Pokémon in it
+/usage [format], 2026-11-01   only battles from that date onwards
+```
+
+For the full list or a spreadsheet, run this on the VM:
+
+```bash
+cd ~/showdown/pokemon-showdown
+node tools/usage-report                                    every format
+node tools/usage-report --format gen9azoripokdexsingles6v6
+node tools/usage-report --min 20 --csv usage.csv           spreadsheet, ignoring rare Pokémon
+```
+
+It only reads the logs, so it's safe to run while people are playing. Wait for a
+few hundred battles before retiering: with a small sample, usage says more about
+who was online than about how strong a Pokémon is.
+
+## Random Battles
+
+The two Random Battle formats build teams for you, so there's no teambuilding
+and no team to validate. They pull from every fully evolved Pokémon in the game,
+this game's own Pokémon included.
+
+Showdown only ships sets for the Pokémon in Scarlet/Violet, so the rest are
+generated from what each Pokémon can learn:
+
+```bash
+cd pokemon-showdown
+node tools/build-random-sets          # add sets for anything new
+node tools/build-random-sets --force  # redo every generated set
+node build
+```
+
+Run that after adding a Pokémon or changing learnsets, or new Pokémon will never
+show up in Random Battles. Sets Showdown wrote by hand are never overwritten;
+generated ones are marked `"generated": true` in
+`data/random-battles/gen9/sets.json`.
+
 ## Accounts and ranked battles
 
 Players can register a name with a password, like on regular Pokémon Showdown:

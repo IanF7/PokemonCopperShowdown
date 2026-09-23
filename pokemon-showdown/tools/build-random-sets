@@ -1,0 +1,221 @@
+#!/usr/bin/env node
+/**
+ * Builds Random Battle sets for Pokemon that don't have any.
+ *
+ *   node tools/build-random-sets          add sets for anything missing
+ *   node tools/build-random-sets --force  rebuild every generated set
+ *
+ * Pokemon Showdown ships hand-tuned sets for the Pokemon in Scarlet/Violet
+ * (data/random-battles/gen9/sets.json and doubles-sets.json), but not for
+ * Pokemon Copper's own Pokemon, or the older Pokemon this game brings back.
+ * Without a set, a Pokemon simply never appears in a Random Battle.
+ *
+ * This fills the gaps: it picks a role from the Pokemon's stats and a movepool
+ * from what it can actually learn, in the same format Showdown uses. Sets that
+ * already exist are left alone, and generated ones are marked so they can be
+ * rebuilt later ("generated": true).
+ *
+ * Re-run it after adding new Pokemon or changing learnsets, then rebuild.
+ */
+'use strict';
+
+const fs = require('fs');
+const path = require('path');
+
+const { Dex } = require(path.resolve(__dirname, '../dist/sim'));
+const DATA_DIR = path.resolve(__dirname, '../data/random-battles/gen9');
+const FORCE = process.argv.includes('--force');
+
+/** moves that need a charge/recharge turn, hurt the user badly, or are too random to hand out */
+const BAD_MOVES = new Set([
+	'hyperbeam', 'gigaimpact', 'solarbeam', 'solarblade', 'skyattack', 'fly', 'dig', 'dive', 'bounce',
+	'phantomforce', 'shadowforce', 'razorwind', 'skullbash', 'frenzyplant', 'blastburn', 'hydrocannon',
+	'rockwrecker', 'roaroftime', 'prismaticlaser', 'eternabeam', 'meteorassault', 'lastresort', 'explosion',
+	'selfdestruct', 'memento', 'finalgambit', 'healingwish', 'lunardance', 'mirrormove', 'naturepower',
+	'metronome', 'assist', 'copycat', 'sleeptalk', 'snore', 'dreameater', 'synchronoise', 'present', 'beatup',
+	'bide', 'counter', 'mirrorcoat', 'endeavor', 'falseswipe', 'holdback', 'guillotine', 'horndrill',
+	'fissure', 'sheercold', 'splash', 'celebrate', 'happyhour', 'holdhands', 'teleport', 'transform',
+	'bestow', 'skydrop', 'freezeshock', 'iceburn', 'dynamaxcannon', 'behemothblade', 'behemothbash',
+	'steelbeam', 'mistyexplosion', 'chloroblast', 'shelltrap', 'focuspunch', 'beakblast', 'bellydrum',
+]);
+// setup moves, split so a physical attacker isn't handed Nasty Plot
+const SETUP_PHYSICAL = [
+	'swordsdance', 'dragondance', 'bulkup', 'shiftgear', 'victorydance', 'tidyup', 'coil', 'honeclaws', 'curse',
+];
+const SETUP_SPECIAL = ['nastyplot', 'calmmind', 'quiverdance', 'takeheart', 'clangoroussoul'];
+const SETUP_NEUTRAL = ['shellsmash', 'workup', 'growth', 'agility', 'rockpolish', 'irondefense', 'acidarmor', 'cosmicpower'];
+const RECOVERY_MOVES = [
+	'recover', 'roost', 'softboiled', 'milkdrink', 'slackoff', 'synthesis', 'moonlight', 'morningsun',
+	'shoreup', 'strengthsap', 'junglehealing', 'rest',
+];
+const PIVOT_MOVES = ['uturn', 'voltswitch', 'flipturn', 'partingshot'];
+const UTILITY_MOVES = [
+	'knockoff', 'willowisp', 'thunderwave', 'taunt', 'toxic', 'substitute', 'stealthrock', 'spikes',
+	'rapidspin', 'defog', 'encore', 'spore', 'sleeppowder', 'hypnosis', 'glare', 'nuzzle', 'yawn',
+	'leechseed', 'wish', 'trick', 'switcheroo', 'haze', 'painsplit', 'destinybond', 'toxicspikes',
+	'stickyweb', 'courtchange', 'healbell', 'aromatherapy', 'roar', 'whirlwind', 'tailwind', 'trickroom',
+	'lightscreen', 'reflect', 'auroraveil',
+];
+const DOUBLES_MOVES = [
+	'fakeout', 'followme', 'ragepowder', 'helpinghand', 'icywind', 'electroweb', 'snarl', 'wideguard',
+	'quickguard', 'decorate', 'tailwind', 'trickroom',
+];
+/** abilities that are actively bad to be handed at random */
+const BAD_ABILITIES = new Set([
+	'defeatist', 'slowstart', 'truant', 'stall', 'klutz', 'normalize', 'illuminate', 'runaway',
+	'honeygather', 'pickup', 'ballfetch', 'wimpout', 'emergencyexit', 'zenmode', 'schooling', 'iceface',
+	'hungerswitch', 'powerconstruct', 'battlebond', 'disguise', 'rkssystem', 'multitype', 'forecast',
+	'stancechange', 'shieldsdown', 'zerotohero', 'commander', 'flowergift', 'imposter', 'ripen',
+]);
+
+const bst = species => Object.values(species.baseStats).reduce((a, b) => a + b, 0);
+/** Showdown scales levels down as Pokemon get stronger; this matches its own curve closely */
+const levelFor = species => Math.max(70, Math.min(95, Math.round(91 - (bst(species) - 400) * 0.064)));
+
+const moveScore = move => {
+	let power = move.basePower;
+	if (move.multihit) power *= Array.isArray(move.multihit) ? 3 : move.multihit;
+	if (move.id === 'return' || move.id === 'frustration') power = 100;
+	const accuracy = move.accuracy === true ? 100 : move.accuracy;
+	return power * (accuracy / 100);
+};
+
+function movesFor(species) {
+	const pool = [...Dex.species.getMovePool(species.id)].map(id => Dex.moves.get(id))
+		.filter(move => move.exists && !move.isNonstandard && !move.isZ && !move.isMax && !BAD_MOVES.has(move.id));
+	const physical = species.baseStats.atk >= species.baseStats.spa;
+	const usable = move => {
+		if (move.category === 'Status') return true;
+		// don't hand a physical attacker special moves and vice versa
+		if (move.category === 'Physical' && species.baseStats.atk + 10 < species.baseStats.spa) return false;
+		if (move.category === 'Special' && species.baseStats.spa + 10 < species.baseStats.atk) return false;
+		return move.basePower >= 55;
+	};
+	const attacks = pool.filter(m => m.category !== 'Status' && usable(m)).sort((a, b) => moveScore(b) - moveScore(a));
+	return { pool, attacks };
+}
+
+function buildMovepool(species, isDoubles) {
+	const { pool, attacks } = movesFor(species);
+	const has = id => pool.some(m => m.id === id);
+	const chosen = [];
+	const add = move => {
+		if (move && !chosen.includes(move.name) && chosen.length < 9) chosen.push(move.name);
+	};
+
+	// best same-type attack of each of its types, then coverage from other types
+	for (const type of species.types) {
+		add(attacks.find(m => m.type === type));
+	}
+	const usedTypes = new Set(species.types);
+	for (const move of attacks) {
+		if (chosen.length >= (isDoubles ? 4 : 5)) break;
+		if (usedTypes.has(move.type)) continue;
+		usedTypes.add(move.type);
+		add(move);
+	}
+	if (!chosen.length) for (const move of attacks.slice(0, 2)) add(move);
+
+	const pick = preferred => preferred.filter(id => has(id)).map(id => Dex.moves.get(id).name);
+	const physicalAttacker = species.baseStats.atk >= species.baseStats.spa;
+	const setup = pick([...(physicalAttacker ? SETUP_PHYSICAL : SETUP_SPECIAL), ...SETUP_NEUTRAL]);
+	const recovery = pick(RECOVERY_MOVES);
+	const pivot = pick(PIVOT_MOVES);
+	const utility = pick(UTILITY_MOVES);
+	const doublesSupport = pick(DOUBLES_MOVES);
+
+	if (isDoubles) {
+		if (has('protect')) add(Dex.moves.get('protect'));
+		for (const name of doublesSupport.slice(0, 2)) add(Dex.moves.get(name));
+	}
+	if (setup.length) add(Dex.moves.get(setup[0]));
+	if (recovery.length) add(Dex.moves.get(recovery[0]));
+	if (pivot.length) add(Dex.moves.get(pivot[0]));
+	for (const name of utility.slice(0, 2)) add(Dex.moves.get(name));
+
+	return { movepool: chosen, hasSetup: !!setup.length, hasRecovery: !!recovery.length, hasProtect: has('protect') };
+}
+
+function roleFor(species, info, isDoubles) {
+	const { atk, def, spa, spd, hp, spe } = species.baseStats;
+	const offense = Math.max(atk, spa);
+	const bulk = hp + def + spd;
+	if (isDoubles) {
+		if (info.hasProtect && offense >= 100) return 'Offensive Protect';
+		if (info.hasProtect && bulk >= 270) return 'Bulky Protect';
+		if (spe >= 95 && offense >= 95) return 'Doubles Fast Attacker';
+		if (bulk >= 260 && offense >= 85) return 'Doubles Bulky Attacker';
+		if (info.hasSetup) return 'Doubles Setup Sweeper';
+		if (offense >= 110) return 'Doubles Wallbreaker';
+		return 'Doubles Support';
+	}
+	if (info.hasSetup && spe >= 85 && offense >= 90) return 'Setup Sweeper';
+	if (spe >= 100 && offense >= 95) return 'Fast Attacker';
+	if (offense >= 115 && spe < 85) return 'Wallbreaker';
+	if (bulk >= 270 && offense >= 85) return 'Bulky Attacker';
+	if (bulk >= 270) return 'Bulky Support';
+	if (spe >= 95) return 'Fast Support';
+	return 'Bulky Attacker';
+}
+
+function abilitiesFor(species) {
+	const abilities = Object.values(species.abilities)
+		.filter(name => name && !BAD_ABILITIES.has(Dex.toID(name)));
+	return abilities.length ? abilities : [Object.values(species.abilities)[0]];
+}
+
+function generate(species, isDoubles) {
+	const info = buildMovepool(species, isDoubles);
+	if (info.movepool.length < 2) return null; // nothing worth giving it
+	return {
+		role: roleFor(species, info, isDoubles),
+		movepool: info.movepool.sort(),
+		abilities: abilitiesFor(species),
+		teraTypes: [...new Set(species.types)],
+	};
+}
+
+function build(file, isDoubles) {
+	const filePath = path.join(DATA_DIR, file);
+	const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+	let added = 0, rebuilt = 0, skipped = 0;
+
+	// Showdown's own sets are fully evolved Pokemon (plus a handful of Eviolite
+	// users it picked by hand), so generated ones follow the same rule: a Random
+	// Battle full of Caterpies isn't much of a battle.
+	// Totem and costume formes are near-duplicates of the ordinary Pokemon, so
+	// leaving them in would just mean seeing the same Pokemon twice as often
+	const DUPLICATE_FORMES = /-(Totem|Cosplay|Belle|Libre|PhD|Pop-Star|Rock-Star|Spiky-eared|Starter)/i;
+	const eligible = species => (
+		species.exists && !species.isNonstandard && !species.isMega && !species.battleOnly &&
+		species.forme !== 'Gmax' && !species.evos?.length && !DUPLICATE_FORMES.test(species.name) &&
+		!!Dex.species.getMovePool(species.id).size
+	);
+
+	// drop generated sets for anything that no longer qualifies
+	for (const id of Object.keys(data)) {
+		if (data[id]?.generated && !eligible(Dex.species.get(id))) delete data[id];
+	}
+
+	for (const species of Dex.species.all()) {
+		if (!eligible(species)) continue;
+		const existing = data[species.id];
+		if (existing && !(FORCE && existing.generated)) continue;
+
+		const set = generate(species, isDoubles);
+		if (!set) { skipped++; continue; }
+		if (existing) rebuilt++; else added++;
+		data[species.id] = { level: levelFor(species), sets: [set], generated: true };
+	}
+
+	// keep the file in species order, like the originals
+	const ordered = {};
+	for (const id of Object.keys(data).sort((a, b) => (Dex.species.get(a).num - Dex.species.get(b).num) || a.localeCompare(b))) {
+		ordered[id] = data[id];
+	}
+	fs.writeFileSync(filePath, JSON.stringify(ordered, null, '\t') + '\n');
+	console.log(`${file}: ${added} added, ${rebuilt} rebuilt, ${skipped} skipped (no usable moves), ${Object.keys(ordered).length} total`);
+}
+
+build('sets.json', false);
+build('doubles-sets.json', true);

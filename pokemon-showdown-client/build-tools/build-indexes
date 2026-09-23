@@ -1377,7 +1377,8 @@ process.stdout.write("Building `data/teambuilder-tables.js`... ");
 			}
 		}
 		for (const format of Dex.formats.all()) {
-			if (format.effectType !== 'Format' || !format.section?.includes('Copper')) continue;
+			// random formats build their own teams, so they need no teambuilder list
+			if (format.effectType !== 'Format' || !format.section?.includes('Copper') || format.team) continue;
 			const validator = new TeamValidator(format.id);
 			const formatDex = Dex.forFormat(format);
 			const allowed = {};

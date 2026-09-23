@@ -22380,6 +22380,10 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 190,
 		color: "Blue",
 		eggGroups: ["Water 2", "Amorphous"],
+		// only reachable in battle, through Storm Surge (like Darmanitan-Zen)
+		battleOnly: "Brawnsoon",
+		changesFrom: "Brawnsoon",
+		requiredAbility: "Storm Surge",
 	},
 	polterick: {
 		num: -1972,
@@ -22769,6 +22773,10 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 5.9,
 		color: "Purple",
 		eggGroups: ["Field"],
+		// only reachable in battle, through State Shift
+		battleOnly: "Puradox",
+		changesFrom: "Puradox",
+		requiredAbility: "State Shift",
 	},
 	jarmbat: {
 		num: -1994,

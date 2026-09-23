@@ -435,8 +435,11 @@ exports.logchat = false;
 
 /**
  * logchallenges - whether to log challenge battles. Useful for tournament servers.
+ *
+ * On for this server so /usage counts friendly challenges too, not just ladder
+ * battles. Logs hold both teams and the winner (see server/usage-stats.ts).
  */
-exports.logchallenges = false;
+exports.logchallenges = true;
 
 /**
  * loguserstats - how often (in milliseconds) to write user stats to the

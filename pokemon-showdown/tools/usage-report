@@ -1,0 +1,75 @@
+#!/usr/bin/env node
+/**
+ * Prints how often each Pokemon is used, and how often it wins, from the
+ * battle logs this server has already saved. Useful for retiering.
+ *
+ *   node tools/usage-report                                  every format
+ *   node tools/usage-report --format gen9azoripokdexsingles6v6
+ *   node tools/usage-report --since 2026-10-01               only recent battles
+ *   node tools/usage-report --csv usage.csv                  save a spreadsheet
+ *   node tools/usage-report --min 20                         hide Pokemon under 20 teams
+ *
+ * Read-only: it never changes anything, and is safe to run while the server is up.
+ * Players can see the same numbers in-game with /usage.
+ */
+'use strict';
+
+const fs = require('fs');
+const path = require('path');
+
+let stats;
+try {
+	stats = require(path.resolve(__dirname, '../dist/server/usage-stats'));
+} catch {
+	console.error('Build the server first: node build');
+	process.exit(1);
+}
+
+const arg = name => {
+	const i = process.argv.indexOf('--' + name);
+	return i >= 0 ? process.argv[i + 1] : undefined;
+};
+
+(async () => {
+	process.chdir(path.resolve(__dirname, '..')); // logs/ is relative to the server folder
+	const format = arg('format');
+	const since = arg('since');
+	const csvPath = arg('csv');
+	const minTeams = Number(arg('min') || 0);
+
+	const all = await stats.collect({ format, since });
+	if (!all.length) {
+		console.log('No battles recorded yet.');
+		console.log('Rated battles are always logged; for challenges, set Config.logchallenges = true in config/config.js.');
+		return;
+	}
+
+	const csvRows = [['format', 'pokemon', 'teams', 'usage %', 'wins', 'losses', 'win rate %', 'top item', 'top ability', 'top moves']];
+	for (const entry of all) {
+		console.log(`\n=== ${entry.format}: ${entry.battles} battles, ${entry.teams} teams${since ? ` (since ${since})` : ''}`);
+		if (entry.battles < 50) console.log(`    (small sample: treat as a hint, not a verdict)`);
+		console.log('    ' + 'Pokemon'.padEnd(22) + 'usage'.padStart(7) + '  ' + 'win rate'.padStart(9) + '   common item / ability');
+		for (const p of entry.pokemon) {
+			if (p.teams < minTeams) continue;
+			const winRate = p.winRate === null ? '   -' : `${(p.winRate * 100).toFixed(0)}%`.padStart(4);
+			console.log(
+				'    ' + p.species.padEnd(22) +
+				`${(p.usage * 100).toFixed(1)}%`.padStart(7) + '  ' +
+				`${winRate} (${p.wins}-${p.losses})`.padStart(9) + '   ' +
+				`${stats.summarize(p.items, p.teams, 1) || '-'} / ${stats.summarize(p.abilities, p.teams, 1) || '-'}`
+			);
+			csvRows.push([
+				entry.format, p.species, p.teams, (p.usage * 100).toFixed(2), p.wins, p.losses,
+				p.winRate === null ? '' : (p.winRate * 100).toFixed(1),
+				stats.summarize(p.items, p.teams, 1), stats.summarize(p.abilities, p.teams, 1),
+				stats.summarize(p.moves, p.teams, 4),
+			]);
+		}
+	}
+
+	if (csvPath) {
+		const csv = csvRows.map(row => row.map(cell => `"${String(cell).replace(/"/g, '""')}"`).join(',')).join('\n');
+		fs.writeFileSync(csvPath, csv + '\n');
+		console.log(`\nSaved ${csvRows.length - 1} rows to ${csvPath}`);
+	}
+})();

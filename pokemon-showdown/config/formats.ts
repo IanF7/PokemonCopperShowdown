@@ -120,4 +120,22 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		bestOfDefault: true,
 		ruleset: ['Standard Doubles', 'VGC Timer', 'Open Team Sheets', 'Terastal Clause'],
 	},
+	{
+		section: "Pokémon Copper (Random Battles)",
+	},
+	{
+		name: "[Gen 9] Copper Random Singles 6v6",
+		desc: "Randomly generated teams, drawn from every Pok&eacute;mon in this game. No teambuilding needed.",
+		mod: "gen9",
+		team: "random",
+		ruleset: ["Obtainable", "Species Clause", "HP Percentage Mod", "Cancel Mod", "Sleep Clause Mod", "Illusion Level Mod"],
+	},
+	{
+		name: "[Gen 9] Copper Random Doubles 6v6",
+		desc: "Randomly generated teams for double battles. No teambuilding needed.",
+		mod: "gen9",
+		gameType: "doubles",
+		team: "random",
+		ruleset: ["Obtainable", "Species Clause", "HP Percentage Mod", "Cancel Mod", "Sleep Clause Mod"],
+	},
 ];
