@@ -979,9 +979,9 @@ export const Dex = new class implements ModdedDex {
 		if (!pokemon) return '';
 		const data = this.getTeambuilderSpriteData(pokemon, dex);
 		const shiny = (data.shiny ? '-shiny' : '');
-		const resize = (data.h ? `background-size:${data.h}px` : '');
 		let dir = data.spriteDir + shiny;
 		let spritePrefix = Dex.resourcePrefix;
+		let { x, y, h } = data;
 		if (Dex.hasLocalSprite(dir.slice('sprites/'.length), data.spriteid)) {
 			spritePrefix = Dex.getCustomSpritePrefix();
 		} else if (data.spriteDir === 'sprites/home-centered' && Dex.hasLocalSprite(`gen5${shiny}`, data.spriteid)) {
@@ -990,8 +990,19 @@ export const Dex = new class implements ModdedDex {
 			dir = `sprites/gen5${shiny}`;
 			spritePrefix = Dex.getCustomSpritePrefix();
 		}
+		if (spritePrefix !== Dex.resourcePrefix) {
+			// Our sprites are drawn centred on a square canvas, and mostly at 192px rather
+			// than the 96px this box is built around, so they all want the same placement
+			// and scaling -- whichever branch above picked the folder. Without this, the
+			// ones that don't go through the Home branch (Mega Evolutions added in Gen 9)
+			// are drawn at full size and spill out of the box.
+			x = 8;
+			y = 10;
+			h = 96;
+		}
+		const resize = (h ? `background-size:${h}px` : '');
 
-		return `background-image:url(${spritePrefix}${dir}/${data.spriteid}.png);background-position:${data.x + xOffset}px ${data.y + yOffset}px;background-repeat:no-repeat;${resize}`;
+		return `background-image:url(${spritePrefix}${dir}/${data.spriteid}.png);background-position:${x + xOffset}px ${y + yOffset}px;background-repeat:no-repeat;${resize}`;
 	}
 
 	getItemIcon(item: any) {

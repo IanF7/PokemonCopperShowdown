@@ -979,9 +979,9 @@ getTeambuilderSprite=function getTeambuilderSprite(pokemon,dex){var xOffset=argu
 if(!pokemon)return'';
 var data=this.getTeambuilderSpriteData(pokemon,dex);
 var shiny=data.shiny?'-shiny':'';
-var resize=data.h?"background-size:"+data.h+"px":'';
 var dir=data.spriteDir+shiny;
 var spritePrefix=Dex.resourcePrefix;
+var x=data.x,y=data.y,h=data.h;
 if(Dex.hasLocalSprite(dir.slice('sprites/'.length),data.spriteid)){
 spritePrefix=Dex.getCustomSpritePrefix();
 }else if(data.spriteDir==='sprites/home-centered'&&Dex.hasLocalSprite("gen5"+shiny,data.spriteid)){
@@ -990,8 +990,19 @@ spritePrefix=Dex.getCustomSpritePrefix();
 dir="sprites/gen5"+shiny;
 spritePrefix=Dex.getCustomSpritePrefix();
 }
+if(spritePrefix!==Dex.resourcePrefix){
 
-return"background-image:url("+spritePrefix+dir+"/"+data.spriteid+".png);background-position:"+(data.x+xOffset)+"px "+(data.y+yOffset)+"px;background-repeat:no-repeat;"+resize;
+
+
+
+
+x=8;
+y=10;
+h=96;
+}
+var resize=h?"background-size:"+h+"px":'';
+
+return"background-image:url("+spritePrefix+dir+"/"+data.spriteid+".png);background-position:"+(x+xOffset)+"px "+(y+yOffset)+"px;background-repeat:no-repeat;"+resize;
 };_proto2.
 
 getItemIcon=function getItemIcon(item){var _item;
