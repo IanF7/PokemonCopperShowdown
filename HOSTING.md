@@ -63,6 +63,13 @@ bash showdown/deploy/update.sh
 
 To watch the server log: `sudo journalctl -u showdown -f`
 
+Players see updates as soon as they reload: the client build stamps every
+script and stylesheet in `index-selfhosted.html` with a hash of its contents,
+so a changed file gets a new address and browsers can't serve a stale copy.
+The one exception is a file you *replace* under the same name, such as a
+redrawn sprite or a re-recorded cry. Those are cached for an hour, so reload
+with Ctrl+F5 (Cmd+Shift+R on a Mac) to see the new version straight away.
+
 ## Cost
 
 The e2-micro VM, 30 GB disk and 1 GB/month of outgoing traffic are in Google's

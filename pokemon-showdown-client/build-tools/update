@@ -242,6 +242,25 @@ try {
 		.replace(/<!-- config\/head-custom\.html -->/g, '' + fs.readFileSync('config/head-custom-test.html'));
 } catch {}
 
+// The self-hosted page is served by our own server and isn't one of the official
+// templates, so stamp its own scripts/styles with a hash of their contents here.
+// Without this, browsers keep using cached copies after an update (see HOSTING.md).
+{
+	const SELFHOSTED = 'play.pokemonshowdown.com/index-selfhosted.html';
+	const contents = fs.readFileSync(SELFHOSTED, UTF8).replace(
+		/(src=|href=)"((?:js|data|style|config)\/[^"?]+)(?:\?[A-Za-z0-9]*)?"/g,
+		(fullMatch, attr, url) => {
+			let hash = 'v1';
+			try {
+				const file = fs.readFileSync('play.pokemonshowdown.com/' + url);
+				hash = crypto.createHash('md5').update(file).digest('hex').substr(0, 8);
+			} catch {}
+			return `${attr}"${url}?${hash}"`;
+		}
+	);
+	fs.writeFileSync(SELFHOSTED, contents);
+}
+
 fs.writeFileSync('play.pokemonshowdown.com/caches/index-old.html', indexContents);
 if (indexContents2) {
 	fs.writeFileSync('play.pokemonshowdown.com/caches/index-test.html', indexContents2);
