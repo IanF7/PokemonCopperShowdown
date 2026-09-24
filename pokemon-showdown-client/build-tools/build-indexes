@@ -1383,7 +1383,10 @@ process.stdout.write("Building `data/teambuilder-tables.js`... ");
 			const formatDex = Dex.forFormat(format);
 			const allowed = {};
 			for (const species of formatDex.species.all()) {
-				if (!species.exists || species.isNonstandard === 'CAP') continue;
+				// Anything flagged non-standard is illegal here (Obtainable rejects it), and
+				// some formes -- Gmax, battle-only -- validate as their base species rather
+				// than reporting a problem, so they'd otherwise slip into the list.
+				if (!species.exists || species.isNonstandard) continue;
 				// a minimal, otherwise-valid set: if it still fails, the species itself isn't allowed
 				let move = 'Tackle';
 				try {

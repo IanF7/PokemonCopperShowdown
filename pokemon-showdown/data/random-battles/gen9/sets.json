@@ -25349,33 +25349,6 @@
 			}
 		]
 	},
-	"eternatuseternamax": {
-		"level": 70,
-		"sets": [
-			{
-				"role": "Setup Sweeper",
-				"movepool": [
-					"Agility",
-					"Body Slam",
-					"Fire Blast",
-					"Gunk Shot",
-					"Meteor Beam",
-					"Outrage",
-					"Recover",
-					"Substitute",
-					"Toxic"
-				],
-				"abilities": [
-					"Pressure"
-				],
-				"teraTypes": [
-					"Poison",
-					"Dragon"
-				]
-			}
-		],
-		"generated": true
-	},
 	"urshifu": {
 		"level": 74,
 		"sets": [

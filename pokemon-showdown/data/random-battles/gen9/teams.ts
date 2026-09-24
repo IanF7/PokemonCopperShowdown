@@ -150,6 +150,11 @@ const DEFENSIVE_TERA_BLAST_USERS = [
 	'alcremie', 'bellossom', 'comfey', 'fezandipiti', 'florges',
 ];
 
+/** tags that count toward the legendary limit below */
+const LEGENDARY_TAGS = ['Restricted Legendary', 'Sub-Legendary', 'Mythical'];
+/** most legendaries/mythicals one randomly generated team may have */
+const MAX_LEGENDARIES = 2;
+
 export class RandomTeams {
 	readonly dex: ModdedDex;
 	gen: number;
@@ -1763,6 +1768,7 @@ export class RandomTeams {
 
 		let leadsRemaining = this.format.gameType === 'doubles' ? 2 : 1;
 		let hasMega = false;
+		let legendaries = 0;
 		while (baseSpeciesPool.length && pokemon.length < this.maxTeamSize) {
 			const baseSpecies = this.sampleNoReplace(baseSpeciesPool);
 			// Only one Mega Evolution per side is allowed in a battle, so only one per team.
@@ -1776,6 +1782,10 @@ export class RandomTeams {
 
 			// Limit to one of each species (Species Clause)
 			if (baseFormes[species.baseSpecies]) continue;
+
+			// A team of legendaries isn't much of a battle, so cap how many one team gets
+			const isLegendary = LEGENDARY_TAGS.some(tag => species.tags.includes(tag));
+			if (isLegendary && legendaries >= MAX_LEGENDARIES) continue;
 
 			// Treat Ogerpon formes and Terapagos like the Tera Blast user role; reject if team has one already
 			if (['ogerpon', 'ogerponhearthflame', 'terapagos'].includes(species.id) && teamDetails.teraBlast) continue;
@@ -1880,6 +1890,7 @@ export class RandomTeams {
 			// Now that our Pokemon has passed all checks, we can increment our counters
 			baseFormes[species.baseSpecies] = 1;
 			if (species.isMega) hasMega = true;
+			if (isLegendary) legendaries++;
 
 			// Increment type counters
 			for (const typeName of types) {

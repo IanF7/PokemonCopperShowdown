@@ -23861,33 +23861,6 @@
 			}
 		]
 	},
-	"eternatuseternamax": {
-		"level": 70,
-		"sets": [
-			{
-				"role": "Offensive Protect",
-				"movepool": [
-					"Agility",
-					"Fire Blast",
-					"Gunk Shot",
-					"Meteor Beam",
-					"Outrage",
-					"Protect",
-					"Recover",
-					"Substitute",
-					"Toxic"
-				],
-				"abilities": [
-					"Pressure"
-				],
-				"teraTypes": [
-					"Poison",
-					"Dragon"
-				]
-			}
-		],
-		"generated": true
-	},
 	"urshifu": {
 		"level": 75,
 		"sets": [
