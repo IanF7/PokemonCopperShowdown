@@ -284,11 +284,11 @@
 				"role": "Bulky Attacker",
 				"movepool": [
 					"Agility",
-					"Dark Wave",
 					"Dazzling Gleam",
 					"Ice Beam",
 					"Power Surge",
 					"Rest",
+					"Signal Beam",
 					"Surf",
 					"Thunder Wave",
 					"Volt Switch"

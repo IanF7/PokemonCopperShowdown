@@ -36,7 +36,8 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		desc: 'Single battle with Pok&eacute;mon new to Pok&eacute;mon Copper',
 		mod: 'gen9',
 		bestOfDefault: true,
-		ruleset: ['Standard', 'Azori Exclusives', 'VGC Timer', 'Terastal Clause'],
+		ruleset: ['Standard', 'Azori Exclusives', 'VGC Timer', 'Terastal Clause', 'Limit Two Restricted'],
+		restricted: ['Restricted Legendary', 'Sub-Legendary', 'Mythical'],
 	},
 	{
 		name: "[Gen 9] New Pokémon Doubles 4v4",
@@ -52,7 +53,8 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		mod: 'gen9',
 		gameType: 'doubles',
 		bestOfDefault: true,
-		ruleset: ['Standard Doubles', 'Azori Exclusives', 'VGC Timer', 'Terastal Clause'],
+		ruleset: ['Standard Doubles', 'Azori Exclusives', 'VGC Timer', 'Terastal Clause', 'Limit Two Restricted'],
+		restricted: ['Restricted Legendary', 'Sub-Legendary', 'Mythical'],
 	},
 	{
 		section: "Pokémon Copper (Azori Pokédex)",
@@ -69,7 +71,8 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		desc: 'Single battle with Pok&eacute;mon from the Azori Pok&eacute;dex',
 		mod: 'gen9',
 		bestOfDefault: true,
-		ruleset: ['Standard', 'Azori Pokedex', 'VGC Timer', 'Terastal Clause'],
+		ruleset: ['Standard', 'Azori Pokedex', 'VGC Timer', 'Terastal Clause', 'Limit Two Restricted'],
+		restricted: ['Restricted Legendary', 'Sub-Legendary', 'Mythical'],
 	},
 	{
 		name: "[Gen 9] Azori Pokédex Doubles 4v4",
@@ -85,7 +88,8 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		mod: 'gen9',
 		gameType: 'doubles',
 		bestOfDefault: true,
-		ruleset: ['Standard Doubles', 'Azori Pokedex', 'Flat Rules', 'VGC Timer', 'Terastal Clause'],
+		ruleset: ['Standard Doubles', 'Azori Pokedex', 'VGC Timer', 'Terastal Clause', 'Limit Two Restricted'],
+		restricted: ['Restricted Legendary', 'Sub-Legendary', 'Mythical'],
 	},
 	{
 		section: "Pokémon Copper (National Pokédex)",
@@ -97,12 +101,13 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		bestOfDefault: true,
 		ruleset: ['Standard', 'Flat Rules', 'VGC Timer', 'Open Team Sheets', 'Terastal Clause'],
 	},
-		{
+	{
 		name: "[Gen 9] National Pokédex Singles 6v6",
 		desc: 'Single battle with all Pok&eacute;mon in the National Pok&eacute;dex',
 		mod: 'gen9',
 		bestOfDefault: true,
-		ruleset: ['Standard', 'VGC Timer', 'Open Team Sheets', 'Terastal Clause'],
+		ruleset: ['Standard', 'VGC Timer', 'Open Team Sheets', 'Terastal Clause', 'Limit Two Restricted'],
+		restricted: ['Restricted Legendary', 'Sub-Legendary', 'Mythical'],
 	},
 	{
 		name: "[Gen 9] National Pokédex Doubles 4v4",
@@ -118,7 +123,26 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		mod: 'gen9',
 		gameType: 'doubles',
 		bestOfDefault: true,
-		ruleset: ['Standard Doubles', 'VGC Timer', 'Open Team Sheets', 'Terastal Clause'],
+		ruleset: ['Standard Doubles', 'VGC Timer', 'Open Team Sheets', 'Terastal Clause', 'Limit Two Restricted'],
+		restricted: ['Restricted Legendary', 'Sub-Legendary', 'Mythical'],
+	},
+	{
+		section: "Pokémon Copper (Anything Goes)",
+	},
+	{
+		name: "[Gen 9] Anything Goes Singles",
+		desc: 'Single battle with no restrictions at all: any Pok&eacute;mon, any number of legendaries, any items.',
+		mod: 'gen9',
+		bestOfDefault: true,
+		ruleset: ['Standard AG', 'VGC Timer', 'Open Team Sheets', 'Terastal Clause'],
+	},
+	{
+		name: "[Gen 9] Anything Goes Doubles",
+		desc: 'Double battle with no restrictions at all: any Pok&eacute;mon, any number of legendaries, any items.',
+		mod: 'gen9',
+		gameType: 'doubles',
+		bestOfDefault: true,
+		ruleset: ['Standard AG', 'VGC Timer', 'Open Team Sheets', 'Terastal Clause'],
 	},
 	{
 		section: "Pokémon Copper (Random Battles)",
