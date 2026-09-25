@@ -365,6 +365,10 @@ License: GPLv2
 .trainersprite {
 	max-width: 80px;
 	max-height: 80px;
+	/* Avatars are drawn as a background, so anything smaller than the 80x80 box would
+	   otherwise sit in the top-left corner. Official sprites fill the box exactly, so
+	   this only moves smaller ones (this game's are 64x64) down onto the same floor. */
+	background-position: center bottom;
 }
 .turn {
 	position: absolute;

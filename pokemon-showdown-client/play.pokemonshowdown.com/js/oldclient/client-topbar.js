@@ -764,7 +764,7 @@
 				for (var j = 0; j < ours.length; j++) {
 					var name = ours[j];
 					buf += '<button name="setAvatar" value="' + name + '" style="background-image:url(' +
-						Dex.resolveAvatar(name) + ');background-position:0 0;background-size:80px 80px" class="option pixelated' +
+						Dex.resolveAvatar(name) + ');background-position:center bottom" class="option pixelated' +
 						(name === curName ? ' cur' : '') + '" title="/avatar ' + name + '"></button>';
 				}
 				buf += '</div><div style="clear:left"></div>';

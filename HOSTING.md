@@ -109,8 +109,12 @@ name, reload with Ctrl+F5 (Cmd+Shift+R on a Mac) to see it straight away.
 
 Put PNGs in `pokemon-showdown-client/play.pokemonshowdown.com/sprites/trainers/`,
 named exactly what players will type: lowercase letters, numbers and hyphens only,
-e.g. `professor-verde.png`. They're shown at up to 80x80 and scaled down keeping
-their shape, so any square size works (this game's are 128x128).
+e.g. `professor-verde.png`.
+
+**Draw them 80x80 or smaller** — this game's are 64x64. In battle the avatar is a
+background image drawn at its own size in an 80x80 box, so anything bigger is cut
+off rather than shrunk (a 128x128 sprite loses everything below the waist).
+Smaller ones sit centred on the bottom edge, in line with Showdown's own avatars.
 
 Players pick one with `/avatar professor-verde`. Any sprite in that folder is
 allowed automatically — there's no list to keep in sync — and anything not in it
