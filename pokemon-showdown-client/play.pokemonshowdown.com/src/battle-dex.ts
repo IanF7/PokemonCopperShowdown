@@ -330,7 +330,7 @@ export const Dex = new class implements ModdedDex {
 		}
 		if (avatar.startsWith('#')) {
 			const name = toID(avatar.substr(1));
-			return `${Dex.spritePrefix('trainers-custom', name)}sprites/trainers-custom/${name}.png`;
+			return Dex.spriteUrl('trainers-custom', `${name}.png`);
 		}
 		if (avatar.includes('.') && window.Config?.server?.registered) {
 			// custom avatar served by the server
@@ -341,7 +341,7 @@ export const Dex = new class implements ModdedDex {
 		// This game has trainer sprites of its own, so serve ours when we have one and
 		// fall back to play.pokemonshowdown.com for the official avatars.
 		const name = Dex.sanitizeName(avatar || 'unknown');
-		return `${Dex.spritePrefix('trainers', name)}sprites/trainers/${name}.png`;
+		return Dex.spriteUrl('trainers', `${name}.png`);
 	}
 
 	/**
@@ -396,6 +396,18 @@ export const Dex = new class implements ModdedDex {
 	/** play.pokemonshowdown.com, unless this server has the sprite itself */
 	spritePrefix(dir: string, name: string) {
 		return this.hasLocalSprite(dir, name) ? Dex.getCustomSpritePrefix() : Dex.resourcePrefix;
+	}
+
+	/**
+	 * Full URL for a sprite, from here if we have it and from play.pokemonshowdown.com
+	 * if we don't. Ours carry a version from the sprite manifest: a redrawn sprite keeps
+	 * its filename, so without it browsers would serve the old picture for an hour.
+	 */
+	spriteUrl(dir: string, file: string) {
+		const name = file.replace(/\.\w+$/, '');
+		if (!this.hasLocalSprite(dir, name)) return `${Dex.resourcePrefix}sprites/${dir}/${file}`;
+		const version = window.BattleLocalSpritesVersion;
+		return `${Dex.getCustomSpritePrefix()}sprites/${dir}/${file}${version ? `?v=${version}` : ''}`;
 	}
 
 	getShortName(name: string) {
@@ -752,7 +764,7 @@ export const Dex = new class implements ModdedDex {
 		if (Dex.afdMode || options.afd) {
 			// Explicit false check above means AFD will be off if the user disables it - no matter what
 			dir = 'afd' + dir;
-			spriteData.url = Dex.spritePrefix(dir, name) + 'sprites/' + dir + '/' + name + '.png';
+			spriteData.url = Dex.spriteUrl(dir, name + '.png');
 			// Duplicate code but needed to make AFD tinymax work
 			// April Fool's 2020
 			if (isDynamax && !options.noScale) {
@@ -791,7 +803,7 @@ export const Dex = new class implements ModdedDex {
 				dir = animDir + 'ani' + dir;
 				spriteData.w = animationData[facing].w;
 				spriteData.h = animationData[facing].h;
-				spriteData.url = Dex.spritePrefix(dir, name) + 'sprites/' + dir + '/' + name + '.gif';
+				spriteData.url = Dex.spriteUrl(dir, name + '.gif');
 				animatedSprite = true;
 				break;
 			}
@@ -807,7 +819,7 @@ export const Dex = new class implements ModdedDex {
 				name += '-f';
 			}
 
-			spriteData.url = Dex.spritePrefix(dir, name) + 'sprites/' + dir + '/' + name + '.png';
+			spriteData.url = Dex.spriteUrl(dir, name + '.png');
 		}
 
 		if (!options.noScale) {
@@ -898,7 +910,7 @@ export const Dex = new class implements ModdedDex {
 			// so stretching one to fill the slot squashes it. `contain` scales it to 30x30
 			// instead, which leaves the artwork the same size as the official icons next to it.
 			// They're always scaled down, so let the browser smooth them rather than drop pixels.
-			return `background:transparent url(${Dex.getCustomSpritePrefix()}sprites/gen5icons/${id}.png) no-repeat center center / contain;image-rendering:auto${fainted}`;
+			return `background:transparent url(${Dex.spriteUrl('gen5icons', `${id}.png`)}) no-repeat center center / contain;image-rendering:auto${fainted}`;
 		}
 		return `background:transparent url(${Dex.resourcePrefix}sprites/pokemonicons-sheet.png?v22) no-repeat scroll -${left}px -${top}px${fainted}`;
 	}
@@ -983,18 +995,17 @@ export const Dex = new class implements ModdedDex {
 		if (!pokemon) return '';
 		const data = this.getTeambuilderSpriteData(pokemon, dex);
 		const shiny = (data.shiny ? '-shiny' : '');
-		let dir = data.spriteDir + shiny;
-		let spritePrefix = Dex.resourcePrefix;
+		let dir = data.spriteDir.slice('sprites/'.length) + shiny;
 		let { x, y, h } = data;
-		if (Dex.hasLocalSprite(dir.slice('sprites/'.length), data.spriteid)) {
-			spritePrefix = Dex.getCustomSpritePrefix();
-		} else if (data.spriteDir === 'sprites/home-centered' && Dex.hasLocalSprite(`gen5${shiny}`, data.spriteid)) {
+		if (
+			!Dex.hasLocalSprite(dir, data.spriteid) && data.spriteDir === 'sprites/home-centered' &&
+			Dex.hasLocalSprite(`gen5${shiny}`, data.spriteid)
+		) {
 			// We only have Home-style sprites for this game's own Pokemon, but our battle
 			// sprites are the same drawings, so they sit in this box the same way.
-			dir = `sprites/gen5${shiny}`;
-			spritePrefix = Dex.getCustomSpritePrefix();
+			dir = `gen5${shiny}`;
 		}
-		if (spritePrefix !== Dex.resourcePrefix) {
+		if (Dex.hasLocalSprite(dir, data.spriteid)) {
 			// Our sprites are drawn centred on a square canvas, and mostly at 192px rather
 			// than the 96px this box is built around, so they all want the same placement
 			// and scaling -- whichever branch above picked the folder. Without this, the
@@ -1006,7 +1017,8 @@ export const Dex = new class implements ModdedDex {
 		}
 		const resize = (h ? `background-size:${h}px` : '');
 
-		return `background-image:url(${spritePrefix}${dir}/${data.spriteid}.png);background-position:${x + xOffset}px ${y + yOffset}px;background-repeat:no-repeat;${resize}`;
+		const url = Dex.spriteUrl(dir, `${data.spriteid}.png`);
+		return `background-image:url(${url});background-position:${x + xOffset}px ${y + yOffset}px;background-repeat:no-repeat;${resize}`;
 	}
 
 	getItemIcon(item: any) {
@@ -1017,7 +1029,7 @@ export const Dex = new class implements ModdedDex {
 		if (num < 0) {
 			// Custom items (negative spritenum) aren't on the official icon sheet:
 			// they use their own 24x24 png in sprites/itemicons/ on this server.
-			const url = `${Dex.getCustomSpritePrefix()}sprites/itemicons/${toID(item.name)}.png`;
+			const url = Dex.spriteUrl('itemicons', `${toID(item.name)}.png`);
 			return `background:transparent url(${url}) no-repeat scroll 0px 0px;background-size:24px 24px`;
 		}
 

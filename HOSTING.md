@@ -63,12 +63,12 @@ bash showdown/deploy/update.sh
 
 To watch the server log: `sudo journalctl -u showdown -f`
 
-Players see updates as soon as they reload: the client build stamps every
+Players see updates as soon as they reload. The client build stamps every
 script and stylesheet in `index-selfhosted.html` with a hash of its contents,
-so a changed file gets a new address and browsers can't serve a stale copy.
-The one exception is a file you *replace* under the same name, such as a
-redrawn sprite or a re-recorded cry. Those are cached for an hour, so reload
-with Ctrl+F5 (Cmd+Shift+R on a Mac) to see the new version straight away.
+and every sprite served from this server with a version from the sprite
+manifest, so a changed file always gets a new address and browsers can't serve
+a stale copy. Cries are the one exception: re-recording one under the same
+name leaves it cached for an hour, so use Ctrl+F5 (Cmd+Shift+R on a Mac).
 
 ## Cost
 
