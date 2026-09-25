@@ -105,6 +105,28 @@ new ones won't be picked up. Then commit, push and run `update.sh`.
 Sprites are cached by browsers for an hour, so if you replace one under the same
 name, reload with Ctrl+F5 (Cmd+Shift+R on a Mac) to see it straight away.
 
+## Trainer sprites (avatars)
+
+Put PNGs in `pokemon-showdown-client/play.pokemonshowdown.com/sprites/trainers/`,
+named exactly what players will type: lowercase letters, numbers and hyphens only,
+e.g. `professor-verde.png`. They're shown at up to 80x80 and scaled down keeping
+their shape, so any square size works (this game's are 128x128).
+
+Players pick one with `/avatar professor-verde`. Any sprite in that folder is
+allowed automatically — there's no list to keep in sync — and anything not in it
+falls back to Showdown's own avatars, so `/avatar cynthia` still works. Where a
+name would collide with an official avatar, this game's copy is suffixed
+`-copper` (`beauty-copper`) so both remain available.
+
+After adding or removing sprites, run `node build` in `pokemon-showdown-client`
+**and restart the server**: the client build records which sprites are ours, and
+the server reads the folder once at startup to decide which names it accepts.
+
+Players can also just click one: the avatar picker (click your name at the top
+right → Avatar) lists this game's trainers first, under "Pokémon Copper
+trainers", with Showdown's own avatars below. That list is built from the same
+manifest, so new sprites appear there on their own.
+
 ## Custom cries
 
 Put MP3s in `pokemon-showdown-client/play.pokemonshowdown.com/audio/cries/`,

@@ -78,7 +78,7 @@ export const Avatars = new class {
 	}
 	canUse(userid: ID, avatar: string): AvatarID | null {
 		avatar = avatar.toLowerCase().replace(/[^a-z0-9-.#]+/g, '');
-		if (OFFICIAL_AVATARS.has(avatar)) return avatar;
+		if (OFFICIAL_AVATARS.has(avatar) || COPPER_AVATARS.has(avatar)) return avatar;
 
 		const customs = customAvatars[userid]?.allowed;
 		if (!customs) return null;
@@ -101,7 +101,7 @@ export const Avatars = new class {
 			return FS(`config/avatars/${avatar}`).isFile();
 		}
 		if (!avatar.startsWith('#')) {
-			return OFFICIAL_AVATARS.has(avatar);
+			return OFFICIAL_AVATARS.has(avatar) || COPPER_AVATARS.has(avatar);
 		}
 		return Net(Avatars.src(avatar)).get().then(() => true).catch(() => false);
 	}
@@ -222,6 +222,20 @@ export const Avatars = new class {
 function listUsers(users: string[]) {
 	return users.flatMap((userid, i) => [i ? ', ' : null, <username class="username">{userid}</username>]);
 }
+
+/**
+ * This game's own trainer sprites. Read straight from the client's sprites/trainers
+ * folder, so dropping a PNG in there and restarting is all it takes to make it
+ * usable -- no list to keep in sync. Names that clash with an official avatar are
+ * suffixed '-copper' so both stay available.
+ */
+const COPPER_AVATARS = new Set<string>();
+try {
+	const trainerDir = `${Config.clientdir || '../pokemon-showdown-client/play.pokemonshowdown.com'}/sprites/trainers`;
+	for (const file of FS(trainerDir).readdirSync()) {
+		if (file.endsWith('.png')) COPPER_AVATARS.add(file.slice(0, -4));
+	}
+} catch {} // no self-hosted client, or no trainer sprites: just use the official list
 
 const OFFICIAL_AVATARS = new Set([
 	'aaron',

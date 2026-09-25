@@ -329,7 +329,8 @@ export const Dex = new class implements ModdedDex {
 			avatar = BattleAvatarNumbers[avatar];
 		}
 		if (avatar.startsWith('#')) {
-			return Dex.resourcePrefix + 'sprites/trainers-custom/' + toID(avatar.substr(1)) + '.png';
+			const name = toID(avatar.substr(1));
+			return `${Dex.spritePrefix('trainers-custom', name)}sprites/trainers-custom/${name}.png`;
 		}
 		if (avatar.includes('.') && window.Config?.server?.registered) {
 			// custom avatar served by the server
@@ -337,7 +338,10 @@ export const Dex = new class implements ModdedDex {
 			const server = `${protocol}://${Config.server.host}:${Config.server.port}`;
 			return `${server}/avatars/${encodeURIComponent(avatar).replace(/%3F/g, '?')}`;
 		}
-		return Dex.resourcePrefix + 'sprites/trainers/' + Dex.sanitizeName(avatar || 'unknown') + '.png';
+		// This game has trainer sprites of its own, so serve ours when we have one and
+		// fall back to play.pokemonshowdown.com for the official avatars.
+		const name = Dex.sanitizeName(avatar || 'unknown');
+		return `${Dex.spritePrefix('trainers', name)}sprites/trainers/${name}.png`;
 	}
 
 	/**

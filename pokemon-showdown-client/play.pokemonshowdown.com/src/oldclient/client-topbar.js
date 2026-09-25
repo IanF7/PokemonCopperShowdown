@@ -750,8 +750,26 @@
 		type: 'semimodal',
 		initialize: function () {
 			var cur = +app.user.get('avatar');
+			var curName = '' + app.user.get('avatar');
 			var buf = '';
 			buf += '<p>Choose an avatar or <button name="close" class="button">Cancel</button></p>';
+
+			// This game's own trainers, read from the sprite manifest, so adding a PNG to
+			// sprites/trainers and rebuilding is all it takes for it to show up here.
+			var ours = ((window.BattleLocalSprites && BattleLocalSprites.trainers) || '').split(' ');
+			ours = ours.filter(function (name) { return name; }).sort();
+			if (ours.length) {
+				buf += '<p style="clear:left"><strong>Pok&eacute;mon Copper trainers</strong></p>';
+				buf += '<div class="avatarlist">';
+				for (var j = 0; j < ours.length; j++) {
+					var name = ours[j];
+					buf += '<button name="setAvatar" value="' + name + '" style="background-image:url(' +
+						Dex.resolveAvatar(name) + ');background-position:0 0;background-size:80px 80px" class="option pixelated' +
+						(name === curName ? ' cur' : '') + '" title="/avatar ' + name + '"></button>';
+				}
+				buf += '</div><div style="clear:left"></div>';
+				buf += '<p><strong>Pok&eacute;mon Showdown avatars</strong></p>';
+			}
 
 			buf += '<div class="avatarlist">';
 			for (var i = 1; i <= 293; i++) {
