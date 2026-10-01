@@ -48,19 +48,33 @@ const SETUP_PHYSICAL = [
 	'swordsdance', 'dragondance', 'bulkup', 'shiftgear', 'victorydance', 'tidyup', 'coil', 'honeclaws', 'curse',
 ];
 const SETUP_SPECIAL = ['nastyplot', 'calmmind', 'quiverdance', 'takeheart', 'clangoroussoul'];
-const SETUP_NEUTRAL = ['shellsmash', 'workup', 'growth', 'agility', 'rockpolish', 'irondefense', 'acidarmor', 'cosmicpower'];
+const SETUP_NEUTRAL = ['shellsmash', 'workup', 'growth', 'irondefense', 'acidarmor', 'cosmicpower'];
+/** all do the same thing, so a set never wants more than one */
+const SETUP_SPEED = ['agility', 'rockpolish', 'autotomize'];
 const RECOVERY_MOVES = [
 	'recover', 'roost', 'softboiled', 'milkdrink', 'slackoff', 'synthesis', 'moonlight', 'morningsun',
-	'shoreup', 'strengthsap', 'junglehealing', 'rest',
+	'shoreup', 'strengthsap', 'junglehealing', 'rest', 'painsplit',
 ];
 const PIVOT_MOVES = ['uturn', 'voltswitch', 'flipturn', 'partingshot'];
 const UTILITY_MOVES = [
-	'knockoff', 'willowisp', 'thunderwave', 'taunt', 'toxic', 'substitute', 'stealthrock', 'spikes',
+	'knockoff', 'willowisp', 'thunderwave', 'taunt', 'toxic', 'substitute',
 	'rapidspin', 'defog', 'encore', 'spore', 'sleeppowder', 'hypnosis', 'glare', 'nuzzle', 'yawn',
-	'leechseed', 'wish', 'trick', 'switcheroo', 'haze', 'painsplit', 'destinybond', 'toxicspikes',
-	'stickyweb', 'courtchange', 'healbell', 'aromatherapy', 'roar', 'whirlwind', 'tailwind', 'trickroom',
+	'leechseed', 'wish', 'trick', 'switcheroo', 'haze', 'destinybond',
+	'courtchange', 'healbell', 'aromatherapy', 'roar', 'whirlwind', 'tailwind', 'trickroom',
 	'lightscreen', 'reflect', 'auroraveil',
 ];
+/** only worth a slot on something that expects to switch in and out */
+const HAZARD_MOVES = ['stealthrock', 'spikes', 'toxicspikes', 'stickyweb'];
+/** the only support a sweeper benefits from: everything else costs it a turn */
+const SWEEPER_UTILITY = ['substitute', 'taunt', 'knockoff', 'encore', 'trick', 'switcheroo'];
+/**
+ * Dead weight on most Pokemon, since you have to be hit first and live through it --
+ * but they're the entire point of something with a huge HP stat and no offence at all,
+ * which is how Wobbuffet is meant to be played.
+ */
+const COUNTER_MOVES = ['counter', 'mirrorcoat'];
+const wantsCounterMoves = species =>
+	species.baseStats.hp >= 150 && Math.max(species.baseStats.atk, species.baseStats.spa) <= 50;
 const DOUBLES_MOVES = [
 	'fakeout', 'followme', 'ragepowder', 'helpinghand', 'icywind', 'electroweb', 'snarl', 'wideguard',
 	'quickguard', 'decorate', 'tailwind', 'trickroom',
@@ -109,58 +123,121 @@ const moveScore = move => {
 
 function movesFor(species) {
 	const pool = [...Dex.species.getMovePool(species.id)].map(id => Dex.moves.get(id))
-		.filter(move => move.exists && !move.isNonstandard && !move.isZ && !move.isMax && !BAD_MOVES.has(move.id));
-	const physical = species.baseStats.atk >= species.baseStats.spa;
-	const usable = move => {
-		if (move.category === 'Status') return true;
-		// don't hand a physical attacker special moves and vice versa
-		if (move.category === 'Physical' && species.baseStats.atk + 10 < species.baseStats.spa) return false;
-		if (move.category === 'Special' && species.baseStats.spa + 10 < species.baseStats.atk) return false;
-		return move.basePower >= 55;
-	};
-	const attacks = pool.filter(m => m.category !== 'Status' && usable(m)).sort((a, b) => moveScore(b) - moveScore(a));
-	return { pool, attacks };
+		.filter(move => move.exists && !move.isNonstandard && !move.isZ && !move.isMax &&
+			(!BAD_MOVES.has(move.id) || (COUNTER_MOVES.includes(move.id) && wantsCounterMoves(species))));
+	const { atk, spa } = species.baseStats;
+	// Commit to one attacking category. Mixing physical and special attacks is what let
+	// a four-move draw come out as Swords Dance alongside Ice Beam: the setup move and
+	// the attacks have to agree or half the set is dead weight.
+	let category;
+	if (atk > spa + 10) category = 'Physical';
+	else if (spa > atk + 10) category = 'Special';
+	else {
+		// evenly spread stats: go with whichever side it actually has the moves for
+		const strength = cat => pool.filter(m => m.category === cat && m.basePower >= 60)
+			.sort((a, b) => moveScore(b) - moveScore(a)).slice(0, 4)
+			.reduce((total, m) => total + moveScore(m), 0);
+		category = strength('Physical') >= strength('Special') ? 'Physical' : 'Special';
+	}
+	const attacks = pool.filter(m => m.category === category && m.basePower >= 55)
+		.sort((a, b) => moveScore(b) - moveScore(a));
+	return { pool, attacks, category };
 }
 
+/**
+ * What kind of Pokemon this is, decided from its stats alone. Working this out first
+ * is what keeps a set coherent: the archetype says how many slots go to attacks,
+ * setup, recovery and support, instead of bolting one of each onto every Pokemon.
+ */
+function archetypeFor(species) {
+	const { hp, atk, def, spa, spd, spe } = species.baseStats;
+	const offense = Math.max(atk, spa);
+	const bulk = hp + def + spd;
+	if (spe >= 95 && offense >= 95) return 'sweeper';
+	if (offense >= 110) return 'wallbreaker';
+	if (bulk >= 280 && offense >= 85) return 'bulky attacker';
+	if (bulk >= 280) return 'bulky support';
+	if (spe >= 95) return 'fast support';
+	return 'bulky attacker';
+}
+
+/** how many of each kind of move each archetype wants */
+const QUOTAS = {
+	'sweeper': { attacks: 4, setup: 2, recovery: 0, utility: 1, pivot: 0, hazards: 0 },
+	'wallbreaker': { attacks: 4, setup: 1, recovery: 1, utility: 1, pivot: 1, hazards: 0 },
+	'bulky attacker': { attacks: 3, setup: 1, recovery: 1, utility: 1, pivot: 1, hazards: 1 },
+	'bulky support': { attacks: 2, setup: 0, recovery: 1, utility: 3, pivot: 1, hazards: 1 },
+	'fast support': { attacks: 3, setup: 0, recovery: 1, utility: 2, pivot: 1, hazards: 1 },
+};
+
 function buildMovepool(species, isDoubles) {
-	const { pool, attacks } = movesFor(species);
+	const { pool, attacks, category } = movesFor(species);
+	const archetype = archetypeFor(species);
+	const quota = QUOTAS[archetype];
 	const has = id => pool.some(m => m.id === id);
 	const chosen = [];
 	const add = move => {
 		if (move && !chosen.includes(move.name) && chosen.length < 9) chosen.push(move.name);
 	};
+	const pick = preferred => preferred.filter(id => has(id)).map(id => Dex.moves.get(id).name);
 
-	// best same-type attack of each of its types, then coverage from other types
-	for (const type of species.types) {
-		add(attacks.find(m => m.type === type));
-	}
+	// STAB first, then one move per new type for coverage, up to this archetype's quota
+	for (const type of species.types) add(attacks.find(m => m.type === type));
 	const usedTypes = new Set(species.types);
 	for (const move of attacks) {
-		if (chosen.length >= (isDoubles ? 4 : 5)) break;
+		if (chosen.length >= quota.attacks) break;
 		if (usedTypes.has(move.type)) continue;
 		usedTypes.add(move.type);
 		add(move);
 	}
-	if (!chosen.length) for (const move of attacks.slice(0, 2)) add(move);
+	// top up so a four-move draw can't come out as one attack and three status moves
+	for (const move of attacks) {
+		if (chosen.length >= Math.min(quota.attacks, 3)) break;
+		add(move);
+	}
+	const attackCount = chosen.length;
 
-	const pick = preferred => preferred.filter(id => has(id)).map(id => Dex.moves.get(id).name);
-	const physicalAttacker = species.baseStats.atk >= species.baseStats.spa;
-	const setup = pick([...(physicalAttacker ? SETUP_PHYSICAL : SETUP_SPECIAL), ...SETUP_NEUTRAL]);
+	const offensiveSetup = pick([...(category === 'Physical' ? SETUP_PHYSICAL : SETUP_SPECIAL), ...SETUP_NEUTRAL]);
+	const speedSetup = pick(SETUP_SPEED);
+	// a second setup move is only worth it if it does something different, so pair an
+	// offensive boost with a speed boost rather than handing out Agility and Rock Polish
+	const setup = quota.setup >= 2 ?
+		[...offensiveSetup.slice(0, 1), ...speedSetup.slice(0, 1)] :
+		[...offensiveSetup, ...speedSetup];
 	const recovery = pick(RECOVERY_MOVES);
 	const pivot = pick(PIVOT_MOVES);
-	const utility = pick(UTILITY_MOVES);
-	const doublesSupport = pick(DOUBLES_MOVES);
+	// a bulky attacker that found setup gets labelled a sweeper too, so judge by what
+	// the set will actually be rather than by the archetype alone
+	const willSweep = archetype === 'sweeper' ||
+		(archetype === 'bulky attacker' && setup.length && species.baseStats.spe >= 85);
+	const utilityList = willSweep ? SWEEPER_UTILITY : UTILITY_MOVES;
+	const utility = pick(wantsCounterMoves(species) ? [...COUNTER_MOVES, ...utilityList] : utilityList);
+	const hazards = pick(HAZARD_MOVES);
 
 	if (isDoubles) {
 		if (has('protect')) add(Dex.moves.get('protect'));
-		for (const name of doublesSupport.slice(0, 2)) add(Dex.moves.get(name));
+		for (const name of pick(DOUBLES_MOVES).slice(0, 2)) add(Dex.moves.get(name));
 	}
-	if (setup.length) add(Dex.moves.get(setup[0]));
-	if (recovery.length) add(Dex.moves.get(recovery[0]));
-	if (pivot.length) add(Dex.moves.get(pivot[0]));
-	for (const name of utility.slice(0, 2)) add(Dex.moves.get(name));
+	for (const name of setup.slice(0, quota.setup)) add(Dex.moves.get(name));
+	// Rest is fine on its own here: Showdown gives it a Chesto Berry, and pairs it
+	// with Sleep Talk when the Pokemon has one
+	if (quota.recovery && has('sleeptalk') && recovery.includes('Rest')) add(Dex.moves.get('sleeptalk'));
+	for (const name of recovery.slice(0, quota.recovery)) add(Dex.moves.get(name));
+	for (const name of pivot.slice(0, quota.pivot)) add(Dex.moves.get(name));
+	for (const name of hazards.slice(0, quota.hazards)) add(Dex.moves.get(name));
+	for (const name of utility.slice(0, quota.utility)) add(Dex.moves.get(name));
+	// Showdown picks four moves, so make sure there are at least four to pick from
+	for (const name of [...utility, ...pick(UTILITY_MOVES), ...pick(HAZARD_MOVES)]) {
+		if (chosen.length >= 4) break;
+		add(Dex.moves.get(name));
+	}
 
-	return { movepool: chosen, hasSetup: !!setup.length, hasRecovery: !!recovery.length, hasProtect: has('protect') };
+	return {
+		movepool: chosen, attackCount, category, archetype,
+		hasSetup: chosen.some(n => setup.includes(n)),
+		hasRecovery: chosen.some(n => recovery.includes(n)),
+		hasProtect: has('protect'),
+	};
 }
 
 function roleFor(species, info, isDoubles) {
@@ -176,13 +253,13 @@ function roleFor(species, info, isDoubles) {
 		if (offense >= 110) return 'Doubles Wallbreaker';
 		return 'Doubles Support';
 	}
-	if (info.hasSetup && spe >= 85 && offense >= 90) return 'Setup Sweeper';
-	if (spe >= 100 && offense >= 95) return 'Fast Attacker';
-	if (offense >= 115 && spe < 85) return 'Wallbreaker';
-	if (bulk >= 270 && offense >= 85) return 'Bulky Attacker';
-	if (bulk >= 270) return 'Bulky Support';
-	if (spe >= 95) return 'Fast Support';
-	return 'Bulky Attacker';
+	switch (info.archetype) {
+	case 'sweeper': return info.hasSetup ? 'Setup Sweeper' : 'Fast Attacker';
+	case 'wallbreaker': return 'Wallbreaker';
+	case 'bulky attacker': return info.hasSetup && spe >= 85 ? 'Setup Sweeper' : 'Bulky Attacker';
+	case 'fast support': return 'Fast Support';
+	default: return 'Bulky Support';
+	}
 }
 
 function abilitiesFor(species) {
@@ -193,7 +270,9 @@ function abilitiesFor(species) {
 
 function generate(species, isDoubles) {
 	const info = buildMovepool(species, isDoubles);
-	if (info.movepool.length < 2) return null; // nothing worth giving it
+	// Showdown picks four moves from this pool, so anything that can't fill four
+	// (Wobbuffet, whose only attacks are Counter and Mirror Coat) is left out entirely
+	if (info.movepool.length < 4) return null;
 	// A Mega starts the battle in its base forme, so it carries the base forme's ability
 	const abilitySource = megaBaseOf(species) || species;
 	return {
@@ -238,7 +317,12 @@ function build(file, isDoubles) {
 		if (existing && !(FORCE && existing.generated)) continue;
 
 		const set = generate(species, isDoubles);
-		if (!set) { skipped++; continue; }
+		if (!set) {
+			// drop any entry we wrote for it previously, or a stale one keeps it in the pool
+			if (existing?.generated) delete data[species.id];
+			skipped++;
+			continue;
+		}
 		if (existing) rebuilt++; else added++;
 		data[species.id] = { level: levelFor(species), sets: [set], generated: true };
 	}

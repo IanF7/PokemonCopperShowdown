@@ -486,8 +486,12 @@ export class RandomTeams {
 			const unpairedMoves = [...movePool];
 			for (const pair of MOVE_PAIRS) {
 				if (movePool.includes(pair[0]) && movePool.includes(pair[1])) {
-					this.fastPop(unpairedMoves, unpairedMoves.indexOf(pair[0]));
-					this.fastPop(unpairedMoves, unpairedMoves.indexOf(pair[1]));
+					// 'protect' is in three different pairs, so by the time a later pair is
+					// checked an earlier one may already have removed it; fastPop(-1) throws
+					for (const move of pair) {
+						const index = unpairedMoves.indexOf(move);
+						if (index >= 0) this.fastPop(unpairedMoves, index);
+					}
 				}
 			}
 			if (unpairedMoves.length === 1) {
@@ -499,8 +503,10 @@ export class RandomTeams {
 		if (moves.size === this.maxMoveCount - 1) {
 			for (const pair of MOVE_PAIRS) {
 				if (movePool.includes(pair[0]) && movePool.includes(pair[1])) {
-					this.fastPop(movePool, movePool.indexOf(pair[0]));
-					this.fastPop(movePool, movePool.indexOf(pair[1]));
+					for (const move of pair) {
+						const index = movePool.indexOf(move);
+						if (index >= 0) this.fastPop(movePool, index);
+					}
 				}
 			}
 		}

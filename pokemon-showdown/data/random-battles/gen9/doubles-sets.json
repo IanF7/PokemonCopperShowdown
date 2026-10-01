@@ -5,12 +5,12 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Dark Wave",
 					"Nasty Plot",
 					"Overheat",
 					"Protect",
 					"Psychic",
-					"Rest",
 					"Shadow Ball",
 					"Snarl",
 					"Trick Room"
@@ -34,13 +34,13 @@
 				"movepool": [
 					"Dazzling Gleam",
 					"Earth Power",
-					"Energy Ball",
-					"Focus Blast",
+					"Heal Bell",
 					"Helping Hand",
 					"Protect",
 					"Rest",
-					"Rock Polish",
-					"Wide Guard"
+					"Trick Room",
+					"Wide Guard",
+					"Yawn"
 				],
 				"abilities": [
 					"Misty Surge"
@@ -59,8 +59,8 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Calm Mind",
 					"Draco Meteor",
-					"Dragon Dance",
 					"Earth Power",
 					"Fire Blast",
 					"Future Sight",
@@ -86,14 +86,13 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Draco Meteor",
-					"Earthquake",
+					"Earth Power",
 					"Nasty Plot",
 					"Overheat",
 					"Protect",
 					"Raging Blast",
-					"Rest",
-					"Roar",
 					"Substitute"
 				],
 				"abilities": [
@@ -113,6 +112,7 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Body Slam",
 					"Dragon Dance",
 					"Earthquake",
@@ -120,7 +120,6 @@
 					"Icy Wind",
 					"Order Strike",
 					"Protect",
-					"Rest",
 					"Substitute"
 				],
 				"abilities": [
@@ -146,8 +145,6 @@
 					"Fire Blast",
 					"Meteor Beam",
 					"Protect",
-					"Roost",
-					"Stealth Rock",
 					"Tailwind"
 				],
 				"abilities": [
@@ -174,8 +171,6 @@
 					"Fire Blast",
 					"Meteor Beam",
 					"Protect",
-					"Roost",
-					"Stealth Rock",
 					"Tailwind"
 				],
 				"abilities": [
@@ -225,14 +220,12 @@
 			{
 				"role": "Bulky Protect",
 				"movepool": [
-					"Body Press",
 					"Double-Edge",
 					"Flare Blitz",
 					"Protect",
 					"Rest",
+					"Substitute",
 					"Swords Dance",
-					"Thunder Wave",
-					"Toxic",
 					"Wild Charge"
 				],
 				"abilities": [
@@ -260,13 +253,13 @@
 					"Helping Hand",
 					"High Horsepower",
 					"Protect",
-					"Rest",
 					"Smart Strike",
+					"Substitute",
 					"Supercell Slam"
 				],
 				"abilities": [
 					"Lightning Rod",
-					"Electric Surge",
+					"Motor Drive",
 					"Sap Sipper"
 				],
 				"teraTypes": [
@@ -284,14 +277,14 @@
 				"role": "Bulky Protect",
 				"movepool": [
 					"Agility",
-					"Dazzling Gleam",
 					"Electroweb",
 					"Ice Beam",
 					"Icy Wind",
 					"Power Surge",
 					"Protect",
 					"Rest",
-					"Surf"
+					"Surf",
+					"Volt Switch"
 				],
 				"abilities": [
 					"Volt Absorb",
@@ -311,15 +304,15 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Brick Break",
 					"Double-Edge",
 					"First Impression",
 					"Pressure Wave",
 					"Protect",
-					"Roost",
+					"Substitute",
 					"Swords Dance",
-					"Tailwind",
-					"U-turn"
+					"Tailwind"
 				],
 				"abilities": [
 					"Swarm",
@@ -342,13 +335,13 @@
 				"movepool": [
 					"Double-Edge",
 					"Earthquake",
-					"Head Smash",
 					"Helping Hand",
 					"Meteor Mash",
 					"Protect",
 					"Rest",
 					"Stealth Rock",
-					"Swords Dance"
+					"Swords Dance",
+					"Yawn"
 				],
 				"abilities": [
 					"Steelworker",
@@ -376,8 +369,8 @@
 					"Meteor Mash",
 					"Protect",
 					"Rest",
-					"Stealth Rock",
-					"Swords Dance"
+					"Swords Dance",
+					"Yawn"
 				],
 				"abilities": [
 					"Steelworker",
@@ -404,9 +397,9 @@
 					"Foul Play",
 					"Helping Hand",
 					"Hone Claws",
-					"Play Rough",
 					"Protect",
-					"Rest"
+					"Rest",
+					"U-turn"
 				],
 				"abilities": [
 					"State Shift"
@@ -424,9 +417,9 @@
 			{
 				"role": "Bulky Protect",
 				"movepool": [
+					"Flip Turn",
 					"Follow Me",
 					"Hyper Voice",
-					"Ice Beam",
 					"Icy Wind",
 					"Moonblast",
 					"Nasty Plot",
@@ -453,14 +446,14 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Dark Wave",
 					"Earth Power",
 					"Heat Wave",
-					"Knock Off",
 					"Nasty Plot",
 					"Protect",
-					"Rest",
 					"Shadow Ball",
+					"Substitute",
 					"Tailwind"
 				],
 				"abilities": [
@@ -484,10 +477,10 @@
 					"Calm Mind",
 					"Earth Power",
 					"Fake Out",
-					"Focus Blast",
 					"Future Sight",
 					"Helping Hand",
 					"Hyper Voice",
+					"Knock Off",
 					"Protect",
 					"Recover"
 				],
@@ -539,15 +532,15 @@
 			{
 				"role": "Doubles Setup Sweeper",
 				"movepool": [
-					"Belch",
-					"Earthquake",
 					"Outrage",
+					"Poison Jab",
 					"Protect",
 					"Rest",
 					"Snarl",
 					"Superpower",
 					"Swords Dance",
-					"Toxic"
+					"Toxic",
+					"Toxic Spikes"
 				],
 				"abilities": [
 					"Poison Point",
@@ -595,15 +588,14 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Calm Mind",
 					"Dazzling Gleam",
 					"Future Sight",
 					"Helping Hand",
 					"Overheat",
 					"Protect",
-					"Roost",
-					"Shadow Ball",
-					"Will-O-Wisp"
+					"Shadow Ball"
 				],
 				"abilities": [
 					"Eternal Flame",
@@ -624,9 +616,9 @@
 				"role": "Doubles Setup Sweeper",
 				"movepool": [
 					"Calm Mind",
-					"Earth Power",
 					"Flash Cannon",
 					"Helping Hand",
+					"Knock Off",
 					"Meteor Beam",
 					"Moonblast",
 					"Protect",
@@ -656,10 +648,10 @@
 					"Earth Power",
 					"Flash Cannon",
 					"Helping Hand",
+					"Knock Off",
 					"Meteor Beam",
 					"Moonblast",
 					"Protect",
-					"Rest",
 					"Trick Room"
 				],
 				"abilities": [
@@ -681,15 +673,15 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Close Combat",
 					"Foul Play",
 					"Hone Claws",
 					"Protect",
 					"Psychic Fangs",
-					"Rest",
 					"Snarl",
 					"Spectral Strike",
-					"U-turn"
+					"Substitute"
 				],
 				"abilities": [
 					"Intimidate",
@@ -711,14 +703,14 @@
 				"role": "Offensive Protect",
 				"movepool": [
 					"Hurricane",
-					"Hyper Voice",
 					"Ice Beam",
 					"Icy Wind",
 					"Moonblast",
 					"Nasty Plot",
 					"Protect",
 					"Roost",
-					"Tailwind"
+					"Tailwind",
+					"U-turn"
 				],
 				"abilities": [
 					"Keen Eye",
@@ -739,13 +731,13 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Hyper Voice",
 					"Ice Beam",
 					"Icy Wind",
 					"Moonblast",
 					"Nasty Plot",
 					"Protect",
-					"Roost",
 					"Shadow Ball",
 					"Tailwind"
 				],
@@ -796,15 +788,14 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Bulk Up",
 					"Close Combat",
 					"Double-Edge",
 					"Electroweb",
 					"Outrage",
 					"Protect",
-					"Rest",
-					"Supercell Slam",
-					"Volt Switch"
+					"Supercell Slam"
 				],
 				"abilities": [
 					"Magnet Pull",
@@ -826,9 +817,9 @@
 				"movepool": [
 					"Dark Wave",
 					"Fake Out",
-					"Heat Wave",
 					"Helping Hand",
 					"Nasty Plot",
+					"Parting Shot",
 					"Protect",
 					"Psychic",
 					"Rest",
@@ -851,14 +842,13 @@
 			{
 				"role": "Doubles Support",
 				"movepool": [
-					"Body Slam",
-					"Ice Beam",
+					"Ice Hammer",
 					"Icy Wind",
 					"Knock Off",
+					"Liquidation",
 					"Outrage",
 					"Protect",
 					"Rest",
-					"Surf",
 					"U-turn"
 				],
 				"abilities": [
@@ -905,14 +895,14 @@
 			{
 				"role": "Bulky Protect",
 				"movepool": [
-					"Double-Edge",
 					"Head Smash",
 					"Helping Hand",
-					"Mineral Burst",
+					"Meteor Mash",
 					"Protect",
 					"Rest",
-					"Rock Polish",
-					"Superpower",
+					"Stealth Rock",
+					"Substitute",
+					"Trick Room",
 					"Wide Guard"
 				],
 				"abilities": [
@@ -940,7 +930,7 @@
 					"Nasty Plot",
 					"Protect",
 					"Rest",
-					"Shadow Ball",
+					"Spikes",
 					"U-turn"
 				],
 				"abilities": [
@@ -991,13 +981,12 @@
 				"movepool": [
 					"Agility",
 					"Boomburst",
-					"Drill Peck",
+					"Encore",
 					"Heat Wave",
+					"Hurricane",
 					"Power Surge",
 					"Protect",
-					"Roost",
-					"Tailwind",
-					"Volt Switch"
+					"Tailwind"
 				],
 				"abilities": [
 					"Speed Boost",
@@ -1017,14 +1006,14 @@
 			{
 				"role": "Doubles Fast Attacker",
 				"movepool": [
+					"Agility",
 					"Fake Out",
 					"Follow Me",
 					"Hone Claws",
-					"Leaf Storm",
 					"Play Rough",
 					"Protect",
+					"Seed Bomb",
 					"Superpower",
-					"Synthesis",
 					"Thrash"
 				],
 				"abilities": [
@@ -1130,14 +1119,14 @@
 				"role": "Offensive Protect",
 				"movepool": [
 					"Calm Mind",
-					"Dazzling Gleam",
 					"Earth Power",
 					"Energy Ball",
 					"Follow Me",
 					"Helping Hand",
 					"Overheat",
 					"Protect",
-					"Synthesis"
+					"Synthesis",
+					"Will-O-Wisp"
 				],
 				"abilities": [
 					"Flame Body",
@@ -1158,15 +1147,14 @@
 			{
 				"role": "Bulky Protect",
 				"movepool": [
-					"Body Press",
 					"Double-Edge",
-					"Earthquake",
 					"Helping Hand",
-					"Iron Defense",
 					"Knock Off",
 					"Meteor Mash",
 					"Protect",
-					"Rest"
+					"Rest",
+					"Substitute",
+					"Yawn"
 				],
 				"abilities": [
 					"Steel Wool",
@@ -1186,12 +1174,12 @@
 			{
 				"role": "Bulky Protect",
 				"movepool": [
-					"Body Slam",
 					"Curse",
 					"Earthquake",
 					"Knock Off",
 					"Protect",
 					"Rest",
+					"Stealth Rock",
 					"Stone Edge",
 					"Superpower",
 					"Wide Guard"
@@ -1217,12 +1205,12 @@
 					"Earth Power",
 					"Follow Me",
 					"Helping Hand",
-					"Hidden Power",
 					"Ice Beam",
 					"Nasty Plot",
 					"Protect",
 					"Rest",
-					"Shadow Ball"
+					"Shadow Ball",
+					"Substitute"
 				],
 				"abilities": [
 					"Snow Cloak",
@@ -1300,14 +1288,14 @@
 				"role": "Offensive Protect",
 				"movepool": [
 					"Coil",
-					"Crunch",
 					"Poison Jab",
 					"Protect",
 					"Psychic Fangs",
 					"Rest",
 					"Snarl",
 					"Spectral Strike",
-					"Taunt"
+					"Substitute",
+					"Toxic Spikes"
 				],
 				"abilities": [
 					"Shed Skin",
@@ -1332,10 +1320,10 @@
 					"Fire Blast",
 					"Focus Blast",
 					"Helping Hand",
+					"Nasty Plot",
 					"Protect",
 					"Rest",
-					"Shadow Ball",
-					"Swords Dance",
+					"Spikes",
 					"Trick Room"
 				],
 				"abilities": [
@@ -1353,17 +1341,17 @@
 		"level": 89,
 		"sets": [
 			{
-				"role": "Doubles Setup Sweeper",
+				"role": "Doubles Support",
 				"movepool": [
 					"Brave Bird",
 					"Fake Out",
 					"Follow Me",
-					"Heat Wave",
-					"Hone Claws",
 					"Iron Tail",
+					"Knock Off",
 					"Play Rough",
 					"Protect",
-					"Roost"
+					"Roost",
+					"U-turn"
 				],
 				"abilities": [
 					"Limber",
@@ -1382,13 +1370,13 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Fake Out",
 					"Foul Play",
 					"Hone Claws",
 					"Lunge",
 					"Play Rough",
 					"Protect",
-					"Rest",
 					"Snarl",
 					"Supercell Slam"
 				],
@@ -1411,13 +1399,13 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Fake Out",
 					"Foul Play",
 					"Hone Claws",
 					"Lunge",
 					"Play Rough",
 					"Protect",
-					"Rest",
 					"Snarl",
 					"Supercell Slam"
 				],
@@ -1446,7 +1434,6 @@
 					"Rest",
 					"Spikes",
 					"Steel Roller",
-					"Supercell Slam",
 					"U-turn",
 					"Work Up"
 				],
@@ -1469,14 +1456,14 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Calm Mind",
 					"Dark Pulse",
 					"Focus Blast",
 					"Future Sight",
 					"Leaf Storm",
 					"Protect",
-					"Synthesis",
-					"Toxic",
+					"Substitute",
 					"Trick Room"
 				],
 				"abilities": [
@@ -1496,17 +1483,17 @@
 		"level": 86,
 		"sets": [
 			{
-				"role": "Doubles Setup Sweeper",
+				"role": "Doubles Support",
 				"movepool": [
-					"Calm Mind",
 					"Energy Ball",
-					"Extrasensory",
 					"Fake Out",
 					"Helping Hand",
 					"Hidden Power",
+					"Knock Off",
 					"Moonblast",
 					"Protect",
-					"Rest"
+					"Rest",
+					"U-turn"
 				],
 				"abilities": [
 					"Super Luck",
@@ -1532,9 +1519,9 @@
 					"Moonlight",
 					"Nasty Plot",
 					"Protect",
-					"Psychic",
 					"Surf",
-					"Trick Room"
+					"Trick Room",
+					"U-turn"
 				],
 				"abilities": [
 					"Damp",
@@ -1554,14 +1541,13 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Close Combat",
 					"Leech Life",
 					"Liquidation",
 					"Mega Kick",
 					"Protect",
-					"Rest",
-					"Swords Dance",
-					"U-turn"
+					"Swords Dance"
 				],
 				"abilities": [
 					"Limber",
@@ -1583,10 +1569,10 @@
 				"movepool": [
 					"Double-Edge",
 					"Earthquake",
-					"Fae Strike",
 					"Fake Out",
 					"Helping Hand",
 					"Iron Defense",
+					"Knock Off",
 					"Protect",
 					"Rest",
 					"Supercell Slam"
@@ -1609,10 +1595,10 @@
 				"movepool": [
 					"Double-Edge",
 					"Earthquake",
-					"Fae Strike",
 					"Fake Out",
 					"Helping Hand",
 					"Iron Defense",
+					"Knock Off",
 					"Protect",
 					"Rest",
 					"Supercell Slam"
@@ -1636,12 +1622,12 @@
 					"Fake Out",
 					"Focus Blast",
 					"Helping Hand",
-					"Hidden Power",
 					"Leaf Storm",
 					"Nasty Plot",
 					"Power Surge",
 					"Protect",
-					"Rest"
+					"Rest",
+					"Volt Switch"
 				],
 				"abilities": [
 					"Grass Pelt",
@@ -1668,9 +1654,9 @@
 					"Energy Ball",
 					"Moonlight",
 					"Protect",
-					"Psychic",
 					"Quiver Dance",
-					"Rage Powder"
+					"Rage Powder",
+					"U-turn"
 				],
 				"abilities": [
 					"Oblivious",
@@ -1691,11 +1677,11 @@
 				"role": "Doubles Setup Sweeper",
 				"movepool": [
 					"Chip Away",
-					"Earthquake",
 					"Fake Out",
 					"Parting Shot",
 					"Protect",
 					"Rest",
+					"Stealth Rock",
 					"Stone Edge",
 					"Superpower",
 					"Work Up"
@@ -1718,7 +1704,6 @@
 			{
 				"role": "Doubles Setup Sweeper",
 				"movepool": [
-					"Heat Wave",
 					"Helping Hand",
 					"Hurricane",
 					"Icy Wind",
@@ -1726,6 +1711,7 @@
 					"Protect",
 					"Roost",
 					"Shadow Ball",
+					"U-turn",
 					"Uproar"
 				],
 				"abilities": [
@@ -1744,17 +1730,17 @@
 		"level": 85,
 		"sets": [
 			{
-				"role": "Doubles Setup Sweeper",
+				"role": "Doubles Support",
 				"movepool": [
 					"Brave Bird",
 					"Double-Edge",
 					"Foul Play",
-					"Hone Claws",
 					"Icy Wind",
-					"Play Rough",
 					"Protect",
 					"Roost",
-					"Snarl"
+					"Snarl",
+					"Taunt",
+					"U-turn"
 				],
 				"abilities": [
 					"Pickpocket",
@@ -1808,8 +1794,7 @@
 					"Gunk Shot",
 					"Hydro Smash",
 					"Protect",
-					"Rest",
-					"Toxic",
+					"Substitute",
 					"Wide Guard"
 				],
 				"abilities": [
@@ -1837,8 +1822,8 @@
 					"Power Gem",
 					"Protect",
 					"Psyshock",
-					"Roost",
-					"Tailwind"
+					"Tailwind",
+					"Taunt"
 				],
 				"abilities": [
 					"Blaze",
@@ -1865,8 +1850,8 @@
 					"Power Gem",
 					"Protect",
 					"Psyshock",
-					"Roost",
-					"Tailwind"
+					"Tailwind",
+					"Taunt"
 				],
 				"abilities": [
 					"Blaze",
@@ -1886,7 +1871,6 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
-					"Crunch",
 					"Earthquake",
 					"Power Whip",
 					"Protect",
@@ -1919,7 +1903,6 @@
 					"Power Whip",
 					"Protect",
 					"Sacred Sword",
-					"Spikes",
 					"Substitute",
 					"Swords Dance",
 					"Synthesis"
@@ -1948,9 +1931,8 @@
 					"Hyper Voice",
 					"Power Surge",
 					"Protect",
-					"Rest",
-					"Surf",
-					"U-turn"
+					"Substitute",
+					"Surf"
 				],
 				"abilities": [
 					"Dry Skin",
@@ -2002,8 +1984,7 @@
 					"Petal Dance",
 					"Protect",
 					"Sludge Bomb",
-					"Synthesis",
-					"Toxic"
+					"Synthesis"
 				],
 				"abilities": [
 					"Overgrow",
@@ -2053,9 +2034,8 @@
 					"Helping Hand",
 					"Outrage",
 					"Protect",
-					"Rest",
-					"Swords Dance",
-					"Will-O-Wisp"
+					"Substitute",
+					"Swords Dance"
 				],
 				"abilities": [
 					"Blaze",
@@ -2081,9 +2061,7 @@
 					"Hurricane",
 					"Overheat",
 					"Protect",
-					"Rest",
-					"Substitute",
-					"Will-O-Wisp"
+					"Substitute"
 				],
 				"abilities": [
 					"Blaze",
@@ -2174,10 +2152,10 @@
 					"Energy Ball",
 					"Hurricane",
 					"Protect",
-					"Psychic",
 					"Quiver Dance",
 					"Rage Powder",
-					"Roost"
+					"Roost",
+					"U-turn"
 				],
 				"abilities": [
 					"Compound Eyes",
@@ -2204,7 +2182,7 @@
 					"Roost",
 					"Swords Dance",
 					"Tailwind",
-					"Throat Chop",
+					"U-turn",
 					"X-Scissor"
 				],
 				"abilities": [
@@ -2225,11 +2203,11 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Double-Edge",
 					"Electroweb",
 					"Poison Jab",
 					"Protect",
-					"Roost",
 					"Swords Dance",
 					"Tailwind",
 					"Throat Chop",
@@ -2251,17 +2229,16 @@
 		"level": 86,
 		"sets": [
 			{
-				"role": "Doubles Setup Sweeper",
+				"role": "Doubles Support",
 				"movepool": [
 					"Brave Bird",
+					"Defog",
 					"Double-Edge",
-					"Heat Wave",
 					"Protect",
 					"Roost",
 					"Substitute",
 					"Tailwind",
-					"U-turn",
-					"Work Up"
+					"U-turn"
 				],
 				"abilities": [
 					"Keen Eye",
@@ -2282,13 +2259,13 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Heat Wave",
 					"Hurricane",
 					"Ominous Wind",
 					"Protect",
-					"Roost",
+					"Substitute",
 					"Tailwind",
-					"U-turn",
 					"Uproar",
 					"Work Up"
 				],
@@ -2309,15 +2286,15 @@
 		"level": 90,
 		"sets": [
 			{
-				"role": "Doubles Setup Sweeper",
+				"role": "Doubles Support",
 				"movepool": [
 					"Crunch",
 					"Double-Edge",
 					"Icy Wind",
-					"Iron Tail",
 					"Protect",
 					"Rest",
-					"Swords Dance",
+					"Taunt",
+					"Thunder Wave",
 					"U-turn",
 					"Wild Charge"
 				],
@@ -2345,8 +2322,8 @@
 					"Protect",
 					"Rest",
 					"Snarl",
-					"Stomping Tantrum",
-					"Swords Dance"
+					"Swords Dance",
+					"U-turn"
 				],
 				"abilities": [
 					"Gluttony",
@@ -2365,17 +2342,17 @@
 		"level": 88,
 		"sets": [
 			{
-				"role": "Doubles Setup Sweeper",
+				"role": "Doubles Support",
 				"movepool": [
+					"Defog",
 					"Double-Edge",
 					"Drill Peck",
-					"Drill Run",
 					"Protect",
 					"Roost",
+					"Substitute",
 					"Tailwind",
 					"Throat Chop",
-					"U-turn",
-					"Work Up"
+					"U-turn"
 				],
 				"abilities": [
 					"Keen Eye",
@@ -2483,15 +2460,15 @@
 			{
 				"role": "Doubles Setup Sweeper",
 				"movepool": [
-					"Agility",
-					"Body Slam",
+					"Alluring Voice",
 					"Fake Out",
 					"Helping Hand",
-					"Play Rough",
+					"Nasty Plot",
+					"Power Surge",
 					"Protect",
 					"Rest",
 					"Surf",
-					"Volt Tackle"
+					"Volt Switch"
 				],
 				"abilities": [
 					"Static",
@@ -2510,15 +2487,15 @@
 			{
 				"role": "Doubles Setup Sweeper",
 				"movepool": [
-					"Agility",
-					"Body Slam",
+					"Alluring Voice",
 					"Fake Out",
 					"Helping Hand",
-					"Play Rough",
+					"Nasty Plot",
+					"Power Surge",
 					"Protect",
 					"Rest",
 					"Surf",
-					"Volt Tackle"
+					"Volt Switch"
 				],
 				"abilities": [
 					"Static",
@@ -2537,15 +2514,15 @@
 			{
 				"role": "Doubles Setup Sweeper",
 				"movepool": [
-					"Agility",
-					"Body Slam",
+					"Alluring Voice",
 					"Fake Out",
 					"Helping Hand",
-					"Play Rough",
+					"Nasty Plot",
+					"Power Surge",
 					"Protect",
 					"Rest",
 					"Surf",
-					"Volt Tackle"
+					"Volt Switch"
 				],
 				"abilities": [
 					"Static",
@@ -2564,15 +2541,15 @@
 			{
 				"role": "Doubles Setup Sweeper",
 				"movepool": [
-					"Agility",
-					"Body Slam",
+					"Alluring Voice",
 					"Fake Out",
 					"Helping Hand",
-					"Play Rough",
+					"Nasty Plot",
+					"Power Surge",
 					"Protect",
 					"Rest",
 					"Surf",
-					"Volt Tackle"
+					"Volt Switch"
 				],
 				"abilities": [
 					"Static",
@@ -2591,15 +2568,15 @@
 			{
 				"role": "Doubles Setup Sweeper",
 				"movepool": [
-					"Agility",
-					"Body Slam",
+					"Alluring Voice",
 					"Fake Out",
 					"Helping Hand",
-					"Play Rough",
+					"Nasty Plot",
+					"Power Surge",
 					"Protect",
 					"Rest",
 					"Surf",
-					"Volt Tackle"
+					"Volt Switch"
 				],
 				"abilities": [
 					"Static",
@@ -2618,15 +2595,15 @@
 			{
 				"role": "Doubles Setup Sweeper",
 				"movepool": [
-					"Agility",
-					"Body Slam",
+					"Alluring Voice",
 					"Fake Out",
 					"Helping Hand",
-					"Play Rough",
+					"Nasty Plot",
+					"Power Surge",
 					"Protect",
 					"Rest",
 					"Surf",
-					"Volt Tackle"
+					"Volt Switch"
 				],
 				"abilities": [
 					"Static",
@@ -2645,15 +2622,15 @@
 			{
 				"role": "Doubles Setup Sweeper",
 				"movepool": [
-					"Agility",
-					"Body Slam",
+					"Alluring Voice",
 					"Fake Out",
 					"Helping Hand",
-					"Play Rough",
+					"Nasty Plot",
+					"Power Surge",
 					"Protect",
 					"Rest",
 					"Surf",
-					"Volt Tackle"
+					"Volt Switch"
 				],
 				"abilities": [
 					"Static",
@@ -2672,15 +2649,15 @@
 			{
 				"role": "Doubles Setup Sweeper",
 				"movepool": [
-					"Agility",
-					"Body Slam",
+					"Alluring Voice",
 					"Fake Out",
 					"Helping Hand",
-					"Play Rough",
+					"Nasty Plot",
+					"Power Surge",
 					"Protect",
 					"Rest",
 					"Surf",
-					"Volt Tackle"
+					"Volt Switch"
 				],
 				"abilities": [
 					"Static",
@@ -2786,7 +2763,7 @@
 					"Helping Hand",
 					"Play Rough",
 					"Protect",
-					"Rest",
+					"Substitute",
 					"Volt Tackle"
 				],
 				"abilities": [
@@ -2806,6 +2783,7 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Alluring Voice",
 					"Fake Out",
 					"Focus Blast",
@@ -2813,7 +2791,6 @@
 					"Nasty Plot",
 					"Power Surge",
 					"Protect",
-					"Rest",
 					"Surf"
 				],
 				"abilities": [
@@ -2917,10 +2894,10 @@
 					"Helping Hand",
 					"Hone Claws",
 					"Icy Wind",
-					"Outrage",
 					"Poison Jab",
 					"Protect",
-					"Rest"
+					"Rest",
+					"Stealth Rock"
 				],
 				"abilities": [
 					"Poison Point",
@@ -2946,10 +2923,10 @@
 					"Helping Hand",
 					"Hone Claws",
 					"Icy Wind",
-					"Outrage",
 					"Poison Jab",
 					"Protect",
-					"Rest"
+					"Rest",
+					"Stealth Rock"
 				],
 				"abilities": [
 					"Poison Point",
@@ -3198,13 +3175,13 @@
 				"role": "Doubles Setup Sweeper",
 				"movepool": [
 					"Double-Edge",
+					"Knock Off",
 					"Leech Life",
 					"Protect",
 					"Rage Powder",
 					"Seed Bomb",
 					"Swords Dance",
 					"Synthesis",
-					"Throat Chop",
 					"Wide Guard"
 				],
 				"abilities": [
@@ -3504,10 +3481,9 @@
 					"Energy Ball",
 					"Focus Blast",
 					"Future Sight",
-					"Knock Off",
 					"Nasty Plot",
 					"Protect",
-					"Recover",
+					"Substitute",
 					"Trick Room"
 				],
 				"abilities": [
@@ -3532,10 +3508,9 @@
 					"Energy Ball",
 					"Focus Blast",
 					"Future Sight",
-					"Knock Off",
 					"Nasty Plot",
 					"Protect",
-					"Recover",
+					"Substitute",
 					"Trick Room"
 				],
 				"abilities": [
@@ -3606,15 +3581,13 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
-					"Body Slam",
 					"Growth",
 					"Knock Off",
 					"Leaf Storm",
-					"Leech Life",
 					"Protect",
 					"Sludge Wave",
-					"Synthesis",
-					"Toxic"
+					"Swift",
+					"Synthesis"
 				],
 				"abilities": [
 					"Chlorophyll",
@@ -3731,15 +3704,14 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Double-Edge",
 					"Flare Blitz",
 					"High Horsepower",
 					"Megahorn",
-					"Morning Sun",
 					"Protect",
 					"Substitute",
-					"Swords Dance",
-					"Will-O-Wisp"
+					"Swords Dance"
 				],
 				"abilities": [
 					"Flash Fire",
@@ -3758,10 +3730,10 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Double-Edge",
 					"Fae Strike",
 					"Megahorn",
-					"Morning Sun",
 					"Protect",
 					"Substitute",
 					"Swords Dance",
@@ -3882,12 +3854,12 @@
 					"Brave Bird",
 					"Close Combat",
 					"Double-Edge",
-					"First Impression",
 					"Helping Hand",
 					"Protect",
 					"Roost",
 					"Swords Dance",
-					"Tailwind"
+					"Tailwind",
+					"U-turn"
 				],
 				"abilities": [
 					"Keen Eye",
@@ -4080,9 +4052,9 @@
 					"Nasty Plot",
 					"Protect",
 					"Psychic",
-					"Rest",
 					"Shadow Ball",
 					"Sludge Wave",
+					"Substitute",
 					"Trick Room"
 				],
 				"abilities": [
@@ -4285,11 +4257,11 @@
 					"Double-Edge",
 					"Earthquake",
 					"Icy Wind",
-					"Iron Head",
 					"Knock Off",
 					"Outrage",
 					"Protect",
 					"Rest",
+					"Stealth Rock",
 					"Swords Dance"
 				],
 				"abilities": [
@@ -4314,9 +4286,9 @@
 					"Flare Blitz",
 					"Icy Wind",
 					"Knock Off",
-					"Outrage",
 					"Protect",
 					"Rest",
+					"Stealth Rock",
 					"Swords Dance",
 					"Vengeance"
 				],
@@ -4471,11 +4443,11 @@
 					"Double-Edge",
 					"Earthquake",
 					"Fake Out",
-					"Hammer Arm",
 					"Helping Hand",
 					"Outrage",
 					"Protect",
 					"Rest",
+					"Substitute",
 					"Work Up"
 				],
 				"abilities": [
@@ -4503,7 +4475,7 @@
 					"Helping Hand",
 					"Outrage",
 					"Protect",
-					"Rest",
+					"Substitute",
 					"Work Up"
 				],
 				"abilities": [
@@ -4528,8 +4500,8 @@
 					"Double-Edge",
 					"Flip Turn",
 					"Icy Wind",
+					"Knock Off",
 					"Megahorn",
-					"Poison Jab",
 					"Protect",
 					"Rest",
 					"Swords Dance"
@@ -4553,12 +4525,12 @@
 				"role": "Offensive Protect",
 				"movepool": [
 					"Agility",
+					"Cosmic Power",
 					"Ice Beam",
 					"Icy Wind",
 					"Meteor Beam",
 					"Protect",
 					"Psychic",
-					"Recover",
 					"Surf",
 					"Trick Room"
 				],
@@ -4581,12 +4553,12 @@
 				"role": "Offensive Protect",
 				"movepool": [
 					"Agility",
+					"Cosmic Power",
 					"Ice Beam",
 					"Icy Wind",
 					"Meteor Beam",
 					"Protect",
 					"Psychic",
-					"Recover",
 					"Surf",
 					"Trick Room"
 				],
@@ -4616,7 +4588,7 @@
 					"Nasty Plot",
 					"Protect",
 					"Rest",
-					"Thunderbolt"
+					"Substitute"
 				],
 				"abilities": [
 					"Soundproof",
@@ -4666,7 +4638,7 @@
 					"Ice Beam",
 					"Nasty Plot",
 					"Protect",
-					"Rest"
+					"Substitute"
 				],
 				"abilities": [
 					"Oblivious",
@@ -4762,9 +4734,8 @@
 					"Double-Edge",
 					"Earthquake",
 					"Helping Hand",
-					"Knock Off",
 					"Protect",
-					"Rest",
+					"Substitute",
 					"Swords Dance",
 					"X-Scissor"
 				],
@@ -5224,12 +5195,12 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Double-Edge",
 					"Dragon Dance",
 					"Earthquake",
 					"Pressure Wave",
 					"Protect",
-					"Roost",
 					"Stone Edge",
 					"Tailwind",
 					"Wide Guard"
@@ -5253,12 +5224,12 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Double-Edge",
 					"Dragon Dance",
 					"Earthquake",
 					"Pressure Wave",
 					"Protect",
-					"Roost",
 					"Stone Edge",
 					"Tailwind",
 					"Wide Guard"
@@ -5561,6 +5532,7 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Calm Mind",
 					"Draco Meteor",
 					"Fire Blast",
@@ -5568,8 +5540,7 @@
 					"Helping Hand",
 					"Ice Beam",
 					"Icy Wind",
-					"Protect",
-					"Roost"
+					"Protect"
 				],
 				"abilities": [
 					"Levitate",
@@ -5597,7 +5568,7 @@
 					"Ice Beam",
 					"Icy Wind",
 					"Protect",
-					"Roost"
+					"Substitute"
 				],
 				"abilities": [
 					"Inner Focus",
@@ -5656,13 +5627,13 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Brick Break",
 					"Bulk Up",
 					"Double-Edge",
 					"Helping Hand",
 					"Icy Wind",
 					"Protect",
-					"Recover",
 					"Vengeance",
 					"Zen Headbutt"
 				],
@@ -5684,6 +5655,7 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Earth Power",
 					"Energy Ball",
 					"Fire Blast",
@@ -5691,8 +5663,7 @@
 					"Helping Hand",
 					"Icy Wind",
 					"Nasty Plot",
-					"Protect",
-					"Recover"
+					"Protect"
 				],
 				"abilities": [
 					"Pressure",
@@ -5796,7 +5767,6 @@
 					"Knock Off",
 					"Petal Dance",
 					"Protect",
-					"Substitute",
 					"Synthesis"
 				],
 				"abilities": [
@@ -5984,9 +5954,9 @@
 					"Agility",
 					"Air Slash",
 					"Bug Buzz",
-					"Focus Blast",
 					"Protect",
 					"Roost",
+					"Substitute",
 					"Tailwind",
 					"U-turn",
 					"Uproar"
@@ -6032,17 +6002,17 @@
 		"level": 82,
 		"sets": [
 			{
-				"role": "Doubles Setup Sweeper",
+				"role": "Doubles Support",
 				"movepool": [
 					"Brave Bird",
 					"Cross Poison",
-					"Crunch",
-					"Curse",
 					"Double-Edge",
 					"Protect",
 					"Quick Guard",
 					"Roost",
-					"Tailwind"
+					"Tailwind",
+					"Taunt",
+					"U-turn"
 				],
 				"abilities": [
 					"Inner Focus",
@@ -6062,6 +6032,7 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Brave Bird",
 					"Cross Poison",
 					"Crunch",
@@ -6069,7 +6040,6 @@
 					"Double-Edge",
 					"Protect",
 					"Quick Guard",
-					"Roost",
 					"Tailwind"
 				],
 				"abilities": [
@@ -6131,7 +6101,7 @@
 					"Future Sight",
 					"Heat Wave",
 					"Protect",
-					"Roost",
+					"Substitute",
 					"Tailwind",
 					"Trick Room"
 				],
@@ -6346,8 +6316,8 @@
 					"Lunge",
 					"Protect",
 					"Seed Bomb",
+					"Substitute",
 					"Swords Dance",
-					"Synthesis",
 					"Tailwind"
 				],
 				"abilities": [
@@ -6559,8 +6529,10 @@
 			{
 				"role": "Doubles Support",
 				"movepool": [
+					"Counter",
 					"Destiny Bond",
-					"Encore"
+					"Encore",
+					"Mirror Coat"
 				],
 				"abilities": [
 					"Shadow Tag",
@@ -6620,9 +6592,9 @@
 					"Double-Edge",
 					"Dragon Dance",
 					"Earthquake",
-					"Head Smash",
 					"Protect",
 					"Rest",
+					"Stealth Rock",
 					"Steel Roller",
 					"Taunt",
 					"Wide Guard"
@@ -6835,15 +6807,15 @@
 			{
 				"role": "Bulky Protect",
 				"movepool": [
-					"Double-Edge",
 					"Helping Hand",
 					"Knock Off",
-					"Meteor Beam",
 					"Protect",
 					"Rest",
-					"Shell Smash",
 					"Skitter Smack",
-					"Steel Roller"
+					"Stealth Rock",
+					"Stone Edge",
+					"Substitute",
+					"Toxic"
 				],
 				"abilities": [
 					"Sturdy",
@@ -6952,15 +6924,15 @@
 			{
 				"role": "Doubles Setup Sweeper",
 				"movepool": [
-					"Calm Mind",
+					"Curse",
 					"Double-Edge",
-					"Earthquake",
 					"Head Smash",
 					"Icy Wind",
+					"Liquidation",
 					"Protect",
 					"Recover",
-					"Substitute",
-					"Surf"
+					"Stealth Rock",
+					"Substitute"
 				],
 				"abilities": [
 					"Hustle",
@@ -6981,13 +6953,12 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
-					"Double-Edge",
 					"Fire Blast",
-					"Gunk Shot",
 					"Helping Hand",
 					"Icy Wind",
 					"Protect",
 					"Rest",
+					"Sludge Wave",
 					"Thunder Wave",
 					"Water Spout"
 				],
@@ -7051,14 +7022,14 @@
 			{
 				"role": "Bulky Protect",
 				"movepool": [
-					"Agility",
+					"Defog",
+					"Haze",
 					"Helping Hand",
 					"Hurricane",
-					"Ice Beam",
 					"Icy Wind",
 					"Protect",
 					"Roost",
-					"Signal Beam",
+					"Substitute",
 					"Surf"
 				],
 				"abilities": [
@@ -7102,12 +7073,12 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Body Press",
 					"Brave Bird",
 					"Icy Wind",
 					"Iron Head",
 					"Protect",
-					"Roost",
 					"Swords Dance",
 					"Tailwind",
 					"X-Scissor"
@@ -7181,9 +7152,9 @@
 					"Nasty Plot",
 					"Overheat",
 					"Protect",
-					"Rest",
 					"Sludge Bomb",
-					"Snarl"
+					"Snarl",
+					"Substitute"
 				],
 				"abilities": [
 					"Early Bird",
@@ -7372,15 +7343,15 @@
 			{
 				"role": "Bulky Protect",
 				"movepool": [
-					"Curse",
 					"Double-Edge",
 					"Earthquake",
-					"Hammer Arm",
 					"Helping Hand",
 					"Icy Wind",
 					"Milk Drink",
 					"Protect",
-					"Steel Roller"
+					"Stealth Rock",
+					"Steel Roller",
+					"Thunder Wave"
 				],
 				"abilities": [
 					"Thick Fat",
@@ -7436,7 +7407,7 @@
 				"abilities": [
 					"Natural Cure",
 					"Corrosion",
-					"Merciless"
+					"Curious Medicine"
 				],
 				"teraTypes": [
 					"Fairy",
@@ -7660,14 +7631,14 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
-					"Double-Edge",
 					"Earth Power",
 					"Future Sight",
 					"Helping Hand",
 					"Leaf Storm",
+					"Nasty Plot",
+					"Pollen Puff",
 					"Protect",
-					"Recover",
-					"Swords Dance",
+					"Substitute",
 					"Trick Room"
 				],
 				"abilities": [
@@ -7731,8 +7702,8 @@
 					"Leaf Storm",
 					"Protect",
 					"Quick Guard",
-					"Swift",
-					"Synthesis"
+					"Substitute",
+					"Swift"
 				],
 				"abilities": [
 					"Overgrow",
@@ -7788,15 +7759,15 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Brave Bird",
 					"Close Combat",
 					"Double-Edge",
 					"Flare Blitz",
 					"Helping Hand",
 					"Protect",
-					"Rest",
-					"Swords Dance",
-					"U-turn"
+					"Substitute",
+					"Swords Dance"
 				],
 				"abilities": [
 					"Blaze",
@@ -7886,17 +7857,17 @@
 		"level": 90,
 		"sets": [
 			{
-				"role": "Doubles Setup Sweeper",
+				"role": "Doubles Support",
 				"movepool": [
 					"Double-Edge",
 					"Gunk Shot",
 					"Helping Hand",
-					"Hone Claws",
 					"Icy Wind",
 					"Play Rough",
 					"Protect",
 					"Rest",
-					"Seed Bomb"
+					"Substitute",
+					"Thunder Wave"
 				],
 				"abilities": [
 					"Gluttony",
@@ -7920,10 +7891,10 @@
 					"Electroweb",
 					"Energy Ball",
 					"Protect",
-					"Psychic",
 					"Quiver Dance",
 					"Roost",
-					"Tailwind"
+					"Tailwind",
+					"U-turn"
 				],
 				"abilities": [
 					"Swarm",
@@ -7944,14 +7915,14 @@
 				"role": "Doubles Setup Sweeper",
 				"movepool": [
 					"Bug Buzz",
-					"Double-Edge",
 					"Electroweb",
 					"Energy Ball",
-					"Iron Defense",
 					"Protect",
+					"Quiver Dance",
 					"Roost",
 					"Sludge Bomb",
-					"Tailwind"
+					"Tailwind",
+					"U-turn"
 				],
 				"abilities": [
 					"Shield Dust",
@@ -8040,17 +8011,17 @@
 		"level": 87,
 		"sets": [
 			{
-				"role": "Doubles Setup Sweeper",
+				"role": "Doubles Support",
 				"movepool": [
-					"Boomburst",
 					"Brave Bird",
-					"Heat Wave",
+					"Defog",
+					"Double-Edge",
 					"Protect",
 					"Quick Guard",
 					"Roost",
+					"Substitute",
 					"Tailwind",
-					"U-turn",
-					"Work Up"
+					"U-turn"
 				],
 				"abilities": [
 					"Guts",
@@ -8141,7 +8112,7 @@
 					"Icy Wind",
 					"Moonblast",
 					"Protect",
-					"Rest"
+					"Substitute"
 				],
 				"abilities": [
 					"Synchronize",
@@ -8274,16 +8245,15 @@
 		"level": 87,
 		"sets": [
 			{
-				"role": "Doubles Setup Sweeper",
+				"role": "Doubles Support",
 				"movepool": [
+					"Defog",
 					"Double-Edge",
 					"Leech Life",
-					"Night Slash",
 					"Pressure Wave",
 					"Protect",
 					"Roost",
 					"Substitute",
-					"Swords Dance",
 					"U-turn"
 				],
 				"abilities": [
@@ -8310,8 +8280,6 @@
 					"Poltergeist",
 					"Protect",
 					"Rest",
-					"Substitute",
-					"Sucker Punch",
 					"Will-O-Wisp"
 				],
 				"abilities": [
@@ -8332,9 +8300,8 @@
 				"role": "Doubles Setup Sweeper",
 				"movepool": [
 					"Boomburst",
-					"Earthquake",
+					"Ice Beam",
 					"Icy Wind",
-					"Outrage",
 					"Overheat",
 					"Protect",
 					"Rest",
@@ -8400,11 +8367,11 @@
 					"Double-Edge",
 					"Fake Out",
 					"Helping Hand",
-					"Ice Beam",
 					"Play Rough",
 					"Protect",
 					"Rest",
-					"Thunderbolt",
+					"Substitute",
+					"Wild Charge",
 					"Work Up"
 				],
 				"abilities": [
@@ -8464,14 +8431,14 @@
 			{
 				"role": "Bulky Protect",
 				"movepool": [
+					"Body Slam",
 					"Bulk Up",
-					"Energy Ball",
 					"Fake Out",
 					"Foul Play",
 					"Helping Hand",
+					"Knock Off",
 					"Poltergeist",
 					"Protect",
-					"Psychic",
 					"Recover"
 				],
 				"abilities": [
@@ -8494,12 +8461,12 @@
 				"movepool": [
 					"Double-Edge",
 					"Fae Strike",
-					"Foul Play",
 					"Helping Hand",
 					"Icy Wind",
 					"Iron Head",
 					"Protect",
 					"Rest",
+					"Stealth Rock",
 					"Swords Dance"
 				],
 				"abilities": [
@@ -8523,12 +8490,12 @@
 				"movepool": [
 					"Double-Edge",
 					"Fae Strike",
-					"Foul Play",
 					"Helping Hand",
 					"Icy Wind",
 					"Iron Head",
 					"Protect",
 					"Rest",
+					"Stealth Rock",
 					"Swords Dance"
 				],
 				"abilities": [
@@ -8668,7 +8635,7 @@
 					"Helping Hand",
 					"Poison Jab",
 					"Protect",
-					"Recover",
+					"Substitute",
 					"Zen Headbutt"
 				],
 				"abilities": [
@@ -8693,11 +8660,10 @@
 					"Hyper Voice",
 					"Overheat",
 					"Protect",
-					"Rest",
 					"Signal Beam",
 					"Snarl",
-					"Thunderbolt",
-					"Volt Switch"
+					"Substitute",
+					"Thunderbolt"
 				],
 				"abilities": [
 					"Static",
@@ -8721,11 +8687,10 @@
 					"Hyper Voice",
 					"Overheat",
 					"Protect",
-					"Rest",
 					"Signal Beam",
 					"Snarl",
-					"Thunderbolt",
-					"Volt Switch"
+					"Substitute",
+					"Thunderbolt"
 				],
 				"abilities": [
 					"Static",
@@ -8887,8 +8852,8 @@
 					"Icy Wind",
 					"Liquidation",
 					"Protect",
-					"Rest",
-					"Snarl"
+					"Snarl",
+					"Substitute"
 				],
 				"abilities": [
 					"Rough Skin",
@@ -8915,8 +8880,8 @@
 					"Icy Wind",
 					"Liquidation",
 					"Protect",
-					"Rest",
-					"Snarl"
+					"Snarl",
+					"Substitute"
 				],
 				"abilities": [
 					"Rough Skin",
@@ -8938,13 +8903,12 @@
 				"movepool": [
 					"Curse",
 					"Double-Edge",
-					"Earthquake",
 					"Icy Wind",
+					"Liquidation",
 					"Protect",
 					"Rest",
 					"Steel Roller",
-					"Substitute",
-					"Water Spout"
+					"Substitute"
 				],
 				"abilities": [
 					"Water Veil",
@@ -9087,13 +9051,13 @@
 			{
 				"role": "Doubles Setup Sweeper",
 				"movepool": [
+					"Brick Break",
 					"Double-Edge",
 					"Fake Out",
 					"Helping Hand",
 					"Protect",
-					"Psychic",
 					"Rest",
-					"Shadow Ball",
+					"Substitute",
 					"Wild Charge",
 					"Work Up"
 				],
@@ -9150,13 +9114,13 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Double-Edge",
 					"Dragon Dance",
 					"First Impression",
 					"Helping Hand",
 					"Outrage",
 					"Protect",
-					"Rest",
 					"Superpower",
 					"Tailwind"
 				],
@@ -9240,8 +9204,8 @@
 					"Double-Edge",
 					"Dragon Dance",
 					"Helping Hand",
-					"Moonblast",
 					"Outrage",
+					"Play Rough",
 					"Protect",
 					"Roost",
 					"Tailwind"
@@ -9324,7 +9288,6 @@
 			{
 				"role": "Doubles Setup Sweeper",
 				"movepool": [
-					"Earth Power",
 					"Future Sight",
 					"Helping Hand",
 					"Icy Wind",
@@ -9332,7 +9295,8 @@
 					"Moonblast",
 					"Moonlight",
 					"Nasty Plot",
-					"Protect"
+					"Protect",
+					"Stealth Rock"
 				],
 				"abilities": [
 					"Levitate"
@@ -9352,10 +9316,10 @@
 				"role": "Doubles Setup Sweeper",
 				"movepool": [
 					"Double-Edge",
-					"Flare Blitz",
 					"Helping Hand",
 					"Morning Sun",
 					"Protect",
+					"Stealth Rock",
 					"Stone Edge",
 					"Swords Dance",
 					"Trick Room",
@@ -9435,14 +9399,14 @@
 			{
 				"role": "Bulky Protect",
 				"movepool": [
-					"Double-Edge",
-					"Earthquake",
+					"Earth Power",
 					"Future Sight",
-					"Ice Beam",
 					"Protect",
+					"Rapid Spin",
 					"Rest",
-					"Rock Polish",
+					"Stealth Rock",
 					"Substitute",
+					"Trick",
 					"Trick Room"
 				],
 				"abilities": [
@@ -9462,15 +9426,13 @@
 			{
 				"role": "Bulky Protect",
 				"movepool": [
-					"Double-Edge",
-					"Earthquake",
-					"Meteor Beam",
+					"Leech Seed",
 					"Power Whip",
 					"Protect",
 					"Recover",
 					"Stealth Rock",
-					"Substitute",
-					"Swords Dance"
+					"Stone Edge",
+					"Substitute"
 				],
 				"abilities": [
 					"Suction Cups",
@@ -9495,7 +9457,6 @@
 					"Protect",
 					"Rest",
 					"Stone Edge",
-					"Substitute",
 					"Superpower",
 					"Swords Dance",
 					"X-Scissor"
@@ -9541,14 +9502,14 @@
 			{
 				"role": "Doubles Setup Sweeper",
 				"movepool": [
-					"Double-Edge",
-					"Energy Ball",
 					"Fire Blast",
 					"Future Sight",
+					"Hidden Power",
 					"Icy Wind",
 					"Protect",
 					"Rest",
 					"Tailwind",
+					"Thunder Wave",
 					"Work Up"
 				],
 				"abilities": [
@@ -9575,7 +9536,7 @@
 					"Icy Wind",
 					"Protect",
 					"Recover",
-					"Spectral Strike"
+					"Stealth Rock"
 				],
 				"abilities": [
 					"Color Change",
@@ -9750,8 +9711,8 @@
 					"Icy Wind",
 					"Megahorn",
 					"Protect",
-					"Rest",
 					"Snarl",
+					"Substitute",
 					"Swords Dance"
 				],
 				"abilities": [
@@ -9777,9 +9738,9 @@
 					"Foul Play",
 					"Icy Wind",
 					"Protect",
-					"Rest",
 					"Snarl",
 					"Spectral Strike",
+					"Substitute",
 					"Swords Dance"
 				],
 				"abilities": [
@@ -9828,11 +9789,10 @@
 					"Earthquake",
 					"Foul Play",
 					"Helping Hand",
-					"Ice Beam",
+					"Ice Spinner",
 					"Icy Wind",
 					"Protect",
-					"Rest",
-					"Taunt"
+					"Substitute"
 				],
 				"abilities": [
 					"Inner Focus",
@@ -9852,8 +9812,6 @@
 			{
 				"role": "Bulky Protect",
 				"movepool": [
-					"Encore",
-					"Hidden Power",
 					"Ice Beam",
 					"Icy Wind",
 					"Protect",
@@ -9881,15 +9839,14 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Aqua Tail",
 					"Coil",
 					"Crunch",
 					"Double-Edge",
-					"Ice Beam",
 					"Icy Wind",
 					"Protect",
 					"Rest",
-					"Substitute",
-					"Surf"
+					"Substitute"
 				],
 				"abilities": [
 					"Swift Swim",
@@ -9936,13 +9893,13 @@
 				"role": "Bulky Protect",
 				"movepool": [
 					"Double-Edge",
-					"Earthquake",
 					"Head Smash",
 					"Icy Wind",
+					"Iron Defense",
 					"Liquidation",
 					"Protect",
 					"Rest",
-					"Rock Polish",
+					"Stealth Rock",
 					"Substitute"
 				],
 				"abilities": [
@@ -10015,7 +9972,7 @@
 					"Helping Hand",
 					"Outrage",
 					"Protect",
-					"Roost",
+					"Substitute",
 					"Tailwind"
 				],
 				"abilities": [
@@ -10076,15 +10033,15 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Double-Edge",
 					"Earthquake",
 					"Hone Claws",
 					"Icy Wind",
-					"Knock Off",
 					"Meteor Mash",
 					"Protect",
 					"Psychic Fangs",
-					"Rest"
+					"Substitute"
 				],
 				"abilities": [
 					"Clear Body",
@@ -10236,6 +10193,7 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Calm Mind",
 					"Draco Meteor",
 					"Energy Ball",
@@ -10243,8 +10201,7 @@
 					"Helping Hand",
 					"Ice Beam",
 					"Icy Wind",
-					"Protect",
-					"Recover"
+					"Protect"
 				],
 				"abilities": [
 					"Levitate"
@@ -10300,6 +10257,7 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Calm Mind",
 					"Draco Meteor",
 					"Energy Ball",
@@ -10307,8 +10265,7 @@
 					"Helping Hand",
 					"Ice Beam",
 					"Icy Wind",
-					"Protect",
-					"Recover"
+					"Protect"
 				],
 				"abilities": [
 					"Levitate"
@@ -10724,7 +10681,7 @@
 					"Double-Edge",
 					"Helping Hand",
 					"Protect",
-					"Rest",
+					"Substitute",
 					"Tailwind",
 					"U-turn"
 				],
@@ -10746,12 +10703,12 @@
 			{
 				"role": "Doubles Setup Sweeper",
 				"movepool": [
-					"Crunch",
 					"Double-Edge",
 					"Icy Wind",
 					"Liquidation",
 					"Protect",
 					"Rest",
+					"Stealth Rock",
 					"Superpower",
 					"Swords Dance",
 					"Thunder Wave"
@@ -10826,7 +10783,6 @@
 					"Petal Dance",
 					"Protect",
 					"Sludge Bomb",
-					"Substitute",
 					"Synthesis",
 					"Toxic",
 					"Uproar"
@@ -10856,8 +10812,6 @@
 					"Protect",
 					"Sludge Bomb",
 					"Substitute",
-					"Synthesis",
-					"Toxic",
 					"Uproar"
 				],
 				"abilities": [
@@ -10928,8 +10882,7 @@
 					"Psychic",
 					"Quiver Dance",
 					"Substitute",
-					"Synthesis",
-					"Uproar"
+					"Synthesis"
 				],
 				"abilities": [
 					"Anticipation",
@@ -10956,8 +10909,7 @@
 					"Protect",
 					"Rest",
 					"Stealth Rock",
-					"Substitute",
-					"Sucker Punch"
+					"Substitute"
 				],
 				"abilities": [
 					"Anticipation",
@@ -10977,14 +10929,14 @@
 			{
 				"role": "Doubles Setup Sweeper",
 				"movepool": [
-					"Bug Buzz",
+					"Bug Bite",
 					"Double-Edge",
 					"Electroweb",
-					"Flash Cannon",
-					"Gunk Shot",
 					"Iron Defense",
+					"Iron Head",
 					"Protect",
 					"Rest",
+					"Stealth Rock",
 					"Substitute"
 				],
 				"abilities": [
@@ -11003,14 +10955,14 @@
 		"level": 89,
 		"sets": [
 			{
-				"role": "Doubles Support",
+				"role": "Doubles Setup Sweeper",
 				"movepool": [
 					"Air Slash",
 					"Bug Buzz",
 					"Electroweb",
 					"Energy Ball",
 					"Protect",
-					"Psychic",
+					"Quiver Dance",
 					"Roost",
 					"Tailwind",
 					"U-turn"
@@ -11115,7 +11067,6 @@
 					"Dazzling Gleam",
 					"Growth",
 					"Helping Hand",
-					"Hidden Power",
 					"Petal Dance",
 					"Pollen Puff",
 					"Protect",
@@ -11176,13 +11127,13 @@
 				"role": "Doubles Bulky Attacker",
 				"movepool": [
 					"Acid Armor",
-					"Earthquake",
+					"Earth Power",
 					"Helping Hand",
-					"Ice Beam",
 					"Icy Wind",
 					"Protect",
 					"Recover",
 					"Sludge Wave",
+					"Stealth Rock",
 					"Surf"
 				],
 				"abilities": [
@@ -11244,17 +11195,17 @@
 		"level": 86,
 		"sets": [
 			{
-				"role": "Doubles Setup Sweeper",
+				"role": "Doubles Support",
 				"movepool": [
 					"Close Combat",
 					"Fake Out",
-					"Fire Punch",
 					"Helping Hand",
 					"Mega Kick",
 					"Play Rough",
 					"Protect",
 					"Rest",
-					"Work Up"
+					"Thunder Wave",
+					"U-turn"
 				],
 				"abilities": [
 					"Cute Charm",
@@ -11273,6 +11224,7 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Close Combat",
 					"Fake Out",
 					"Fire Punch",
@@ -11280,7 +11232,6 @@
 					"Mega Kick",
 					"Play Rough",
 					"Protect",
-					"Rest",
 					"Work Up"
 				],
 				"abilities": [
@@ -11347,16 +11298,16 @@
 		"level": 88,
 		"sets": [
 			{
-				"role": "Doubles Setup Sweeper",
+				"role": "Doubles Support",
 				"movepool": [
 					"Body Slam",
 					"Fake Out",
 					"Foul Play",
-					"Hone Claws",
-					"Iron Tail",
+					"Knock Off",
 					"Play Rough",
 					"Protect",
 					"Rest",
+					"Taunt",
 					"U-turn"
 				],
 				"abilities": [
@@ -11441,9 +11392,9 @@
 					"Chatter",
 					"Heat Wave",
 					"Nasty Plot",
-					"Ominous Wind",
 					"Protect",
 					"Roost",
+					"Substitute",
 					"Tailwind",
 					"U-turn"
 				],
@@ -11555,8 +11506,6 @@
 					"Fire Blast",
 					"Helping Hand",
 					"Protect",
-					"Rest",
-					"Stealth Rock",
 					"Substitute",
 					"Surf"
 				],
@@ -11612,14 +11561,14 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
+					"Body Slam",
 					"Close Combat",
 					"Earthquake",
 					"Helping Hand",
 					"Meteor Mash",
 					"Protect",
-					"Psychic",
 					"Quick Guard",
-					"Rest",
 					"Swords Dance"
 				],
 				"abilities": [
@@ -11641,6 +11590,7 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Dragon Pulse",
 					"Flash Cannon",
 					"Focus Blast",
@@ -11648,8 +11598,7 @@
 					"Nasty Plot",
 					"Protect",
 					"Psychic",
-					"Quick Guard",
-					"Rest"
+					"Quick Guard"
 				],
 				"abilities": [
 					"Steadfast",
@@ -11691,9 +11640,8 @@
 		"level": 85,
 		"sets": [
 			{
-				"role": "Doubles Setup Sweeper",
+				"role": "Doubles Support",
 				"movepool": [
-					"Aqua Tail",
 					"Crunch",
 					"Earthquake",
 					"Knock Off",
@@ -11701,7 +11649,8 @@
 					"Protect",
 					"Rest",
 					"Snarl",
-					"Swords Dance"
+					"Taunt",
+					"Toxic Spikes"
 				],
 				"abilities": [
 					"Battle Armor",
@@ -11769,7 +11718,6 @@
 					"Power Whip",
 					"Protect",
 					"Rage Powder",
-					"Sludge Bomb",
 					"Swords Dance",
 					"Synthesis"
 				],
@@ -11835,7 +11783,7 @@
 				"movepool": [
 					"Double-Edge",
 					"Helping Hand",
-					"Ice Beam",
+					"Ice Spinner",
 					"Icy Wind",
 					"Outrage",
 					"Protect",
@@ -11936,10 +11884,10 @@
 			{
 				"role": "Bulky Protect",
 				"movepool": [
-					"Belch",
 					"Double-Edge",
 					"Helping Hand",
 					"Icy Wind",
+					"Knock Off",
 					"Power Whip",
 					"Protect",
 					"Rest",
@@ -12007,12 +11955,12 @@
 				"movepool": [
 					"Double-Edge",
 					"Earthquake",
-					"Growth",
 					"Knock Off",
-					"Leaf Storm",
+					"Poison Jab",
+					"Power Whip",
 					"Protect",
 					"Rage Powder",
-					"Sludge Bomb",
+					"Swords Dance",
 					"Synthesis"
 				],
 				"abilities": [
@@ -12383,13 +12331,13 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Close Combat",
 					"Earthquake",
 					"Helping Hand",
 					"Icy Wind",
 					"Leaf Blade",
 					"Protect",
-					"Rest",
 					"Swords Dance",
 					"Zen Headbutt"
 				],
@@ -12512,10 +12460,9 @@
 					"Icy Wind",
 					"Protect",
 					"Psychic",
-					"Rest",
 					"Shadow Ball",
-					"Thunderbolt",
-					"Will-O-Wisp"
+					"Substitute",
+					"Thunderbolt"
 				],
 				"abilities": [
 					"Snow Cloak",
@@ -12931,7 +12878,6 @@
 					"Overheat",
 					"Protect",
 					"Rest",
-					"Taunt",
 					"Will-O-Wisp"
 				],
 				"abilities": [
@@ -13724,13 +13670,13 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
-					"Double-Edge",
 					"Energy Ball",
-					"Flare Blitz",
 					"Future Sight",
 					"Helping Hand",
+					"Overheat",
 					"Protect",
-					"Rest",
+					"Substitute",
+					"Thunderbolt",
 					"Trick Room",
 					"Work Up"
 				],
@@ -13926,7 +13872,6 @@
 				"role": "Doubles Setup Sweeper",
 				"movepool": [
 					"Aqua Tail",
-					"Crunch",
 					"Gunk Shot",
 					"Helping Hand",
 					"Knock Off",
@@ -13978,17 +13923,17 @@
 		"level": 88,
 		"sets": [
 			{
-				"role": "Doubles Setup Sweeper",
+				"role": "Doubles Support",
 				"movepool": [
 					"Fake Out",
 					"Foul Play",
 					"Gunk Shot",
-					"Hone Claws",
-					"Hyper Voice",
+					"Knock Off",
 					"Play Rough",
 					"Protect",
 					"Rest",
-					"Snarl"
+					"Snarl",
+					"U-turn"
 				],
 				"abilities": [
 					"Limber",
@@ -14008,14 +13953,12 @@
 			{
 				"role": "Doubles Fast Attacker",
 				"movepool": [
-					"Gunk Shot",
+					"Focus Blast",
 					"Helping Hand",
-					"Hone Claws",
-					"Knock Off",
 					"Leaf Storm",
+					"Nasty Plot",
 					"Protect",
-					"Superpower",
-					"Synthesis",
+					"Substitute",
 					"Uproar"
 				],
 				"abilities": [
@@ -14035,15 +13978,14 @@
 			{
 				"role": "Doubles Fast Attacker",
 				"movepool": [
-					"Belch",
 					"Flare Blitz",
+					"Gunk Shot",
 					"Helping Hand",
 					"Hone Claws",
-					"Knock Off",
 					"Protect",
-					"Rest",
+					"Substitute",
 					"Superpower",
-					"Uproar"
+					"Throat Chop"
 				],
 				"abilities": [
 					"Gluttony",
@@ -14062,15 +14004,15 @@
 			{
 				"role": "Doubles Fast Attacker",
 				"movepool": [
+					"Aqua Tail",
 					"Gunk Shot",
 					"Helping Hand",
 					"Hone Claws",
-					"Ice Beam",
 					"Icy Wind",
 					"Protect",
-					"Rest",
+					"Substitute",
 					"Superpower",
-					"Surf"
+					"Throat Chop"
 				],
 				"abilities": [
 					"Gluttony",
@@ -14096,7 +14038,7 @@
 					"Moonblast",
 					"Moonlight",
 					"Protect",
-					"Shadow Ball",
+					"Thunder Wave",
 					"Trick Room"
 				],
 				"abilities": [
@@ -14208,17 +14150,17 @@
 		"level": 89,
 		"sets": [
 			{
-				"role": "Doubles Setup Sweeper",
+				"role": "Doubles Support",
 				"movepool": [
 					"Air Slash",
 					"Energy Ball",
 					"Future Sight",
 					"Helping Hand",
-					"Nasty Plot",
+					"Knock Off",
 					"Protect",
 					"Roost",
 					"Tailwind",
-					"Uproar"
+					"U-turn"
 				],
 				"abilities": [
 					"Unaware",
@@ -14284,7 +14226,6 @@
 					"Iron Head",
 					"Poison Jab",
 					"Protect",
-					"Rest",
 					"Substitute",
 					"Swords Dance"
 				],
@@ -14308,13 +14249,13 @@
 				"role": "Bulky Protect",
 				"movepool": [
 					"Double-Edge",
-					"Fire Blast",
+					"Fae Strike",
 					"Helping Hand",
-					"Ice Beam",
 					"Icy Wind",
+					"Knock Off",
 					"Protect",
-					"Psychic",
 					"Rest",
+					"Wild Charge",
 					"Work Up"
 				],
 				"abilities": [
@@ -14334,15 +14275,15 @@
 			{
 				"role": "Bulky Protect",
 				"movepool": [
-					"Calm Mind",
 					"Dazzling Gleam",
-					"Fire Blast",
 					"Helping Hand",
 					"Hyper Voice",
-					"Ice Beam",
 					"Icy Wind",
+					"Knock Off",
 					"Protect",
-					"Rest"
+					"Rest",
+					"Thunder Wave",
+					"Toxic"
 				],
 				"abilities": [
 					"Healer",
@@ -14403,12 +14344,11 @@
 					"Earthquake",
 					"Icy Wind",
 					"Knock Off",
+					"Liquidation",
 					"Power Whip",
 					"Protect",
 					"Rest",
-					"Sludge Wave",
-					"Surf",
-					"Toxic"
+					"Stealth Rock"
 				],
 				"abilities": [
 					"Swift Swim",
@@ -14432,8 +14372,8 @@
 					"Bulk Up",
 					"Earthquake",
 					"Helping Hand",
+					"Knock Off",
 					"Mega Kick",
-					"Poison Jab",
 					"Protect",
 					"Rest",
 					"Superpower",
@@ -14524,15 +14464,14 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Double-Edge",
 					"Megahorn",
 					"Poison Jab",
 					"Protect",
-					"Rest",
 					"Steel Roller",
 					"Substitute",
-					"Swords Dance",
-					"Toxic"
+					"Swords Dance"
 				],
 				"abilities": [
 					"Poison Point",
@@ -14559,7 +14498,6 @@
 					"Protect",
 					"Rest",
 					"Steel Roller",
-					"Substitute",
 					"Swords Dance",
 					"Toxic"
 				],
@@ -14729,16 +14667,16 @@
 		"level": 87,
 		"sets": [
 			{
-				"role": "Doubles Setup Sweeper",
+				"role": "Doubles Support",
 				"movepool": [
-					"Agility",
 					"Double-Edge",
 					"Flip Turn",
 					"Head Smash",
 					"Icy Wind",
 					"Protect",
-					"Psychic Fangs",
 					"Rest",
+					"Substitute",
+					"Taunt",
 					"Wave Crash"
 				],
 				"abilities": [
@@ -14807,8 +14745,8 @@
 					"Foul Play",
 					"Helping Hand",
 					"Protect",
-					"Rest",
-					"Snarl"
+					"Snarl",
+					"Substitute"
 				],
 				"abilities": [
 					"Intimidate",
@@ -14833,11 +14771,9 @@
 					"Earthquake",
 					"Flare Blitz",
 					"Protect",
-					"Rest",
+					"Substitute",
 					"Superpower",
-					"Thrash",
-					"U-turn",
-					"Will-O-Wisp"
+					"Thrash"
 				],
 				"abilities": [
 					"Sheer Force"
@@ -14860,10 +14796,8 @@
 					"Flare Blitz",
 					"Icicle Crash",
 					"Protect",
-					"Rest",
-					"Superpower",
-					"U-turn",
-					"Will-O-Wisp"
+					"Substitute",
+					"Superpower"
 				],
 				"abilities": [
 					"Gorilla Tactics"
@@ -14885,10 +14819,11 @@
 					"Helping Hand",
 					"Hyper Voice",
 					"Knock Off",
+					"Leaf Storm",
 					"Petal Dance",
 					"Protect",
-					"Synthesis",
-					"Toxic"
+					"Spikes",
+					"Synthesis"
 				],
 				"abilities": [
 					"Water Absorb",
@@ -14908,11 +14843,11 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
-					"Body Press",
 					"Earthquake",
 					"Knock Off",
 					"Protect",
 					"Rest",
+					"Stealth Rock",
 					"Stone Edge",
 					"Swords Dance",
 					"Wide Guard",
@@ -15024,7 +14959,7 @@
 					"Ice Beam",
 					"Icy Wind",
 					"Protect",
-					"Roost",
+					"Substitute",
 					"Tailwind"
 				],
 				"abilities": [
@@ -15046,7 +14981,6 @@
 			{
 				"role": "Bulky Protect",
 				"movepool": [
-					"Dark Wave",
 					"Energy Ball",
 					"Knock Off",
 					"Nasty Plot",
@@ -15054,6 +14988,7 @@
 					"Psychic",
 					"Rest",
 					"Shadow Ball",
+					"Toxic Spikes",
 					"Trick Room"
 				],
 				"abilities": [
@@ -15073,11 +15008,11 @@
 				"role": "Offensive Protect",
 				"movepool": [
 					"Curse",
-					"Earthquake",
 					"Icy Wind",
 					"Liquidation",
 					"Protect",
 					"Rest",
+					"Stealth Rock",
 					"Stone Edge",
 					"Superpower",
 					"Wide Guard"
@@ -15101,13 +15036,13 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Head Smash",
 					"Hone Claws",
 					"Outrage",
 					"Pressure Wave",
 					"Protect",
 					"Quick Guard",
-					"Roost",
 					"Tailwind",
 					"Thrash"
 				],
@@ -15134,8 +15069,7 @@
 					"Gunk Shot",
 					"Protect",
 					"Rest",
-					"Seed Bomb",
-					"Substitute",
+					"Spikes",
 					"Toxic"
 				],
 				"abilities": [
@@ -15380,17 +15314,17 @@
 		"level": 89,
 		"sets": [
 			{
-				"role": "Doubles Setup Sweeper",
+				"role": "Doubles Support",
 				"movepool": [
-					"Agility",
 					"Air Slash",
 					"Electroweb",
 					"Energy Ball",
 					"Helping Hand",
-					"Iron Tail",
+					"Knock Off",
 					"Protect",
 					"Roost",
-					"Thunderbolt"
+					"Thunderbolt",
+					"U-turn"
 				],
 				"abilities": [
 					"Static",
@@ -15478,14 +15412,14 @@
 				"role": "Bulky Protect",
 				"movepool": [
 					"Acid Armor",
-					"Energy Ball",
 					"Icy Wind",
 					"Protect",
 					"Recover",
 					"Shadow Ball",
 					"Sludge Wave",
 					"Trick Room",
-					"Water Spout"
+					"Water Spout",
+					"Will-O-Wisp"
 				],
 				"abilities": [
 					"Water Absorb",
@@ -15550,13 +15484,12 @@
 				"movepool": [
 					"Body Press",
 					"Knock Off",
-					"Poison Jab",
 					"Power Whip",
 					"Protect",
 					"Rest",
+					"Stealth Rock",
 					"Steel Roller",
-					"Swords Dance",
-					"Thunder Wave"
+					"Swords Dance"
 				],
 				"abilities": [
 					"Iron Barbs",
@@ -15576,12 +15509,12 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
-					"Assurance",
 					"Facade",
 					"Protect",
 					"Rest",
 					"Shift Gear",
 					"Steel Roller",
+					"Substitute",
 					"Trick Room",
 					"Volt Switch",
 					"Wild Charge"
@@ -15632,9 +15565,9 @@
 					"Close Combat",
 					"Electroweb",
 					"Outrage",
-					"Power Surge",
 					"Protect",
 					"Rest",
+					"Supercell Slam",
 					"Thrash",
 					"U-turn"
 				],
@@ -15815,15 +15748,14 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Acid Armor",
 					"Agility",
 					"Bug Buzz",
 					"Energy Ball",
 					"Focus Blast",
-					"Knock Off",
 					"Protect",
-					"Recover",
 					"Sludge Bomb",
-					"U-turn"
+					"Substitute"
 				],
 				"abilities": [
 					"Hydration",
@@ -15848,8 +15780,8 @@
 					"Power Surge",
 					"Protect",
 					"Rest",
-					"Sludge Wave",
-					"Surf",
+					"Stealth Rock",
+					"Substitute",
 					"Thunder Wave",
 					"Toxic"
 				],
@@ -15872,13 +15804,12 @@
 			{
 				"role": "Bulky Protect",
 				"movepool": [
-					"Curse",
 					"Double-Edge",
 					"Earthquake",
-					"Foul Play",
 					"Protect",
 					"Rest",
-					"Stone Edge",
+					"Stealth Rock",
+					"Substitute",
 					"Thunder Wave",
 					"Toxic"
 				],
@@ -16052,8 +15983,7 @@
 					"Protect",
 					"Rest",
 					"Swords Dance",
-					"Taunt",
-					"Toxic"
+					"Taunt"
 				],
 				"abilities": [
 					"Reckless",
@@ -16073,13 +16003,11 @@
 			{
 				"role": "Bulky Protect",
 				"movepool": [
-					"Close Combat",
 					"Double-Edge",
-					"Flare Blitz",
 					"Protect",
 					"Rest",
-					"Swords Dance",
 					"Taunt",
+					"Toxic",
 					"Vengeance",
 					"Will-O-Wisp"
 				],
@@ -16201,13 +16129,11 @@
 				"role": "Offensive Protect",
 				"movepool": [
 					"Belch",
-					"Body Slam",
-					"Flare Blitz",
+					"Focus Blast",
 					"Knock Off",
+					"Overheat",
 					"Protect",
-					"Rest",
-					"Superpower",
-					"Will-O-Wisp"
+					"Rest"
 				],
 				"abilities": [
 					"Gluttony",
@@ -16227,15 +16153,15 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Crunch",
 					"First Impression",
 					"Helping Hand",
 					"Hone Claws",
 					"Iron Head",
 					"Protect",
-					"Rest",
-					"Superpower",
-					"Thunder Wave"
+					"Substitute",
+					"Superpower"
 				],
 				"abilities": [
 					"Swarm",
@@ -16300,8 +16226,8 @@
 					"Helping Hand",
 					"Nasty Plot",
 					"Protect",
-					"Rest",
-					"Snarl"
+					"Snarl",
+					"Substitute"
 				],
 				"abilities": [
 					"Levitate"
@@ -16820,8 +16746,8 @@
 					"Helping Hand",
 					"Icy Wind",
 					"Protect",
-					"Rest",
 					"Secret Sword",
+					"Substitute",
 					"Surf",
 					"Swift"
 				],
@@ -16923,13 +16849,13 @@
 				"movepool": [
 					"Bug Buzz",
 					"Electroweb",
+					"Energy Ball",
 					"Flash Cannon",
-					"Gunk Shot",
-					"Hone Claws",
+					"Iron Defense",
 					"Protect",
-					"Rest",
-					"Techno Blast",
-					"U-turn"
+					"Rock Polish",
+					"Substitute",
+					"Techno Blast"
 				],
 				"abilities": [
 					"Download"
@@ -16950,13 +16876,13 @@
 				"movepool": [
 					"Bug Buzz",
 					"Electroweb",
+					"Energy Ball",
 					"Flash Cannon",
-					"Gunk Shot",
-					"Hone Claws",
+					"Iron Defense",
 					"Protect",
-					"Rest",
-					"Techno Blast",
-					"U-turn"
+					"Rock Polish",
+					"Substitute",
+					"Techno Blast"
 				],
 				"abilities": [
 					"Download"
@@ -16977,13 +16903,13 @@
 				"movepool": [
 					"Bug Buzz",
 					"Electroweb",
+					"Energy Ball",
 					"Flash Cannon",
-					"Gunk Shot",
-					"Hone Claws",
+					"Iron Defense",
 					"Protect",
-					"Rest",
-					"Techno Blast",
-					"U-turn"
+					"Rock Polish",
+					"Substitute",
+					"Techno Blast"
 				],
 				"abilities": [
 					"Download"
@@ -17004,13 +16930,13 @@
 				"movepool": [
 					"Bug Buzz",
 					"Electroweb",
+					"Energy Ball",
 					"Flash Cannon",
-					"Gunk Shot",
-					"Hone Claws",
+					"Iron Defense",
 					"Protect",
-					"Rest",
-					"Techno Blast",
-					"U-turn"
+					"Rock Polish",
+					"Substitute",
+					"Techno Blast"
 				],
 				"abilities": [
 					"Download"
@@ -17031,13 +16957,13 @@
 				"movepool": [
 					"Bug Buzz",
 					"Electroweb",
+					"Energy Ball",
 					"Flash Cannon",
-					"Gunk Shot",
-					"Hone Claws",
+					"Iron Defense",
 					"Protect",
-					"Rest",
-					"Techno Blast",
-					"U-turn"
+					"Rock Polish",
+					"Substitute",
+					"Techno Blast"
 				],
 				"abilities": [
 					"Download"
@@ -17148,6 +17074,7 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Focus Blast",
 					"Future Sight",
 					"Helping Hand",
@@ -17155,7 +17082,6 @@
 					"Nasty Plot",
 					"Overheat",
 					"Protect",
-					"Rest",
 					"Trick Room"
 				],
 				"abilities": [
@@ -17177,14 +17103,13 @@
 				"role": "Offensive Protect",
 				"movepool": [
 					"Dark Wave",
-					"Gunk Shot",
 					"Helping Hand",
 					"Ice Beam",
 					"Icy Wind",
 					"Protect",
-					"Rest",
-					"Surf",
-					"U-turn"
+					"Sludge Wave",
+					"Substitute",
+					"Surf"
 				],
 				"abilities": [
 					"Torrent",
@@ -17229,14 +17154,13 @@
 				"role": "Offensive Protect",
 				"movepool": [
 					"Dark Wave",
-					"Gunk Shot",
 					"Helping Hand",
 					"Ice Beam",
 					"Icy Wind",
 					"Protect",
-					"Rest",
-					"Surf",
-					"U-turn"
+					"Sludge Wave",
+					"Substitute",
+					"Surf"
 				],
 				"abilities": [
 					"Torrent",
@@ -17257,11 +17181,11 @@
 				"role": "Doubles Setup Sweeper",
 				"movepool": [
 					"Earthquake",
-					"Gunk Shot",
 					"Knock Off",
 					"Mega Kick",
 					"Protect",
 					"Rest",
+					"Spikes",
 					"Superpower",
 					"Swords Dance",
 					"U-turn"
@@ -17348,11 +17272,11 @@
 					"Energy Ball",
 					"Hurricane",
 					"Protect",
-					"Psychic",
 					"Quiver Dance",
 					"Rage Powder",
 					"Rest",
-					"Tailwind"
+					"Tailwind",
+					"U-turn"
 				],
 				"abilities": [
 					"Shield Dust",
@@ -17377,11 +17301,11 @@
 					"Energy Ball",
 					"Hurricane",
 					"Protect",
-					"Psychic",
 					"Quiver Dance",
 					"Rage Powder",
 					"Rest",
-					"Tailwind"
+					"Tailwind",
+					"U-turn"
 				],
 				"abilities": [
 					"Shield Dust",
@@ -17406,11 +17330,11 @@
 					"Energy Ball",
 					"Hurricane",
 					"Protect",
-					"Psychic",
 					"Quiver Dance",
 					"Rage Powder",
 					"Rest",
-					"Tailwind"
+					"Tailwind",
+					"U-turn"
 				],
 				"abilities": [
 					"Shield Dust",
@@ -17435,11 +17359,11 @@
 					"Energy Ball",
 					"Hurricane",
 					"Protect",
-					"Psychic",
 					"Quiver Dance",
 					"Rage Powder",
 					"Rest",
-					"Tailwind"
+					"Tailwind",
+					"U-turn"
 				],
 				"abilities": [
 					"Shield Dust",
@@ -17464,11 +17388,11 @@
 					"Energy Ball",
 					"Hurricane",
 					"Protect",
-					"Psychic",
 					"Quiver Dance",
 					"Rage Powder",
 					"Rest",
-					"Tailwind"
+					"Tailwind",
+					"U-turn"
 				],
 				"abilities": [
 					"Shield Dust",
@@ -17493,11 +17417,11 @@
 					"Energy Ball",
 					"Hurricane",
 					"Protect",
-					"Psychic",
 					"Quiver Dance",
 					"Rage Powder",
 					"Rest",
-					"Tailwind"
+					"Tailwind",
+					"U-turn"
 				],
 				"abilities": [
 					"Shield Dust",
@@ -17522,11 +17446,11 @@
 					"Energy Ball",
 					"Hurricane",
 					"Protect",
-					"Psychic",
 					"Quiver Dance",
 					"Rage Powder",
 					"Rest",
-					"Tailwind"
+					"Tailwind",
+					"U-turn"
 				],
 				"abilities": [
 					"Shield Dust",
@@ -17551,11 +17475,11 @@
 					"Energy Ball",
 					"Hurricane",
 					"Protect",
-					"Psychic",
 					"Quiver Dance",
 					"Rage Powder",
 					"Rest",
-					"Tailwind"
+					"Tailwind",
+					"U-turn"
 				],
 				"abilities": [
 					"Shield Dust",
@@ -17580,11 +17504,11 @@
 					"Energy Ball",
 					"Hurricane",
 					"Protect",
-					"Psychic",
 					"Quiver Dance",
 					"Rage Powder",
 					"Rest",
-					"Tailwind"
+					"Tailwind",
+					"U-turn"
 				],
 				"abilities": [
 					"Shield Dust",
@@ -17609,11 +17533,11 @@
 					"Energy Ball",
 					"Hurricane",
 					"Protect",
-					"Psychic",
 					"Quiver Dance",
 					"Rage Powder",
 					"Rest",
-					"Tailwind"
+					"Tailwind",
+					"U-turn"
 				],
 				"abilities": [
 					"Shield Dust",
@@ -17638,11 +17562,11 @@
 					"Energy Ball",
 					"Hurricane",
 					"Protect",
-					"Psychic",
 					"Quiver Dance",
 					"Rage Powder",
 					"Rest",
-					"Tailwind"
+					"Tailwind",
+					"U-turn"
 				],
 				"abilities": [
 					"Shield Dust",
@@ -17667,11 +17591,11 @@
 					"Energy Ball",
 					"Hurricane",
 					"Protect",
-					"Psychic",
 					"Quiver Dance",
 					"Rage Powder",
 					"Rest",
-					"Tailwind"
+					"Tailwind",
+					"U-turn"
 				],
 				"abilities": [
 					"Shield Dust",
@@ -17696,11 +17620,11 @@
 					"Energy Ball",
 					"Hurricane",
 					"Protect",
-					"Psychic",
 					"Quiver Dance",
 					"Rage Powder",
 					"Rest",
-					"Tailwind"
+					"Tailwind",
+					"U-turn"
 				],
 				"abilities": [
 					"Shield Dust",
@@ -17725,11 +17649,11 @@
 					"Energy Ball",
 					"Hurricane",
 					"Protect",
-					"Psychic",
 					"Quiver Dance",
 					"Rage Powder",
 					"Rest",
-					"Tailwind"
+					"Tailwind",
+					"U-turn"
 				],
 				"abilities": [
 					"Shield Dust",
@@ -17754,11 +17678,11 @@
 					"Energy Ball",
 					"Hurricane",
 					"Protect",
-					"Psychic",
 					"Quiver Dance",
 					"Rage Powder",
 					"Rest",
-					"Tailwind"
+					"Tailwind",
+					"U-turn"
 				],
 				"abilities": [
 					"Shield Dust",
@@ -17783,11 +17707,11 @@
 					"Energy Ball",
 					"Hurricane",
 					"Protect",
-					"Psychic",
 					"Quiver Dance",
 					"Rage Powder",
 					"Rest",
-					"Tailwind"
+					"Tailwind",
+					"U-turn"
 				],
 				"abilities": [
 					"Shield Dust",
@@ -17812,11 +17736,11 @@
 					"Energy Ball",
 					"Hurricane",
 					"Protect",
-					"Psychic",
 					"Quiver Dance",
 					"Rage Powder",
 					"Rest",
-					"Tailwind"
+					"Tailwind",
+					"U-turn"
 				],
 				"abilities": [
 					"Shield Dust",
@@ -17841,11 +17765,11 @@
 					"Energy Ball",
 					"Hurricane",
 					"Protect",
-					"Psychic",
 					"Quiver Dance",
 					"Rage Powder",
 					"Rest",
-					"Tailwind"
+					"Tailwind",
+					"U-turn"
 				],
 				"abilities": [
 					"Shield Dust",
@@ -17870,11 +17794,11 @@
 					"Energy Ball",
 					"Hurricane",
 					"Protect",
-					"Psychic",
 					"Quiver Dance",
 					"Rage Powder",
 					"Rest",
-					"Tailwind"
+					"Tailwind",
+					"U-turn"
 				],
 				"abilities": [
 					"Shield Dust",
@@ -17939,9 +17863,8 @@
 					"Hyper Voice",
 					"Overheat",
 					"Protect",
-					"Rest",
 					"Snarl",
-					"Will-O-Wisp",
+					"Substitute",
 					"Work Up"
 				],
 				"abilities": [
@@ -17997,8 +17920,7 @@
 					"Pollen Puff",
 					"Protect",
 					"Psychic",
-					"Substitute",
-					"Synthesis"
+					"Substitute"
 				],
 				"abilities": [
 					"Flower Veil",
@@ -18086,7 +18008,7 @@
 		"level": 86,
 		"sets": [
 			{
-				"role": "Doubles Setup Sweeper",
+				"role": "Doubles Support",
 				"movepool": [
 					"Helping Hand",
 					"Iron Tail",
@@ -18094,9 +18016,9 @@
 					"Rest",
 					"Snarl",
 					"Take Down",
-					"Wild Charge",
-					"Work Up",
-					"Zen Headbutt"
+					"Thunder Wave",
+					"U-turn",
+					"Wild Charge"
 				],
 				"abilities": [
 					"Fur Coat"
@@ -18167,7 +18089,7 @@
 					"Helping Hand",
 					"Nasty Plot",
 					"Protect",
-					"Rest",
+					"Substitute",
 					"Thunderbolt"
 				],
 				"abilities": [
@@ -18195,7 +18117,7 @@
 					"Nasty Plot",
 					"Protect",
 					"Psychic",
-					"Rest",
+					"Substitute",
 					"Thunderbolt"
 				],
 				"abilities": [
@@ -18216,13 +18138,12 @@
 			{
 				"role": "Bulky Protect",
 				"movepool": [
-					"Close Combat",
-					"Flash Cannon",
-					"Head Smash",
+					"Destiny Bond",
+					"Iron Head",
 					"Protect",
 					"Rest",
-					"Shadow Ball",
-					"Swords Dance",
+					"Spectral Strike",
+					"Substitute",
 					"Toxic",
 					"Wide Guard"
 				],
@@ -18244,11 +18165,11 @@
 				"role": "Offensive Protect",
 				"movepool": [
 					"Close Combat",
-					"Flash Cannon",
 					"Head Smash",
+					"Iron Head",
 					"Protect",
 					"Rest",
-					"Shadow Ball",
+					"Spectral Strike",
 					"Swords Dance",
 					"Toxic",
 					"Wide Guard"
@@ -18277,7 +18198,7 @@
 					"Protect",
 					"Psychic",
 					"Rest",
-					"Thunderbolt",
+					"Toxic",
 					"Trick Room"
 				],
 				"abilities": [
@@ -18298,13 +18219,13 @@
 				"role": "Doubles Setup Sweeper",
 				"movepool": [
 					"Calm Mind",
+					"Dazzling Gleam",
 					"Energy Ball",
-					"Fae Strike",
 					"Flamethrower",
 					"Helping Hand",
 					"Protect",
-					"Psychic",
 					"Rest",
+					"Sticky Web",
 					"Toxic"
 				],
 				"abilities": [
@@ -18345,14 +18266,14 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Dark Wave",
 					"Flamethrower",
-					"Foul Play",
 					"Future Sight",
 					"Helping Hand",
-					"Knock Off",
+					"Nasty Plot",
 					"Protect",
 					"Rest",
-					"Superpower",
+					"Substitute",
 					"Trick Room"
 				],
 				"abilities": [
@@ -18374,12 +18295,12 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
-					"Earthquake",
 					"Helping Hand",
 					"Icy Wind",
 					"Liquidation",
 					"Protect",
 					"Rest",
+					"Stealth Rock",
 					"Stone Edge",
 					"Superpower",
 					"Swords Dance"
@@ -18526,9 +18447,8 @@
 					"Hyper Voice",
 					"Power Surge",
 					"Protect",
-					"Rest",
-					"Surf",
-					"U-turn"
+					"Substitute",
+					"Surf"
 				],
 				"abilities": [
 					"Dry Skin",
@@ -18555,7 +18475,6 @@
 					"Outrage",
 					"Protect",
 					"Rest",
-					"Substitute",
 					"Thrash",
 					"Toxic"
 				],
@@ -18579,12 +18498,12 @@
 				"movepool": [
 					"Calm Mind",
 					"Earth Power",
-					"Hyper Voice",
 					"Ice Beam",
 					"Icy Wind",
 					"Meteor Beam",
 					"Protect",
 					"Rest",
+					"Stealth Rock",
 					"Thunder Wave"
 				],
 				"abilities": [
@@ -18662,6 +18581,7 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Body Slam",
 					"Brave Bird",
 					"Close Combat",
@@ -18669,7 +18589,6 @@
 					"Iron Head",
 					"Protect",
 					"Quick Guard",
-					"Roost",
 					"Swords Dance"
 				],
 				"abilities": [
@@ -18844,7 +18763,6 @@
 				"role": "Doubles Bulky Attacker",
 				"movepool": [
 					"Curse",
-					"Facade",
 					"Foul Play",
 					"Poltergeist",
 					"Power Whip",
@@ -18872,7 +18790,6 @@
 				"role": "Bulky Protect",
 				"movepool": [
 					"Curse",
-					"Facade",
 					"Foul Play",
 					"Poltergeist",
 					"Power Whip",
@@ -18897,15 +18814,14 @@
 		"level": 85,
 		"sets": [
 			{
-				"role": "Doubles Setup Sweeper",
+				"role": "Doubles Support",
 				"movepool": [
-					"Curse",
-					"Facade",
 					"Foul Play",
 					"Poltergeist",
 					"Power Whip",
 					"Protect",
 					"Synthesis",
+					"Toxic",
 					"Trick Room",
 					"Will-O-Wisp"
 				],
@@ -18928,7 +18844,6 @@
 				"role": "Offensive Protect",
 				"movepool": [
 					"Curse",
-					"Facade",
 					"Foul Play",
 					"Poltergeist",
 					"Power Whip",
@@ -19042,12 +18957,10 @@
 				"movepool": [
 					"Close Combat",
 					"Megahorn",
-					"Moonblast",
 					"Outrage",
+					"Play Rough",
 					"Protect",
-					"Rest",
-					"Thunder Wave",
-					"Toxic"
+					"Substitute"
 				],
 				"abilities": [
 					"Fairy Aura"
@@ -19065,14 +18978,13 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
-					"Foul Play",
-					"Hone Claws",
+					"Dark Wave",
 					"Hyper Voice",
 					"Oblivion Wing",
 					"Protect",
 					"Psychic",
-					"Roost",
 					"Snarl",
+					"Substitute",
 					"Tailwind"
 				],
 				"abilities": [
@@ -19097,10 +19009,8 @@
 					"Earthquake",
 					"Outrage",
 					"Protect",
-					"Rest",
 					"Substitute",
-					"Superpower",
-					"Toxic"
+					"Superpower"
 				],
 				"abilities": [
 					"Aura Break"
@@ -19124,10 +19034,8 @@
 					"Earthquake",
 					"Outrage",
 					"Protect",
-					"Rest",
 					"Substitute",
-					"Superpower",
-					"Toxic"
+					"Superpower"
 				],
 				"abilities": [
 					"Aura Break"
@@ -19181,13 +19089,13 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Calm Mind",
 					"Earth Power",
 					"Helping Hand",
 					"Meteor Beam",
 					"Moonblast",
 					"Protect",
 					"Psychic",
-					"Rest",
 					"Rock Polish",
 					"Trick Room"
 				],
@@ -19773,10 +19681,9 @@
 					"Double-Edge",
 					"Earthquake",
 					"Helping Hand",
-					"Ice Beam",
+					"Liquidation",
 					"Protect",
 					"Rest",
-					"Surf",
 					"Toxic",
 					"U-turn"
 				],
@@ -19889,16 +19796,16 @@
 		"level": 88,
 		"sets": [
 			{
-				"role": "Doubles Setup Sweeper",
+				"role": "Doubles Support",
 				"movepool": [
-					"Crunch",
 					"Ice Spinner",
 					"Icy Wind",
-					"Iron Defense",
 					"Leech Life",
 					"Liquidation",
 					"Protect",
 					"Rest",
+					"Toxic",
+					"U-turn",
 					"Wide Guard"
 				],
 				"abilities": [
@@ -19975,10 +19882,8 @@
 					"Moonblast",
 					"Pollen Puff",
 					"Protect",
-					"Sludge Bomb",
 					"Synthesis",
-					"Thunder Wave",
-					"Toxic"
+					"Thunder Wave"
 				],
 				"abilities": [
 					"Effect Spore",
@@ -20029,8 +19934,7 @@
 					"Protect",
 					"Rest",
 					"Swords Dance",
-					"Taunt",
-					"Toxic"
+					"Taunt"
 				],
 				"abilities": [
 					"Fluffy",
@@ -20211,11 +20115,11 @@
 			{
 				"role": "Bulky Protect",
 				"movepool": [
-					"Curse",
 					"Helping Hand",
 					"Protect",
 					"Recover",
 					"Secret Power",
+					"Substitute",
 					"Taunt",
 					"Toxic"
 				],
@@ -20236,14 +20140,14 @@
 			{
 				"role": "Bulky Protect",
 				"movepool": [
+					"Crunch",
 					"Double-Edge",
-					"Flamethrower",
-					"Ice Beam",
 					"Icy Wind",
 					"Outrage",
 					"Protect",
-					"Rest",
+					"Psychic Fangs",
 					"Snarl",
+					"Substitute",
 					"Swords Dance"
 				],
 				"abilities": [
@@ -20263,12 +20167,12 @@
 				"role": "Bulky Protect",
 				"movepool": [
 					"Double-Edge",
-					"Flamethrower",
 					"Icy Wind",
 					"Outrage",
 					"Protect",
-					"Rest",
+					"Psychic Fangs",
 					"Snarl",
+					"Substitute",
 					"Swords Dance",
 					"X-Scissor"
 				],
@@ -20290,12 +20194,12 @@
 				"movepool": [
 					"Crunch",
 					"Double-Edge",
-					"Flamethrower",
 					"Icy Wind",
 					"Outrage",
 					"Protect",
-					"Rest",
+					"Psychic Fangs",
 					"Snarl",
+					"Substitute",
 					"Swords Dance"
 				],
 				"abilities": [
@@ -20314,14 +20218,14 @@
 			{
 				"role": "Bulky Protect",
 				"movepool": [
+					"Crunch",
 					"Double-Edge",
-					"Flamethrower",
-					"Ice Beam",
 					"Icy Wind",
 					"Outrage",
 					"Protect",
-					"Rest",
+					"Psychic Fangs",
 					"Snarl",
+					"Substitute",
 					"Swords Dance"
 				],
 				"abilities": [
@@ -20341,14 +20245,14 @@
 				"role": "Bulky Protect",
 				"movepool": [
 					"Double-Edge",
-					"Flamethrower",
 					"Icy Wind",
 					"Outrage",
 					"Protect",
-					"Rest",
+					"Psychic Fangs",
 					"Snarl",
+					"Substitute",
 					"Swords Dance",
-					"Thunderbolt"
+					"Thunder Fang"
 				],
 				"abilities": [
 					"RKS System"
@@ -20366,14 +20270,14 @@
 			{
 				"role": "Bulky Protect",
 				"movepool": [
+					"Crunch",
 					"Double-Edge",
-					"Flamethrower",
-					"Ice Beam",
 					"Icy Wind",
 					"Outrage",
 					"Protect",
-					"Rest",
+					"Psychic Fangs",
 					"Snarl",
+					"Substitute",
 					"Swords Dance"
 				],
 				"abilities": [
@@ -20392,14 +20296,14 @@
 			{
 				"role": "Bulky Protect",
 				"movepool": [
+					"Crunch",
 					"Double-Edge",
-					"Flamethrower",
 					"Icy Wind",
 					"Outrage",
 					"Protect",
-					"Raging Blast",
-					"Rest",
+					"Psychic Fangs",
 					"Snarl",
+					"Substitute",
 					"Swords Dance"
 				],
 				"abilities": [
@@ -20419,13 +20323,13 @@
 				"role": "Bulky Protect",
 				"movepool": [
 					"Double-Edge",
-					"Flamethrower",
-					"Ice Beam",
+					"Fire Fang",
 					"Icy Wind",
 					"Outrage",
 					"Protect",
-					"Rest",
+					"Psychic Fangs",
 					"Snarl",
+					"Substitute",
 					"Swords Dance"
 				],
 				"abilities": [
@@ -20444,14 +20348,14 @@
 			{
 				"role": "Bulky Protect",
 				"movepool": [
-					"Air Slash",
+					"Aerial Ace",
 					"Double-Edge",
-					"Flamethrower",
 					"Icy Wind",
 					"Outrage",
 					"Protect",
-					"Rest",
+					"Psychic Fangs",
 					"Snarl",
+					"Substitute",
 					"Swords Dance"
 				],
 				"abilities": [
@@ -20471,13 +20375,13 @@
 				"role": "Bulky Protect",
 				"movepool": [
 					"Double-Edge",
-					"Flamethrower",
 					"Icy Wind",
 					"Outrage",
 					"Protect",
-					"Rest",
-					"Shadow Ball",
+					"Psychic Fangs",
+					"Shadow Claw",
 					"Snarl",
+					"Substitute",
 					"Swords Dance"
 				],
 				"abilities": [
@@ -20496,14 +20400,14 @@
 			{
 				"role": "Bulky Protect",
 				"movepool": [
+					"Crunch",
 					"Double-Edge",
-					"Flamethrower",
-					"Grass Pledge",
 					"Icy Wind",
 					"Outrage",
 					"Protect",
-					"Rest",
+					"Psychic Fangs",
 					"Snarl",
+					"Substitute",
 					"Swords Dance"
 				],
 				"abilities": [
@@ -20522,14 +20426,14 @@
 			{
 				"role": "Bulky Protect",
 				"movepool": [
+					"Crunch",
 					"Double-Edge",
-					"Flamethrower",
-					"Ice Beam",
 					"Icy Wind",
 					"Outrage",
 					"Protect",
-					"Rest",
+					"Psychic Fangs",
 					"Snarl",
+					"Substitute",
 					"Swords Dance"
 				],
 				"abilities": [
@@ -20549,13 +20453,13 @@
 				"role": "Bulky Protect",
 				"movepool": [
 					"Double-Edge",
-					"Flamethrower",
-					"Ice Beam",
+					"Ice Fang",
 					"Icy Wind",
 					"Outrage",
 					"Protect",
-					"Rest",
+					"Psychic Fangs",
 					"Snarl",
+					"Substitute",
 					"Swords Dance"
 				],
 				"abilities": [
@@ -20574,14 +20478,14 @@
 			{
 				"role": "Bulky Protect",
 				"movepool": [
+					"Crunch",
 					"Double-Edge",
-					"Flamethrower",
-					"Ice Beam",
 					"Icy Wind",
 					"Outrage",
 					"Protect",
-					"Rest",
+					"Psychic Fangs",
 					"Snarl",
+					"Substitute",
 					"Swords Dance"
 				],
 				"abilities": [
@@ -20600,14 +20504,14 @@
 			{
 				"role": "Bulky Protect",
 				"movepool": [
+					"Crunch",
 					"Double-Edge",
-					"Flamethrower",
 					"Icy Wind",
 					"Outrage",
 					"Protect",
 					"Psychic Fangs",
-					"Rest",
 					"Snarl",
+					"Substitute",
 					"Swords Dance"
 				],
 				"abilities": [
@@ -20627,13 +20531,13 @@
 				"role": "Bulky Protect",
 				"movepool": [
 					"Double-Edge",
-					"Flamethrower",
 					"Icy Wind",
 					"Outrage",
 					"Protect",
-					"Rest",
+					"Psychic Fangs",
 					"Rock Slide",
 					"Snarl",
+					"Substitute",
 					"Swords Dance"
 				],
 				"abilities": [
@@ -20653,13 +20557,13 @@
 				"role": "Bulky Protect",
 				"movepool": [
 					"Double-Edge",
-					"Flamethrower",
-					"Flash Cannon",
 					"Icy Wind",
+					"Iron Head",
 					"Outrage",
 					"Protect",
-					"Rest",
+					"Psychic Fangs",
 					"Snarl",
+					"Substitute",
 					"Swords Dance"
 				],
 				"abilities": [
@@ -20678,14 +20582,14 @@
 			{
 				"role": "Bulky Protect",
 				"movepool": [
+					"Crunch",
 					"Double-Edge",
-					"Flamethrower",
 					"Icy Wind",
 					"Outrage",
 					"Protect",
-					"Rest",
+					"Psychic Fangs",
 					"Snarl",
-					"Surf",
+					"Substitute",
 					"Swords Dance"
 				],
 				"abilities": [
@@ -20729,12 +20633,11 @@
 					"Acrobatics",
 					"Double-Edge",
 					"Earthquake",
-					"Meteor Beam",
 					"Protect",
-					"Rest",
+					"Rock Polish",
 					"Shell Smash",
-					"Substitute",
-					"U-turn"
+					"Stone Edge",
+					"Substitute"
 				],
 				"abilities": [
 					"Shields Down"
@@ -20756,12 +20659,11 @@
 					"Acrobatics",
 					"Double-Edge",
 					"Earthquake",
-					"Meteor Beam",
 					"Protect",
-					"Rest",
+					"Rock Polish",
 					"Shell Smash",
-					"Substitute",
-					"U-turn"
+					"Stone Edge",
+					"Substitute"
 				],
 				"abilities": [
 					"Shields Down"
@@ -20783,12 +20685,11 @@
 					"Acrobatics",
 					"Double-Edge",
 					"Earthquake",
-					"Meteor Beam",
 					"Protect",
-					"Rest",
+					"Rock Polish",
 					"Shell Smash",
-					"Substitute",
-					"U-turn"
+					"Stone Edge",
+					"Substitute"
 				],
 				"abilities": [
 					"Shields Down"
@@ -20810,12 +20711,11 @@
 					"Acrobatics",
 					"Double-Edge",
 					"Earthquake",
-					"Meteor Beam",
 					"Protect",
-					"Rest",
+					"Rock Polish",
 					"Shell Smash",
-					"Substitute",
-					"U-turn"
+					"Stone Edge",
+					"Substitute"
 				],
 				"abilities": [
 					"Shields Down"
@@ -20837,12 +20737,11 @@
 					"Acrobatics",
 					"Double-Edge",
 					"Earthquake",
-					"Meteor Beam",
 					"Protect",
-					"Rest",
+					"Rock Polish",
 					"Shell Smash",
-					"Substitute",
-					"U-turn"
+					"Stone Edge",
+					"Substitute"
 				],
 				"abilities": [
 					"Shields Down"
@@ -20864,12 +20763,11 @@
 					"Acrobatics",
 					"Double-Edge",
 					"Earthquake",
-					"Meteor Beam",
 					"Protect",
-					"Rest",
+					"Rock Polish",
 					"Shell Smash",
-					"Substitute",
-					"U-turn"
+					"Stone Edge",
+					"Substitute"
 				],
 				"abilities": [
 					"Shields Down"
@@ -20913,7 +20811,6 @@
 				"role": "Bulky Protect",
 				"movepool": [
 					"Draco Meteor",
-					"Focus Blast",
 					"Hyper Voice",
 					"Overheat",
 					"Protect",
@@ -20939,11 +20836,11 @@
 			{
 				"role": "Doubles Fast Attacker",
 				"movepool": [
+					"Agility",
 					"Fake Out",
 					"Helping Hand",
 					"Poison Jab",
 					"Protect",
-					"Rest",
 					"Steel Roller",
 					"Wild Charge",
 					"Work Up",
@@ -21164,13 +21061,13 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Brave Bird",
 					"Electroweb",
 					"Fae Strike",
 					"Iron Head",
 					"Protect",
-					"Roost",
-					"U-turn",
+					"Substitute",
 					"Wild Charge",
 					"Work Up"
 				],
@@ -21197,10 +21094,8 @@
 					"Future Sight",
 					"Moonblast",
 					"Protect",
-					"Rest",
-					"Taunt",
-					"Thunderbolt",
-					"Toxic"
+					"Substitute",
+					"Thunderbolt"
 				],
 				"abilities": [
 					"Psychic Surge",
@@ -21251,11 +21146,10 @@
 					"Calm Mind",
 					"Ice Beam",
 					"Icy Wind",
-					"Knock Off",
 					"Moonblast",
 					"Protect",
 					"Rest",
-					"Shadow Ball",
+					"Substitute",
 					"Surf"
 				],
 				"abilities": [
@@ -21367,13 +21261,11 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
-					"Knock Off",
 					"Meteor Beam",
 					"Protect",
 					"Psychic",
-					"Rest",
 					"Sludge Wave",
-					"Thunder Wave",
+					"Substitute",
 					"Thunderbolt",
 					"Trick Room"
 				],
@@ -21401,8 +21293,7 @@
 					"Outrage",
 					"Protect",
 					"Roost",
-					"Taunt",
-					"Toxic"
+					"Taunt"
 				],
 				"abilities": [
 					"Beast Boost"
@@ -21422,14 +21313,14 @@
 				"role": "Offensive Protect",
 				"movepool": [
 					"Agility",
-					"Bug Buzz",
 					"Close Combat",
 					"Electroweb",
 					"Foul Play",
 					"Icy Wind",
+					"Lunge",
 					"Outrage",
 					"Protect",
-					"Roost"
+					"Substitute"
 				],
 				"abilities": [
 					"Beast Boost"
@@ -21480,7 +21371,6 @@
 					"Protect",
 					"Rest",
 					"Steel Roller",
-					"Superpower",
 					"Toxic",
 					"Wide Guard"
 				],
@@ -21501,13 +21391,12 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
-					"Knock Off",
 					"Leaf Blade",
 					"Protect",
 					"Sacred Sword",
 					"Smart Strike",
+					"Substitute",
 					"Swords Dance",
-					"Synthesis",
 					"Tailwind",
 					"X-Scissor"
 				],
@@ -21528,14 +21417,14 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
-					"Dark Wave",
+					"Crunch",
 					"Iron Defense",
+					"Knock Off",
 					"Outrage",
 					"Protect",
 					"Rest",
 					"Snarl",
 					"Steel Roller",
-					"Thrash",
 					"Wide Guard"
 				],
 				"abilities": [
@@ -21739,6 +21628,7 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Calm Mind",
 					"Electroweb",
 					"Energy Ball",
@@ -21746,8 +21636,7 @@
 					"Fleur Cannon",
 					"Helping Hand",
 					"Ice Beam",
-					"Protect",
-					"Rest"
+					"Protect"
 				],
 				"abilities": [
 					"Soul-Heart"
@@ -21793,6 +21682,7 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Calm Mind",
 					"Electroweb",
 					"Energy Ball",
@@ -21800,8 +21690,7 @@
 					"Fleur Cannon",
 					"Helping Hand",
 					"Ice Beam",
-					"Protect",
-					"Rest"
+					"Protect"
 				],
 				"abilities": [
 					"Soul-Heart"
@@ -21820,15 +21709,14 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Bulk Up",
 					"Close Combat",
 					"Foul Play",
-					"Knock Off",
 					"Outrage",
 					"Protect",
-					"Rest",
-					"Vengeance",
-					"Will-O-Wisp"
+					"Substitute",
+					"Vengeance"
 				],
 				"abilities": [
 					"Technician"
@@ -21852,9 +21740,9 @@
 					"Helping Hand",
 					"Nasty Plot",
 					"Protect",
-					"Rest",
 					"Sludge Wave",
 					"Snarl",
+					"Substitute",
 					"Thunderbolt"
 				],
 				"abilities": [
@@ -21875,9 +21763,9 @@
 				"role": "Offensive Protect",
 				"movepool": [
 					"Double-Edge",
+					"Iron Defense",
 					"Protect",
 					"Rest",
-					"Rock Polish",
 					"Steel Roller",
 					"Stone Edge",
 					"Superpower",
@@ -21902,14 +21790,12 @@
 				"role": "Offensive Protect",
 				"movepool": [
 					"Calm Mind",
-					"Knock Off",
 					"Mind Blown",
 					"Protect",
 					"Psychic",
-					"Rest",
 					"Shadow Ball",
-					"Uproar",
-					"Will-O-Wisp"
+					"Substitute",
+					"Uproar"
 				],
 				"abilities": [
 					"Beast Boost"
@@ -21928,15 +21814,15 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Bulk Up",
 					"Close Combat",
 					"Fake Out",
 					"Helping Hand",
 					"Mega Kick",
 					"Outrage",
-					"Power Surge",
-					"Protect",
-					"Rest"
+					"Plasma Fists",
+					"Protect"
 				],
 				"abilities": [
 					"Volt Absorb"
@@ -21954,15 +21840,15 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Bulk Up",
 					"Close Combat",
 					"Fake Out",
 					"Helping Hand",
 					"Mega Kick",
 					"Outrage",
-					"Power Surge",
-					"Protect",
-					"Rest"
+					"Plasma Fists",
+					"Protect"
 				],
 				"abilities": [
 					"Volt Absorb"
@@ -21980,14 +21866,13 @@
 			{
 				"role": "Doubles Setup Sweeper",
 				"movepool": [
-					"Facade",
+					"Hidden Power",
 					"Iron Defense",
 					"Mineral Burst",
 					"Protect",
 					"Rest",
 					"Thunder Wave",
-					"Thunderbolt",
-					"Toxic"
+					"Thunderbolt"
 				],
 				"abilities": [
 					"Magnet Pull"
@@ -22012,8 +21897,7 @@
 					"Rest",
 					"Steel Roller",
 					"Superpower",
-					"Thunder Wave",
-					"Toxic"
+					"Thunder Wave"
 				],
 				"abilities": [
 					"Iron Fist"
@@ -22203,14 +22087,14 @@
 				"role": "Bulky Protect",
 				"movepool": [
 					"Bug Buzz",
-					"Calm Mind",
-					"Energy Ball",
 					"Future Sight",
 					"Helping Hand",
 					"Protect",
 					"Recover",
-					"Shadow Ball",
-					"Trick Room"
+					"Sticky Web",
+					"Toxic",
+					"Trick Room",
+					"U-turn"
 				],
 				"abilities": [
 					"Swarm",
@@ -22231,7 +22115,6 @@
 			{
 				"role": "Doubles Setup Sweeper",
 				"movepool": [
-					"Burning Jealousy",
 					"Dark Pulse",
 					"Nasty Plot",
 					"Protect",
@@ -22239,7 +22122,8 @@
 					"Quick Guard",
 					"Rest",
 					"Shadow Ball",
-					"Snarl"
+					"Snarl",
+					"U-turn"
 				],
 				"abilities": [
 					"Unburden",
@@ -22264,7 +22148,6 @@
 					"Leaf Storm",
 					"Pollen Puff",
 					"Protect",
-					"Substitute",
 					"Synthesis",
 					"Toxic"
 				],
@@ -22290,10 +22173,8 @@
 					"Double-Edge",
 					"Protect",
 					"Rest",
-					"Scalding Horn",
+					"Substitute",
 					"Swords Dance",
-					"Thunder Wave",
-					"Toxic",
 					"Wild Charge"
 				],
 				"abilities": [
@@ -22348,17 +22229,17 @@
 		"level": 85,
 		"sets": [
 			{
-				"role": "Doubles Setup Sweeper",
+				"role": "Doubles Support",
 				"movepool": [
-					"Bulk Up",
 					"Double-Edge",
 					"Helping Hand",
-					"Play Rough",
 					"Protect",
 					"Psychic Fangs",
 					"Rest",
 					"Snarl",
-					"Thunderbolt"
+					"Thunder Wave",
+					"Volt Switch",
+					"Wild Charge"
 				],
 				"abilities": [
 					"Strong Jaw",
@@ -22623,8 +22504,7 @@
 					"Leech Life",
 					"Power Whip",
 					"Protect",
-					"Rest",
-					"Will-O-Wisp"
+					"Rest"
 				],
 				"abilities": [
 					"Flash Fire",
@@ -22652,8 +22532,7 @@
 					"Pressure Wave",
 					"Protect",
 					"Rest",
-					"Taunt",
-					"Toxic"
+					"Taunt"
 				],
 				"abilities": [
 					"Limber",
@@ -22781,12 +22660,12 @@
 			{
 				"role": "Bulky Protect",
 				"movepool": [
-					"Bulk Up",
 					"Close Combat",
 					"Double-Edge",
-					"Gunk Shot",
 					"Helping Hand",
 					"Icy Wind",
+					"Knock Off",
+					"Parting Shot",
 					"Protect",
 					"Rest",
 					"Throat Chop"
@@ -22934,12 +22813,12 @@
 			{
 				"role": "Bulky Protect",
 				"movepool": [
-					"Body Press",
 					"Curse",
 					"Double-Edge",
 					"Earthquake",
 					"Protect",
 					"Rest",
+					"Stealth Rock",
 					"Trick Room",
 					"Vengeance",
 					"Will-O-Wisp"
@@ -23210,14 +23089,14 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Agility",
 					"Body Slam",
 					"Close Combat",
 					"Helping Hand",
 					"High Horsepower",
-					"Knock Off",
 					"Megahorn",
 					"Protect",
-					"Rest",
+					"Substitute",
 					"Swords Dance"
 				],
 				"abilities": [
@@ -23503,11 +23382,9 @@
 				"role": "Offensive Protect",
 				"movepool": [
 					"Earthquake",
-					"Mega Kick",
 					"Outrage",
 					"Protect",
 					"Rest",
-					"Taunt",
 					"Thunder Wave",
 					"Wild Charge"
 				],
@@ -23530,14 +23407,12 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
-					"Hyper Voice",
 					"Ice Beam",
 					"Icy Wind",
 					"Meteor Beam",
 					"Power Surge",
 					"Protect",
 					"Rest",
-					"Taunt",
 					"Thunder Wave"
 				],
 				"abilities": [
@@ -23561,11 +23436,9 @@
 				"movepool": [
 					"Earthquake",
 					"Fishious Rend",
-					"Mega Kick",
 					"Outrage",
 					"Protect",
 					"Rest",
-					"Substitute",
 					"Toxic"
 				],
 				"abilities": [
@@ -23587,7 +23460,6 @@
 			{
 				"role": "Bulky Protect",
 				"movepool": [
-					"Body Slam",
 					"Ice Beam",
 					"Icy Wind",
 					"Iron Defense",
@@ -23941,8 +23813,8 @@
 					"Power Whip",
 					"Protect",
 					"Snarl",
-					"Swords Dance",
-					"Synthesis"
+					"Substitute",
+					"Swords Dance"
 				],
 				"abilities": [
 					"Leaf Guard"
@@ -24741,7 +24613,7 @@
 		"level": 87,
 		"sets": [
 			{
-				"role": "Doubles Setup Sweeper",
+				"role": "Doubles Support",
 				"movepool": [
 					"Crunch",
 					"Double-Edge",
@@ -24750,8 +24622,8 @@
 					"Play Rough",
 					"Protect",
 					"Rest",
-					"Seed Bomb",
-					"Tidy Up"
+					"Thunder Wave",
+					"U-turn"
 				],
 				"abilities": [
 					"Friend Guard",
@@ -25266,7 +25138,7 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
-					"Crunch",
+					"Fire Blast",
 					"Growth",
 					"Helping Hand",
 					"Leaf Storm",
@@ -25274,7 +25146,7 @@
 					"Protect",
 					"Rage Powder",
 					"Rest",
-					"Take Down"
+					"Will-O-Wisp"
 				],
 				"abilities": [
 					"Chlorophyll",
@@ -25621,13 +25493,12 @@
 				"movepool": [
 					"Earth Power",
 					"Energy Ball",
+					"Iron Defense",
 					"Meteor Beam",
 					"Protect",
-					"Rest",
 					"Rock Polish",
 					"Sludge Wave",
-					"Substitute",
-					"Toxic"
+					"Substitute"
 				],
 				"abilities": [
 					"Toxic Debris",
@@ -25816,7 +25687,6 @@
 					"Nasty Plot",
 					"Protect",
 					"Rest",
-					"Substitute",
 					"Surf",
 					"Taunt"
 				],
@@ -25843,7 +25713,6 @@
 					"Nasty Plot",
 					"Protect",
 					"Rest",
-					"Substitute",
 					"Surf",
 					"Taunt"
 				],
@@ -25870,7 +25739,6 @@
 					"Nasty Plot",
 					"Protect",
 					"Rest",
-					"Substitute",
 					"Surf",
 					"Taunt"
 				],
@@ -25897,7 +25765,6 @@
 					"Nasty Plot",
 					"Protect",
 					"Rest",
-					"Substitute",
 					"Surf",
 					"Taunt"
 				],
@@ -25924,7 +25791,6 @@
 					"Nasty Plot",
 					"Protect",
 					"Rest",
-					"Substitute",
 					"Surf",
 					"Taunt"
 				],
@@ -26088,8 +25954,8 @@
 					"Outrage",
 					"Protect",
 					"Roost",
-					"Tailwind",
-					"Wild Charge"
+					"Stealth Rock",
+					"Tailwind"
 				],
 				"abilities": [
 					"Serene Grace",
