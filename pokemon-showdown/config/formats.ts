@@ -22,7 +22,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 	// S/V Singles
 	///////////////////////////////////////////////////////////////////
 	{
-		section: "Pokémon Copper (New Pokémon Only)",
+		section: "New Pokémon Only",
 	},
 	{
 		name: "[Gen 9] New Pokémon Singles 3v3",
@@ -57,7 +57,25 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		restricted: ['Restricted Legendary', 'Sub-Legendary', 'Mythical'],
 	},
 	{
-		section: "Pokémon Copper (Azori Pokédex)",
+		section: "New Pokémon Only (Randoms)",
+	},
+	{
+		name: "[Gen 9] New Pokémon Random Singles 6v6",
+		desc: "Randomly generated teams, drawn from Pok&eacute;mon new to Pok&eacute;mon Copper. No teambuilding needed.",
+		mod: "gen9",
+		team: "random",
+		ruleset: ["Obtainable", "Azori Exclusives", "Species Clause", "HP Percentage Mod", "Cancel Mod", "Sleep Clause Mod", "Illusion Level Mod", "Terastal Clause"],
+	},
+	{
+		name: "[Gen 9] New Pokémon Random Doubles 6v6",
+		desc: "Randomly generated teams for double battles, drawn from Pok&eacute;mon new to Pok&eacute;mon Copper. No teambuilding needed.",
+		mod: "gen9",
+		gameType: "doubles",
+		team: "random",
+		ruleset: ["Obtainable", "Azori Exclusives", "Species Clause", "HP Percentage Mod", "Cancel Mod", "Sleep Clause Mod", "Terastal Clause"],
+	},
+	{
+		section: "Azori Pokédex",
 	},
 	{
 		name: "[Gen 9] Azori Pokédex Singles 3v3",
@@ -92,7 +110,25 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		restricted: ['Restricted Legendary', 'Sub-Legendary', 'Mythical'],
 	},
 	{
-		section: "Pokémon Copper (National Pokédex)",
+		section: "Azori Pokédex (Randoms)",
+	},
+	{
+		name: "[Gen 9] Azori Pokédex Random Singles 6v6",
+		desc: "Randomly generated teams, drawn from the Azori Pok&eacute;dex. No teambuilding needed.",
+		mod: "gen9",
+		team: "random",
+		ruleset: ["Obtainable", "Azori Pokedex", "Species Clause", "HP Percentage Mod", "Cancel Mod", "Sleep Clause Mod", "Illusion Level Mod", "Terastal Clause"],
+	},
+	{
+		name: "[Gen 9] Azori Pokédex Random Doubles 6v6",
+		desc: "Randomly generated teams for double battles, drawn from the Azori Pok&eacute;dex. No teambuilding needed.",
+		mod: "gen9",
+		gameType: "doubles",
+		team: "random",
+		ruleset: ["Obtainable", "Azori Pokedex", "Species Clause", "HP Percentage Mod", "Cancel Mod", "Sleep Clause Mod", "Terastal Clause"],
+	},
+	{
+		section: "National Pokédex",
 	},
 	{
 		name: "[Gen 9] National Pokédex Singles 3v3",
@@ -127,25 +163,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		restricted: ['Restricted Legendary', 'Sub-Legendary', 'Mythical'],
 	},
 	{
-		section: "Pokémon Copper (Anything Goes)",
-	},
-	{
-		name: "[Gen 9] Anything Goes Singles",
-		desc: 'Single battle with no restrictions at all: any Pok&eacute;mon, any number of legendaries, any items.',
-		mod: 'gen9',
-		bestOfDefault: true,
-		ruleset: ['Standard AG', 'VGC Timer', 'Open Team Sheets', 'Terastal Clause'],
-	},
-	{
-		name: "[Gen 9] Anything Goes Doubles",
-		desc: 'Double battle with no restrictions at all: any Pok&eacute;mon, any number of legendaries, any items.',
-		mod: 'gen9',
-		gameType: 'doubles',
-		bestOfDefault: true,
-		ruleset: ['Standard AG', 'VGC Timer', 'Open Team Sheets', 'Terastal Clause'],
-	},
-	{
-		section: "Pokémon Copper (Random Battles)",
+		section: "National Pokédex (Randoms)",
 	},
 	{
 		name: "[Gen 9] Copper Random Singles 6v6",
@@ -161,5 +179,23 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		gameType: "doubles",
 		team: "random",
 		ruleset: ["Obtainable", "Species Clause", "HP Percentage Mod", "Cancel Mod", "Sleep Clause Mod", "Terastal Clause"],
+	},
+	{
+		section: "Anything Goes",
+	},
+	{
+		name: "[Gen 9] Anything Goes Singles",
+		desc: 'Single battle with no restrictions at all: any Pok&eacute;mon, any number of legendaries, any items.',
+		mod: 'gen9',
+		bestOfDefault: true,
+		ruleset: ['Standard AG', 'VGC Timer', 'Open Team Sheets', 'Terastal Clause'],
+	},
+	{
+		name: "[Gen 9] Anything Goes Doubles",
+		desc: 'Double battle with no restrictions at all: any Pok&eacute;mon, any number of legendaries, any items.',
+		mod: 'gen9',
+		gameType: 'doubles',
+		bestOfDefault: true,
+		ruleset: ['Standard AG', 'VGC Timer', 'Open Team Sheets', 'Terastal Clause'],
 	},
 ];

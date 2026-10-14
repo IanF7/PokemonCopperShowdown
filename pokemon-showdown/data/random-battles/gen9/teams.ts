@@ -151,9 +151,11 @@ const DEFENSIVE_TERA_BLAST_USERS = [
 ];
 
 /** tags that count toward the legendary limit below */
-const LEGENDARY_TAGS = ['Restricted Legendary', 'Sub-Legendary', 'Mythical'];
+const LEGENDARY_TAGS = ['Restricted Legendary', 'Sub-Legendary', 'Mythical'] as const;
 /** most legendaries/mythicals one randomly generated team may have */
 const MAX_LEGENDARIES = 2;
+/** validator rules that limit which Pokemon a format allows; random teams honour them too */
+const SPECIES_POOL_RULES = ['azoriexclusives', 'azoripokedex'];
 
 export class RandomTeams {
 	readonly dex: ModdedDex;
@@ -1668,6 +1670,26 @@ export class RandomTeams {
 	}
 
 	/**
+	 * Whether a species from the random set pool is legal under the format's
+	 * Pokemon-limiting rules (e.g. Azori Pokedex), checked the way the team
+	 * validator would see it: a Mega is played as its base forme holding the stone.
+	 */
+	isSpeciesAllowedByFormat(speciesid: string, ruleTable: RuleTable): boolean {
+		const rules = SPECIES_POOL_RULES.filter(id => ruleTable.has(id));
+		if (!rules.length) return true;
+		const species = this.dex.species.get(speciesid);
+		const playedAs = species.isMega ? this.dex.species.get(species.changesFrom || species.baseSpecies) : species;
+		if (ruleTable.isBannedSpecies(species) || ruleTable.isBannedSpecies(playedAs)) return false;
+		const set = { name: species.baseSpecies, species: playedAs.name, item: species.requiredItem || '' } as PokemonSet;
+		const validator = { dex: this.dex, ruleTable } as any;
+		for (const id of rules) {
+			const problems = this.dex.formats.get(id).onValidateSet?.call(validator, set, this.format, {}, {});
+			if (problems?.length) return false;
+		}
+		return true;
+	}
+
+	/**
 	 * Checks if the new species is compatible with the other mons currently on the team.
 	 */
 	getPokemonCompatibility(
@@ -1769,7 +1791,8 @@ export class RandomTeams {
 		const teamDetails: RandomTeamsTypes.TeamDetails = {};
 		let numMaxLevelPokemon = 0;
 
-		const pokemonList = isDoubles ? Object.keys(this.randomDoublesSets) : Object.keys(this.randomSets);
+		const pokemonList = (isDoubles ? Object.keys(this.randomDoublesSets) : Object.keys(this.randomSets))
+			.filter(id => this.isSpeciesAllowedByFormat(id, ruleTable));
 		const [pokemonPool, baseSpeciesPool] = this.getPokemonPool(type, pokemon, isMonotype, pokemonList);
 
 		let leadsRemaining = this.format.gameType === 'doubles' ? 2 : 1;
