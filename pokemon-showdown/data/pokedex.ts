@@ -3735,6 +3735,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Red",
 		prevo: "Ledyba",
 		evoLevel: 18,
+		evos: ["Lediboss"],
 		eggGroups: ["Bug"],
 	},
 	spinarak: {
@@ -3814,6 +3815,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Blue",
 		prevo: "Chinchou",
 		evoLevel: 27,
+		evos: ["Linturna"],
 		eggGroups: ["Water 2"],
 	},
 	pichu: {
@@ -10013,6 +10015,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Black",
 		prevo: "Blitzle",
 		evoLevel: 27,
+		evos: ["Volstrika"],
 		eggGroups: ["Field"],
 	},
 	roggenrola: {
@@ -16322,6 +16325,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "White",
 		prevo: "Wooloo",
 		evoLevel: 24,
+		evos: ["Fueghorn"],
 		eggGroups: ["Field"],
 	},
 	chewtle: {

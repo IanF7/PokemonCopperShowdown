@@ -5817,33 +5817,6 @@
 			}
 		]
 	},
-	"ledian": {
-		"level": 92,
-		"sets": [
-			{
-				"role": "Setup Sweeper",
-				"movepool": [
-					"Agility",
-					"Air Slash",
-					"Bug Buzz",
-					"Focus Blast",
-					"Roost",
-					"Substitute",
-					"U-turn"
-				],
-				"abilities": [
-					"Swarm",
-					"Early Bird",
-					"Iron Fist"
-				],
-				"teraTypes": [
-					"Bug",
-					"Flying"
-				]
-			}
-		],
-		"generated": true
-	},
 	"ariados": {
 		"level": 95,
 		"sets": [

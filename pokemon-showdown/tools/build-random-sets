@@ -197,6 +197,13 @@ const moveScore = (move, species, isDoubles = false) => {
 	return power * (accuracy / 100);
 };
 
+/**
+ * Pokemon that gained a new evolution in Pokemon Copper but are still worth a set of
+ * their own: they can now hold Eviolite, which the team builder gives anything not fully
+ * evolved. (Zebstrika and Lanturn are kept the same way, through Showdown's own sets.)
+ */
+const STILL_EVOLVING = ['dubwool'];
+
 /** the stats a Pokemon actually battles with (see BATTLE_FORMES) */
 const battleStats = species => (BATTLE_FORMES[species.id] ? Dex.species.get(BATTLE_FORMES[species.id]) : species).baseStats;
 
@@ -435,7 +442,7 @@ function build(file, isDoubles) {
 		// the stone comes along with it, so it Mega Evolves in battle.
 		if (isMega(species)) return eligible(megaBaseOf(species));
 		if (species.isMega || species.battleOnly) return false;
-		return !species.evos?.length;
+		return !species.evos?.length || STILL_EVOLVING.includes(species.id);
 	};
 
 	// Formes that only look different (Minior's cores, Vivillon's patterns, Pikachu's caps)
