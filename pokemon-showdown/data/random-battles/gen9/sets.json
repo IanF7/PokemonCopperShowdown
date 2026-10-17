@@ -5,10 +5,9 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Agility",
-					"Dark Wave",
+					"Fire Blast",
+					"Focus Blast",
 					"Nasty Plot",
-					"Overheat",
 					"Psychic",
 					"Shadow Ball",
 					"Substitute"
@@ -55,11 +54,10 @@
 				"role": "Wallbreaker",
 				"movepool": [
 					"Calm Mind",
-					"Draco Meteor",
-					"Earth Power",
-					"Fire Blast",
-					"Future Sight",
-					"Rest",
+					"Dragon Pulse",
+					"Focus Blast",
+					"Ice Beam",
+					"Psychic",
 					"Toxic"
 				],
 				"abilities": [
@@ -80,12 +78,12 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Agility",
-					"Draco Meteor",
+					"Chaotic Burst",
 					"Earth Power",
+					"Fire Blast",
 					"Nasty Plot",
-					"Overheat",
-					"Raging Blast",
-					"Substitute"
+					"Substitute",
+					"Thunderbolt"
 				],
 				"abilities": [
 					"Raging Chaos"
@@ -105,7 +103,7 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Agility",
-					"Body Slam",
+					"Body Press",
 					"Dragon Dance",
 					"Earthquake",
 					"Ice Spinner",
@@ -130,10 +128,10 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Agility",
-					"Draco Meteor",
+					"Dragon Pulse",
 					"Earth Power",
-					"Fire Blast",
-					"Meteor Beam"
+					"Golden Storm",
+					"Ice Beam"
 				],
 				"abilities": [
 					"Golden Body",
@@ -154,10 +152,10 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Agility",
-					"Draco Meteor",
+					"Dragon Pulse",
 					"Earth Power",
-					"Fire Blast",
-					"Meteor Beam"
+					"Golden Storm",
+					"Ice Beam"
 				],
 				"abilities": [
 					"Golden Body",
@@ -178,10 +176,9 @@
 				"role": "Wallbreaker",
 				"movepool": [
 					"Close Combat",
-					"Double-Edge",
 					"Flare Blitz",
 					"Flash Freeze",
-					"Rest",
+					"Stomping Tantrum",
 					"Substitute",
 					"Swords Dance"
 				],
@@ -204,12 +201,12 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
+					"Body Press",
 					"Double-Edge",
 					"Flare Blitz",
 					"Rest",
 					"Substitute",
-					"Swords Dance",
-					"Wild Charge"
+					"Swords Dance"
 				],
 				"abilities": [
 					"Fluffy",
@@ -231,7 +228,6 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Agility",
-					"Double-Edge",
 					"High Horsepower",
 					"Smart Strike",
 					"Substitute",
@@ -257,11 +253,11 @@
 				"role": "Bulky Attacker",
 				"movepool": [
 					"Agility",
-					"Ice Beam",
-					"Power Surge",
+					"Dazzling Gleam",
 					"Rest",
 					"Surf",
 					"Thunder Wave",
+					"Thunderbolt",
 					"Volt Switch"
 				],
 				"abilities": [
@@ -282,10 +278,9 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Agility",
 					"Brick Break",
-					"Double-Edge",
 					"First Impression",
+					"Ice Punch",
 					"Pressure Wave",
 					"Substitute",
 					"Swords Dance"
@@ -309,8 +304,8 @@
 			{
 				"role": "Bulky Attacker",
 				"movepool": [
-					"Double-Edge",
 					"Earthquake",
+					"Hammer Arm",
 					"Meteor Mash",
 					"Rest",
 					"Stealth Rock",
@@ -336,11 +331,10 @@
 			{
 				"role": "Wallbreaker",
 				"movepool": [
-					"Double-Edge",
 					"Earthquake",
+					"Hammer Arm",
 					"Head Smash",
 					"Meteor Mash",
-					"Rest",
 					"Swords Dance",
 					"Yawn"
 				],
@@ -364,9 +358,9 @@
 				"role": "Bulky Attacker",
 				"movepool": [
 					"Crush Claw",
-					"First Impression",
 					"Foul Play",
 					"Hone Claws",
+					"Play Rough",
 					"Rest",
 					"Taunt",
 					"U-turn"
@@ -388,7 +382,7 @@
 				"role": "Bulky Attacker",
 				"movepool": [
 					"Flip Turn",
-					"Hyper Voice",
+					"Ice Beam",
 					"Moonblast",
 					"Nasty Plot",
 					"Rest",
@@ -415,8 +409,8 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Agility",
-					"Dark Wave",
 					"Earth Power",
+					"Focus Blast",
 					"Heat Wave",
 					"Nasty Plot",
 					"Shadow Ball",
@@ -441,10 +435,10 @@
 				"role": "Bulky Attacker",
 				"movepool": [
 					"Calm Mind",
-					"Earth Power",
-					"Future Sight",
+					"Focus Blast",
 					"Hyper Voice",
 					"Knock Off",
+					"Psychic",
 					"Recover"
 				],
 				"abilities": [
@@ -469,9 +463,9 @@
 					"Calm Mind",
 					"Earth Power",
 					"Focus Blast",
-					"Future Sight",
 					"Hyper Voice",
 					"Knock Off",
+					"Psychic",
 					"Recover"
 				],
 				"abilities": [
@@ -493,10 +487,10 @@
 			{
 				"role": "Bulky Attacker",
 				"movepool": [
+					"Earthquake",
 					"Outrage",
 					"Poison Jab",
 					"Rest",
-					"Superpower",
 					"Swords Dance",
 					"Toxic",
 					"Toxic Spikes"
@@ -521,8 +515,8 @@
 				"movepool": [
 					"Calm Mind",
 					"Dazzling Gleam",
-					"Future Sight",
-					"Overheat",
+					"Fire Blast",
+					"Psychic",
 					"Roost",
 					"Shadow Ball",
 					"Will-O-Wisp"
@@ -545,11 +539,10 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Agility",
 					"Calm Mind",
 					"Dazzling Gleam",
-					"Future Sight",
-					"Overheat",
+					"Fire Blast",
+					"Psychic",
 					"Shadow Ball"
 				],
 				"abilities": [
@@ -571,9 +564,9 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Calm Mind",
+					"Earth Power",
 					"Flash Cannon",
 					"Knock Off",
-					"Meteor Beam",
 					"Moonblast",
 					"Rest"
 				],
@@ -598,9 +591,9 @@
 				"movepool": [
 					"Calm Mind",
 					"Earth Power",
+					"Energy Ball",
 					"Flash Cannon",
 					"Knock Off",
-					"Meteor Beam",
 					"Moonblast"
 				],
 				"abilities": [
@@ -622,9 +615,8 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Agility",
 					"Close Combat",
-					"Foul Play",
+					"Crunch",
 					"Hone Claws",
 					"Psychic Fangs",
 					"Spectral Strike",
@@ -651,9 +643,9 @@
 				"movepool": [
 					"Hurricane",
 					"Ice Beam",
-					"Moonblast",
 					"Nasty Plot",
 					"Roost",
+					"Shadow Ball",
 					"Substitute",
 					"U-turn"
 				],
@@ -677,10 +669,10 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Agility",
-					"Hyper Voice",
 					"Ice Beam",
 					"Moonblast",
 					"Nasty Plot",
+					"Psychic",
 					"Shadow Ball",
 					"Substitute"
 				],
@@ -705,9 +697,8 @@
 				"movepool": [
 					"Bulk Up",
 					"Close Combat",
-					"Double-Edge",
-					"Outrage",
-					"Rest",
+					"High Horsepower",
+					"Megahorn",
 					"Supercell Slam",
 					"Thunder Wave",
 					"Volt Switch"
@@ -730,11 +721,10 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Agility",
 					"Bulk Up",
 					"Close Combat",
-					"Double-Edge",
-					"Outrage",
+					"High Horsepower",
+					"Megahorn",
 					"Supercell Slam"
 				],
 				"abilities": [
@@ -755,11 +745,11 @@
 			{
 				"role": "Bulky Attacker",
 				"movepool": [
-					"Dark Wave",
+					"Blizzard",
+					"Focus Blast",
 					"Knock Off",
 					"Nasty Plot",
 					"Parting Shot",
-					"Psychic",
 					"Rest",
 					"Shadow Ball"
 				],
@@ -775,16 +765,18 @@
 		"generated": true
 	},
 	"brawnsoon": {
-		"level": 90,
+		"level": 78,
 		"sets": [
 			{
-				"role": "Fast Support",
+				"role": "Wallbreaker",
 				"movepool": [
+					"Brick Break",
+					"Darkest Lariat",
 					"Ice Hammer",
 					"Knock Off",
 					"Liquidation",
-					"Outrage",
-					"Rest",
+					"Pain Split",
+					"Rain Dance",
 					"U-turn"
 				],
 				"abilities": [
@@ -804,11 +796,10 @@
 				"role": "Wallbreaker",
 				"movepool": [
 					"Close Combat",
-					"Double-Edge",
+					"Crunch",
 					"Dragon Dance",
+					"Earthquake",
 					"Flip Turn",
-					"Foul Play",
-					"Rest",
 					"Stone Edge"
 				],
 				"abilities": [
@@ -856,11 +847,11 @@
 				"role": "Bulky Attacker",
 				"movepool": [
 					"Aura Sphere",
-					"Belch",
 					"Earth Power",
 					"Knock Off",
 					"Nasty Plot",
 					"Rest",
+					"Sludge Wave",
 					"Spikes",
 					"U-turn"
 				],
@@ -883,10 +874,10 @@
 				"role": "Wallbreaker",
 				"movepool": [
 					"Aquatic Rush",
-					"Draco Meteor",
+					"Dragon Pulse",
+					"Earth Power",
+					"Fire Blast",
 					"Growth",
-					"Leaf Storm",
-					"Sludge Wave",
 					"Strength Sap",
 					"Substitute"
 				],
@@ -909,11 +900,10 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Agility",
-					"Boomburst",
 					"Encore",
 					"Heat Wave",
 					"Hurricane",
-					"Power Surge"
+					"Thunderbolt"
 				],
 				"abilities": [
 					"Speed Boost",
@@ -933,12 +923,11 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Agility",
+					"Crunch",
 					"Hone Claws",
 					"Play Rough",
 					"Seed Bomb",
-					"Superpower",
-					"Thrash"
+					"Superpower"
 				],
 				"abilities": [
 					"Friend Guard",
@@ -959,12 +948,11 @@
 				"role": "Wallbreaker",
 				"movepool": [
 					"Bulk Up",
-					"Double-Edge",
+					"Darkest Lariat",
 					"Earthquake",
 					"Flare Blitz",
-					"Foul Play",
 					"Parting Shot",
-					"Rest",
+					"Play Rough",
 					"Taunt"
 				],
 				"abilities": [
@@ -988,7 +976,6 @@
 					"Bug Buzz",
 					"Nasty Plot",
 					"Psychic",
-					"Rest",
 					"Sludge Bomb",
 					"Thunderbolt",
 					"Toxic",
@@ -1015,10 +1002,10 @@
 					"Close Combat",
 					"Earthquake",
 					"Knock Off",
-					"Poison Jab",
+					"Pressure Wave",
 					"Recover",
-					"Stone Edge",
-					"Swords Dance"
+					"Swords Dance",
+					"Thunder Punch"
 				],
 				"abilities": [
 					"Oblivious",
@@ -1041,7 +1028,7 @@
 					"Calm Mind",
 					"Earth Power",
 					"Energy Ball",
-					"Overheat",
+					"Fire Blast",
 					"Synthesis",
 					"Will-O-Wisp"
 				],
@@ -1091,11 +1078,11 @@
 				"movepool": [
 					"Curse",
 					"Earthquake",
+					"Hammer Arm",
 					"Knock Off",
 					"Rest",
 					"Stealth Rock",
-					"Stone Edge",
-					"Superpower"
+					"Stone Edge"
 				],
 				"abilities": [
 					"Sturdy",
@@ -1143,7 +1130,6 @@
 					"Iron Head",
 					"Liquidation",
 					"Megahorn",
-					"Rest",
 					"Sacred Sword",
 					"Swords Dance"
 				],
@@ -1170,10 +1156,9 @@
 					"Close Combat",
 					"Darkest Lariat",
 					"High Horsepower",
+					"Ice Punch",
 					"Knock Off",
-					"Outrage",
-					"Parting Shot",
-					"Rest"
+					"Parting Shot"
 				],
 				"abilities": [
 					"Limber",
@@ -1195,8 +1180,8 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Coil",
+					"Fire Lash",
 					"Poison Jab",
-					"Psychic Fangs",
 					"Rest",
 					"Spectral Strike",
 					"Substitute",
@@ -1271,11 +1256,10 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Agility",
-					"Foul Play",
+					"Crunch",
 					"Hone Claws",
+					"Iron Tail",
 					"Knock Off",
-					"Lunge",
 					"Play Rough",
 					"Supercell Slam"
 				],
@@ -1298,11 +1282,10 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Agility",
-					"Foul Play",
+					"Crunch",
 					"Hone Claws",
+					"Iron Tail",
 					"Knock Off",
-					"Lunge",
 					"Play Rough",
 					"Supercell Slam"
 				],
@@ -1327,9 +1310,9 @@
 				"movepool": [
 					"Earthquake",
 					"First Impression",
+					"Iron Head",
 					"Rest",
 					"Spikes",
-					"Steel Roller",
 					"U-turn",
 					"Work Up"
 				],
@@ -1352,12 +1335,11 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Agility",
 					"Calm Mind",
 					"Dark Pulse",
+					"Energy Ball",
 					"Focus Blast",
-					"Future Sight",
-					"Leaf Storm",
+					"Psychic",
 					"Substitute"
 				],
 				"abilities": [
@@ -1379,11 +1361,11 @@
 			{
 				"role": "Fast Support",
 				"movepool": [
-					"Energy Ball",
-					"Hidden Power",
 					"Knock Off",
 					"Moonblast",
 					"Rest",
+					"Shadow Ball",
+					"Swift",
 					"Thunder Wave",
 					"U-turn"
 				],
@@ -1405,10 +1387,10 @@
 			{
 				"role": "Bulky Attacker",
 				"movepool": [
-					"Ice Beam",
 					"Moonblast",
 					"Moonlight",
 					"Nasty Plot",
+					"Power Gem",
 					"Surf",
 					"Toxic",
 					"U-turn"
@@ -1435,7 +1417,7 @@
 					"Close Combat",
 					"Leech Life",
 					"Liquidation",
-					"Mega Kick",
+					"Psycho Cut",
 					"Swords Dance"
 				],
 				"abilities": [
@@ -1458,10 +1440,10 @@
 				"movepool": [
 					"Double-Edge",
 					"Earthquake",
+					"Fae Strike",
 					"Iron Defense",
 					"Knock Off",
-					"Rest",
-					"Supercell Slam"
+					"Rest"
 				],
 				"abilities": [
 					"Friend Guard"
@@ -1481,10 +1463,10 @@
 				"movepool": [
 					"Double-Edge",
 					"Earthquake",
+					"Fae Strike",
 					"Iron Defense",
 					"Knock Off",
-					"Rest",
-					"Supercell Slam"
+					"Rest"
 				],
 				"abilities": [
 					"Friend Guard"
@@ -1502,12 +1484,12 @@
 			{
 				"role": "Bulky Attacker",
 				"movepool": [
+					"Energy Ball",
 					"Focus Blast",
-					"Leaf Storm",
 					"Nasty Plot",
-					"Power Surge",
 					"Rest",
 					"Thunder Wave",
+					"Thunderbolt",
 					"Volt Switch"
 				],
 				"abilities": [
@@ -1532,7 +1514,7 @@
 					"Air Slash",
 					"Bug Buzz",
 					"Defog",
-					"Energy Ball",
+					"Heat Wave",
 					"Moonlight",
 					"Quiver Dance",
 					"U-turn"
@@ -1555,12 +1537,12 @@
 			{
 				"role": "Bulky Attacker",
 				"movepool": [
-					"Chip Away",
+					"Earthquake",
+					"Facade",
 					"Parting Shot",
 					"Rest",
 					"Stealth Rock",
 					"Stone Edge",
-					"Superpower",
 					"Taunt",
 					"Work Up"
 				],
@@ -1582,13 +1564,13 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
+					"Heat Wave",
 					"Hurricane",
 					"Nasty Plot",
 					"Roost",
 					"Shadow Ball",
 					"Taunt",
-					"U-turn",
-					"Uproar"
+					"U-turn"
 				],
 				"abilities": [
 					"Serene Grace",
@@ -1610,8 +1592,8 @@
 				"movepool": [
 					"Brave Bird",
 					"Defog",
-					"Double-Edge",
 					"Foul Play",
+					"Play Rough",
 					"Roost",
 					"Taunt",
 					"U-turn"
@@ -1636,10 +1618,9 @@
 				"movepool": [
 					"Bulk Up",
 					"Close Combat",
-					"Double-Edge",
 					"Gunk Shot",
 					"Hydro Smash",
-					"Rest",
+					"Ice Punch",
 					"Toxic"
 				],
 				"abilities": [
@@ -1662,10 +1643,10 @@
 				"movepool": [
 					"Bulk Up",
 					"Close Combat",
-					"Double-Edge",
 					"Gunk Shot",
 					"Hydro Smash",
-					"Substitute"
+					"Substitute",
+					"Thunder Punch"
 				],
 				"abilities": [
 					"Torrent",
@@ -1687,9 +1668,8 @@
 				"movepool": [
 					"Agility",
 					"Dazzling Gleam",
-					"Overheat",
-					"Power Gem",
-					"Psyshock",
+					"Fire Blast",
+					"Scorching Sands",
 					"Taunt"
 				],
 				"abilities": [
@@ -1712,9 +1692,8 @@
 				"movepool": [
 					"Agility",
 					"Dazzling Gleam",
-					"Overheat",
-					"Power Gem",
-					"Psyshock",
+					"Fire Blast",
+					"Scorching Sands",
 					"Taunt"
 				],
 				"abilities": [
@@ -1737,8 +1716,8 @@
 				"movepool": [
 					"Earthquake",
 					"Power Whip",
-					"Sacred Sword",
 					"Spikes",
+					"Stone Edge",
 					"Substitute",
 					"Swords Dance",
 					"Synthesis"
@@ -1789,10 +1768,10 @@
 				"movepool": [
 					"Agility",
 					"Dragon Pulse",
-					"Hyper Voice",
-					"Power Surge",
+					"Focus Blast",
 					"Substitute",
-					"Surf"
+					"Surf",
+					"Thunderbolt"
 				],
 				"abilities": [
 					"Dry Skin",
@@ -1858,9 +1837,9 @@
 				"role": "Wallbreaker",
 				"movepool": [
 					"Earth Power",
+					"Energy Ball",
 					"Growth",
 					"Knock Off",
-					"Petal Dance",
 					"Sludge Bomb",
 					"Synthesis"
 				],
@@ -1922,7 +1901,7 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Double-Edge",
+					"Crunch",
 					"Earthquake",
 					"Flare Blitz",
 					"Outrage",
@@ -1947,10 +1926,10 @@
 			{
 				"role": "Fast Attacker",
 				"movepool": [
-					"Dragon Pulse",
 					"Focus Blast",
 					"Hurricane",
 					"Overheat",
+					"Scorching Sands",
 					"Substitute"
 				],
 				"abilities": [
@@ -2009,14 +1988,13 @@
 			{
 				"role": "Wallbreaker",
 				"movepool": [
-					"Dragon Pulse",
+					"Dark Pulse",
 					"Flip Turn",
 					"Focus Blast",
 					"Ice Beam",
-					"Rest",
 					"Shell Smash",
 					"Substitute",
-					"Water Spout"
+					"Surf"
 				],
 				"abilities": [
 					"Torrent",
@@ -2061,7 +2039,7 @@
 			{
 				"role": "Bulky Attacker",
 				"movepool": [
-					"Double-Edge",
+					"Drill Run",
 					"Knock Off",
 					"Poison Jab",
 					"Roost",
@@ -2088,12 +2066,11 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Agility",
-					"Double-Edge",
+					"Drill Run",
 					"Poison Jab",
+					"Pressure Wave",
 					"Substitute",
 					"Swords Dance",
-					"Throat Chop",
 					"X-Scissor"
 				],
 				"abilities": [
@@ -2140,12 +2117,10 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Agility",
 					"Heat Wave",
 					"Hurricane",
-					"Ominous Wind",
 					"Substitute",
-					"Uproar",
+					"Swift",
 					"Work Up"
 				],
 				"abilities": [
@@ -2167,13 +2142,12 @@
 			{
 				"role": "Fast Support",
 				"movepool": [
-					"Crunch",
 					"Double-Edge",
 					"Rest",
+					"Stomping Tantrum",
 					"Taunt",
 					"Thunder Wave",
-					"U-turn",
-					"Wild Charge"
+					"U-turn"
 				],
 				"abilities": [
 					"Guts",
@@ -2194,9 +2168,9 @@
 				"movepool": [
 					"Crunch",
 					"Double-Edge",
-					"Iron Tail",
 					"Knock Off",
 					"Rest",
+					"Stomping Tantrum",
 					"Swords Dance",
 					"U-turn"
 				],
@@ -2222,9 +2196,9 @@
 					"Defog",
 					"Double-Edge",
 					"Drill Peck",
+					"Drill Run",
 					"Roost",
 					"Substitute",
-					"Throat Chop",
 					"U-turn"
 				],
 				"abilities": [
@@ -2343,81 +2317,6 @@
 			}
 		]
 	},
-	"pikachualola": {
-		"level": 95,
-		"sets": [
-			{
-				"role": "Setup Sweeper",
-				"movepool": [
-					"Alluring Voice",
-					"Nasty Plot",
-					"Power Surge",
-					"Rest",
-					"Substitute",
-					"Surf",
-					"Volt Switch"
-				],
-				"abilities": [
-					"Static",
-					"Lightning Rod"
-				],
-				"teraTypes": [
-					"Electric"
-				]
-			}
-		],
-		"generated": true
-	},
-	"pikachuhoenn": {
-		"level": 95,
-		"sets": [
-			{
-				"role": "Setup Sweeper",
-				"movepool": [
-					"Alluring Voice",
-					"Nasty Plot",
-					"Power Surge",
-					"Rest",
-					"Substitute",
-					"Surf",
-					"Volt Switch"
-				],
-				"abilities": [
-					"Static",
-					"Lightning Rod"
-				],
-				"teraTypes": [
-					"Electric"
-				]
-			}
-		],
-		"generated": true
-	},
-	"pikachukalos": {
-		"level": 95,
-		"sets": [
-			{
-				"role": "Setup Sweeper",
-				"movepool": [
-					"Alluring Voice",
-					"Nasty Plot",
-					"Power Surge",
-					"Rest",
-					"Substitute",
-					"Surf",
-					"Volt Switch"
-				],
-				"abilities": [
-					"Static",
-					"Lightning Rod"
-				],
-				"teraTypes": [
-					"Electric"
-				]
-			}
-		],
-		"generated": true
-	},
 	"pikachuoriginal": {
 		"level": 95,
 		"sets": [
@@ -2426,110 +2325,10 @@
 				"movepool": [
 					"Alluring Voice",
 					"Nasty Plot",
-					"Power Surge",
 					"Rest",
 					"Substitute",
 					"Surf",
-					"Volt Switch"
-				],
-				"abilities": [
-					"Static",
-					"Lightning Rod"
-				],
-				"teraTypes": [
-					"Electric"
-				]
-			}
-		],
-		"generated": true
-	},
-	"pikachupartner": {
-		"level": 95,
-		"sets": [
-			{
-				"role": "Setup Sweeper",
-				"movepool": [
-					"Alluring Voice",
-					"Nasty Plot",
-					"Power Surge",
-					"Rest",
-					"Substitute",
-					"Surf",
-					"Volt Switch"
-				],
-				"abilities": [
-					"Static",
-					"Lightning Rod"
-				],
-				"teraTypes": [
-					"Electric"
-				]
-			}
-		],
-		"generated": true
-	},
-	"pikachusinnoh": {
-		"level": 95,
-		"sets": [
-			{
-				"role": "Setup Sweeper",
-				"movepool": [
-					"Alluring Voice",
-					"Nasty Plot",
-					"Power Surge",
-					"Rest",
-					"Substitute",
-					"Surf",
-					"Volt Switch"
-				],
-				"abilities": [
-					"Static",
-					"Lightning Rod"
-				],
-				"teraTypes": [
-					"Electric"
-				]
-			}
-		],
-		"generated": true
-	},
-	"pikachuunova": {
-		"level": 95,
-		"sets": [
-			{
-				"role": "Setup Sweeper",
-				"movepool": [
-					"Alluring Voice",
-					"Nasty Plot",
-					"Power Surge",
-					"Rest",
-					"Substitute",
-					"Surf",
-					"Volt Switch"
-				],
-				"abilities": [
-					"Static",
-					"Lightning Rod"
-				],
-				"teraTypes": [
-					"Electric"
-				]
-			}
-		],
-		"generated": true
-	},
-	"pikachuworld": {
-		"level": 95,
-		"sets": [
-			{
-				"role": "Setup Sweeper",
-				"movepool": [
-					"Alluring Voice",
-					"Nasty Plot",
-					"Power Surge",
-					"Rest",
-					"Substitute",
-					"Surf",
+					"Thunderbolt",
 					"Volt Switch"
 				],
 				"abilities": [
@@ -2642,7 +2441,6 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Agility",
-					"Body Slam",
 					"Brick Break",
 					"Play Rough",
 					"Substitute",
@@ -2665,13 +2463,12 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Agility",
 					"Alluring Voice",
 					"Focus Blast",
 					"Nasty Plot",
-					"Power Surge",
 					"Substitute",
-					"Surf"
+					"Surf",
+					"Thunderbolt"
 				],
 				"abilities": [
 					"Static",
@@ -2734,6 +2531,7 @@
 				"movepool": [
 					"Earthquake",
 					"Ice Shard",
+					"Iron Head",
 					"Knock Off",
 					"Rapid Spin",
 					"Swords Dance",
@@ -2754,8 +2552,8 @@
 			{
 				"role": "Bulky Attacker",
 				"movepool": [
-					"Double-Edge",
 					"Earthquake",
+					"Fae Strike",
 					"Hone Claws",
 					"Poison Jab",
 					"Rest",
@@ -2781,8 +2579,8 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Double-Edge",
 					"Earthquake",
+					"Head Smash",
 					"Hone Claws",
 					"Poison Jab",
 					"Rest",
@@ -2851,11 +2649,11 @@
 				"movepool": [
 					"Calm Mind",
 					"Fire Blast",
-					"Future Sight",
+					"Focus Blast",
 					"Knock Off",
-					"Meteor Beam",
 					"Moonblast",
-					"Moonlight"
+					"Moonlight",
+					"Thunderbolt"
 				],
 				"abilities": [
 					"Cute Charm",
@@ -2938,6 +2736,7 @@
 					"Alluring Voice",
 					"Dazzling Gleam",
 					"Fire Blast",
+					"Hyper Voice",
 					"Knock Off",
 					"Protect",
 					"Thunder Wave",
@@ -2981,12 +2780,12 @@
 			{
 				"role": "Bulky Attacker",
 				"movepool": [
-					"Double-Edge",
 					"Knock Off",
 					"Leech Life",
 					"Seed Bomb",
 					"Swords Dance",
-					"Synthesis"
+					"Synthesis",
+					"Throat Chop"
 				],
 				"abilities": [
 					"Effect Spore",
@@ -3349,11 +3148,10 @@
 				"movepool": [
 					"Bulk Up",
 					"Close Combat",
-					"Double-Edge",
 					"Earthquake",
 					"Knock Off",
 					"Liquidation",
-					"Rest"
+					"Pressure Wave"
 				],
 				"abilities": [
 					"Water Absorb",
@@ -3374,11 +3172,11 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Dazzling Gleam",
 					"Energy Ball",
 					"Focus Blast",
-					"Future Sight",
 					"Nasty Plot",
+					"Psychic",
+					"Shadow Ball",
 					"Substitute"
 				],
 				"abilities": [
@@ -3399,11 +3197,11 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Dazzling Gleam",
 					"Energy Ball",
 					"Focus Blast",
-					"Future Sight",
 					"Nasty Plot",
+					"Psychic",
+					"Shadow Ball",
 					"Substitute"
 				],
 				"abilities": [
@@ -3427,10 +3225,9 @@
 					"Bulk Up",
 					"Close Combat",
 					"Darkest Lariat",
-					"Double-Edge",
 					"Earthquake",
-					"Knock Off",
-					"Rest"
+					"Ice Punch",
+					"Knock Off"
 				],
 				"abilities": [
 					"Guts",
@@ -3504,11 +3301,11 @@
 			{
 				"role": "Wallbreaker",
 				"movepool": [
+					"Energy Ball",
 					"Growth",
 					"Knock Off",
-					"Leaf Storm",
+					"Sludge Bomb",
 					"Sludge Wave",
-					"Swift",
 					"Synthesis"
 				],
 				"abilities": [
@@ -3615,13 +3412,12 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Agility",
-					"Double-Edge",
 					"Flare Blitz",
 					"High Horsepower",
-					"Megahorn",
+					"Play Rough",
 					"Substitute",
-					"Swords Dance"
+					"Swords Dance",
+					"Wild Charge"
 				],
 				"abilities": [
 					"Flash Fire",
@@ -3640,9 +3436,8 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Agility",
-					"Double-Edge",
 					"Fae Strike",
+					"High Horsepower",
 					"Megahorn",
 					"Substitute",
 					"Swords Dance",
@@ -3704,6 +3499,7 @@
 				"movepool": [
 					"Body Press",
 					"Iron Defense",
+					"Psychic",
 					"Scald",
 					"Slack Off"
 				],
@@ -3783,10 +3579,10 @@
 			{
 				"role": "Wallbreaker",
 				"movepool": [
-					"Belch",
 					"Fire Blast",
-					"Future Sight",
+					"Ice Beam",
 					"Nasty Plot",
+					"Psychic",
 					"Slack Off",
 					"Surf",
 					"Thunder Wave"
@@ -3989,6 +3785,7 @@
 				"movepool": [
 					"Drill Run",
 					"Icicle Spear",
+					"Liquidation",
 					"Rock Blast",
 					"Shell Smash"
 				],
@@ -4065,12 +3862,12 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Energy Ball",
+					"Focus Blast",
 					"Nasty Plot",
-					"Psychic",
 					"Shadow Ball",
 					"Sludge Wave",
-					"Substitute"
+					"Substitute",
+					"Thunderbolt"
 				],
 				"abilities": [
 					"Cursed Body"
@@ -4130,12 +3927,11 @@
 				"role": "Wallbreaker",
 				"movepool": [
 					"Crabhammer",
-					"Double-Edge",
+					"Hammer Arm",
 					"High Horsepower",
 					"Knock Off",
-					"Rest",
-					"Superpower",
-					"Swords Dance"
+					"Swords Dance",
+					"X-Scissor"
 				],
 				"abilities": [
 					"Hyper Cutter",
@@ -4346,13 +4142,13 @@
 			{
 				"role": "Bulky Attacker",
 				"movepool": [
-					"Double-Edge",
 					"Earthquake",
 					"Knock Off",
-					"Outrage",
 					"Rest",
 					"Stealth Rock",
-					"Swords Dance"
+					"Stone Edge",
+					"Swords Dance",
+					"Throat Chop"
 				],
 				"abilities": [
 					"Rock Head",
@@ -4372,7 +4168,7 @@
 			{
 				"role": "Bulky Attacker",
 				"movepool": [
-					"Double-Edge",
+					"Earthquake",
 					"Flare Blitz",
 					"Knock Off",
 					"Rest",
@@ -4591,7 +4387,7 @@
 				"movepool": [
 					"Double-Edge",
 					"Earthquake",
-					"Outrage",
+					"Ice Punch",
 					"Rest",
 					"Substitute",
 					"Work Up"
@@ -4617,7 +4413,7 @@
 					"Double-Edge",
 					"Earthquake",
 					"Hammer Arm",
-					"Outrage",
+					"Ice Punch",
 					"Substitute",
 					"Work Up"
 				],
@@ -4640,7 +4436,7 @@
 				"role": "Bulky Attacker",
 				"movepool": [
 					"Aqua Tail",
-					"Double-Edge",
+					"Drill Run",
 					"Flip Turn",
 					"Knock Off",
 					"Megahorn",
@@ -4665,7 +4461,6 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Agility",
 					"Cosmic Power",
 					"Ice Beam",
 					"Meteor Beam",
@@ -4691,7 +4486,6 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Agility",
 					"Cosmic Power",
 					"Ice Beam",
 					"Meteor Beam",
@@ -4718,9 +4512,9 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Dazzling Gleam",
-					"Energy Ball",
-					"Future Sight",
+					"Focus Blast",
 					"Nasty Plot",
+					"Psychic",
 					"Rest",
 					"Substitute"
 				],
@@ -4778,11 +4572,11 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Energy Ball",
-					"Future Sight",
-					"Hyper Voice",
+					"Focus Blast",
 					"Ice Beam",
 					"Nasty Plot",
+					"Psychic",
+					"Shadow Ball",
 					"Substitute"
 				],
 				"abilities": [
@@ -4805,10 +4599,9 @@
 				"role": "Wallbreaker",
 				"movepool": [
 					"Close Combat",
-					"Double-Edge",
 					"Earthquake",
 					"Knock Off",
-					"Rest",
+					"Stone Edge",
 					"Swords Dance",
 					"X-Scissor"
 				],
@@ -4831,8 +4624,8 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Close Combat",
-					"Double-Edge",
 					"Earthquake",
+					"Stone Edge",
 					"Substitute",
 					"Swords Dance",
 					"X-Scissor"
@@ -5007,6 +4800,7 @@
 				"movepool": [
 					"Dragon Dance",
 					"Earthquake",
+					"Pressure Wave",
 					"Stone Edge",
 					"Temper Flare",
 					"Waterfall"
@@ -5045,10 +4839,9 @@
 				"movepool": [
 					"Aqua Tail",
 					"Crunch",
-					"Double-Edge",
 					"Dragon Dance",
-					"Outrage",
-					"Rest",
+					"Earthquake",
+					"Temper Flare",
 					"Thunder Wave"
 				],
 				"abilities": [
@@ -5258,11 +5051,10 @@
 			{
 				"role": "Wallbreaker",
 				"movepool": [
+					"Crystalline Cannon",
 					"Earth Power",
 					"Ice Beam",
 					"Knock Off",
-					"Meteor Beam",
-					"Rest",
 					"Shell Smash",
 					"Surf"
 				],
@@ -5285,13 +5077,12 @@
 			{
 				"role": "Wallbreaker",
 				"movepool": [
-					"Double-Edge",
+					"Brick Break",
 					"Flip Turn",
 					"Knock Off",
+					"Leech Life",
 					"Liquidation",
-					"Rest",
 					"Stone Edge",
-					"Superpower",
 					"Swords Dance"
 				],
 				"abilities": [
@@ -5313,8 +5104,7 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Agility",
-					"Double-Edge",
+					"Crunch",
 					"Dragon Dance",
 					"Earthquake",
 					"Pressure Wave",
@@ -5340,8 +5130,7 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Agility",
-					"Double-Edge",
+					"Crunch",
 					"Dragon Dance",
 					"Earthquake",
 					"Pressure Wave",
@@ -5591,12 +5380,11 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Agility",
 					"Calm Mind",
-					"Draco Meteor",
-					"Fire Blast",
-					"Future Sight",
+					"Dragon Pulse",
+					"Focus Blast",
 					"Ice Beam",
+					"Psychic",
 					"Substitute"
 				],
 				"abilities": [
@@ -5618,11 +5406,11 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Agility",
-					"Draco Meteor",
-					"Fire Blast",
+					"Dragon Pulse",
+					"Focus Blast",
 					"Hurricane",
-					"Ice Beam",
-					"Substitute"
+					"Substitute",
+					"Thunderbolt"
 				],
 				"abilities": [
 					"Inner Focus",
@@ -5668,10 +5456,9 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Agility",
 					"Brick Break",
 					"Bulk Up",
-					"Double-Edge",
+					"Ice Punch",
 					"Substitute",
 					"Vengeance",
 					"Zen Headbutt"
@@ -5694,12 +5481,11 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Agility",
 					"Earth Power",
 					"Energy Ball",
 					"Fire Blast",
-					"Future Sight",
 					"Nasty Plot",
+					"Psystrike",
 					"Substitute"
 				],
 				"abilities": [
@@ -5827,10 +5613,10 @@
 			{
 				"role": "Wallbreaker",
 				"movepool": [
-					"Ancient Power",
 					"Dazzling Gleam",
+					"Energy Ball",
 					"Knock Off",
-					"Petal Dance",
+					"Leaf Storm",
 					"Synthesis"
 				],
 				"abilities": [
@@ -5950,13 +5736,12 @@
 			{
 				"role": "Wallbreaker",
 				"movepool": [
-					"Double-Edge",
+					"Brick Break",
+					"Earthquake",
 					"Flip Turn",
 					"Liquidation",
 					"Outrage",
-					"Rest",
 					"Substitute",
-					"Superpower",
 					"Swords Dance"
 				],
 				"abilities": [
@@ -6041,10 +5826,10 @@
 					"Agility",
 					"Air Slash",
 					"Bug Buzz",
+					"Focus Blast",
 					"Roost",
 					"Substitute",
-					"U-turn",
-					"Uproar"
+					"U-turn"
 				],
 				"abilities": [
 					"Swarm",
@@ -6090,7 +5875,7 @@
 				"movepool": [
 					"Brave Bird",
 					"Cross Poison",
-					"Double-Edge",
+					"Crunch",
 					"Roost",
 					"Taunt",
 					"Toxic",
@@ -6114,12 +5899,10 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Agility",
 					"Brave Bird",
 					"Cross Poison",
 					"Crunch",
 					"Curse",
-					"Double-Edge",
 					"Substitute"
 				],
 				"abilities": [
@@ -6177,9 +5960,9 @@
 				"movepool": [
 					"Air Slash",
 					"Calm Mind",
-					"Dazzling Gleam",
-					"Future Sight",
+					"Giga Drain",
 					"Heat Wave",
+					"Psychic",
 					"Substitute"
 				],
 				"abilities": [
@@ -6244,9 +6027,8 @@
 					"Dragon Pulse",
 					"Focus Blast",
 					"Meteor Beam",
-					"Power Surge",
-					"Rest",
 					"Thunder Wave",
+					"Thunderbolt",
 					"Volt Switch"
 				],
 				"abilities": [
@@ -6491,6 +6273,7 @@
 				"movepool": [
 					"Earthquake",
 					"Ice Beam",
+					"Liquidation",
 					"Recover",
 					"Spikes",
 					"Toxic"
@@ -6721,6 +6504,7 @@
 				"role": "Bulky Support",
 				"movepool": [
 					"Iron Head",
+					"Lunge",
 					"Rapid Spin",
 					"Stealth Rock",
 					"Toxic Spikes",
@@ -6738,6 +6522,7 @@
 				"movepool": [
 					"Body Press",
 					"Iron Head",
+					"Lunge",
 					"Rapid Spin",
 					"Spikes",
 					"Stealth Rock"
@@ -6754,6 +6539,7 @@
 				"role": "Bulky Support",
 				"movepool": [
 					"Iron Head",
+					"Lunge",
 					"Rapid Spin",
 					"Spikes",
 					"Stealth Rock",
@@ -6795,12 +6581,12 @@
 			{
 				"role": "Bulky Attacker",
 				"movepool": [
-					"Double-Edge",
 					"Dragon Dance",
 					"Earthquake",
+					"Head Smash",
+					"Iron Head",
 					"Rest",
 					"Stealth Rock",
-					"Steel Roller",
 					"Taunt"
 				],
 				"abilities": [
@@ -6822,12 +6608,11 @@
 			{
 				"role": "Wallbreaker",
 				"movepool": [
-					"Double-Edge",
+					"Crunch",
 					"Dragon Dance",
 					"Earthquake",
 					"Head Smash",
-					"Rest",
-					"Steel Roller",
+					"Iron Head",
 					"Taunt"
 				],
 				"abilities": [
@@ -7002,11 +6787,10 @@
 				"role": "Wallbreaker",
 				"movepool": [
 					"Close Combat",
-					"Double-Edge",
 					"Iron Head",
 					"Knock Off",
 					"Lunge",
-					"Rest",
+					"Pressure Wave",
 					"Swords Dance",
 					"U-turn"
 				],
@@ -7059,6 +6843,7 @@
 					"Close Combat",
 					"Facade",
 					"Knock Off",
+					"Megahorn",
 					"Trailblaze"
 				],
 				"abilities": [
@@ -7095,11 +6880,10 @@
 				"role": "Wallbreaker",
 				"movepool": [
 					"Close Combat",
-					"Double-Edge",
 					"Earthquake",
 					"Knock Off",
 					"Megahorn",
-					"Rest",
+					"Stone Edge",
 					"Swords Dance"
 				],
 				"abilities": [
@@ -7220,7 +7004,7 @@
 				"role": "Bulky Attacker",
 				"movepool": [
 					"Curse",
-					"Double-Edge",
+					"Earthquake",
 					"Head Smash",
 					"Liquidation",
 					"Recover",
@@ -7249,8 +7033,8 @@
 					"Fire Blast",
 					"Rest",
 					"Sludge Wave",
-					"Thunder Wave",
-					"Water Spout"
+					"Surf",
+					"Thunder Wave"
 				],
 				"abilities": [
 					"Suction Cups",
@@ -7338,6 +7122,7 @@
 					"Body Press",
 					"Brave Bird",
 					"Iron Defense",
+					"Iron Head",
 					"Roost"
 				],
 				"abilities": [
@@ -7352,6 +7137,7 @@
 				"movepool": [
 					"Body Press",
 					"Brave Bird",
+					"Iron Head",
 					"Roost",
 					"Spikes",
 					"Stealth Rock"
@@ -7368,6 +7154,7 @@
 				"role": "Bulky Support",
 				"movepool": [
 					"Brave Bird",
+					"Iron Head",
 					"Roost",
 					"Spikes",
 					"Stealth Rock",
@@ -7388,9 +7175,8 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Agility",
-					"Body Press",
 					"Brave Bird",
+					"Drill Run",
 					"Iron Head",
 					"Substitute",
 					"Swords Dance",
@@ -7439,9 +7225,8 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Dark Wave",
-					"Hyper Voice",
+					"Fire Blast",
 					"Nasty Plot",
-					"Overheat",
 					"Sludge Bomb",
 					"Substitute"
 				],
@@ -7653,9 +7438,9 @@
 				"movepool": [
 					"Double-Edge",
 					"Earthquake",
+					"Ice Punch",
 					"Milk Drink",
 					"Stealth Rock",
-					"Steel Roller",
 					"Substitute",
 					"Thunder Wave"
 				],
@@ -7703,11 +7488,11 @@
 				"movepool": [
 					"Calm Mind",
 					"Fire Blast",
-					"Hyper Voice",
 					"Moonblast",
 					"Sludge Wave",
 					"Soft-Boiled",
-					"Thunder Wave"
+					"Thunder Wave",
+					"Thunderbolt"
 				],
 				"abilities": [
 					"Natural Cure",
@@ -7896,12 +7681,11 @@
 			{
 				"role": "Wallbreaker",
 				"movepool": [
-					"Double-Edge",
+					"Crunch",
 					"Dragon Dance",
-					"Foul Play",
+					"Earthquake",
+					"Ice Punch",
 					"Knock Off",
-					"Outrage",
-					"Rest",
 					"Stone Edge"
 				],
 				"abilities": [
@@ -7979,11 +7763,11 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Earth Power",
-					"Future Sight",
-					"Leaf Storm",
+					"Aura Sphere",
+					"Energy Ball",
 					"Nasty Plot",
 					"Pollen Puff",
+					"Psychic",
 					"Substitute"
 				],
 				"abilities": [
@@ -8059,10 +7843,9 @@
 				"movepool": [
 					"Agility",
 					"Dragon Pulse",
+					"Energy Ball",
 					"Focus Blast",
-					"Leaf Storm",
-					"Substitute",
-					"Swift"
+					"Substitute"
 				],
 				"abilities": [
 					"Overgrow",
@@ -8105,13 +7888,12 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Agility",
-					"Brave Bird",
 					"Close Combat",
-					"Double-Edge",
+					"Earthquake",
 					"Flare Blitz",
 					"Substitute",
-					"Swords Dance"
+					"Swords Dance",
+					"Thunder Punch"
 				],
 				"abilities": [
 					"Blaze",
@@ -8157,13 +7939,12 @@
 				"role": "Wallbreaker",
 				"movepool": [
 					"Bulk Up",
-					"Double-Edge",
 					"Earthquake",
 					"Flip Turn",
+					"Hammer Arm",
+					"Ice Punch",
 					"Knock Off",
-					"Liquidation",
-					"Outrage",
-					"Rest"
+					"Liquidation"
 				],
 				"abilities": [
 					"Torrent",
@@ -8225,9 +8006,9 @@
 				"role": "Fast Support",
 				"movepool": [
 					"Double-Edge",
-					"Gunk Shot",
 					"Play Rough",
 					"Rest",
+					"Stomping Tantrum",
 					"Substitute",
 					"Thunder Wave"
 				],
@@ -8275,7 +8056,7 @@
 				"role": "Bulky Attacker",
 				"movepool": [
 					"Bug Buzz",
-					"Energy Ball",
+					"Psychic",
 					"Quiver Dance",
 					"Roost",
 					"Sludge Bomb",
@@ -8483,11 +8264,11 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Calm Mind",
-					"Energy Ball",
-					"Future Sight",
-					"Hyper Voice",
+					"Focus Blast",
 					"Moonblast",
-					"Substitute"
+					"Psychic",
+					"Substitute",
+					"Thunderbolt"
 				],
 				"abilities": [
 					"Synchronize",
@@ -8641,8 +8422,8 @@
 				"role": "Fast Support",
 				"movepool": [
 					"Defog",
-					"Double-Edge",
 					"Leech Life",
+					"Night Slash",
 					"Pressure Wave",
 					"Roost",
 					"Substitute",
@@ -8691,9 +8472,9 @@
 				"role": "Bulky Attacker",
 				"movepool": [
 					"Boomburst",
-					"Ice Beam",
-					"Overheat",
+					"Fire Blast",
 					"Rest",
+					"Surf",
 					"Taunt",
 					"Work Up"
 				],
@@ -8756,8 +8537,8 @@
 					"Double-Edge",
 					"Play Rough",
 					"Rest",
+					"Stomping Tantrum",
 					"Substitute",
-					"Wild Charge",
 					"Work Up"
 				],
 				"abilities": [
@@ -8779,6 +8560,7 @@
 				"movepool": [
 					"Encore",
 					"Knock Off",
+					"Poltergeist",
 					"Recover",
 					"Thunder Wave",
 					"Will-O-Wisp"
@@ -8799,7 +8581,7 @@
 			{
 				"role": "Bulky Attacker",
 				"movepool": [
-					"Body Slam",
+					"Brick Break",
 					"Bulk Up",
 					"Foul Play",
 					"Knock Off",
@@ -8824,8 +8606,8 @@
 			{
 				"role": "Bulky Attacker",
 				"movepool": [
-					"Double-Edge",
 					"Fae Strike",
+					"Foul Play",
 					"Iron Head",
 					"Knock Off",
 					"Rest",
@@ -8851,7 +8633,7 @@
 			{
 				"role": "Bulky Attacker",
 				"movepool": [
-					"Double-Edge",
+					"Crunch",
 					"Fae Strike",
 					"Iron Head",
 					"Knock Off",
@@ -8878,12 +8660,11 @@
 			{
 				"role": "Wallbreaker",
 				"movepool": [
-					"Double-Edge",
+					"Earthquake",
 					"Head Smash",
 					"Hone Claws",
-					"Outrage",
-					"Rest",
-					"Steel Roller",
+					"Ice Punch",
+					"Iron Head",
 					"Thunder Wave"
 				],
 				"abilities": [
@@ -8905,12 +8686,11 @@
 			{
 				"role": "Wallbreaker",
 				"movepool": [
-					"Double-Edge",
+					"Crunch",
+					"Earthquake",
 					"Hone Claws",
-					"Outrage",
-					"Rest",
-					"Steel Roller",
-					"Superpower",
+					"Ice Punch",
+					"Iron Head",
 					"Thunder Wave"
 				],
 				"abilities": [
@@ -8953,10 +8733,9 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Body Slam",
 					"Bulk Up",
 					"Close Combat",
-					"Poison Jab",
+					"Ice Punch",
 					"Substitute",
 					"Zen Headbutt"
 				],
@@ -8979,8 +8758,7 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Agility",
-					"Hyper Voice",
-					"Overheat",
+					"Flamethrower",
 					"Signal Beam",
 					"Substitute",
 					"Thunderbolt"
@@ -9004,8 +8782,7 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Agility",
-					"Hyper Voice",
-					"Overheat",
+					"Flamethrower",
 					"Signal Beam",
 					"Substitute",
 					"Thunderbolt"
@@ -9191,7 +8968,7 @@
 					"Agility",
 					"Close Combat",
 					"Crunch",
-					"Double-Edge",
+					"Earthquake",
 					"Liquidation",
 					"Substitute"
 				],
@@ -9216,7 +8993,7 @@
 					"Agility",
 					"Close Combat",
 					"Crunch",
-					"Double-Edge",
+					"Earthquake",
 					"Liquidation",
 					"Substitute"
 				],
@@ -9238,12 +9015,11 @@
 			{
 				"role": "Bulky Attacker",
 				"movepool": [
-					"Curse",
-					"Double-Edge",
-					"Liquidation",
+					"Hyper Voice",
+					"Ice Beam",
 					"Rest",
-					"Steel Roller",
-					"Substitute"
+					"Substitute",
+					"Surf"
 				],
 				"abilities": [
 					"Water Veil",
@@ -9285,12 +9061,10 @@
 			{
 				"role": "Wallbreaker",
 				"movepool": [
-					"Ancient Power",
 					"Earth Power",
 					"Eruption",
-					"Flash Cannon",
+					"Fire Blast",
 					"Growth",
-					"Rest",
 					"Will-O-Wisp"
 				],
 				"abilities": [
@@ -9352,10 +9126,8 @@
 			{
 				"role": "Wallbreaker",
 				"movepool": [
-					"Ancient Power",
 					"Earth Power",
-					"Eruption",
-					"Rest",
+					"Fire Blast",
 					"Shell Smash",
 					"Sludge Bomb",
 					"Will-O-Wisp"
@@ -9437,11 +9209,11 @@
 			{
 				"role": "Bulky Attacker",
 				"movepool": [
-					"Brick Break",
 					"Double-Edge",
+					"Ice Punch",
 					"Rest",
+					"Stomping Tantrum",
 					"Substitute",
-					"Wild Charge",
 					"Work Up"
 				],
 				"abilities": [
@@ -9485,13 +9257,12 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Agility",
-					"Double-Edge",
 					"Dragon Dance",
+					"Earthquake",
 					"First Impression",
 					"Outrage",
-					"Substitute",
-					"Superpower"
+					"Stone Edge",
+					"Substitute"
 				],
 				"abilities": [
 					"Levitate"
@@ -9552,6 +9323,7 @@
 				"movepool": [
 					"Brave Bird",
 					"Defog",
+					"Dragon Claw",
 					"Earthquake",
 					"Haze",
 					"Roost",
@@ -9568,6 +9340,7 @@
 				"role": "Bulky Setup",
 				"movepool": [
 					"Brave Bird",
+					"Dragon Claw",
 					"Dragon Dance",
 					"Earthquake",
 					"Roost"
@@ -9589,8 +9362,8 @@
 				"role": "Wallbreaker",
 				"movepool": [
 					"Brave Bird",
-					"Double-Edge",
 					"Dragon Dance",
+					"Earthquake",
 					"Outrage",
 					"Play Rough",
 					"Roost",
@@ -9679,11 +9452,11 @@
 			{
 				"role": "Bulky Attacker",
 				"movepool": [
-					"Future Sight",
-					"Meteor Beam",
-					"Moonblast",
+					"Crystalline Cannon",
+					"Earth Power",
 					"Moonlight",
 					"Nasty Plot",
+					"Psychic",
 					"Stealth Rock",
 					"Substitute"
 				],
@@ -9704,7 +9477,7 @@
 			{
 				"role": "Bulky Attacker",
 				"movepool": [
-					"Double-Edge",
+					"Earthquake",
 					"Morning Sun",
 					"Stealth Rock",
 					"Stone Edge",
@@ -9804,13 +9577,13 @@
 			{
 				"role": "Bulky Support",
 				"movepool": [
-					"Earth Power",
-					"Future Sight",
+					"Earthquake",
 					"Rapid Spin",
 					"Rest",
 					"Stealth Rock",
 					"Substitute",
-					"Trick"
+					"Trick",
+					"Zen Headbutt"
 				],
 				"abilities": [
 					"Levitate"
@@ -9854,11 +9627,9 @@
 			{
 				"role": "Wallbreaker",
 				"movepool": [
-					"Double-Edge",
+					"Earthquake",
 					"Knock Off",
-					"Rest",
 					"Stone Edge",
-					"Superpower",
 					"Swords Dance",
 					"X-Scissor"
 				],
@@ -9903,9 +9674,9 @@
 				"role": "Bulky Attacker",
 				"movepool": [
 					"Fire Blast",
-					"Future Sight",
-					"Hidden Power",
+					"Hydro Pump",
 					"Rest",
+					"Swift",
 					"Thunder Wave",
 					"Work Up"
 				],
@@ -9926,8 +9697,8 @@
 				"role": "Bulky Attacker",
 				"movepool": [
 					"Aqua Tail",
+					"Brick Break",
 					"Double-Edge",
-					"Foul Play",
 					"Hone Claws",
 					"Knock Off",
 					"Recover",
@@ -9973,11 +9744,10 @@
 			{
 				"role": "Wallbreaker",
 				"movepool": [
-					"Facade",
-					"Foul Play",
 					"Gunk Shot",
 					"Knock Off",
-					"Rest",
+					"Pain Split",
+					"Poltergeist",
 					"Swords Dance",
 					"Vengeance"
 				],
@@ -10097,10 +9867,10 @@
 					"Calm Mind",
 					"Dazzling Gleam",
 					"Energy Ball",
-					"Future Sight",
-					"Hyper Voice",
 					"Knock Off",
-					"Recover"
+					"Psychic",
+					"Recover",
+					"Shadow Ball"
 				],
 				"abilities": [
 					"Levitate"
@@ -10120,12 +9890,11 @@
 				"role": "Wallbreaker",
 				"movepool": [
 					"Close Combat",
-					"Double-Edge",
-					"Foul Play",
 					"Knock Off",
-					"Megahorn",
-					"Rest",
-					"Swords Dance"
+					"Play Rough",
+					"Stone Edge",
+					"Swords Dance",
+					"Throat Chop"
 				],
 				"abilities": [
 					"Pressure",
@@ -10146,11 +9915,11 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Close Combat",
-					"Double-Edge",
-					"Foul Play",
-					"Megahorn",
+					"Play Rough",
+					"Stone Edge",
 					"Substitute",
-					"Swords Dance"
+					"Swords Dance",
+					"Throat Chop"
 				],
 				"abilities": [
 					"Pressure",
@@ -10171,11 +9940,11 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Close Combat",
-					"Double-Edge",
-					"Foul Play",
 					"Spectral Strike",
+					"Stone Edge",
 					"Substitute",
-					"Swords Dance"
+					"Swords Dance",
+					"Throat Chop"
 				],
 				"abilities": [
 					"Pressure",
@@ -10218,10 +9987,10 @@
 			{
 				"role": "Fast Attacker",
 				"movepool": [
-					"Body Slam",
+					"Crunch",
 					"Earthquake",
-					"Foul Play",
 					"Ice Spinner",
+					"Iron Head",
 					"Substitute"
 				],
 				"abilities": [
@@ -10293,7 +10062,7 @@
 				"movepool": [
 					"Ice Beam",
 					"Psychic",
-					"Rest",
+					"Rain Dance",
 					"Shadow Ball",
 					"Shell Smash",
 					"Substitute",
@@ -10316,7 +10085,7 @@
 			{
 				"role": "Bulky Attacker",
 				"movepool": [
-					"Double-Edge",
+					"Earthquake",
 					"Head Smash",
 					"Iron Defense",
 					"Liquidation",
@@ -10405,7 +10174,7 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Aerial Ace",
-					"Double-Edge",
+					"Brick Break",
 					"Dragon Dance",
 					"Earthquake",
 					"Outrage",
@@ -10467,10 +10236,9 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Agility",
-					"Double-Edge",
-					"Earthquake",
+					"Hammer Arm",
 					"Hone Claws",
+					"Ice Punch",
 					"Meteor Mash",
 					"Psychic Fangs",
 					"Substitute"
@@ -10608,12 +10376,11 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Agility",
+					"Aura Sphere",
 					"Calm Mind",
-					"Draco Meteor",
-					"Energy Ball",
-					"Future Sight",
+					"Dragon Pulse",
 					"Ice Beam",
+					"Mist Ball",
 					"Substitute"
 				],
 				"abilities": [
@@ -10687,12 +10454,11 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Agility",
+					"Aura Sphere",
 					"Calm Mind",
-					"Draco Meteor",
-					"Energy Ball",
-					"Future Sight",
+					"Dragon Pulse",
 					"Ice Beam",
+					"Luster Purge",
 					"Substitute"
 				],
 				"abilities": [
@@ -11180,8 +10946,7 @@
 					"Brave Bird",
 					"Close Combat",
 					"Double-Edge",
-					"Substitute",
-					"U-turn"
+					"Substitute"
 				],
 				"abilities": [
 					"Intimidate",
@@ -11287,12 +11052,12 @@
 				"role": "Wallbreaker",
 				"movepool": [
 					"Dazzling Gleam",
+					"Energy Ball",
 					"Growth",
-					"Petal Dance",
+					"Shadow Ball",
 					"Sludge Bomb",
 					"Synthesis",
-					"Toxic",
-					"Uproar"
+					"Toxic"
 				],
 				"abilities": [
 					"Natural Cure",
@@ -11314,11 +11079,11 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Dazzling Gleam",
+					"Energy Ball",
 					"Growth",
-					"Petal Dance",
+					"Shadow Ball",
 					"Sludge Bomb",
-					"Substitute",
-					"Uproar"
+					"Substitute"
 				],
 				"abilities": [
 					"Natural Cure",
@@ -11399,7 +11164,7 @@
 				"role": "Bulky Attacker",
 				"movepool": [
 					"Bug Buzz",
-					"Leaf Storm",
+					"Energy Ball",
 					"Psychic",
 					"Quiver Dance",
 					"Substitute",
@@ -11424,11 +11189,11 @@
 				"role": "Bulky Attacker",
 				"movepool": [
 					"Bug Bite",
-					"Double-Edge",
 					"Earthquake",
 					"Rest",
 					"Stealth Rock",
-					"Substitute"
+					"Substitute",
+					"Sucker Punch"
 				],
 				"abilities": [
 					"Anticipation",
@@ -11449,12 +11214,12 @@
 				"role": "Bulky Attacker",
 				"movepool": [
 					"Bug Bite",
-					"Double-Edge",
 					"Iron Defense",
 					"Iron Head",
 					"Rest",
 					"Stealth Rock",
-					"Substitute"
+					"Substitute",
+					"Sucker Punch"
 				],
 				"abilities": [
 					"Anticipation",
@@ -11595,8 +11360,8 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Dazzling Gleam",
+					"Energy Ball",
 					"Growth",
-					"Petal Dance",
 					"Pollen Puff",
 					"Substitute",
 					"Synthesis"
@@ -11650,33 +11415,6 @@
 				]
 			}
 		]
-	},
-	"gastrodoneast": {
-		"level": 86,
-		"sets": [
-			{
-				"role": "Bulky Attacker",
-				"movepool": [
-					"Acid Armor",
-					"Earth Power",
-					"Recover",
-					"Sludge Wave",
-					"Stealth Rock",
-					"Substitute",
-					"Surf"
-				],
-				"abilities": [
-					"Sticky Hold",
-					"Storm Drain",
-					"Sand Force"
-				],
-				"teraTypes": [
-					"Water",
-					"Ground"
-				]
-			}
-		],
-		"generated": true
 	},
 	"ambipom": {
 		"level": 84,
@@ -11746,8 +11484,8 @@
 				"role": "Fast Support",
 				"movepool": [
 					"Close Combat",
+					"Ice Punch",
 					"Mega Kick",
-					"Play Rough",
 					"Rest",
 					"Substitute",
 					"Thunder Wave",
@@ -11770,11 +11508,9 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Agility",
 					"Close Combat",
-					"Fire Punch",
+					"Ice Punch",
 					"Mega Kick",
-					"Play Rough",
 					"Substitute",
 					"Work Up"
 				],
@@ -11893,10 +11629,10 @@
 				"role": "Fast Support",
 				"movepool": [
 					"Body Slam",
-					"Foul Play",
 					"Knock Off",
 					"Play Rough",
 					"Rest",
+					"Stomping Tantrum",
 					"Taunt",
 					"U-turn"
 				],
@@ -11980,8 +11716,8 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
+					"Air Cutter",
 					"Boomburst",
-					"Chatter",
 					"Heat Wave",
 					"Nasty Plot",
 					"Roost",
@@ -12073,11 +11809,10 @@
 			{
 				"role": "Wallbreaker",
 				"movepool": [
-					"Double-Edge",
+					"Crunch",
 					"Earthquake",
-					"Liquidation",
 					"Outrage",
-					"Rest",
+					"Stone Edge",
 					"Substitute",
 					"Swords Dance"
 				],
@@ -12159,10 +11894,9 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Agility",
-					"Body Slam",
 					"Close Combat",
 					"Earthquake",
+					"Ice Punch",
 					"Meteor Mash",
 					"Substitute",
 					"Swords Dance"
@@ -12186,8 +11920,7 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Agility",
-					"Dragon Pulse",
+					"Dark Pulse",
 					"Flash Cannon",
 					"Focus Blast",
 					"Nasty Plot",
@@ -12320,9 +12053,9 @@
 				"role": "Bulky Attacker",
 				"movepool": [
 					"Crunch",
-					"Facade",
 					"Knock Off",
 					"Power Whip",
+					"Seed Bomb",
 					"Swords Dance",
 					"Synthesis"
 				],
@@ -12403,10 +12136,9 @@
 			{
 				"role": "Wallbreaker",
 				"movepool": [
-					"Double-Edge",
+					"Body Press",
+					"Earthquake",
 					"Ice Spinner",
-					"Outrage",
-					"Rest",
 					"Substitute",
 					"Swords Dance",
 					"Wood Hammer"
@@ -12511,10 +12243,10 @@
 				"role": "Bulky Attacker",
 				"movepool": [
 					"Double-Edge",
+					"Earthquake",
+					"Ice Punch",
 					"Knock Off",
-					"Power Whip",
 					"Rest",
-					"Steel Roller",
 					"Swords Dance"
 				],
 				"abilities": [
@@ -12577,7 +12309,7 @@
 			{
 				"role": "Wallbreaker",
 				"movepool": [
-					"Double-Edge",
+					"Brick Break",
 					"Earthquake",
 					"Knock Off",
 					"Poison Jab",
@@ -12688,11 +12420,11 @@
 				"role": "Wallbreaker",
 				"movepool": [
 					"Air Slash",
+					"Aura Sphere",
 					"Dazzling Gleam",
-					"Fire Blast",
-					"Future Sight",
 					"Nasty Plot",
 					"Roost",
+					"Shadow Ball",
 					"Thunder Wave"
 				],
 				"abilities": [
@@ -12807,6 +12539,7 @@
 			{
 				"role": "Fast Support",
 				"movepool": [
+					"Aerial Ace",
 					"Earthquake",
 					"Protect",
 					"Substitute",
@@ -12822,6 +12555,7 @@
 			{
 				"role": "Bulky Support",
 				"movepool": [
+					"Aerial Ace",
 					"Earthquake",
 					"Knock Off",
 					"Protect",
@@ -12942,10 +12676,9 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Agility",
 					"Close Combat",
 					"Earthquake",
-					"Leaf Blade",
+					"Ice Punch",
 					"Substitute",
 					"Swords Dance",
 					"Zen Headbutt"
@@ -13041,27 +12774,30 @@
 		]
 	},
 	"froslass": {
-		"level": 87,
+		"level": 86,
 		"sets": [
 			{
 				"role": "Fast Support",
 				"movepool": [
-					"Destiny Bond",
-					"Poltergeist",
+					"Ice Beam",
+					"Psychic",
+					"Rest",
+					"Shadow Ball",
 					"Spikes",
-					"Taunt",
-					"Triple Axel",
+					"Thunder Wave",
 					"Will-O-Wisp"
 				],
 				"abilities": [
+					"Snow Cloak",
 					"Cursed Body"
 				],
 				"teraTypes": [
-					"Ghost",
-					"Ice"
+					"Ice",
+					"Ghost"
 				]
 			}
-		]
+		],
+		"generated": true
 	},
 	"froslassmega": {
 		"level": 79,
@@ -13566,12 +13302,11 @@
 			{
 				"role": "Wallbreaker",
 				"movepool": [
-					"Dragon Pulse",
+					"Dark Pulse",
 					"Earth Power",
+					"Fire Blast",
 					"Iron Defense",
 					"Mineral Burst",
-					"Overheat",
-					"Rest",
 					"Will-O-Wisp"
 				],
 				"abilities": [
@@ -13811,12 +13546,11 @@
 				"role": "Wallbreaker",
 				"movepool": [
 					"Dark Wave",
+					"Focus Blast",
 					"Ice Beam",
 					"Knock Off",
 					"Nasty Plot",
-					"Psychic",
-					"Rest",
-					"Sludge Bomb"
+					"Psychic"
 				],
 				"abilities": [
 					"Bad Dreams"
@@ -14494,12 +14228,12 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Energy Ball",
-					"Future Sight",
-					"Overheat",
+					"Brick Break",
+					"Flare Blitz",
 					"Substitute",
-					"Thunderbolt",
-					"Work Up"
+					"Wild Charge",
+					"Work Up",
+					"Zen Headbutt"
 				],
 				"abilities": [
 					"Victory Star"
@@ -14619,11 +14353,10 @@
 				"movepool": [
 					"Bulk Up",
 					"Close Combat",
-					"Double-Edge",
+					"Earthquake",
 					"Flare Blitz",
-					"Head Smash",
 					"Knock Off",
-					"Rest"
+					"Wild Charge"
 				],
 				"abilities": [
 					"Blaze",
@@ -14711,10 +14444,10 @@
 			{
 				"role": "Bulky Attacker",
 				"movepool": [
-					"Aqua Tail",
-					"Gunk Shot",
+					"Ice Punch",
 					"Knock Off",
 					"Rest",
+					"Stomping Tantrum",
 					"Strength",
 					"Swords Dance"
 				],
@@ -14735,8 +14468,7 @@
 			{
 				"role": "Wallbreaker",
 				"movepool": [
-					"Psychic Fangs",
-					"Rest",
+					"Stomping Tantrum",
 					"Strength",
 					"Superpower",
 					"Thunder Wave",
@@ -14762,10 +14494,10 @@
 				"role": "Fast Support",
 				"movepool": [
 					"Foul Play",
-					"Gunk Shot",
 					"Knock Off",
 					"Play Rough",
 					"Rest",
+					"Seed Bomb",
 					"Thunder Wave",
 					"U-turn"
 				],
@@ -14787,11 +14519,12 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Focus Blast",
-					"Leaf Storm",
-					"Nasty Plot",
+					"Brick Break",
+					"Gunk Shot",
+					"Hone Claws",
+					"Seed Bomb",
 					"Substitute",
-					"Uproar"
+					"Throat Chop"
 				],
 				"abilities": [
 					"Gluttony",
@@ -14810,11 +14543,11 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
+					"Brick Break",
 					"Flare Blitz",
 					"Gunk Shot",
 					"Hone Claws",
 					"Substitute",
-					"Superpower",
 					"Throat Chop"
 				],
 				"abilities": [
@@ -14835,10 +14568,10 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Aqua Tail",
-					"Gunk Shot",
+					"Brick Break",
 					"Hone Claws",
+					"Ice Punch",
 					"Substitute",
-					"Superpower",
 					"Throat Chop"
 				],
 				"abilities": [
@@ -14860,9 +14593,9 @@
 				"movepool": [
 					"Calm Mind",
 					"Energy Ball",
-					"Future Sight",
-					"Moonblast",
 					"Moonlight",
+					"Psychic",
+					"Shadow Ball",
 					"Thunder Wave"
 				],
 				"abilities": [
@@ -14930,12 +14663,11 @@
 			{
 				"role": "Wallbreaker",
 				"movepool": [
+					"Body Press",
 					"Curse",
 					"Earthquake",
-					"Iron Head",
-					"Rest",
 					"Stone Edge",
-					"Superpower",
+					"Throat Chop",
 					"Toxic"
 				],
 				"abilities": [
@@ -14957,9 +14689,9 @@
 				"role": "Fast Support",
 				"movepool": [
 					"Air Slash",
-					"Energy Ball",
-					"Future Sight",
+					"Heat Wave",
 					"Knock Off",
+					"Psychic",
 					"Roost",
 					"Thunder Wave",
 					"U-turn"
@@ -15022,12 +14754,11 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Double-Edge",
 					"Earthquake",
 					"Iron Head",
-					"Poison Jab",
 					"Substitute",
-					"Swords Dance"
+					"Swords Dance",
+					"X-Scissor"
 				],
 				"abilities": [
 					"Sand Rush",
@@ -15049,10 +14780,10 @@
 				"role": "Bulky Attacker",
 				"movepool": [
 					"Double-Edge",
-					"Fae Strike",
+					"Ice Punch",
 					"Knock Off",
 					"Rest",
-					"Wild Charge",
+					"Stomping Tantrum",
 					"Work Up"
 				],
 				"abilities": [
@@ -15138,10 +14869,10 @@
 			{
 				"role": "Bulky Attacker",
 				"movepool": [
+					"Brick Break",
 					"Earthquake",
 					"Knock Off",
 					"Liquidation",
-					"Power Whip",
 					"Rest",
 					"Stealth Rock"
 				],
@@ -15164,12 +14895,12 @@
 			{
 				"role": "Bulky Attacker",
 				"movepool": [
+					"Brick Break",
 					"Bulk Up",
 					"Earthquake",
+					"Ice Punch",
 					"Knock Off",
-					"Mega Kick",
-					"Rest",
-					"Superpower"
+					"Rest"
 				],
 				"abilities": [
 					"Guts",
@@ -15192,10 +14923,10 @@
 					"Bulk Up",
 					"Close Combat",
 					"Earthquake",
+					"Ice Punch",
 					"Knock Off",
-					"Mega Kick",
-					"Poison Jab",
-					"Rest"
+					"Pain Split",
+					"Throat Chop"
 				],
 				"abilities": [
 					"Sturdy",
@@ -15234,6 +14965,7 @@
 				"movepool": [
 					"Bullet Seed",
 					"Knock Off",
+					"Lunge",
 					"Sticky Web",
 					"Triple Axel"
 				],
@@ -15253,12 +14985,11 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Agility",
-					"Double-Edge",
+					"Earthquake",
 					"Megahorn",
 					"Poison Jab",
-					"Steel Roller",
 					"Substitute",
+					"Superpower",
 					"Swords Dance"
 				],
 				"abilities": [
@@ -15280,11 +15011,10 @@
 			{
 				"role": "Wallbreaker",
 				"movepool": [
-					"Double-Edge",
+					"Earthquake",
 					"Megahorn",
 					"Poison Jab",
-					"Rest",
-					"Steel Roller",
+					"Superpower",
 					"Swords Dance",
 					"Toxic"
 				],
@@ -15325,6 +15055,7 @@
 				"role": "Bulky Support",
 				"movepool": [
 					"Encore",
+					"Energy Ball",
 					"Leech Seed",
 					"Moonblast",
 					"Substitute"
@@ -15424,9 +15155,9 @@
 			{
 				"role": "Fast Support",
 				"movepool": [
-					"Double-Edge",
 					"Flip Turn",
 					"Head Smash",
+					"Psychic Fangs",
 					"Rest",
 					"Substitute",
 					"Taunt",
@@ -15489,9 +15220,9 @@
 				"movepool": [
 					"Bulk Up",
 					"Close Combat",
-					"Double-Edge",
+					"Crunch",
 					"Earthquake",
-					"Foul Play",
+					"Gunk Shot",
 					"Substitute"
 				],
 				"abilities": [
@@ -15516,9 +15247,9 @@
 					"Bulk Up",
 					"Earthquake",
 					"Flare Blitz",
-					"Substitute",
-					"Superpower",
-					"Thrash"
+					"Hammer Arm",
+					"Lash Out",
+					"Substitute"
 				],
 				"abilities": [
 					"Sheer Force"
@@ -15537,11 +15268,11 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Bulk Up",
-					"Double-Edge",
-					"Flare Blitz",
+					"Earthquake",
+					"Hammer Arm",
 					"Icicle Crash",
-					"Substitute",
-					"Superpower"
+					"Lash Out",
+					"Substitute"
 				],
 				"abilities": [
 					"Gorilla Tactics"
@@ -15559,11 +15290,11 @@
 			{
 				"role": "Bulky Attacker",
 				"movepool": [
+					"Energy Ball",
+					"Giga Drain",
 					"Growth",
 					"Hyper Voice",
 					"Knock Off",
-					"Leaf Storm",
-					"Petal Dance",
 					"Spikes",
 					"Synthesis"
 				],
@@ -15612,10 +15343,8 @@
 			{
 				"role": "Wallbreaker",
 				"movepool": [
-					"Body Press",
 					"Earthquake",
 					"Knock Off",
-					"Rest",
 					"Stone Edge",
 					"Swords Dance",
 					"X-Scissor"
@@ -15675,11 +15404,10 @@
 				"role": "Wallbreaker",
 				"movepool": [
 					"Close Combat",
-					"Double-Edge",
-					"Foul Play",
+					"Crunch",
 					"Head Smash",
+					"Ice Punch",
 					"Knock Off",
-					"Rest",
 					"Swords Dance"
 				],
 				"abilities": [
@@ -15704,8 +15432,8 @@
 					"Air Slash",
 					"Calm Mind",
 					"Energy Ball",
-					"Future Sight",
-					"Ice Beam",
+					"Heat Wave",
+					"Psychic",
 					"Substitute"
 				],
 				"abilities": [
@@ -15778,13 +15506,12 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Agility",
+					"Crunch",
+					"Earthquake",
 					"Head Smash",
 					"Hone Claws",
-					"Outrage",
 					"Pressure Wave",
-					"Substitute",
-					"Thrash"
+					"Substitute"
 				],
 				"abilities": [
 					"Defeatist"
@@ -15804,11 +15531,11 @@
 				"role": "Bulky Attacker",
 				"movepool": [
 					"Body Press",
-					"Body Slam",
 					"Curse",
 					"Gunk Shot",
 					"Rest",
 					"Spikes",
+					"Stomping Tantrum",
 					"Toxic"
 				],
 				"abilities": [
@@ -16030,7 +15757,6 @@
 					"Hyper Voice",
 					"Ice Beam",
 					"Iron Defense",
-					"Rest",
 					"Signal Beam",
 					"Taunt"
 				],
@@ -16115,11 +15841,10 @@
 				"role": "Wallbreaker",
 				"movepool": [
 					"Close Combat",
-					"Double-Edge",
+					"Drill Run",
 					"Iron Head",
 					"Knock Off",
 					"Megahorn",
-					"Rest",
 					"Swords Dance"
 				],
 				"abilities": [
@@ -16180,10 +15905,10 @@
 				"role": "Bulky Attacker",
 				"movepool": [
 					"Acid Armor",
+					"Ice Beam",
 					"Recover",
 					"Shadow Ball",
-					"Sludge Wave",
-					"Water Spout",
+					"Surf",
 					"Will-O-Wisp"
 				],
 				"abilities": [
@@ -16264,11 +15989,11 @@
 				"role": "Bulky Attacker",
 				"movepool": [
 					"Body Press",
+					"Iron Head",
 					"Knock Off",
 					"Power Whip",
 					"Rest",
 					"Stealth Rock",
-					"Steel Roller",
 					"Swords Dance"
 				],
 				"abilities": [
@@ -16291,8 +16016,8 @@
 				"movepool": [
 					"Facade",
 					"Rest",
+					"Secret Power",
 					"Shift Gear",
-					"Steel Roller",
 					"Substitute",
 					"Volt Switch",
 					"Wild Charge"
@@ -16358,10 +16083,9 @@
 					"Bulk Up",
 					"Close Combat",
 					"Knock Off",
-					"Outrage",
-					"Rest",
+					"Lunge",
+					"Stomping Tantrum",
 					"Supercell Slam",
-					"Thrash",
 					"U-turn"
 				],
 				"abilities": [
@@ -16380,13 +16104,13 @@
 			{
 				"role": "Wallbreaker",
 				"movepool": [
+					"Dark Pulse",
 					"Energy Ball",
-					"Future Sight",
 					"Meteor Beam",
 					"Nasty Plot",
+					"Psychic",
 					"Recover",
-					"Thunder Wave",
-					"Thunderbolt"
+					"Thunder Wave"
 				],
 				"abilities": [
 					"Telepathy",
@@ -16452,9 +16176,9 @@
 				"movepool": [
 					"Calm Mind",
 					"Energy Ball",
-					"Overheat",
+					"Fire Blast",
+					"Pain Split",
 					"Psychic",
-					"Rest",
 					"Shadow Ball",
 					"Will-O-Wisp"
 				],
@@ -16576,7 +16300,6 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Acid Armor",
-					"Agility",
 					"Bug Buzz",
 					"Energy Ball",
 					"Focus Blast",
@@ -16628,8 +16351,8 @@
 			{
 				"role": "Bulky Support",
 				"movepool": [
-					"Double-Edge",
 					"Earthquake",
+					"Mineral Burst",
 					"Rest",
 					"Stealth Rock",
 					"Substitute",
@@ -16708,12 +16431,11 @@
 			{
 				"role": "Wallbreaker",
 				"movepool": [
+					"Crunch",
 					"Earthquake",
-					"Gunk Shot",
+					"Fire Punch",
 					"Hone Claws",
 					"Outrage",
-					"Rest",
-					"Superpower",
 					"Taunt"
 				],
 				"abilities": [
@@ -16759,10 +16481,9 @@
 				"movepool": [
 					"Close Combat",
 					"Curse",
-					"Double-Edge",
 					"Earthquake",
+					"Ice Punch",
 					"Knock Off",
-					"Rest",
 					"Vengeance"
 				],
 				"abilities": [
@@ -16805,11 +16526,10 @@
 			{
 				"role": "Wallbreaker",
 				"movepool": [
-					"Close Combat",
+					"Earthquake",
 					"Head Charge",
 					"Megahorn",
-					"Outrage",
-					"Rest",
+					"Stone Edge",
 					"Swords Dance",
 					"Taunt"
 				],
@@ -16860,6 +16580,7 @@
 					"Brave Bird",
 					"Bulk Up",
 					"Close Combat",
+					"Double-Edge",
 					"Roost"
 				],
 				"abilities": [
@@ -16937,6 +16658,7 @@
 			{
 				"role": "Bulky Support",
 				"movepool": [
+					"Brave Bird",
 					"Defog",
 					"Foul Play",
 					"Roost",
@@ -16975,11 +16697,12 @@
 			{
 				"role": "Bulky Attacker",
 				"movepool": [
-					"Belch",
-					"Focus Blast",
+					"Flare Blitz",
+					"Hone Claws",
 					"Knock Off",
-					"Overheat",
-					"Rest"
+					"Rest",
+					"Stomping Tantrum",
+					"Throat Chop"
 				],
 				"abilities": [
 					"Gluttony",
@@ -16999,13 +16722,12 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Agility",
-					"Crunch",
 					"First Impression",
 					"Hone Claws",
 					"Iron Head",
-					"Substitute",
-					"Superpower"
+					"Stomping Tantrum",
+					"Stone Edge",
+					"Substitute"
 				],
 				"abilities": [
 					"Swarm",
@@ -17050,9 +16772,9 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Belch",
 					"Dark Wave",
-					"Draco Meteor",
+					"Dragon Pulse",
+					"Earth Power",
 					"Fire Blast",
 					"Nasty Plot",
 					"Substitute"
@@ -17612,30 +17334,6 @@
 			}
 		]
 	},
-	"keldeo": {
-		"level": 79,
-		"sets": [
-			{
-				"role": "Setup Sweeper",
-				"movepool": [
-					"Air Slash",
-					"Calm Mind",
-					"Secret Sword",
-					"Substitute",
-					"Surf",
-					"Swift"
-				],
-				"abilities": [
-					"Justified"
-				],
-				"teraTypes": [
-					"Water",
-					"Fighting"
-				]
-			}
-		],
-		"generated": true
-	},
 	"keldeoresolute": {
 		"level": 79,
 		"sets": [
@@ -17721,12 +17419,12 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Bug Buzz",
-					"Energy Ball",
+					"Flamethrower",
 					"Flash Cannon",
 					"Iron Defense",
 					"Rock Polish",
 					"Substitute",
-					"Techno Blast"
+					"Thunderbolt"
 				],
 				"abilities": [
 					"Download"
@@ -17746,12 +17444,12 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Bug Buzz",
-					"Energy Ball",
+					"Flamethrower",
 					"Flash Cannon",
 					"Iron Defense",
 					"Rock Polish",
 					"Substitute",
-					"Techno Blast"
+					"Thunderbolt"
 				],
 				"abilities": [
 					"Download"
@@ -17771,12 +17469,12 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Bug Buzz",
-					"Energy Ball",
+					"Flamethrower",
 					"Flash Cannon",
 					"Iron Defense",
 					"Rock Polish",
 					"Substitute",
-					"Techno Blast"
+					"Thunderbolt"
 				],
 				"abilities": [
 					"Download"
@@ -17796,12 +17494,12 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Bug Buzz",
-					"Energy Ball",
+					"Flamethrower",
 					"Flash Cannon",
 					"Iron Defense",
 					"Rock Polish",
 					"Substitute",
-					"Techno Blast"
+					"Thunderbolt"
 				],
 				"abilities": [
 					"Download"
@@ -17821,12 +17519,12 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Bug Buzz",
-					"Energy Ball",
+					"Flamethrower",
 					"Flash Cannon",
 					"Iron Defense",
 					"Rock Polish",
 					"Substitute",
-					"Techno Blast"
+					"Thunderbolt"
 				],
 				"abilities": [
 					"Download"
@@ -17883,9 +17581,9 @@
 				"role": "Wallbreaker",
 				"movepool": [
 					"Close Combat",
-					"Double-Edge",
 					"Earthquake",
 					"Knock Off",
+					"Stone Edge",
 					"Swords Dance",
 					"Synthesis",
 					"Wood Hammer"
@@ -17931,12 +17629,11 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Agility",
+					"Fire Blast",
 					"Focus Blast",
-					"Future Sight",
-					"Hyper Voice",
 					"Nasty Plot",
-					"Overheat",
+					"Psychic",
+					"Shadow Ball",
 					"Substitute"
 				],
 				"abilities": [
@@ -18021,8 +17718,8 @@
 				"role": "Fast Attacker",
 				"movepool": [
 					"Dark Wave",
+					"Extrasensory",
 					"Ice Beam",
-					"Sludge Wave",
 					"Substitute",
 					"Surf"
 				],
@@ -18045,11 +17742,11 @@
 				"role": "Bulky Attacker",
 				"movepool": [
 					"Earthquake",
+					"Ice Punch",
 					"Knock Off",
 					"Mega Kick",
 					"Rest",
 					"Spikes",
-					"Superpower",
 					"Swords Dance",
 					"U-turn"
 				],
@@ -18141,519 +17838,6 @@
 			}
 		]
 	},
-	"vivillonarchipelago": {
-		"level": 90,
-		"sets": [
-			{
-				"role": "Setup Sweeper",
-				"movepool": [
-					"Bug Buzz",
-					"Energy Ball",
-					"Hurricane",
-					"Quiver Dance",
-					"Rest",
-					"Substitute",
-					"U-turn"
-				],
-				"abilities": [
-					"Shield Dust",
-					"Compound Eyes",
-					"Friend Guard"
-				],
-				"teraTypes": [
-					"Bug",
-					"Flying"
-				]
-			}
-		],
-		"generated": true
-	},
-	"vivilloncontinental": {
-		"level": 90,
-		"sets": [
-			{
-				"role": "Setup Sweeper",
-				"movepool": [
-					"Bug Buzz",
-					"Energy Ball",
-					"Hurricane",
-					"Quiver Dance",
-					"Rest",
-					"Substitute",
-					"U-turn"
-				],
-				"abilities": [
-					"Shield Dust",
-					"Compound Eyes",
-					"Friend Guard"
-				],
-				"teraTypes": [
-					"Bug",
-					"Flying"
-				]
-			}
-		],
-		"generated": true
-	},
-	"vivillonelegant": {
-		"level": 90,
-		"sets": [
-			{
-				"role": "Setup Sweeper",
-				"movepool": [
-					"Bug Buzz",
-					"Energy Ball",
-					"Hurricane",
-					"Quiver Dance",
-					"Rest",
-					"Substitute",
-					"U-turn"
-				],
-				"abilities": [
-					"Shield Dust",
-					"Compound Eyes",
-					"Friend Guard"
-				],
-				"teraTypes": [
-					"Bug",
-					"Flying"
-				]
-			}
-		],
-		"generated": true
-	},
-	"vivillonfancy": {
-		"level": 90,
-		"sets": [
-			{
-				"role": "Setup Sweeper",
-				"movepool": [
-					"Bug Buzz",
-					"Energy Ball",
-					"Hurricane",
-					"Quiver Dance",
-					"Rest",
-					"Substitute",
-					"U-turn"
-				],
-				"abilities": [
-					"Shield Dust",
-					"Compound Eyes",
-					"Friend Guard"
-				],
-				"teraTypes": [
-					"Bug",
-					"Flying"
-				]
-			}
-		],
-		"generated": true
-	},
-	"vivillongarden": {
-		"level": 90,
-		"sets": [
-			{
-				"role": "Setup Sweeper",
-				"movepool": [
-					"Bug Buzz",
-					"Energy Ball",
-					"Hurricane",
-					"Quiver Dance",
-					"Rest",
-					"Substitute",
-					"U-turn"
-				],
-				"abilities": [
-					"Shield Dust",
-					"Compound Eyes",
-					"Friend Guard"
-				],
-				"teraTypes": [
-					"Bug",
-					"Flying"
-				]
-			}
-		],
-		"generated": true
-	},
-	"vivillonhighplains": {
-		"level": 90,
-		"sets": [
-			{
-				"role": "Setup Sweeper",
-				"movepool": [
-					"Bug Buzz",
-					"Energy Ball",
-					"Hurricane",
-					"Quiver Dance",
-					"Rest",
-					"Substitute",
-					"U-turn"
-				],
-				"abilities": [
-					"Shield Dust",
-					"Compound Eyes",
-					"Friend Guard"
-				],
-				"teraTypes": [
-					"Bug",
-					"Flying"
-				]
-			}
-		],
-		"generated": true
-	},
-	"vivillonicysnow": {
-		"level": 90,
-		"sets": [
-			{
-				"role": "Setup Sweeper",
-				"movepool": [
-					"Bug Buzz",
-					"Energy Ball",
-					"Hurricane",
-					"Quiver Dance",
-					"Rest",
-					"Substitute",
-					"U-turn"
-				],
-				"abilities": [
-					"Shield Dust",
-					"Compound Eyes",
-					"Friend Guard"
-				],
-				"teraTypes": [
-					"Bug",
-					"Flying"
-				]
-			}
-		],
-		"generated": true
-	},
-	"vivillonjungle": {
-		"level": 90,
-		"sets": [
-			{
-				"role": "Setup Sweeper",
-				"movepool": [
-					"Bug Buzz",
-					"Energy Ball",
-					"Hurricane",
-					"Quiver Dance",
-					"Rest",
-					"Substitute",
-					"U-turn"
-				],
-				"abilities": [
-					"Shield Dust",
-					"Compound Eyes",
-					"Friend Guard"
-				],
-				"teraTypes": [
-					"Bug",
-					"Flying"
-				]
-			}
-		],
-		"generated": true
-	},
-	"vivillonmarine": {
-		"level": 90,
-		"sets": [
-			{
-				"role": "Setup Sweeper",
-				"movepool": [
-					"Bug Buzz",
-					"Energy Ball",
-					"Hurricane",
-					"Quiver Dance",
-					"Rest",
-					"Substitute",
-					"U-turn"
-				],
-				"abilities": [
-					"Shield Dust",
-					"Compound Eyes",
-					"Friend Guard"
-				],
-				"teraTypes": [
-					"Bug",
-					"Flying"
-				]
-			}
-		],
-		"generated": true
-	},
-	"vivillonmodern": {
-		"level": 90,
-		"sets": [
-			{
-				"role": "Setup Sweeper",
-				"movepool": [
-					"Bug Buzz",
-					"Energy Ball",
-					"Hurricane",
-					"Quiver Dance",
-					"Rest",
-					"Substitute",
-					"U-turn"
-				],
-				"abilities": [
-					"Shield Dust",
-					"Compound Eyes",
-					"Friend Guard"
-				],
-				"teraTypes": [
-					"Bug",
-					"Flying"
-				]
-			}
-		],
-		"generated": true
-	},
-	"vivillonmonsoon": {
-		"level": 90,
-		"sets": [
-			{
-				"role": "Setup Sweeper",
-				"movepool": [
-					"Bug Buzz",
-					"Energy Ball",
-					"Hurricane",
-					"Quiver Dance",
-					"Rest",
-					"Substitute",
-					"U-turn"
-				],
-				"abilities": [
-					"Shield Dust",
-					"Compound Eyes",
-					"Friend Guard"
-				],
-				"teraTypes": [
-					"Bug",
-					"Flying"
-				]
-			}
-		],
-		"generated": true
-	},
-	"vivillonocean": {
-		"level": 90,
-		"sets": [
-			{
-				"role": "Setup Sweeper",
-				"movepool": [
-					"Bug Buzz",
-					"Energy Ball",
-					"Hurricane",
-					"Quiver Dance",
-					"Rest",
-					"Substitute",
-					"U-turn"
-				],
-				"abilities": [
-					"Shield Dust",
-					"Compound Eyes",
-					"Friend Guard"
-				],
-				"teraTypes": [
-					"Bug",
-					"Flying"
-				]
-			}
-		],
-		"generated": true
-	},
-	"vivillonpokeball": {
-		"level": 90,
-		"sets": [
-			{
-				"role": "Setup Sweeper",
-				"movepool": [
-					"Bug Buzz",
-					"Energy Ball",
-					"Hurricane",
-					"Quiver Dance",
-					"Rest",
-					"Substitute",
-					"U-turn"
-				],
-				"abilities": [
-					"Shield Dust",
-					"Compound Eyes",
-					"Friend Guard"
-				],
-				"teraTypes": [
-					"Bug",
-					"Flying"
-				]
-			}
-		],
-		"generated": true
-	},
-	"vivillonpolar": {
-		"level": 90,
-		"sets": [
-			{
-				"role": "Setup Sweeper",
-				"movepool": [
-					"Bug Buzz",
-					"Energy Ball",
-					"Hurricane",
-					"Quiver Dance",
-					"Rest",
-					"Substitute",
-					"U-turn"
-				],
-				"abilities": [
-					"Shield Dust",
-					"Compound Eyes",
-					"Friend Guard"
-				],
-				"teraTypes": [
-					"Bug",
-					"Flying"
-				]
-			}
-		],
-		"generated": true
-	},
-	"vivillonriver": {
-		"level": 90,
-		"sets": [
-			{
-				"role": "Setup Sweeper",
-				"movepool": [
-					"Bug Buzz",
-					"Energy Ball",
-					"Hurricane",
-					"Quiver Dance",
-					"Rest",
-					"Substitute",
-					"U-turn"
-				],
-				"abilities": [
-					"Shield Dust",
-					"Compound Eyes",
-					"Friend Guard"
-				],
-				"teraTypes": [
-					"Bug",
-					"Flying"
-				]
-			}
-		],
-		"generated": true
-	},
-	"vivillonsandstorm": {
-		"level": 90,
-		"sets": [
-			{
-				"role": "Setup Sweeper",
-				"movepool": [
-					"Bug Buzz",
-					"Energy Ball",
-					"Hurricane",
-					"Quiver Dance",
-					"Rest",
-					"Substitute",
-					"U-turn"
-				],
-				"abilities": [
-					"Shield Dust",
-					"Compound Eyes",
-					"Friend Guard"
-				],
-				"teraTypes": [
-					"Bug",
-					"Flying"
-				]
-			}
-		],
-		"generated": true
-	},
-	"vivillonsavanna": {
-		"level": 90,
-		"sets": [
-			{
-				"role": "Setup Sweeper",
-				"movepool": [
-					"Bug Buzz",
-					"Energy Ball",
-					"Hurricane",
-					"Quiver Dance",
-					"Rest",
-					"Substitute",
-					"U-turn"
-				],
-				"abilities": [
-					"Shield Dust",
-					"Compound Eyes",
-					"Friend Guard"
-				],
-				"teraTypes": [
-					"Bug",
-					"Flying"
-				]
-			}
-		],
-		"generated": true
-	},
-	"vivillonsun": {
-		"level": 90,
-		"sets": [
-			{
-				"role": "Setup Sweeper",
-				"movepool": [
-					"Bug Buzz",
-					"Energy Ball",
-					"Hurricane",
-					"Quiver Dance",
-					"Rest",
-					"Substitute",
-					"U-turn"
-				],
-				"abilities": [
-					"Shield Dust",
-					"Compound Eyes",
-					"Friend Guard"
-				],
-				"teraTypes": [
-					"Bug",
-					"Flying"
-				]
-			}
-		],
-		"generated": true
-	},
-	"vivillontundra": {
-		"level": 90,
-		"sets": [
-			{
-				"role": "Setup Sweeper",
-				"movepool": [
-					"Bug Buzz",
-					"Energy Ball",
-					"Hurricane",
-					"Quiver Dance",
-					"Rest",
-					"Substitute",
-					"U-turn"
-				],
-				"abilities": [
-					"Shield Dust",
-					"Compound Eyes",
-					"Friend Guard"
-				],
-				"teraTypes": [
-					"Bug",
-					"Flying"
-				]
-			}
-		],
-		"generated": true
-	},
 	"pyroar": {
 		"level": 88,
 		"sets": [
@@ -18683,8 +17867,8 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Dark Pulse",
+					"Fire Blast",
 					"Hyper Voice",
-					"Overheat",
 					"Substitute",
 					"Work Up"
 				],
@@ -18708,11 +17892,10 @@
 				"role": "Wallbreaker",
 				"movepool": [
 					"Calm Mind",
+					"Energy Ball",
 					"Light of Ruin",
-					"Petal Dance",
 					"Pollen Puff",
 					"Psychic",
-					"Rest",
 					"Substitute"
 				],
 				"abilities": [
@@ -18733,8 +17916,8 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Calm Mind",
+					"Energy Ball",
 					"Light of Ruin",
-					"Petal Dance",
 					"Pollen Puff",
 					"Psychic",
 					"Substitute"
@@ -18814,12 +17997,11 @@
 				"role": "Wallbreaker",
 				"movepool": [
 					"Close Combat",
+					"Darkest Lariat",
 					"Earthquake",
-					"Foul Play",
+					"Ice Punch",
 					"Knock Off",
-					"Outrage",
 					"Parting Shot",
-					"Rest",
 					"Swords Dance"
 				],
 				"abilities": [
@@ -18905,38 +18087,13 @@
 			}
 		]
 	},
-	"meowsticfmega": {
-		"level": 80,
-		"sets": [
-			{
-				"role": "Setup Sweeper",
-				"movepool": [
-					"Alluring Voice",
-					"Energy Ball",
-					"Future Sight",
-					"Nasty Plot",
-					"Substitute",
-					"Thunderbolt"
-				],
-				"abilities": [
-					"Keen Eye",
-					"Infiltrator",
-					"Competitive"
-				],
-				"teraTypes": [
-					"Psychic"
-				]
-			}
-		],
-		"generated": true
-	},
 	"meowsticmmega": {
 		"level": 80,
 		"sets": [
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Alluring Voice",
+					"Dark Pulse",
 					"Energy Ball",
 					"Nasty Plot",
 					"Psychic",
@@ -18988,7 +18145,6 @@
 					"Close Combat",
 					"Head Smash",
 					"Iron Head",
-					"Rest",
 					"Spectral Strike",
 					"Swords Dance",
 					"Toxic"
@@ -19010,11 +18166,11 @@
 			{
 				"role": "Bulky Attacker",
 				"movepool": [
-					"Energy Ball",
+					"Flash Cannon",
 					"Moonblast",
 					"Nasty Plot",
-					"Psychic",
 					"Rest",
+					"Thunderbolt",
 					"Toxic"
 				],
 				"abilities": [
@@ -19036,10 +18192,10 @@
 				"movepool": [
 					"Calm Mind",
 					"Dazzling Gleam",
-					"Energy Ball",
 					"Flamethrower",
 					"Rest",
 					"Sticky Web",
+					"Surf",
 					"Toxic"
 				],
 				"abilities": [
@@ -19096,14 +18252,13 @@
 		"level": 79,
 		"sets": [
 			{
-				"role": "Setup Sweeper",
+				"role": "Bulky Attacker",
 				"movepool": [
-					"Dark Wave",
-					"Flamethrower",
-					"Future Sight",
-					"Nasty Plot",
+					"Knock Off",
+					"Psycho Cut",
 					"Rest",
-					"Substitute"
+					"Superpower",
+					"Throat Chop"
 				],
 				"abilities": [
 					"Contrary",
@@ -19124,11 +18279,11 @@
 			{
 				"role": "Bulky Attacker",
 				"movepool": [
+					"Earthquake",
 					"Liquidation",
 					"Rest",
 					"Stealth Rock",
 					"Stone Edge",
-					"Superpower",
 					"Swords Dance",
 					"Taunt"
 				],
@@ -19151,13 +18306,12 @@
 			{
 				"role": "Wallbreaker",
 				"movepool": [
+					"Cross Chop",
 					"Earthquake",
-					"Liquidation",
-					"Rest",
 					"Stone Edge",
-					"Superpower",
 					"Swords Dance",
-					"Taunt"
+					"Taunt",
+					"X-Scissor"
 				],
 				"abilities": [
 					"Tough Claws",
@@ -19202,11 +18356,10 @@
 				"role": "Wallbreaker",
 				"movepool": [
 					"Acid Armor",
-					"Draco Meteor",
+					"Dragon Pulse",
 					"Flip Turn",
-					"Rest",
+					"Focus Blast",
 					"Sludge Wave",
-					"Surf",
 					"Thunderbolt",
 					"Toxic"
 				],
@@ -19270,11 +18423,11 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Agility",
-					"Dragon Pulse",
+					"Focus Blast",
 					"Hyper Voice",
-					"Power Surge",
 					"Substitute",
-					"Surf"
+					"Surf",
+					"Thunderbolt"
 				],
 				"abilities": [
 					"Dry Skin",
@@ -19297,10 +18450,9 @@
 				"movepool": [
 					"Close Combat",
 					"Dragon Dance",
+					"Earthquake",
 					"Head Smash",
 					"Outrage",
-					"Rest",
-					"Thrash",
 					"Toxic"
 				],
 				"abilities": [
@@ -19322,9 +18474,9 @@
 				"role": "Bulky Attacker",
 				"movepool": [
 					"Calm Mind",
+					"Crystalline Cannon",
 					"Earth Power",
 					"Ice Beam",
-					"Meteor Beam",
 					"Rest",
 					"Stealth Rock",
 					"Thunder Wave"
@@ -19391,13 +18543,12 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Agility",
-					"Body Slam",
 					"Brave Bird",
 					"Close Combat",
-					"Iron Head",
+					"Stone Edge",
 					"Substitute",
-					"Swords Dance"
+					"Swords Dance",
+					"Throat Chop"
 				],
 				"abilities": [
 					"Limber",
@@ -19573,7 +18724,8 @@
 					"Drain Punch",
 					"Poltergeist",
 					"Protect",
-					"Toxic"
+					"Toxic",
+					"Wood Hammer"
 				],
 				"abilities": [
 					"Harvest"
@@ -19669,9 +18821,9 @@
 				"role": "Bulky Attacker",
 				"movepool": [
 					"Curse",
-					"Foul Play",
 					"Poltergeist",
 					"Power Whip",
+					"Seed Bomb",
 					"Synthesis",
 					"Will-O-Wisp"
 				],
@@ -19775,8 +18927,8 @@
 				"role": "Fast Attacker",
 				"movepool": [
 					"Close Combat",
-					"Megahorn",
-					"Outrage",
+					"Horn Leech",
+					"Night Slash",
 					"Play Rough",
 					"Substitute"
 				],
@@ -19797,7 +18949,7 @@
 				"role": "Fast Attacker",
 				"movepool": [
 					"Dark Wave",
-					"Hyper Voice",
+					"Focus Blast",
 					"Oblivion Wing",
 					"Psychic",
 					"Substitute"
@@ -19819,12 +18971,12 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Body Slam",
+					"Crunch",
 					"Dragon Dance",
 					"Earthquake",
 					"Outrage",
-					"Substitute",
-					"Superpower"
+					"Stone Edge",
+					"Substitute"
 				],
 				"abilities": [
 					"Aura Break"
@@ -19843,12 +18995,12 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Body Slam",
+					"Crunch",
 					"Dragon Dance",
 					"Earthquake",
 					"Outrage",
-					"Substitute",
-					"Superpower"
+					"Stone Edge",
+					"Substitute"
 				],
 				"abilities": [
 					"Aura Break"
@@ -19906,11 +19058,9 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Calm Mind",
+					"Crystalline Cannon",
 					"Earth Power",
-					"Meteor Beam",
 					"Moonblast",
-					"Psychic",
-					"Rock Polish",
 					"Substitute"
 				],
 				"abilities": [
@@ -20317,8 +19467,7 @@
 					"Earthquake",
 					"Gunk Shot",
 					"Ice Hammer",
-					"Knock Off",
-					"Rest"
+					"Knock Off"
 				],
 				"abilities": [
 					"Hyper Cutter",
@@ -20540,7 +19689,6 @@
 			{
 				"role": "Bulky Attacker",
 				"movepool": [
-					"Double-Edge",
 					"Earthquake",
 					"Liquidation",
 					"Rest",
@@ -20698,7 +19846,7 @@
 					"Energy Ball",
 					"Growth",
 					"Moonblast",
-					"Pollen Puff",
+					"Sludge Bomb",
 					"Synthesis",
 					"Thunder Wave"
 				],
@@ -20759,8 +19907,8 @@
 					"Close Combat",
 					"Double-Edge",
 					"Earthquake",
-					"Fae Strike",
-					"Rest",
+					"Ice Punch",
+					"Pain Split",
 					"Swords Dance",
 					"Taunt"
 				],
@@ -20931,11 +20079,11 @@
 				"role": "Wallbreaker",
 				"movepool": [
 					"Close Combat",
+					"Drill Run",
 					"First Impression",
-					"Iron Head",
 					"Knock Off",
 					"Liquidation",
-					"Rest",
+					"Pain Split",
 					"Swords Dance"
 				],
 				"abilities": [
@@ -20956,11 +20104,11 @@
 				"role": "Wallbreaker",
 				"movepool": [
 					"Close Combat",
+					"Drill Run",
 					"First Impression",
 					"Iron Head",
 					"Knock Off",
-					"Liquidation",
-					"Rest",
+					"Pain Split",
 					"Swords Dance"
 				],
 				"abilities": [
@@ -21027,7 +20175,7 @@
 				"movepool": [
 					"Crunch",
 					"Double-Edge",
-					"Outrage",
+					"Iron Head",
 					"Psychic Fangs",
 					"Substitute",
 					"Swords Dance"
@@ -21048,8 +20196,8 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Double-Edge",
-					"Outrage",
+					"Crunch",
+					"Iron Head",
 					"Psychic Fangs",
 					"Substitute",
 					"Swords Dance",
@@ -21072,11 +20220,11 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Crunch",
-					"Double-Edge",
-					"Outrage",
+					"Iron Head",
 					"Psychic Fangs",
 					"Substitute",
-					"Swords Dance"
+					"Swords Dance",
+					"X-Scissor"
 				],
 				"abilities": [
 					"RKS System"
@@ -21095,7 +20243,7 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Crunch",
-					"Double-Edge",
+					"Iron Head",
 					"Outrage",
 					"Psychic Fangs",
 					"Substitute",
@@ -21117,12 +20265,12 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Double-Edge",
-					"Outrage",
+					"Iron Head",
 					"Psychic Fangs",
 					"Substitute",
 					"Swords Dance",
-					"Thunder Fang"
+					"Thunder Fang",
+					"X-Scissor"
 				],
 				"abilities": [
 					"RKS System"
@@ -21141,11 +20289,11 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Crunch",
-					"Double-Edge",
-					"Outrage",
+					"Iron Head",
 					"Psychic Fangs",
 					"Substitute",
-					"Swords Dance"
+					"Swords Dance",
+					"X-Scissor"
 				],
 				"abilities": [
 					"RKS System"
@@ -21163,12 +20311,11 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Crunch",
-					"Double-Edge",
-					"Outrage",
 					"Psychic Fangs",
+					"Raging Blast",
 					"Substitute",
-					"Swords Dance"
+					"Swords Dance",
+					"X-Scissor"
 				],
 				"abilities": [
 					"RKS System"
@@ -21186,12 +20333,12 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Double-Edge",
 					"Fire Fang",
-					"Outrage",
+					"Iron Head",
 					"Psychic Fangs",
 					"Substitute",
-					"Swords Dance"
+					"Swords Dance",
+					"X-Scissor"
 				],
 				"abilities": [
 					"RKS System"
@@ -21210,9 +20357,8 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Aerial Ace",
-					"Double-Edge",
-					"Outrage",
-					"Psychic Fangs",
+					"Crunch",
+					"Iron Head",
 					"Substitute",
 					"Swords Dance"
 				],
@@ -21232,12 +20378,12 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Double-Edge",
-					"Outrage",
+					"Iron Head",
 					"Psychic Fangs",
 					"Shadow Claw",
 					"Substitute",
-					"Swords Dance"
+					"Swords Dance",
+					"X-Scissor"
 				],
 				"abilities": [
 					"RKS System"
@@ -21256,11 +20402,11 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Crunch",
-					"Double-Edge",
-					"Outrage",
+					"Grass Pledge",
 					"Psychic Fangs",
 					"Substitute",
-					"Swords Dance"
+					"Swords Dance",
+					"X-Scissor"
 				],
 				"abilities": [
 					"RKS System"
@@ -21279,11 +20425,11 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Crunch",
-					"Double-Edge",
-					"Outrage",
+					"Iron Head",
 					"Psychic Fangs",
 					"Substitute",
-					"Swords Dance"
+					"Swords Dance",
+					"X-Scissor"
 				],
 				"abilities": [
 					"RKS System"
@@ -21301,9 +20447,9 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Double-Edge",
+					"Crunch",
 					"Ice Fang",
-					"Outrage",
+					"Iron Head",
 					"Psychic Fangs",
 					"Substitute",
 					"Swords Dance"
@@ -21325,11 +20471,11 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Crunch",
-					"Double-Edge",
-					"Outrage",
+					"Iron Head",
 					"Psychic Fangs",
 					"Substitute",
-					"Swords Dance"
+					"Swords Dance",
+					"X-Scissor"
 				],
 				"abilities": [
 					"RKS System"
@@ -21348,11 +20494,11 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Crunch",
-					"Double-Edge",
-					"Outrage",
+					"Iron Head",
 					"Psychic Fangs",
 					"Substitute",
-					"Swords Dance"
+					"Swords Dance",
+					"X-Scissor"
 				],
 				"abilities": [
 					"RKS System"
@@ -21370,12 +20516,12 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Double-Edge",
-					"Outrage",
 					"Psychic Fangs",
 					"Rock Slide",
+					"Shadow Claw",
 					"Substitute",
-					"Swords Dance"
+					"Swords Dance",
+					"X-Scissor"
 				],
 				"abilities": [
 					"RKS System"
@@ -21393,12 +20539,12 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Double-Edge",
+					"Crunch",
 					"Iron Head",
-					"Outrage",
 					"Psychic Fangs",
 					"Substitute",
-					"Swords Dance"
+					"Swords Dance",
+					"X-Scissor"
 				],
 				"abilities": [
 					"RKS System"
@@ -21416,12 +20562,12 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Crunch",
-					"Double-Edge",
-					"Outrage",
+					"Iron Head",
 					"Psychic Fangs",
 					"Substitute",
-					"Swords Dance"
+					"Surf",
+					"Swords Dance",
+					"X-Scissor"
 				],
 				"abilities": [
 					"RKS System"
@@ -21456,156 +20602,6 @@
 			}
 		]
 	},
-	"miniorblue": {
-		"level": 85,
-		"sets": [
-			{
-				"role": "Setup Sweeper",
-				"movepool": [
-					"Acrobatics",
-					"Double-Edge",
-					"Earthquake",
-					"Rock Polish",
-					"Shell Smash",
-					"Stone Edge",
-					"Substitute"
-				],
-				"abilities": [
-					"Shields Down"
-				],
-				"teraTypes": [
-					"Rock",
-					"Flying"
-				]
-			}
-		],
-		"generated": true
-	},
-	"miniorgreen": {
-		"level": 85,
-		"sets": [
-			{
-				"role": "Setup Sweeper",
-				"movepool": [
-					"Acrobatics",
-					"Double-Edge",
-					"Earthquake",
-					"Rock Polish",
-					"Shell Smash",
-					"Stone Edge",
-					"Substitute"
-				],
-				"abilities": [
-					"Shields Down"
-				],
-				"teraTypes": [
-					"Rock",
-					"Flying"
-				]
-			}
-		],
-		"generated": true
-	},
-	"miniorindigo": {
-		"level": 85,
-		"sets": [
-			{
-				"role": "Setup Sweeper",
-				"movepool": [
-					"Acrobatics",
-					"Double-Edge",
-					"Earthquake",
-					"Rock Polish",
-					"Shell Smash",
-					"Stone Edge",
-					"Substitute"
-				],
-				"abilities": [
-					"Shields Down"
-				],
-				"teraTypes": [
-					"Rock",
-					"Flying"
-				]
-			}
-		],
-		"generated": true
-	},
-	"miniororange": {
-		"level": 85,
-		"sets": [
-			{
-				"role": "Setup Sweeper",
-				"movepool": [
-					"Acrobatics",
-					"Double-Edge",
-					"Earthquake",
-					"Rock Polish",
-					"Shell Smash",
-					"Stone Edge",
-					"Substitute"
-				],
-				"abilities": [
-					"Shields Down"
-				],
-				"teraTypes": [
-					"Rock",
-					"Flying"
-				]
-			}
-		],
-		"generated": true
-	},
-	"miniorviolet": {
-		"level": 85,
-		"sets": [
-			{
-				"role": "Setup Sweeper",
-				"movepool": [
-					"Acrobatics",
-					"Double-Edge",
-					"Earthquake",
-					"Rock Polish",
-					"Shell Smash",
-					"Stone Edge",
-					"Substitute"
-				],
-				"abilities": [
-					"Shields Down"
-				],
-				"teraTypes": [
-					"Rock",
-					"Flying"
-				]
-			}
-		],
-		"generated": true
-	},
-	"minioryellow": {
-		"level": 85,
-		"sets": [
-			{
-				"role": "Setup Sweeper",
-				"movepool": [
-					"Acrobatics",
-					"Double-Edge",
-					"Earthquake",
-					"Rock Polish",
-					"Shell Smash",
-					"Stone Edge",
-					"Substitute"
-				],
-				"abilities": [
-					"Shields Down"
-				],
-				"teraTypes": [
-					"Rock",
-					"Flying"
-				]
-			}
-		],
-		"generated": true
-	},
 	"komala": {
 		"level": 88,
 		"sets": [
@@ -21633,10 +20629,10 @@
 			{
 				"role": "Bulky Attacker",
 				"movepool": [
-					"Draco Meteor",
-					"Hyper Voice",
-					"Overheat",
+					"Dragon Pulse",
+					"Fire Blast",
 					"Rest",
+					"Scorching Sands",
 					"Shell Smash",
 					"Will-O-Wisp"
 				],
@@ -21658,9 +20654,9 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Agility",
-					"Poison Jab",
-					"Steel Roller",
+					"Iron Head",
 					"Substitute",
+					"U-turn",
 					"Wild Charge",
 					"Work Up",
 					"Zen Headbutt"
@@ -21746,10 +20742,10 @@
 				"role": "Wallbreaker",
 				"movepool": [
 					"Calm Mind",
-					"Draco Meteor",
-					"Energy Ball",
-					"Fire Blast",
+					"Dragon Pulse",
 					"Hyper Voice",
+					"Ice Beam",
+					"Raging Blast",
 					"Roost",
 					"Thunder Wave"
 				],
@@ -21773,10 +20769,10 @@
 				"role": "Wallbreaker",
 				"movepool": [
 					"Calm Mind",
-					"Draco Meteor",
-					"Energy Ball",
-					"Fire Blast",
+					"Dragon Pulse",
 					"Hyper Voice",
+					"Ice Beam",
+					"Raging Blast",
 					"Roost",
 					"Thunder Wave"
 				],
@@ -21799,11 +20795,11 @@
 			{
 				"role": "Wallbreaker",
 				"movepool": [
+					"Body Press",
 					"Earthquake",
 					"Knock Off",
 					"Poltergeist",
 					"Power Whip",
-					"Steel Roller",
 					"Swords Dance",
 					"Synthesis"
 				],
@@ -21861,7 +20857,6 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Agility",
 					"Brave Bird",
 					"Fae Strike",
 					"Iron Head",
@@ -21888,9 +20883,9 @@
 				"role": "Setup Sweeper",
 				"movepool": [
 					"Calm Mind",
-					"Energy Ball",
-					"Future Sight",
+					"Focus Blast",
 					"Moonblast",
+					"Psychic",
 					"Substitute",
 					"Thunderbolt"
 				],
@@ -21912,9 +20907,9 @@
 			{
 				"role": "Wallbreaker",
 				"movepool": [
-					"Close Combat",
 					"Fae Strike",
-					"Megahorn",
+					"High Horsepower",
+					"Stone Edge",
 					"Swords Dance",
 					"Synthesis",
 					"Taunt",
@@ -22044,8 +21039,8 @@
 			{
 				"role": "Fast Attacker",
 				"movepool": [
-					"Meteor Beam",
-					"Psychic",
+					"Crystalline Cannon",
+					"Dazzling Gleam",
 					"Sludge Wave",
 					"Substitute",
 					"Thunderbolt"
@@ -22071,8 +21066,8 @@
 					"Close Combat",
 					"Earthquake",
 					"Leech Life",
-					"Outrage",
 					"Roost",
+					"Stone Edge",
 					"Taunt"
 				],
 				"abilities": [
@@ -22094,10 +21089,10 @@
 				"movepool": [
 					"Agility",
 					"Close Combat",
-					"Foul Play",
+					"Drill Run",
 					"Lunge",
-					"Outrage",
-					"Substitute"
+					"Substitute",
+					"Throat Chop"
 				],
 				"abilities": [
 					"Beast Boost"
@@ -22119,10 +21114,9 @@
 					"Calm Mind",
 					"Dazzling Gleam",
 					"Energy Ball",
-					"Power Surge",
-					"Rest",
 					"Signal Beam",
 					"Thunder Wave",
+					"Thunderbolt",
 					"Volt Switch"
 				],
 				"abilities": [
@@ -22141,11 +21135,11 @@
 			{
 				"role": "Bulky Attacker",
 				"movepool": [
-					"Double-Edge",
+					"Earthquake",
 					"Iron Defense",
+					"Iron Head",
 					"Pressure Wave",
 					"Rest",
-					"Steel Roller",
 					"Toxic"
 				],
 				"abilities": [
@@ -22190,11 +21184,11 @@
 				"role": "Bulky Attacker",
 				"movepool": [
 					"Crunch",
+					"Earthquake",
 					"Iron Defense",
 					"Knock Off",
 					"Outrage",
-					"Rest",
-					"Steel Roller"
+					"Rest"
 				],
 				"abilities": [
 					"Beast Boost"
@@ -22405,62 +21399,11 @@
 				"movepool": [
 					"Agility",
 					"Calm Mind",
-					"Energy Ball",
+					"Dazzling Gleam",
 					"Flash Cannon",
-					"Fleur Cannon",
 					"Ice Beam",
-					"Substitute"
-				],
-				"abilities": [
-					"Soul-Heart"
-				],
-				"teraTypes": [
-					"Steel",
-					"Fairy"
-				]
-			}
-		],
-		"generated": true
-	},
-	"magearnaoriginal": {
-		"level": 78,
-		"sets": [
-			{
-				"role": "Wallbreaker",
-				"movepool": [
-					"Calm Mind",
-					"Energy Ball",
-					"Flash Cannon",
-					"Fleur Cannon",
-					"Ice Beam",
-					"Rest",
-					"Thunder Wave",
-					"Volt Switch"
-				],
-				"abilities": [
-					"Soul-Heart"
-				],
-				"teraTypes": [
-					"Steel",
-					"Fairy"
-				]
-			}
-		],
-		"generated": true
-	},
-	"magearnaoriginalmega": {
-		"level": 72,
-		"sets": [
-			{
-				"role": "Setup Sweeper",
-				"movepool": [
-					"Agility",
-					"Calm Mind",
-					"Energy Ball",
-					"Flash Cannon",
-					"Fleur Cannon",
-					"Ice Beam",
-					"Substitute"
+					"Substitute",
+					"Thunderbolt"
 				],
 				"abilities": [
 					"Soul-Heart"
@@ -22479,11 +21422,10 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Agility",
 					"Bulk Up",
 					"Close Combat",
-					"Foul Play",
-					"Outrage",
+					"Ice Punch",
+					"Stone Edge",
 					"Substitute",
 					"Vengeance"
 				],
@@ -22504,7 +21446,7 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Draco Meteor",
+					"Dragon Pulse",
 					"Fire Blast",
 					"Nasty Plot",
 					"Sludge Wave",
@@ -22528,12 +21470,11 @@
 			{
 				"role": "Wallbreaker",
 				"movepool": [
-					"Double-Edge",
+					"Body Press",
+					"Earthquake",
 					"Iron Defense",
-					"Rest",
-					"Steel Roller",
+					"Iron Head",
 					"Stone Edge",
-					"Superpower",
 					"Toxic"
 				],
 				"abilities": [
@@ -22557,8 +21498,7 @@
 					"Mind Blown",
 					"Psychic",
 					"Shadow Ball",
-					"Substitute",
-					"Uproar"
+					"Substitute"
 				],
 				"abilities": [
 					"Beast Boost"
@@ -22577,13 +21517,12 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Agility",
 					"Bulk Up",
 					"Close Combat",
-					"Mega Kick",
-					"Outrage",
 					"Plasma Fists",
-					"Substitute"
+					"Play Rough",
+					"Substitute",
+					"Throat Chop"
 				],
 				"abilities": [
 					"Volt Absorb"
@@ -22601,13 +21540,12 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Agility",
 					"Bulk Up",
 					"Close Combat",
-					"Mega Kick",
-					"Outrage",
 					"Plasma Fists",
-					"Substitute"
+					"Play Rough",
+					"Substitute",
+					"Throat Chop"
 				],
 				"abilities": [
 					"Volt Absorb"
@@ -22625,7 +21563,7 @@
 			{
 				"role": "Bulky Attacker",
 				"movepool": [
-					"Hidden Power",
+					"Flash Cannon",
 					"Iron Defense",
 					"Mineral Burst",
 					"Rest",
@@ -22648,12 +21586,11 @@
 			{
 				"role": "Wallbreaker",
 				"movepool": [
+					"Darkest Lariat",
+					"Double Iron Bash",
 					"Earthquake",
+					"Ice Punch",
 					"Iron Defense",
-					"Mega Kick",
-					"Rest",
-					"Steel Roller",
-					"Superpower",
 					"Thunder Wave"
 				],
 				"abilities": [
@@ -22825,8 +21762,8 @@
 				"role": "Bulky Support",
 				"movepool": [
 					"Bug Buzz",
-					"Future Sight",
 					"Hypnosis",
+					"Psychic",
 					"Recover",
 					"Sticky Web",
 					"Substitute",
@@ -22852,11 +21789,11 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
+					"Burning Jealousy",
 					"Dark Pulse",
 					"Nasty Plot",
 					"Psychic",
 					"Rest",
-					"Shadow Ball",
 					"Substitute",
 					"U-turn"
 				],
@@ -22877,9 +21814,9 @@
 			{
 				"role": "Bulky Attacker",
 				"movepool": [
+					"Energy Ball",
 					"Growth",
 					"Hyper Voice",
-					"Leaf Storm",
 					"Pollen Puff",
 					"Synthesis",
 					"Toxic"
@@ -22964,8 +21901,8 @@
 			{
 				"role": "Fast Support",
 				"movepool": [
-					"Double-Edge",
-					"Psychic Fangs",
+					"Crunch",
+					"Play Rough",
 					"Rest",
 					"Thunder Wave",
 					"Toxic",
@@ -23205,11 +22142,9 @@
 			{
 				"role": "Wallbreaker",
 				"movepool": [
-					"Belch",
-					"Boomburst",
 					"Power Surge",
 					"Psychic Noise",
-					"Rest",
+					"Sludge Wave",
 					"Thunder Wave",
 					"Volt Switch"
 				],
@@ -23237,8 +22172,7 @@
 					"Flare Blitz",
 					"Knock Off",
 					"Leech Life",
-					"Power Whip",
-					"Rest"
+					"Power Whip"
 				],
 				"abilities": [
 					"Flash Fire",
@@ -23259,12 +22193,12 @@
 			{
 				"role": "Wallbreaker",
 				"movepool": [
-					"Body Slam",
 					"Bulk Up",
 					"Close Combat",
-					"Liquidation",
+					"Ice Punch",
+					"Pain Split",
 					"Pressure Wave",
-					"Rest",
+					"Stomping Tantrum",
 					"Taunt"
 				],
 				"abilities": [
@@ -23314,31 +22248,6 @@
 				]
 			}
 		]
-	},
-	"polteageistantique": {
-		"level": 84,
-		"sets": [
-			{
-				"role": "Wallbreaker",
-				"movepool": [
-					"Dark Pulse",
-					"Giga Drain",
-					"Nasty Plot",
-					"Psychic",
-					"Shadow Ball",
-					"Strength Sap",
-					"Will-O-Wisp"
-				],
-				"abilities": [
-					"Weak Armor",
-					"Cursed Body"
-				],
-				"teraTypes": [
-					"Ghost"
-				]
-			}
-		],
-		"generated": true
 	},
 	"hatterene": {
 		"level": 85,
@@ -23499,11 +22408,10 @@
 				"movepool": [
 					"Brave Bird",
 					"Close Combat",
-					"Double-Edge",
-					"First Impression",
 					"Knock Off",
-					"Rest",
-					"Swords Dance"
+					"Leaf Blade",
+					"Swords Dance",
+					"Throat Chop"
 				],
 				"abilities": [
 					"Steadfast",
@@ -23522,13 +22430,13 @@
 			{
 				"role": "Wallbreaker",
 				"movepool": [
-					"Energy Ball",
-					"Future Sight",
+					"Focus Blast",
 					"Ice Beam",
 					"Nasty Plot",
+					"Psychic",
+					"Shadow Ball",
 					"Slack Off",
-					"Thunder Wave",
-					"Thunderbolt"
+					"Thunder Wave"
 				],
 				"abilities": [
 					"Tangled Feet",
@@ -23549,8 +22457,8 @@
 			{
 				"role": "Bulky Attacker",
 				"movepool": [
+					"Body Press",
 					"Curse",
-					"Double-Edge",
 					"Earthquake",
 					"Rest",
 					"Stealth Rock",
@@ -23604,174 +22512,6 @@
 			}
 		]
 	},
-	"alcremiecaramelswirl": {
-		"level": 85,
-		"sets": [
-			{
-				"role": "Wallbreaker",
-				"movepool": [
-					"Alluring Voice",
-					"Calm Mind",
-					"Energy Ball",
-					"Psychic",
-					"Recover",
-					"Substitute"
-				],
-				"abilities": [
-					"Sweet Veil",
-					"Aroma Veil"
-				],
-				"teraTypes": [
-					"Fairy"
-				]
-			}
-		],
-		"generated": true
-	},
-	"alcremielemoncream": {
-		"level": 85,
-		"sets": [
-			{
-				"role": "Wallbreaker",
-				"movepool": [
-					"Alluring Voice",
-					"Calm Mind",
-					"Energy Ball",
-					"Psychic",
-					"Recover",
-					"Substitute"
-				],
-				"abilities": [
-					"Sweet Veil",
-					"Aroma Veil"
-				],
-				"teraTypes": [
-					"Fairy"
-				]
-			}
-		],
-		"generated": true
-	},
-	"alcremiematchacream": {
-		"level": 85,
-		"sets": [
-			{
-				"role": "Wallbreaker",
-				"movepool": [
-					"Alluring Voice",
-					"Calm Mind",
-					"Energy Ball",
-					"Psychic",
-					"Recover",
-					"Substitute"
-				],
-				"abilities": [
-					"Sweet Veil",
-					"Aroma Veil"
-				],
-				"teraTypes": [
-					"Fairy"
-				]
-			}
-		],
-		"generated": true
-	},
-	"alcremiemintcream": {
-		"level": 85,
-		"sets": [
-			{
-				"role": "Wallbreaker",
-				"movepool": [
-					"Alluring Voice",
-					"Calm Mind",
-					"Energy Ball",
-					"Psychic",
-					"Recover",
-					"Substitute"
-				],
-				"abilities": [
-					"Sweet Veil",
-					"Aroma Veil"
-				],
-				"teraTypes": [
-					"Fairy"
-				]
-			}
-		],
-		"generated": true
-	},
-	"alcremierainbowswirl": {
-		"level": 85,
-		"sets": [
-			{
-				"role": "Wallbreaker",
-				"movepool": [
-					"Alluring Voice",
-					"Calm Mind",
-					"Energy Ball",
-					"Psychic",
-					"Recover",
-					"Substitute"
-				],
-				"abilities": [
-					"Sweet Veil",
-					"Aroma Veil"
-				],
-				"teraTypes": [
-					"Fairy"
-				]
-			}
-		],
-		"generated": true
-	},
-	"alcremierubycream": {
-		"level": 85,
-		"sets": [
-			{
-				"role": "Wallbreaker",
-				"movepool": [
-					"Alluring Voice",
-					"Calm Mind",
-					"Energy Ball",
-					"Psychic",
-					"Recover",
-					"Substitute"
-				],
-				"abilities": [
-					"Sweet Veil",
-					"Aroma Veil"
-				],
-				"teraTypes": [
-					"Fairy"
-				]
-			}
-		],
-		"generated": true
-	},
-	"alcremierubyswirl": {
-		"level": 85,
-		"sets": [
-			{
-				"role": "Wallbreaker",
-				"movepool": [
-					"Alluring Voice",
-					"Calm Mind",
-					"Energy Ball",
-					"Psychic",
-					"Recover",
-					"Substitute"
-				],
-				"abilities": [
-					"Sweet Veil",
-					"Aroma Veil"
-				],
-				"teraTypes": [
-					"Fairy"
-				]
-			}
-		],
-		"generated": true
-	},
 	"falinks": {
 		"level": 84,
 		"sets": [
@@ -23799,13 +22539,12 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
-					"Agility",
-					"Body Slam",
 					"Close Combat",
 					"High Horsepower",
-					"Megahorn",
+					"Poison Jab",
 					"Substitute",
-					"Swords Dance"
+					"Swords Dance",
+					"Throat Chop"
 				],
 				"abilities": [
 					"Battle Armor",
@@ -24497,30 +23236,6 @@
 				]
 			}
 		]
-	},
-	"zarudedada": {
-		"level": 78,
-		"sets": [
-			{
-				"role": "Setup Sweeper",
-				"movepool": [
-					"Close Combat",
-					"Crunch",
-					"Double-Edge",
-					"Power Whip",
-					"Substitute",
-					"Swords Dance"
-				],
-				"abilities": [
-					"Leaf Guard"
-				],
-				"teraTypes": [
-					"Dark",
-					"Grass"
-				]
-			}
-		],
-		"generated": true
 	},
 	"regieleki": {
 		"level": 79,
@@ -25382,32 +24097,6 @@
 			}
 		]
 	},
-	"mausholdfour": {
-		"level": 87,
-		"sets": [
-			{
-				"role": "Fast Support",
-				"movepool": [
-					"Crunch",
-					"Double-Edge",
-					"Play Rough",
-					"Rest",
-					"Taunt",
-					"Thunder Wave",
-					"U-turn"
-				],
-				"abilities": [
-					"Friend Guard",
-					"Cheek Pouch",
-					"Technician"
-				],
-				"teraTypes": [
-					"Normal"
-				]
-			}
-		],
-		"generated": true
-	},
 	"dachsbun": {
 		"level": 92,
 		"sets": [
@@ -25935,11 +24624,10 @@
 			{
 				"role": "Wallbreaker",
 				"movepool": [
+					"Energy Ball",
 					"Fire Blast",
+					"Flamethrower",
 					"Growth",
-					"Leaf Storm",
-					"Overheat",
-					"Rest",
 					"Will-O-Wisp"
 				],
 				"abilities": [
@@ -26280,11 +24968,10 @@
 			{
 				"role": "Setup Sweeper",
 				"movepool": [
+					"Crystalline Cannon",
+					"Dazzling Gleam",
 					"Earth Power",
-					"Energy Ball",
 					"Iron Defense",
-					"Meteor Beam",
-					"Rock Polish",
 					"Sludge Wave",
 					"Substitute"
 				],
@@ -26531,106 +25218,9 @@
 			{
 				"role": "Wallbreaker",
 				"movepool": [
-					"Draco Meteor",
-					"Icy Wind",
+					"Dragon Pulse",
+					"Hydro Pump",
 					"Nasty Plot",
-					"Rest",
-					"Surf",
-					"Taunt"
-				],
-				"abilities": [
-					"Storm Drain"
-				],
-				"teraTypes": [
-					"Dragon",
-					"Water"
-				]
-			}
-		],
-		"generated": true
-	},
-	"tatsugiridroopy": {
-		"level": 86,
-		"sets": [
-			{
-				"role": "Wallbreaker",
-				"movepool": [
-					"Draco Meteor",
-					"Icy Wind",
-					"Nasty Plot",
-					"Rest",
-					"Surf",
-					"Taunt"
-				],
-				"abilities": [
-					"Storm Drain"
-				],
-				"teraTypes": [
-					"Dragon",
-					"Water"
-				]
-			}
-		],
-		"generated": true
-	},
-	"tatsugiridroopymega": {
-		"level": 80,
-		"sets": [
-			{
-				"role": "Wallbreaker",
-				"movepool": [
-					"Draco Meteor",
-					"Icy Wind",
-					"Nasty Plot",
-					"Rest",
-					"Surf",
-					"Taunt"
-				],
-				"abilities": [
-					"Storm Drain"
-				],
-				"teraTypes": [
-					"Dragon",
-					"Water"
-				]
-			}
-		],
-		"generated": true
-	},
-	"tatsugiristretchy": {
-		"level": 86,
-		"sets": [
-			{
-				"role": "Wallbreaker",
-				"movepool": [
-					"Draco Meteor",
-					"Icy Wind",
-					"Nasty Plot",
-					"Rest",
-					"Surf",
-					"Taunt"
-				],
-				"abilities": [
-					"Storm Drain"
-				],
-				"teraTypes": [
-					"Dragon",
-					"Water"
-				]
-			}
-		],
-		"generated": true
-	},
-	"tatsugiristretchymega": {
-		"level": 80,
-		"sets": [
-			{
-				"role": "Wallbreaker",
-				"movepool": [
-					"Draco Meteor",
-					"Icy Wind",
-					"Nasty Plot",
-					"Rest",
 					"Surf",
 					"Taunt"
 				],
@@ -26790,31 +25380,6 @@
 				]
 			}
 		]
-	},
-	"dudunsparcethreesegment": {
-		"level": 83,
-		"sets": [
-			{
-				"role": "Bulky Attacker",
-				"movepool": [
-					"Coil",
-					"Double-Edge",
-					"Earthquake",
-					"Outrage",
-					"Roost",
-					"Stealth Rock",
-					"Toxic"
-				],
-				"abilities": [
-					"Serene Grace",
-					"Rattled"
-				],
-				"teraTypes": [
-					"Normal"
-				]
-			}
-		],
-		"generated": true
 	},
 	"kingambit": {
 		"level": 74,
@@ -27352,11 +25917,10 @@
 			{
 				"role": "Wallbreaker",
 				"movepool": [
-					"Double-Edge",
+					"Body Press",
 					"Earthquake",
 					"Glaive Rush",
 					"Icicle Crash",
-					"Rest",
 					"Substitute",
 					"Swords Dance"
 				],
@@ -27839,32 +26403,6 @@
 				]
 			}
 		]
-	},
-	"sinistchamasterpiece": {
-		"level": 84,
-		"sets": [
-			{
-				"role": "Wallbreaker",
-				"movepool": [
-					"Leaf Storm",
-					"Nasty Plot",
-					"Rest",
-					"Scald",
-					"Shadow Ball",
-					"Substitute",
-					"Uproar"
-				],
-				"abilities": [
-					"Hospitality",
-					"Heatproof"
-				],
-				"teraTypes": [
-					"Grass",
-					"Ghost"
-				]
-			}
-		],
-		"generated": true
 	},
 	"okidogi": {
 		"level": 77,

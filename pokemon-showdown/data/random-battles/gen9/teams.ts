@@ -156,6 +156,27 @@ const LEGENDARY_TAGS = ['Restricted Legendary', 'Sub-Legendary', 'Mythical'] as 
 const MAX_LEGENDARIES = 2;
 /** validator rules that limit which Pokemon a format allows; random teams honour them too */
 const SPECIES_POOL_RULES = ['azoriexclusives', 'azoripokedex'];
+/**
+ * Abilities that do nothing until a weather or terrain is up, and the move that sets it.
+ * A Pokemon whose every ability is one of these always carries the move.
+ */
+const ABILITY_SETUP_MOVES: { [ability: string]: string } = {
+	swiftswim: 'raindance', raindish: 'raindance', hydration: 'raindance', stormsurge: 'raindance',
+	chlorophyll: 'sunnyday', solarpower: 'sunnyday', leafguard: 'sunnyday', eternalflame: 'sunnyday',
+	sandrush: 'sandstorm', sandforce: 'sandstorm', sandveil: 'sandstorm',
+	slushrush: 'snowscape', icebody: 'snowscape', snowcloak: 'snowscape',
+	surgesurfer: 'electricterrain', grasspelt: 'grassyterrain',
+};
+/** the rock that makes each weather last longer */
+const WEATHER_ROCKS: { [move: string]: string } = {
+	raindance: 'Damp Rock', sunnyday: 'Heat Rock', sandstorm: 'Smooth Rock', snowscape: 'Icy Rock',
+};
+const TYPE_BOOST_ITEMS: { [type: string]: string } = {
+	Bug: 'Silver Powder', Dark: 'Black Glasses', Dragon: 'Dragon Fang', Electric: 'Magnet', Fairy: 'Fairy Feather',
+	Fighting: 'Black Belt', Fire: 'Charcoal', Flying: 'Sharp Beak', Ghost: 'Spell Tag', Grass: 'Miracle Seed',
+	Ground: 'Soft Sand', Ice: 'Never-Melt Ice', Normal: 'Silk Scarf', Poison: 'Poison Barb', Psychic: 'Twisted Spoon',
+	Rock: 'Hard Stone', Steel: 'Metal Coat', Water: 'Mystic Water',
+};
 
 export class RandomTeams {
 	readonly dex: ModdedDex;
@@ -170,6 +191,8 @@ export class RandomTeams {
 	readonly maxMoveCount: number;
 	readonly forceMonotype: string | undefined;
 	readonly forceTeraType: string | undefined;
+	/** Terastallization is banned, so a set's Tera Type means nothing */
+	readonly noTera: boolean;
 
 	/**
 	 * Checkers for move enforcement based on types or other factors
@@ -195,6 +218,7 @@ export class RandomTeams {
 		this.maxTeamSize = ruleTable.maxTeamSize;
 		this.adjustLevel = ruleTable.adjustLevel;
 		this.maxMoveCount = ruleTable.maxMoveCount;
+		this.noTera = ruleTable.has('terastalclause');
 		const forceMonotype = ruleTable.valueRules.get('forcemonotype');
 		this.forceMonotype = forceMonotype && this.dex.types.get(forceMonotype).exists ?
 			this.dex.types.get(forceMonotype).name : undefined;
@@ -727,6 +751,8 @@ export class RandomTeams {
 
 		const moveType = move.type;
 		if (moveType === 'Normal') {
+			// a Mega's set lists the ability it starts the battle with, not the one it Mega Evolves into
+			if (species.isMega) abilities = [...abilities, ...Object.values(species.abilities)];
 			if (abilities.includes('Aerilate')) return 'Flying';
 			if (abilities.includes('Galvanize')) return 'Electric';
 			if (abilities.includes('Pixilate')) return 'Fairy';
@@ -778,6 +804,16 @@ export class RandomTeams {
 		}
 
 		// Add other moves you really want to have, e.g. STAB, recovery, setup.
+
+		// Enforce the weather or terrain that every one of this Pokemon's abilities depends on
+		const neededSetupMoves = new Set(abilities.map(ability => ABILITY_SETUP_MOVES[toID(ability)]));
+		if (neededSetupMoves.size === 1) {
+			const [moveid] = neededSetupMoves;
+			if (moveid && movePool.includes(moveid)) {
+				counter = this.addMove(moveid, moves, types, abilities, teamDetails, species, isLead,
+					movePool, teraType, role, isDoubles);
+			}
+		}
 
 		// Enforce Facade if Guts is a possible ability
 		if (movePool.includes('facade') && abilities.includes('Guts')) {
@@ -896,8 +932,23 @@ export class RandomTeams {
 			}
 		}
 
+		// The checkers above skip some types on purpose, but every type a Pokemon has should
+		// get at least one attack of that type whenever its set offers one
+		for (const type of types) {
+			if (counter.get(type) || moves.size >= this.maxMoveCount) continue;
+			const stabMoves = movePool.filter(moveid => {
+				const move = this.dex.moves.get(moveid);
+				return !this.noStab.includes(moveid) && (move.basePower || move.basePowerCallback) &&
+					this.getMoveType(move, species, abilities, teraType) === type;
+			});
+			if (stabMoves.length) {
+				counter = this.addMove(this.sample(stabMoves), moves, types, abilities, teamDetails, species, isLead,
+					movePool, teraType, role, isDoubles);
+			}
+		}
+
 		// Enforce Tera STAB
-		if (!counter.get('stabtera') && !['Bulky Support', 'Doubles Support'].includes(role)) {
+		if (!this.noTera && !counter.get('stabtera') && !['Bulky Support', 'Doubles Support'].includes(role)) {
 			const stabMoves = [];
 			for (const moveid of movePool) {
 				const move = this.dex.moves.get(moveid);
@@ -1075,11 +1126,11 @@ export class RandomTeams {
 		switch (ability) {
 		// Abilities which are primarily useful for certain moves or with team support
 		case 'Chlorophyll': case 'Solar Power':
-			return !teamDetails.sun;
+			return !teamDetails.sun && !moves.has('sunnyday');
 		case 'Defiant':
 			return (species.id === 'thundurus' && !!counter.get('Status'));
 		case 'Hydration': case 'Swift Swim':
-			return !teamDetails.rain;
+			return !teamDetails.rain && !moves.has('raindance');
 		case 'Iron Fist': case 'Skill Link':
 			return !counter.get(toID(ability));
 		case 'Overgrow':
@@ -1087,9 +1138,9 @@ export class RandomTeams {
 		case 'Prankster':
 			return !counter.get('Status');
 		case 'Sand Force': case 'Sand Rush':
-			return !teamDetails.sand;
+			return !teamDetails.sand && !moves.has('sandstorm');
 		case 'Slush Rush':
-			return !teamDetails.snow;
+			return !teamDetails.snow && !moves.has('snowscape');
 		case 'Swarm':
 			return !counter.get('Bug');
 		case 'Torrent':
@@ -1175,11 +1226,18 @@ export class RandomTeams {
 			return this.sample(species.requiredItems);
 		}
 		if (species.id === 'pikachu') return 'Light Ball';
+		// a Pokemon that sets the weather its own ability runs on wants that weather to last
+		for (const moveid in WEATHER_ROCKS) {
+			if (moves.has(moveid) && ABILITY_SETUP_MOVES[toID(ability)] === moveid) return WEATHER_ROCKS[moveid];
+		}
+		if ((ability === 'Super Luck' || ability === 'Sniper') && counter.get('Physical') + counter.get('Special') >= 2) {
+			return 'Scope Lens';
+		}
 		if (role === 'AV Pivot') return 'Assault Vest';
 		if (species.id === 'regieleki') return 'Magnet';
 		if (types.has('Normal') && moves.has('doubleedge') && moves.has('fakeout')) return 'Silk Scarf';
 		if (
-			species.id === 'froslass' || moves.has('populationbomb') ||
+			moves.has('populationbomb') ||
 			(ability === 'Hustle' && counter.get('setup') && !isDoubles && this.randomChance(1, 2))
 		) return 'Wide Lens';
 		if (species.id === 'smeargle') return 'Focus Sash';
@@ -1322,7 +1380,7 @@ export class RandomTeams {
 			return (
 				(ability === 'Quark Drive' || ability === 'Protosynthesis') && !isLead && species.id !== 'ironvaliant' &&
 				['dracometeor', 'firstimpression', 'uturn', 'voltswitch'].every(m => !moves.has(m))
-			) ? 'Booster Energy' : 'Life Orb';
+			) ? 'Booster Energy' : this.getOffensiveItem(ability, types, moves, counter, species, isLead, true);
 		}
 		if (isLead && (species.id === 'glimmora' ||
 			(['Doubles Wallbreaker', 'Offensive Protect'].includes(role) &&
@@ -1335,6 +1393,43 @@ export class RandomTeams {
 		}
 		if (!counter.get('Status')) return 'Assault Vest';
 		return 'Sitrus Berry';
+	}
+
+	/**
+	 * Life Orb suits nearly any attacker, which is exactly why it ended up on most of them.
+	 * Instead, pick from the items that actually help this set: a booster for the type it
+	 * leans on, Expert Belt for wide coverage, Lum Berry so a setup turn isn't wasted, and
+	 * so on, with Life Orb as one option among them.
+	 */
+	getOffensiveItem(
+		ability: string,
+		types: Set<string>,
+		moves: Set<string>,
+		counter: MoveCounter,
+		species: Species,
+		isLead: boolean,
+		isDoubles: boolean,
+	): string {
+		const attacks = [...moves].map(id => this.dex.moves.get(id))
+			.filter(move => move.category !== 'Status' && (move.basePower || move.basePowerCallback) && !move.damage);
+		const candidates = ['Life Orb'];
+		// the STAB type with the most attacks gets a type booster
+		let mainType = '', most = 0;
+		for (const type of types) {
+			const count = attacks.filter(move => move.type === type).length;
+			if (count > most) {
+				most = count;
+				mainType = type;
+			}
+		}
+		if (mainType && TYPE_BOOST_ITEMS[mainType]) candidates.push(TYPE_BOOST_ITEMS[mainType]);
+		if (new Set(attacks.map(move => move.type)).size >= 3) candidates.push('Expert Belt');
+		if (ability === 'Iron Fist' && attacks.some(move => move.flags['punch'])) candidates.push('Punching Glove');
+		if (attacks.some(move => move.flags['sound'] && move.category === 'Special')) candidates.push('Throat Spray');
+		if (counter.get('setup')) candidates.push(isDoubles && counter.get('physicalsetup') ? 'Clear Amulet' : 'Lum Berry');
+		const { hp, def, spd } = species.baseStats;
+		if (hp + def + spd < 230 && !counter.get('recoil') && (isLead || isDoubles)) candidates.push('Focus Sash');
+		return this.sample(candidates);
 	}
 
 	getItem(
@@ -1423,12 +1518,12 @@ export class RandomTeams {
 		if (role === 'Fast Support' || role === 'Fast Bulky Setup') {
 			return (
 				counter.get('Physical') + counter.get('Special') > counter.get('Status') && lifeOrbReqs
-			) ? 'Life Orb' : 'Leftovers';
+			) ? this.getOffensiveItem(ability, types, moves, counter, species, isLead, false) : 'Leftovers';
 		}
 		if (role === 'Tera Blast user' && DEFENSIVE_TERA_BLAST_USERS.includes(species.id)) return 'Leftovers';
 		if (
 			lifeOrbReqs && ['Fast Attacker', 'Setup Sweeper', 'Tera Blast user', 'Wallbreaker'].some(m => role === (m))
-		) return 'Life Orb';
+		) return this.getOffensiveItem(ability, types, moves, counter, species, isLead, false);
 		return 'Leftovers';
 	}
 
@@ -1438,7 +1533,10 @@ export class RandomTeams {
 	): number {
 		if (this.adjustLevel) return this.adjustLevel;
 		// Temporarily modified for Mega Invasion randomized spotlight
-		if (this.format.mod === 'gen9' && (species.id in this.randomMegaSets)) return this.randomMegaSets[species.id]["level"]!;
+		// (the Mega Invasion sets are singles sets; doubles uses its own)
+		if (this.format.mod === 'gen9' && !isDoubles && (species.id in this.randomMegaSets)) {
+			return this.randomMegaSets[species.id]["level"]!;
+		}
 		// doubles levelling
 		if (isDoubles && this.randomDoublesSets[species.id]["level"]) return this.randomDoublesSets[species.id]["level"]!;
 		if (!isDoubles && this.randomSets[species.id]["level"]) return this.randomSets[species.id]["level"]!;
@@ -1495,7 +1593,7 @@ export class RandomTeams {
 		const forme = this.getForme(species);
 		let sets;
 		// Temporarily modified for Mega Invasion randomized spotlight
-		if (Object.keys(this.randomMegaSets).includes(species.id)) {
+		if (!isDoubles && Object.keys(this.randomMegaSets).includes(species.id)) {
 			sets = this.randomMegaSets[species.id]["sets"];
 		} else {
 			sets = this[`random${isDoubles ? 'Doubles' : ''}Sets`][species.id]["sets"];
@@ -1553,6 +1651,15 @@ export class RandomTeams {
 			}
 		}
 
+		// Poison types get the same healing from Black Sludge, and draining moves heal more with Big Root
+		if (item === 'Leftovers') {
+			if (types.has('Poison')) {
+				item = 'Black Sludge';
+			} else if (counter.get('drain') && this.randomChance(1, 2)) {
+				item = 'Big Root';
+			}
+		}
+
 		// Get level
 		const level = this.getLevel(species, isDoubles);
 
@@ -1578,7 +1685,7 @@ export class RandomTeams {
 			} else {
 				// Maximize number of Stealth Rock switch-ins in singles
 				if (isDoubles) break;
-				if (srWeakness <= 0 || ability === 'Regenerator' || ['Leftovers', 'Life Orb'].includes(item)) break;
+				if (srWeakness <= 0 || ability === 'Regenerator' || ['Leftovers', 'Black Sludge', 'Life Orb'].includes(item)) break;
 				if (item !== 'Sitrus Berry' && hp % (4 / srWeakness) > 0) break;
 				// Minimise number of Stealth Rock switch-ins to activate Sitrus Berry
 				if (item === 'Sitrus Berry' && hp % (4 / srWeakness) === 0) break;

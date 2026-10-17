@@ -72,7 +72,7 @@
             },
             {
                 "role": "Bulky Setup",
-                "movepool": ["Body Press", "Iron Defense", "Scald", "Slack Off"],
+                "movepool": ["Body Press", "Iron Defense", "Psychic", "Scald", "Slack Off"],
                 "abilities": ["Regenerator"],
                 "teraTypes": ["Stellar"]
             }
@@ -89,7 +89,7 @@
             },
             {
                 "role": "Fast Support",
-                "movepool": ["Encore", "Perish Song", "Protect", "Shadow Ball", "Substitute"],
+                "movepool": ["Encore", "Perish Song", "Protect", "Shadow Ball", "Sludge Wave", "Substitute"],
                 "abilities": ["Cursed Body"],
                 "teraTypes": ["Stellar"]
             }
@@ -262,7 +262,7 @@
         "sets": [
             {
                 "role": "Bulky Setup",
-                "movepool": ["Calm Mind", "Dark Pulse", "Recover", "Will-O-Wisp"],
+                "movepool": ["Calm Mind", "Dark Pulse", "Recover", "Shadow Ball", "Will-O-Wisp"],
                 "abilities": ["Prankster"],
                 "teraTypes": ["Stellar"]
             }
@@ -295,7 +295,7 @@
         "sets": [
             {
                 "role": "Bulky Setup",
-                "movepool": ["Double-Edge", "Dragon Dance", "Earthquake", "Roost"],
+                "movepool": ["Double-Edge", "Dragon Claw", "Dragon Dance", "Earthquake", "Roost"],
                 "abilities": ["Natural Cure"],
                 "teraTypes": ["Stellar"]
             }
@@ -340,7 +340,7 @@
         "sets": [
             {
                 "role": "Setup Sweeper",
-                "movepool": ["Double-Edge", "Dragon Dance", "Earthquake", "Roost"],
+                "movepool": ["Double-Edge", "Dragon Claw", "Dragon Dance", "Earthquake", "Roost"],
                 "abilities": ["Intimidate"],
                 "teraTypes": ["Stellar"]
             }
