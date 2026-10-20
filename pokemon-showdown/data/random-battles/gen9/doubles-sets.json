@@ -12,8 +12,8 @@
 					"Protect",
 					"Shadow Ball",
 					"Snarl",
-					"Substitute",
-					"Trick Room"
+					"Trick Room",
+					"Will-O-Wisp"
 				],
 				"abilities": [
 					"Prankster"
@@ -340,9 +340,7 @@
 					"Yawn"
 				],
 				"abilities": [
-					"Steelworker",
-					"Battle Armor",
-					"Thick Fat"
+					"Steelworker"
 				],
 				"teraTypes": [
 					"Steel",
@@ -359,8 +357,8 @@
 				"role": "Offensive Protect",
 				"movepool": [
 					"Earthquake",
+					"Fire Punch",
 					"Hammer Arm",
-					"Head Smash",
 					"Helping Hand",
 					"Meteor Mash",
 					"Protect",
@@ -384,17 +382,15 @@
 		"level": 87,
 		"sets": [
 			{
-				"role": "Doubles Setup Sweeper",
+				"role": "Doubles Support",
 				"movepool": [
 					"Crush Claw",
-					"Fake Out",
+					"Encore",
 					"Foul Play",
-					"Helping Hand",
-					"Hone Claws",
-					"Play Rough",
+					"Parting Shot",
 					"Protect",
-					"Rest",
-					"U-turn"
+					"Shadow Ball",
+					"Taunt"
 				],
 				"abilities": [
 					"State Shift"
@@ -726,12 +722,12 @@
 				"movepool": [
 					"Agility",
 					"Blizzard",
+					"Hyper Voice",
 					"Icy Wind",
 					"Moonblast",
 					"Nasty Plot",
 					"Protect",
 					"Psychic",
-					"Shadow Ball",
 					"Tailwind"
 				],
 				"abilities": [
@@ -818,8 +814,7 @@
 					"Shadow Ball"
 				],
 				"abilities": [
-					"Cursed Body",
-					"Contrary"
+					"Cursed Body"
 				],
 				"teraTypes": [
 					"Ghost"
@@ -863,15 +858,14 @@
 					"Close Combat",
 					"Crunch",
 					"Dragon Dance",
-					"Earthquake",
 					"Flip Turn",
+					"Ice Fang",
 					"Protect",
 					"Rock Slide",
 					"Snarl"
 				],
 				"abilities": [
-					"Strong Jaw",
-					"Intimidate"
+					"Strong Jaw"
 				],
 				"teraTypes": [
 					"Rock",
@@ -971,17 +965,15 @@
 			{
 				"role": "Doubles Fast Attacker",
 				"movepool": [
-					"Agility",
-					"Discharge",
 					"Encore",
 					"Heat Wave",
 					"Hurricane",
+					"Power Surge",
 					"Protect",
 					"Tailwind"
 				],
 				"abilities": [
-					"Speed Boost",
-					"Early Bird"
+					"Speed Boost"
 				],
 				"teraTypes": [
 					"Electric",
@@ -1025,7 +1017,7 @@
 				"role": "Offensive Protect",
 				"movepool": [
 					"Bulk Up",
-					"Darkest Lariat",
+					"Crunch",
 					"Earthquake",
 					"Fake Out",
 					"Flare Blitz",
@@ -1035,7 +1027,6 @@
 					"Snarl"
 				],
 				"abilities": [
-					"Anger Point",
 					"Sheer Force"
 				],
 				"teraTypes": [
@@ -1091,7 +1082,6 @@
 					"Thunder Punch"
 				],
 				"abilities": [
-					"Oblivious",
 					"No Guard"
 				],
 				"teraTypes": [
@@ -1219,18 +1209,16 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Aqua Cutter",
 					"Flip Turn",
 					"Icy Wind",
 					"Iron Head",
-					"Liquidation",
-					"Megahorn",
 					"Protect",
 					"Sacred Sword",
-					"Swords Dance"
+					"Swords Dance",
+					"X-Scissor"
 				],
 				"abilities": [
-					"Swift Swim",
-					"Moxie",
 					"Sharpness"
 				],
 				"teraTypes": [
@@ -1283,13 +1271,11 @@
 					"Rest",
 					"Snarl",
 					"Spectral Strike",
-					"Substitute",
+					"Toxic",
 					"Toxic Spikes"
 				],
 				"abilities": [
-					"Shed Skin",
-					"Merciless",
-					"Rattled"
+					"Merciless"
 				],
 				"teraTypes": [
 					"Poison",
@@ -1361,8 +1347,8 @@
 				"movepool": [
 					"Crunch",
 					"Fake Out",
+					"Fire Fang",
 					"Hone Claws",
-					"Iron Tail",
 					"Knock Off",
 					"Play Rough",
 					"Protect",
@@ -1370,9 +1356,7 @@
 					"Supercell Slam"
 				],
 				"abilities": [
-					"Full Charge",
-					"Tough Claws",
-					"Volt Absorb"
+					"Tough Claws"
 				],
 				"teraTypes": [
 					"Electric",
@@ -1447,6 +1431,7 @@
 				"movepool": [
 					"Calm Mind",
 					"Dark Pulse",
+					"Encore",
 					"Energy Ball",
 					"Focus Blast",
 					"Protect",
@@ -1455,9 +1440,7 @@
 					"Trick Room"
 				],
 				"abilities": [
-					"Magician",
-					"Prankster",
-					"Psychic Surge"
+					"Prankster"
 				],
 				"teraTypes": [
 					"Grass",
@@ -1484,7 +1467,6 @@
 					"U-turn"
 				],
 				"abilities": [
-					"Super Luck",
 					"Technician"
 				],
 				"teraTypes": [
@@ -1670,12 +1652,11 @@
 					"Parting Shot",
 					"Protect",
 					"Rest",
-					"Rock Slide",
+					"Rock Tomb",
 					"Stealth Rock",
 					"Work Up"
 				],
 				"abilities": [
-					"Keen Eye",
 					"Technician"
 				],
 				"teraTypes": [
@@ -1692,7 +1673,7 @@
 			{
 				"role": "Doubles Setup Sweeper",
 				"movepool": [
-					"Dazzling Gleam",
+					"Alluring Voice",
 					"Helping Hand",
 					"Hurricane",
 					"Icy Wind",
@@ -1703,8 +1684,7 @@
 					"U-turn"
 				],
 				"abilities": [
-					"Serene Grace",
-					"Infiltrator"
+					"Serene Grace"
 				],
 				"teraTypes": [
 					"Ghost",
@@ -1911,11 +1891,11 @@
 				"role": "Offensive Protect",
 				"movepool": [
 					"Agility",
-					"Discharge",
 					"Dragon Pulse",
 					"Electroweb",
 					"Focus Blast",
 					"Protect",
+					"Rising Voltage",
 					"Substitute",
 					"Surf"
 				],
@@ -2576,14 +2556,14 @@
 				"role": "Offensive Protect",
 				"movepool": [
 					"Alluring Voice",
-					"Discharge",
 					"Fake Out",
 					"Focus Blast",
 					"Helping Hand",
 					"Nasty Plot",
 					"Protect",
 					"Substitute",
-					"Surf"
+					"Surf",
+					"Thunder"
 				],
 				"abilities": [
 					"Static",
@@ -2682,9 +2662,9 @@
 				"role": "Doubles Bulky Attacker",
 				"movepool": [
 					"Earthquake",
-					"Fae Strike",
 					"Helping Hand",
 					"Hone Claws",
+					"Ice Punch",
 					"Icy Wind",
 					"Poison Jab",
 					"Protect",
@@ -2692,8 +2672,6 @@
 					"Stealth Rock"
 				],
 				"abilities": [
-					"Poison Point",
-					"Rivalry",
 					"Sheer Force"
 				],
 				"teraTypes": [
@@ -2711,9 +2689,9 @@
 				"role": "Offensive Protect",
 				"movepool": [
 					"Earthquake",
-					"Head Smash",
 					"Helping Hand",
 					"Hone Claws",
+					"Ice Punch",
 					"Icy Wind",
 					"Poison Jab",
 					"Protect",
@@ -2721,8 +2699,6 @@
 					"Stealth Rock"
 				],
 				"abilities": [
-					"Poison Point",
-					"Rivalry",
 					"Sheer Force"
 				],
 				"teraTypes": [
@@ -3245,10 +3221,10 @@
 					"Close Combat",
 					"Earthquake",
 					"Helping Hand",
+					"Ice Punch",
 					"Icy Wind",
 					"Knock Off",
 					"Liquidation",
-					"Pressure Wave",
 					"Protect"
 				],
 				"abilities": [
@@ -3326,18 +3302,16 @@
 				"movepool": [
 					"Bulk Up",
 					"Close Combat",
-					"Darkest Lariat",
 					"Earthquake",
 					"Helping Hand",
 					"Ice Punch",
 					"Knock Off",
 					"Protect",
+					"Stone Edge",
 					"Wide Guard"
 				],
 				"abilities": [
-					"Guts",
-					"No Guard",
-					"Steadfast"
+					"No Guard"
 				],
 				"teraTypes": [
 					"Fighting"
@@ -3887,19 +3861,17 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
-					"Crabhammer",
 					"Hammer Arm",
 					"High Horsepower",
 					"Icy Wind",
 					"Knock Off",
+					"Liquidation",
 					"Protect",
+					"Rock Slide",
 					"Swords Dance",
-					"Wide Guard",
-					"X-Scissor"
+					"Wide Guard"
 				],
 				"abilities": [
-					"Hyper Cutter",
-					"Shell Armor",
 					"Sheer Force"
 				],
 				"teraTypes": [
@@ -4343,15 +4315,14 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
-					"Blizzard",
 					"Cosmic Power",
+					"Double-Edge",
 					"Icy Wind",
-					"Meteor Beam",
 					"Protect",
-					"Psychic",
+					"Psycho Cut",
 					"Substitute",
-					"Surf",
-					"Trick Room"
+					"Trick Room",
+					"Waterfall"
 				],
 				"abilities": [
 					"Natural Cure",
@@ -4521,12 +4492,12 @@
 				"role": "Offensive Protect",
 				"movepool": [
 					"Close Combat",
+					"Double-Edge",
 					"Earthquake",
 					"Helping Hand",
 					"Protect",
 					"Substitute",
 					"Swords Dance",
-					"Throat Chop",
 					"X-Scissor"
 				],
 				"abilities": [
@@ -5015,10 +4986,10 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Aerial Ace",
 					"Crunch",
 					"Dragon Dance",
 					"Earthquake",
-					"Pressure Wave",
 					"Protect",
 					"Rock Slide",
 					"Substitute",
@@ -6355,7 +6326,7 @@
 				"movepool": [
 					"Dragon Dance",
 					"Earthquake",
-					"Head Smash",
+					"Ice Fang",
 					"Iron Head",
 					"Protect",
 					"Rest",
@@ -6364,8 +6335,6 @@
 					"Wide Guard"
 				],
 				"abilities": [
-					"Rock Head",
-					"Sturdy",
 					"Sheer Force"
 				],
 				"teraTypes": [
@@ -6541,11 +6510,11 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Aerial Ace",
+					"Bug Bite",
 					"Close Combat",
 					"Helping Hand",
 					"Iron Head",
-					"Lunge",
-					"Pressure Wave",
 					"Protect",
 					"Quick Guard",
 					"Swords Dance",
@@ -6582,8 +6551,7 @@
 				],
 				"abilities": [
 					"Sturdy",
-					"Gluttony",
-					"Contrary"
+					"Gluttony"
 				],
 				"teraTypes": [
 					"Bug",
@@ -6917,7 +6885,8 @@
 					"Protect",
 					"Sludge Bomb",
 					"Snarl",
-					"Substitute"
+					"Substitute",
+					"Sunny Day"
 				],
 				"abilities": [
 					"Early Bird",
@@ -7164,13 +7133,11 @@
 					"Icy Wind",
 					"Protect",
 					"Sludge Wave",
-					"Soft-Boiled",
-					"Thunderbolt"
+					"Thunderbolt",
+					"Toxic"
 				],
 				"abilities": [
-					"Natural Cure",
-					"Corrosion",
-					"Curious Medicine"
+					"Corrosion"
 				],
 				"teraTypes": [
 					"Fairy",
@@ -7572,13 +7539,13 @@
 				"movepool": [
 					"Bulk Up",
 					"Earthquake",
-					"Flip Turn",
 					"Hammer Arm",
 					"Helping Hand",
 					"Ice Punch",
 					"Icy Wind",
 					"Liquidation",
-					"Protect"
+					"Protect",
+					"Rain Dance"
 				],
 				"abilities": [
 					"Torrent",
@@ -7866,9 +7833,9 @@
 				"role": "Offensive Protect",
 				"movepool": [
 					"Calm Mind",
-					"Dazzling Gleam",
 					"Focus Blast",
 					"Helping Hand",
+					"Hyper Voice",
 					"Icy Wind",
 					"Protect",
 					"Psychic",
@@ -8018,8 +7985,7 @@
 					"U-turn"
 				],
 				"abilities": [
-					"Speed Boost",
-					"Infiltrator"
+					"Speed Boost"
 				],
 				"teraTypes": [
 					"Bug",
@@ -8035,13 +8001,12 @@
 			{
 				"role": "Doubles Setup Sweeper",
 				"movepool": [
-					"Double-Edge",
 					"Hone Claws",
-					"Leech Life",
 					"Poltergeist",
 					"Protect",
-					"Rest",
-					"Will-O-Wisp"
+					"Shadow Sneak",
+					"Will-O-Wisp",
+					"X-Scissor"
 				],
 				"abilities": [
 					"Wonder Guard"
@@ -8222,19 +8187,17 @@
 			{
 				"role": "Doubles Setup Sweeper",
 				"movepool": [
-					"Fae Strike",
-					"Foul Play",
+					"Crunch",
 					"Helping Hand",
 					"Icy Wind",
 					"Iron Head",
+					"Play Rough",
 					"Protect",
 					"Rest",
 					"Stealth Rock",
 					"Swords Dance"
 				],
 				"abilities": [
-					"Hyper Cutter",
-					"Intimidate",
 					"Sheer Force"
 				],
 				"teraTypes": [
@@ -8603,7 +8566,6 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
-					"Agility",
 					"Close Combat",
 					"Crunch",
 					"Earthquake",
@@ -8614,7 +8576,6 @@
 					"Substitute"
 				],
 				"abilities": [
-					"Rough Skin",
 					"Speed Boost"
 				],
 				"teraTypes": [
@@ -8634,7 +8595,7 @@
 					"Agility",
 					"Close Combat",
 					"Crunch",
-					"Earthquake",
+					"Ice Fang",
 					"Icy Wind",
 					"Liquidation",
 					"Protect",
@@ -8707,7 +8668,7 @@
 				"role": "Offensive Protect",
 				"movepool": [
 					"Earth Power",
-					"Eruption",
+					"Flash Cannon",
 					"Growth",
 					"Heat Wave",
 					"Helping Hand",
@@ -8816,8 +8777,7 @@
 				],
 				"abilities": [
 					"Own Tempo",
-					"Tangled Feet",
-					"Contrary"
+					"Tangled Feet"
 				],
 				"teraTypes": [
 					"Normal"
@@ -8955,11 +8915,11 @@
 				"role": "Offensive Protect",
 				"movepool": [
 					"Brave Bird",
+					"Double-Edge",
 					"Dragon Dance",
 					"Earthquake",
 					"Helping Hand",
 					"Outrage",
-					"Play Rough",
 					"Protect",
 					"Roost",
 					"Tailwind"
@@ -9252,17 +9212,14 @@
 		"level": 90,
 		"sets": [
 			{
-				"role": "Doubles Setup Sweeper",
+				"role": "Doubles Support",
 				"movepool": [
-					"Fire Blast",
-					"Hydro Pump",
-					"Icy Wind",
+					"Hurricane",
+					"Ice Beam",
 					"Protect",
-					"Rest",
-					"Swift",
-					"Tailwind",
-					"Thunder Wave",
-					"Work Up"
+					"Rain Dance",
+					"Thunder",
+					"Weather Ball"
 				],
 				"abilities": [
 					"Forecast"
@@ -9331,12 +9288,12 @@
 					"Gunk Shot",
 					"Helping Hand",
 					"Icy Wind",
-					"Knock Off",
 					"Pain Split",
 					"Poltergeist",
 					"Protect",
 					"Swords Dance",
-					"Vengeance"
+					"Vengeance",
+					"Will-O-Wisp"
 				],
 				"abilities": [
 					"Insomnia",
@@ -9485,15 +9442,15 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Aerial Ace",
 					"Close Combat",
 					"Icy Wind",
-					"Play Rough",
+					"Night Slash",
 					"Protect",
 					"Snarl",
 					"Spectral Strike",
 					"Substitute",
-					"Swords Dance",
-					"Throat Chop"
+					"Swords Dance"
 				],
 				"abilities": [
 					"Pressure",
@@ -9537,10 +9494,10 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Body Slam",
 					"Crunch",
 					"Earthquake",
 					"Helping Hand",
-					"Ice Spinner",
 					"Icy Wind",
 					"Iron Head",
 					"Protect",
@@ -9717,8 +9674,8 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
-					"Aerial Ace",
 					"Brick Break",
+					"Double-Edge",
 					"Dragon Dance",
 					"Earthquake",
 					"Helping Hand",
@@ -10812,15 +10769,13 @@
 		"level": 88,
 		"sets": [
 			{
-				"role": "Doubles Setup Sweeper",
+				"role": "Doubles Support",
 				"movepool": [
-					"Dazzling Gleam",
-					"Energy Ball",
-					"Growth",
-					"Helping Hand",
-					"Pollen Puff",
+					"Play Rough",
 					"Protect",
-					"Substitute",
+					"Solar Blade",
+					"Sunny Day",
+					"Swords Dance",
 					"Synthesis"
 				],
 				"abilities": [
@@ -11367,10 +11322,10 @@
 			{
 				"role": "Doubles Support",
 				"movepool": [
-					"Crunch",
+					"Cross Poison",
 					"Earthquake",
 					"Knock Off",
-					"Poison Jab",
+					"Night Slash",
 					"Protect",
 					"Rest",
 					"Snarl",
@@ -11378,9 +11333,7 @@
 					"Toxic Spikes"
 				],
 				"abilities": [
-					"Battle Armor",
-					"Sniper",
-					"Keen Eye"
+					"Sniper"
 				],
 				"teraTypes": [
 					"Poison",
@@ -11795,9 +11748,7 @@
 					"Shadow Ball"
 				],
 				"abilities": [
-					"Hustle",
-					"Serene Grace",
-					"Super Luck"
+					"Serene Grace"
 				],
 				"teraTypes": [
 					"Fairy",
@@ -13656,17 +13607,15 @@
 				"movepool": [
 					"Fake Out",
 					"Foul Play",
-					"Knock Off",
 					"Play Rough",
 					"Protect",
 					"Rest",
 					"Seed Bomb",
 					"Snarl",
+					"Thunder Wave",
 					"U-turn"
 				],
 				"abilities": [
-					"Limber",
-					"Unburden",
 					"Prankster"
 				],
 				"teraTypes": [
@@ -14201,8 +14150,6 @@
 					"Swords Dance"
 				],
 				"abilities": [
-					"Poison Point",
-					"Swarm",
 					"Speed Boost"
 				],
 				"teraTypes": [
@@ -14495,11 +14442,11 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
+					"Bite",
 					"Bulk Up",
 					"Earthquake",
 					"Flare Blitz",
 					"Hammer Arm",
-					"Lash Out",
 					"Protect",
 					"Substitute"
 				],
@@ -14519,13 +14466,13 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
-					"Bulk Up",
 					"Earthquake",
-					"Hammer Arm",
+					"Flare Blitz",
 					"Icicle Crash",
 					"Lash Out",
 					"Protect",
-					"Substitute"
+					"Superpower",
+					"U-turn"
 				],
 				"abilities": [
 					"Gorilla Tactics"
@@ -15733,9 +15680,7 @@
 					"Will-O-Wisp"
 				],
 				"abilities": [
-					"Reckless",
-					"Cursed Body",
-					"Defiant"
+					"Reckless"
 				],
 				"teraTypes": [
 					"Normal",
@@ -16887,7 +16832,6 @@
 					"U-turn"
 				],
 				"abilities": [
-					"Cheek Pouch",
 					"Huge Power"
 				],
 				"teraTypes": [
@@ -17252,14 +17196,15 @@
 		"level": 85,
 		"sets": [
 			{
-				"role": "Bulky Protect",
+				"role": "Offensive Protect",
 				"movepool": [
-					"Destiny Bond",
+					"Close Combat",
+					"Head Smash",
 					"Iron Head",
+					"King's Shield",
 					"Protect",
-					"Rest",
 					"Spectral Strike",
-					"Substitute",
+					"Swords Dance",
 					"Toxic",
 					"Wide Guard"
 				],
@@ -17391,7 +17336,6 @@
 					"Trick Room"
 				],
 				"abilities": [
-					"Contrary",
 					"Suction Cups",
 					"Infiltrator"
 				],
@@ -17409,7 +17353,6 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
-					"Earthquake",
 					"Helping Hand",
 					"Icy Wind",
 					"Liquidation",
@@ -17417,12 +17360,11 @@
 					"Rest",
 					"Rock Slide",
 					"Stealth Rock",
-					"Swords Dance"
+					"Swords Dance",
+					"X-Scissor"
 				],
 				"abilities": [
-					"Tough Claws",
-					"Sniper",
-					"Pickpocket"
+					"Tough Claws"
 				],
 				"teraTypes": [
 					"Rock",
@@ -17609,10 +17551,10 @@
 			{
 				"role": "Bulky Protect",
 				"movepool": [
-					"Blizzard",
 					"Calm Mind",
 					"Crystalline Cannon",
 					"Earth Power",
+					"Hyper Voice",
 					"Icy Wind",
 					"Protect",
 					"Rest",
@@ -17620,8 +17562,7 @@
 					"Thunder Wave"
 				],
 				"abilities": [
-					"Refrigerate",
-					"Snow Warning"
+					"Refrigerate"
 				],
 				"teraTypes": [
 					"Rock",
@@ -17695,14 +17636,14 @@
 				"role": "Offensive Protect",
 				"movepool": [
 					"Brave Bird",
-					"Close Combat",
 					"Helping Hand",
+					"High Jump Kick",
 					"Protect",
 					"Quick Guard",
+					"Stone Edge",
 					"Substitute",
 					"Swords Dance",
-					"Throat Chop",
-					"Thunder Punch"
+					"Throat Chop"
 				],
 				"abilities": [
 					"Limber",
@@ -18520,12 +18461,12 @@
 					"Bulk Up",
 					"Close Combat",
 					"Earthquake",
-					"Gunk Shot",
 					"Helping Hand",
 					"Ice Hammer",
 					"Icy Wind",
 					"Knock Off",
-					"Protect"
+					"Protect",
+					"Thunder Punch"
 				],
 				"abilities": [
 					"Hyper Cutter",
@@ -18787,16 +18728,16 @@
 		]
 	},
 	"wishiwashi": {
-		"level": 95,
+		"level": 77,
 		"sets": [
 			{
-				"role": "Doubles Support",
+				"role": "Offensive Protect",
 				"movepool": [
 					"Earthquake",
 					"Helping Hand",
+					"Iron Tail",
 					"Liquidation",
 					"Protect",
-					"Rest",
 					"Toxic",
 					"U-turn"
 				],
@@ -19179,7 +19120,7 @@
 			{
 				"role": "Offensive Protect",
 				"movepool": [
-					"Close Combat",
+					"Aerial Ace",
 					"Drill Run",
 					"First Impression",
 					"Icy Wind",
@@ -21540,9 +21481,7 @@
 					"Throat Chop"
 				],
 				"abilities": [
-					"Reckless",
-					"Guts",
-					"Defiant"
+					"Reckless"
 				],
 				"teraTypes": [
 					"Dark",
@@ -22121,9 +22060,7 @@
 					"Toxic"
 				],
 				"abilities": [
-					"Water Absorb",
-					"Strong Jaw",
-					"Sand Rush"
+					"Strong Jaw"
 				],
 				"teraTypes": [
 					"Water",

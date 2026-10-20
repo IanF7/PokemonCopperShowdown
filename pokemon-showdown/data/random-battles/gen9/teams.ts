@@ -166,6 +166,15 @@ const ABILITY_SETUP_MOVES: { [ability: string]: string } = {
 	sandrush: 'sandstorm', sandforce: 'sandstorm', sandveil: 'sandstorm',
 	slushrush: 'snowscape', icebody: 'snowscape', snowcloak: 'snowscape',
 	surgesurfer: 'electricterrain', grasspelt: 'grassyterrain',
+	forecast: 'raindance', flowergift: 'sunnyday',
+};
+/**
+ * Moves an ability needs to do its job: Speed Boost wants a free turn behind Protect,
+ * Aegislash can't get back to its Shield Forme without King's Shield, Castform's Weather
+ * Ball is what Forecast is for, and Merciless and Corrosion work off poisoning the foe.
+ */
+const ABILITY_MOVES: { [ability: string]: string } = {
+	speedboost: 'protect', stancechange: 'kingsshield', forecast: 'weatherball', merciless: 'toxic', corrosion: 'toxic',
 };
 /** the rock that makes each weather last longer */
 const WEATHER_ROCKS: { [move: string]: string } = {
@@ -757,6 +766,7 @@ export class RandomTeams {
 			if (abilities.includes('Galvanize')) return 'Electric';
 			if (abilities.includes('Pixilate')) return 'Fairy';
 			if (abilities.includes('Refrigerate')) return 'Ice';
+			if (abilities.includes('Spectralize')) return 'Ghost';
 		}
 		return moveType;
 	}
@@ -805,10 +815,13 @@ export class RandomTeams {
 
 		// Add other moves you really want to have, e.g. STAB, recovery, setup.
 
-		// Enforce the weather or terrain that every one of this Pokemon's abilities depends on
-		const neededSetupMoves = new Set(abilities.map(ability => ABILITY_SETUP_MOVES[toID(ability)]));
-		if (neededSetupMoves.size === 1) {
-			const [moveid] = neededSetupMoves;
+		// Enforce the weather, terrain or move that every one of this Pokemon's abilities depends
+		// on. (A Mega's set lists the ability it starts with, but it fights with its own.)
+		const battleAbilities = species.isMega ? Object.values(species.abilities) : abilities;
+		for (const table of [ABILITY_SETUP_MOVES, ABILITY_MOVES]) {
+			const neededMoves = new Set(battleAbilities.map(ability => table[toID(ability)]));
+			if (neededMoves.size !== 1) continue;
+			const [moveid] = neededMoves;
 			if (moveid && movePool.includes(moveid)) {
 				counter = this.addMove(moveid, moves, types, abilities, teamDetails, species, isLead,
 					movePool, teraType, role, isDoubles);
@@ -1226,6 +1239,8 @@ export class RandomTeams {
 			return this.sample(species.requiredItems);
 		}
 		if (species.id === 'pikachu') return 'Light Ball';
+		// With 1 HP (Shedinja), entry hazards are what knock it out, and Life Orb would on its first attack
+		if (species.maxHP === 1) return 'Heavy-Duty Boots';
 		// a Pokemon that sets the weather its own ability runs on wants that weather to last
 		for (const moveid in WEATHER_ROCKS) {
 			if (moves.has(moveid) && ABILITY_SETUP_MOVES[toID(ability)] === moveid) return WEATHER_ROCKS[moveid];

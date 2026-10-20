@@ -178,7 +178,7 @@
         "sets": [
             {
                 "role": "Setup Sweeper",
-                "movepool": ["Dark Pulse", "Fire Blast", "Nasty Plot", "Sludge Bomb", "Taunt"],
+                "movepool": ["Dark Pulse", "Fire Blast", "Nasty Plot", "Sludge Bomb", "Sunny Day", "Taunt"],
                 "abilities": ["Flash Fire"],
                 "teraTypes": ["Stellar"]
             }

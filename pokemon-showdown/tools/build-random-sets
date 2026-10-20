@@ -130,6 +130,89 @@ const ABILITY_NEEDS = {
  */
 const BATTLE_FORMES = {
 	brawnsoon: 'Brawnsoon-Flood',
+	// attacks in Blade Forme, and King's Shield (below) takes it back to Shield Forme
+	aegislash: 'Aegislash-Blade',
+	// School Forme for as long as it stays above a quarter of its HP
+	wishiwashi: 'Wishiwashi-School',
+};
+
+/**
+ * Abilities that make some moves much better than others. Each scores a move (how much
+ * the ability multiplies its power); a set built around one is locked to that ability,
+ * since the team builder would otherwise be free to hand out a different one and leave
+ * the moves stranded. (A Mega always has its own ability, so it's built around that.)
+ */
+const ABILITY_BOOSTS = {
+	technician: m => (m.basePower <= 60 ? 1.5 : 1),
+	skilllink: m => (Array.isArray(m.multihit) ? 5 / 3 : 1),
+	ironfist: m => (m.flags.punch ? 1.2 : 1),
+	strongjaw: m => (m.flags.bite ? 1.5 : 1),
+	sharpness: m => (m.flags.slicing ? 1.5 : 1),
+	megalauncher: m => (m.flags.pulse ? 1.5 : 1),
+	toughclaws: m => (m.flags.contact ? 1.3 : 1),
+	reckless: m => (m.recoil || m.hasCrashDamage ? 1.2 : 1),
+	sheerforce: m => (m.secondary || m.secondaries ? 1.3 : 1),
+	punkrock: m => (m.flags.sound ? 1.3 : 1),
+	steelworker: m => (m.type === 'Steel' ? 1.5 : 1),
+	steelyspirit: m => (m.type === 'Steel' ? 1.5 : 1),
+	serenegrace: m => (m.secondary?.chance ? 1.25 : 1),
+	superluck: m => (m.critRatio >= 2 ? 1.3 : 1),
+	sniper: m => (m.critRatio >= 2 ? 1.3 : 1),
+	// Contrary turns Overheat and Superpower into boosting moves
+	contrary: m => (selfDrop(m) ? 1.5 : 1),
+	// (No Guard's real effect is that everything hits; this only marks the moves it helps)
+	noguard: m => (typeof m.accuracy === 'number' && m.accuracy < 100 ? 1.001 : 1),
+	electricsurge: m => (m.id === 'risingvoltage' ? 2 : 1),
+	psychicsurge: m => (m.id === 'expandingforce' ? 1.5 : 1),
+};
+/** abilities that turn Normal-type moves into another type (Spectralize is Pokemon Copper's) */
+const ATE_ABILITIES = {
+	pixilate: 'Fairy', aerilate: 'Flying', refrigerate: 'Ice', galvanize: 'Electric', spectralize: 'Ghost',
+};
+/** abilities that double Attack: the set is physical whatever the stats say */
+const ATTACK_DOUBLERS = ['hugepower', 'purepower'];
+/** abilities worth building a set around for what they do, not for which moves they boost */
+const PLAYSTYLE_ABILITIES = ['speedboost', 'prankster', 'gorillatactics'];
+/** abilities that only pay off once the foe is poisoned, so they're the plan if it can learn Toxic */
+const POISON_ABILITIES = ['merciless', 'corrosion'];
+/**
+ * Moves an ability needs to do its job: Speed Boost wants a free turn behind Protect,
+ * Aegislash can't get back to its Shield Forme without King's Shield, Castform's Weather
+ * Ball is what Forecast is for, and Merciless and Corrosion work off poisoning the foe.
+ */
+const ABILITY_MOVES = {
+	speedboost: 'protect', stancechange: 'kingsshield', forecast: 'weatherball', merciless: 'toxic', corrosion: 'toxic',
+};
+/** status moves that are worth going first with Prankster */
+const PRANKSTER_MOVES = [
+	'willowisp', 'thunderwave', 'taunt', 'encore', 'substitute', 'destinybond', 'partingshot', 'glare', 'yawn',
+	'leechseed', 'haze', 'reflect', 'lightscreen', 'toxic',
+];
+/** moves that cost HP, which a Pokemon with 1 HP (Shedinja) can't spare */
+const costsHP = m => !!(m.recoil || m.hasCrashDamage || m.mindBlownRecoil || m.struggleRecoil ||
+	['substitute', 'painsplit', 'bellydrum', 'curse', 'clangoroussoul', 'filletaway', 'shedtail'].includes(m.id));
+
+/**
+ * Sets written by hand, for Pokemon whose gimmick the rules above can't express.
+ * Both singles and doubles use them; doubles adds Protect.
+ */
+const HAND_SETS = {
+	// Forecast makes Castform Water-type in rain, which also makes Thunder and Hurricane sure hits
+	castform: {
+		role: 'Wallbreaker', abilities: ['Forecast'],
+		movepool: ['Hurricane', 'Ice Beam', 'Rain Dance', 'Thunder', 'Weather Ball'],
+	},
+	// Flower Gift raises its Attack and Sp. Def in sun, where Solar Blade needs no charge turn
+	cherrim: {
+		role: 'Setup Sweeper', abilities: ['Flower Gift'],
+		movepool: ['Play Rough', 'Solar Blade', 'Sunny Day', 'Swords Dance', 'Synthesis'],
+	},
+	// State Shift swaps it at random between a physical Normal forme and a special Ghost one,
+	// so it gets an attack for each, plus Foul Play, which works the same either way
+	puradox: {
+		role: 'Bulky Support', abilities: ['State Shift'],
+		movepool: ['Crush Claw', 'Encore', 'Foul Play', 'Parting Shot', 'Shadow Ball', 'Taunt'],
+	},
 };
 /**
  * Pokemon whose stats sit too close together to pick an attacking side from, where the
@@ -186,14 +269,14 @@ const bst = species => Object.values(battleStats(species)).reduce((a, b) => a + 
 const levelFor = species => Math.max(70, Math.min(95, Math.round(91 - (bst(species) - 400) * 0.064)));
 
 const moveScore = (move, species, isDoubles = false) => {
-	let power = move.basePower;
+	let power = move.basePower * (move.abilityBoost || 1);
 	// Foul Play hits with the target's Attack, which is only a bargain for something weak
 	if (move.id === 'foulplay' && species && battleStats(species).atk >= 100) power = 60;
 	// in doubles, hitting both foes at once is worth more than a little extra power
 	if (isDoubles && ['allAdjacentFoes', 'allAdjacent'].includes(move.target)) power *= 1.2;
 	if (move.multihit) power *= Array.isArray(move.multihit) ? 3 : move.multihit;
 	if (move.id === 'return' || move.id === 'frustration') power = 100;
-	const accuracy = move.accuracy === true ? 100 : move.accuracy;
+	const accuracy = move.accuracy === true || move.alwaysHits ? 100 : move.accuracy;
 	return power * (accuracy / 100);
 };
 
@@ -207,12 +290,74 @@ const STILL_EVOLVING = ['dubwool'];
 /** the stats a Pokemon actually battles with (see BATTLE_FORMES) */
 const battleStats = species => (BATTLE_FORMES[species.id] ? Dex.species.get(BATTLE_FORMES[species.id]) : species).baseStats;
 
-function movesFor(species, isDoubles) {
+/**
+ * The ability a set is built around, if one of the Pokemon's abilities changes which moves
+ * it should use. A Mega's is fixed (its own); otherwise the ability that improves the most
+ * of its attacks wins, provided it improves at least two of them.
+ */
+function abilityPlanFor(species) {
+	const isMegaForme = !!megaBaseOf(species);
+	const options = isMegaForme ? Object.values(species.abilities) : abilitiesFor(species);
+	const learnable = [...Dex.species.getMovePool(species.id)].map(id => Dex.moves.get(id))
+		.filter(m => m.exists && !m.isNonstandard && m.category !== 'Status' && m.basePower >= 40 && !BAD_MOVES.has(m.id));
+	// how hard the Pokemon's four best attacks hit, used as-is or under a given ability
+	const { atk, spa } = battleStats(species);
+	const topFour = plan => learnable.map(m => asUsedBy(m, plan))
+		.map(m => moveScore(m, species) * (m.category === 'Physical' ? atk : spa) *
+			(species.types.includes(m.type) ? 1.5 : 1))
+		.sort((a, b) => b - a).slice(0, 4).reduce((a, b) => a + b, 0);
+	const baseline = topFour(null) || 1;
+	let bestPlan = null, bestValue = 0;
+	for (const name of options) {
+		const id = Dex.toID(name);
+		let value = 0;
+		if (ATTACK_DOUBLERS.includes(id) || PLAYSTYLE_ABILITIES.includes(id)) {
+			value = 99;
+		} else if (POISON_ABILITIES.includes(id)) {
+			value = Dex.species.getMovePool(species.id).has('toxic') ? 98 : 0;
+		} else if (ATE_ABILITIES[id] || ABILITY_BOOSTS[id]) {
+			// worth building around only if it makes the set hit noticeably harder
+			const gain = topFour({ id }) / baseline;
+			value = gain >= (isMegaForme ? 1.01 : 1.08) ? gain : 0;
+			if (id === 'noguard') value = learnable.some(m => typeof m.accuracy === 'number' && m.accuracy <= 80) ? 1.5 : 0;
+		}
+		if (value > bestValue) {
+			bestValue = value;
+			bestPlan = name;
+		}
+	}
+	// Abilities that must be built around even though they boost nothing (Stance Change,
+	// Forecast): when it's the only ability there is, it's the plan
+	if (!bestPlan && options.length === 1 && ABILITY_MOVES[Dex.toID(options[0])]) bestPlan = options[0];
+	return bestPlan && { name: bestPlan, id: Dex.toID(bestPlan), fixed: isMegaForme };
+}
+
+/** the move as this Pokemon would actually use it: an -ate ability's type, the ability's boost */
+function asUsedBy(move, plan) {
+	if (!plan || move.category === 'Status') return move;
+	const ate = ATE_ABILITIES[plan.id];
+	// (Dex moves are frozen, so the changes go on a wrapper that inherits everything else)
+	const wrap = props => Object.create(move, Object.fromEntries(
+		Object.entries(props).map(([key, value]) => [key, { value, enumerable: true }])));
+	if (ate && move.type === 'Normal') return wrap({ type: ate, abilityBoost: 1.2 });
+	const boost = ABILITY_BOOSTS[plan.id]?.(move) || 1;
+	const alwaysHits = plan.id === 'noguard';
+	if (boost === 1 && !alwaysHits) return move;
+	return wrap({ abilityBoost: boost, alwaysHits });
+}
+
+function movesFor(species, isDoubles, plan) {
+	const oneHP = species.maxHP === 1;
 	const pool = [...Dex.species.getMovePool(species.id)].map(id => Dex.moves.get(id))
 		.filter(move => move.exists && !move.isNonstandard && !move.isZ && !move.isMax &&
 			(!BAD_MOVES.has(move.id) || (COUNTER_MOVES.includes(move.id) && wantsCounterMoves(species))) &&
-			(!LOCK_IN_MOVES.includes(move.id) || species.types.includes(move.type)));
-	const { atk, spa } = battleStats(species);
+			(!LOCK_IN_MOVES.includes(move.id) || species.types.includes(move.type)) &&
+			// with 1 HP, any move that costs HP is a move that knocks you out
+			!(oneHP && (costsHP(move) || (move.heal && move.category === 'Status') ||
+				['rest', 'trick', 'switcheroo'].includes(move.id))))
+		.map(move => asUsedBy(move, plan));
+	let { atk, spa } = battleStats(species);
+	if (plan && ATTACK_DOUBLERS.includes(plan.id)) atk *= 2;
 	// Commit to one attacking category. Mixing physical and special attacks is what let
 	// a four-move draw come out as Swords Dance alongside Ice Beam: the setup move and
 	// the attacks have to agree or half the set is dead weight.
@@ -230,10 +375,14 @@ function movesFor(species, isDoubles) {
 			category = strength('Physical') >= strength('Special') ? 'Physical' : 'Special';
 		}
 	}
+	if (plan && ATTACK_DOUBLERS.includes(plan.id)) category = 'Physical';
 	const offStat = category === 'Physical' ? spa : atk;
 	const mainStat = category === 'Physical' ? atk : spa;
 	const byScore = (a, b) => moveScore(b, species, isDoubles) - moveScore(a, species, isDoubles);
-	const attacks = pool.filter(m => m.category === category && m.basePower >= 55).sort(byScore);
+	// (a 1-HP Pokemon prefers attacks that don't drain: there's nothing for it to heal)
+	const drainPenalty = m => (oneHP && m.drain ? 0.9 : 1);
+	const attacks = pool.filter(m => m.category === category && m.basePower >= 55)
+		.sort((a, b) => moveScore(b, species, isDoubles) * drainPenalty(b) - moveScore(a, species, isDoubles) * drainPenalty(a));
 	// when a type has no attack on the Pokemon's own side, the other side will do for its
 	// STAB, provided it can hit reasonably hard with it
 	const offAttacks = offStat >= Math.min(90, mainStat * 0.75) ?
@@ -247,6 +396,8 @@ function movesFor(species, isDoubles) {
  * setup, recovery and support, instead of bolting one of each onto every Pokemon.
  */
 function archetypeFor(species) {
+	// Wonder Guard is its only defence, so it attacks, sets up and spreads status
+	if (species.maxHP === 1) return 'wonder guard';
 	const { hp, atk, def, spa, spd, spe } = battleStats(species);
 	const offense = Math.max(atk, spa);
 	const bulk = hp + def + spd;
@@ -265,11 +416,21 @@ const QUOTAS = {
 	'bulky attacker': { attacks: 3, setup: 1, recovery: 1, utility: 1, pivot: 1, hazards: 1 },
 	'bulky support': { attacks: 2, setup: 0, recovery: 1, utility: 3, pivot: 1, hazards: 1 },
 	'fast support': { attacks: 3, setup: 0, recovery: 1, utility: 2, pivot: 1, hazards: 1 },
+	'wonder guard': { attacks: 3, setup: 1, recovery: 0, utility: 2, pivot: 0, hazards: 0 },
+	// Gorilla Tactics locks it into one move like a Choice item, so status moves are wasted
+	'choice locked': { attacks: 5, setup: 0, recovery: 0, utility: 0, pivot: 1, hazards: 0 },
 };
 
 /** the move this Pokemon can't do without, if every ability it could get depends on one */
+/** weather abilities a Mega should bring the weather for (Sand Force and the like are a bonus, not the point) */
+const MEGA_WEATHER_ABILITIES = ['swiftswim', 'chlorophyll', 'solarpower', 'sandrush', 'slushrush'];
+
 function requiredMoveFor(species, pool) {
-	const abilities = abilitiesFor(megaBaseOf(species) || species).map(name => Dex.toID(name));
+	let abilities = abilitiesFor(megaBaseOf(species) || species).map(name => Dex.toID(name));
+	if (megaBaseOf(species)) {
+		const own = Object.values(species.abilities).map(name => Dex.toID(name));
+		if (own.every(id => MEGA_WEATHER_ABILITIES.includes(id))) abilities = own;
+	}
 	const needs = new Set(abilities.map(id => ABILITY_NEEDS[id]));
 	if (needs.size !== 1 || needs.has(undefined)) return null;
 	const [moveid] = needs;
@@ -279,9 +440,12 @@ function requiredMoveFor(species, pool) {
 const isAttack = name => Dex.moves.get(name).category !== 'Status';
 
 function buildMovepool(species, isDoubles) {
-	const { pool, attacks, offAttacks, category } = movesFor(species, isDoubles);
-	const archetype = archetypeFor(species);
-	const quota = QUOTAS[archetype];
+	const plan = abilityPlanFor(species);
+	const { pool, attacks, offAttacks, category } = movesFor(species, isDoubles, plan);
+	const archetype = plan?.id === 'gorillatactics' ? 'choice locked' : archetypeFor(species);
+	const quota = { ...QUOTAS[archetype] };
+	const prankster = plan?.id === 'prankster';
+	if (prankster) quota.utility = Math.max(quota.utility, 2);
 	const has = id => pool.some(m => m.id === id);
 	const chosen = [];
 	const add = move => {
@@ -294,9 +458,10 @@ function buildMovepool(species, isDoubles) {
 	// One boosting move, plus a speed boost only for something that isn't already fast:
 	// a sweeper with Nasty Plot, Agility and Substitute ends up with one attack to its name
 	const setup = [];
-	if (quota.setup) {
-		setup.push(...(offensiveSetup.length ? offensiveSetup : speedSetup).slice(0, 1));
-		if (quota.setup >= 2 && offensiveSetup.length && battleStats(species).spe < 100) {
+	// with Contrary, a boosting move lowers the stat instead, and the self-dropping attacks are the boost
+	if (quota.setup && plan?.id !== 'contrary') {
+		setup.push(...(offensiveSetup.length ? offensiveSetup : plan?.id === 'speedboost' ? [] : speedSetup).slice(0, 1));
+		if (quota.setup >= 2 && offensiveSetup.length && battleStats(species).spe < 100 && plan?.id !== 'speedboost') {
 			setup.push(...speedSetup.slice(0, 1));
 		}
 	}
@@ -304,8 +469,14 @@ function buildMovepool(species, isDoubles) {
 	const fitsSet = move => !setup.length || !selfDrop(move);
 	const best = list => list.find(fitsSet) || list[0];
 
-	// A Pokemon whose ability needs a weather or terrain always brings it
+	// A Pokemon whose ability needs a weather or terrain always brings it, and the
+	// same goes for a move its ability depends on (Protect for Speed Boost, and so on)
 	add(requiredMoveFor(species, pool));
+	if (plan && ABILITY_MOVES[plan.id] && has(ABILITY_MOVES[plan.id])) add(Dex.moves.get(ABILITY_MOVES[plan.id]));
+	// a priority STAB is the best thing a 1-HP Pokemon can have: it hits before it can be hit
+	if (species.maxHP === 1) {
+		add(pool.find(m => m.priority > 0 && m.category !== 'Status' && species.types.includes(m.type)));
+	}
 
 	// One attack of every type the Pokemon has, before anything else
 	for (const type of species.types) {
@@ -349,7 +520,7 @@ function buildMovepool(species, isDoubles) {
 	// the set will actually be rather than by the archetype alone
 	const willSweep = archetype === 'sweeper' ||
 		(archetype === 'bulky attacker' && setup.length && battleStats(species).spe >= 85);
-	const utilityList = willSweep ? SWEEPER_UTILITY : UTILITY_MOVES;
+	const utilityList = prankster ? PRANKSTER_MOVES : willSweep ? SWEEPER_UTILITY : UTILITY_MOVES;
 	const utility = pick(wantsCounterMoves(species) ? [...COUNTER_MOVES, ...utilityList] : utilityList);
 	const hazards = pick(HAZARD_MOVES);
 
@@ -372,7 +543,7 @@ function buildMovepool(species, isDoubles) {
 	}
 
 	return {
-		movepool: chosen, attackCount, category, archetype,
+		movepool: chosen, attackCount, category, archetype, plan,
 		hasSetup: chosen.some(n => setup.includes(n)),
 		hasRecovery: chosen.some(n => recovery.includes(n)),
 		hasProtect: has('protect'),
@@ -393,6 +564,8 @@ function roleFor(species, info, isDoubles) {
 		return 'Doubles Support';
 	}
 	switch (info.archetype) {
+	case 'wonder guard': return 'Setup Sweeper';
+	case 'choice locked': return 'Wallbreaker';
 	case 'sweeper': return info.hasSetup ? 'Setup Sweeper' : 'Fast Attacker';
 	case 'wallbreaker': return 'Wallbreaker';
 	case 'bulky attacker': return info.hasSetup && spe >= 85 ? 'Setup Sweeper' : 'Bulky Attacker';
@@ -408,16 +581,33 @@ function abilitiesFor(species) {
 }
 
 function generate(species, isDoubles) {
+	const hand = HAND_SETS[species.id];
+	if (hand) {
+		const movepool = [...hand.movepool];
+		if (isDoubles && Dex.species.getMovePool(species.id).has('protect')) movepool.push('Protect');
+		return {
+			role: isDoubles ? 'Doubles Support' : hand.role,
+			movepool: movepool.sort(),
+			abilities: hand.abilities,
+			teraTypes: [...new Set(species.types)],
+		};
+	}
 	const info = buildMovepool(species, isDoubles);
 	// Showdown picks four moves from this pool, so anything that can't fill four
 	// (Wobbuffet, whose only attacks are Counter and Mirror Coat) is left out entirely
 	if (info.movepool.length < 4) return null;
 	// A Mega starts the battle in its base forme, so it carries the base forme's ability
 	const abilitySource = megaBaseOf(species) || species;
+	let abilities = abilitiesFor(abilitySource);
+	// a set built around an ability keeps only that ability, so the team builder can't swap
+	// it for another; Contrary is dropped from any set not built around it, where it would
+	// only turn the set's boosting moves against it
+	if (info.plan && !info.plan.fixed) abilities = [info.plan.name];
+	else if (abilities.length > 1) abilities = abilities.filter(name => name !== 'Contrary');
 	return {
 		role: roleFor(species, info, isDoubles),
 		movepool: info.movepool.sort(),
-		abilities: abilitiesFor(abilitySource),
+		abilities,
 		teraTypes: [...new Set(species.types)],
 	};
 }
