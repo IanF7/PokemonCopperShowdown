@@ -157,6 +157,11 @@ const MAX_LEGENDARIES = 2;
 /** validator rules that limit which Pokemon a format allows; random teams honour them too */
 const SPECIES_POOL_RULES = ['azoriexclusives', 'azoripokedex'];
 /**
+ * Regional formes from other regions. The Azori Pokedex rule allows a Pokemon by its base
+ * species, so Alolan Golem passes as "Golem"; Azori random teams only want Azorian formes.
+ */
+const OTHER_REGIONAL_FORMES = /^(Alola|Galar|Hisui|Paldea)/;
+/**
  * Abilities that do nothing until a weather or terrain is up, and the move that sets it.
  * A Pokemon whose every ability is one of these always carries the move.
  */
@@ -1802,6 +1807,7 @@ export class RandomTeams {
 		const species = this.dex.species.get(speciesid);
 		const playedAs = species.isMega ? this.dex.species.get(species.changesFrom || species.baseSpecies) : species;
 		if (ruleTable.isBannedSpecies(species) || ruleTable.isBannedSpecies(playedAs)) return false;
+		if (ruleTable.has('azoripokedex') && OTHER_REGIONAL_FORMES.test(playedAs.forme)) return false;
 		const set = { name: species.baseSpecies, species: playedAs.name, item: species.requiredItem || '' } as PokemonSet;
 		const validator = { dex: this.dex, ruleTable } as any;
 		for (const id of rules) {
